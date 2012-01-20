@@ -1,0 +1,28 @@
+--- 
+layout: post
+title: javascript calendar selector
+tags: 
+- Code
+- Web
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+I have been working on this order system over the weekend, and the one piece of it that was the most difficult to get to work, should have been the easiest. I needed a popup or inline date selector. I figured there would be a quick cut and paste way of doing this, but after trying three different (allegedly) cut and paste solution, I was still getting glitches. One of them would have worked just fine, but Internet Explorer can't render web pages properly AT ALL! Dang you Trident rendering engine! Thankfully I finally found <a href="http://www.mattkruse.com/javascript/calendarpopup/">Matt Kruse's Calendar Popup</a>. Just download and include the <a href="http://www.mattkruse.com/javascript/calendarpopup/source.html">four javascript files</a> in your HTML document, and you are good to go. And initialize the calendar class in the header section.
+
+<code>&lt;script src="PopupWindow.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="AnchorPosition.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="date.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="CalendarPopup.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+var cal = new CalendarPopup();
+&lt;/script&gt;</code>
+
+And then to use the calendar popup selector for a certain text input:
+<code>&lt;form&gt;
+&lt;input name="date" type="text" /&gt;
+&lt;a id="anchor1" onclick="cal.select(document.forms['testform'].date,'anchor1','MM/dd/yyyy'); return false;" name="anchor1" href="#"&gt;Show Calendar&lt;/a&gt;
+&lt;/form&gt;</code>
+

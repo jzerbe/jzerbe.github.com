@@ -1,0 +1,60 @@
+--- 
+layout: post
+title: Debian 5 multi-user VNC
+tags: 
+- debian
+- Linux
+- Server
+- tightvnc
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+I found out a pretty pro way of setting up the equivalent of Windows Remote Desktop for Linux. This allows you to run a multi-user VNC onto a Linux box. I'm using Debian 5 - Lenny - as usual, because I like being able to compress installation procedures into a couple of apt-get commands and a little configuration file editing. Cheers to APT! I had to jot this one down.
+
+I feel much the same way about my desktop/server setups as one of the authors of my source material does.
+<blockquote><em>As a not completely new Linux user I have been frustrated over and over again at all the extra bloat and apps that I will never use that gets loaded onto my system when I do an install. Debian was the second distro that I tried and have used many others since, but I keep coming back.</em> - <a href="http://www.debian-administration.org/users/Azerthoth">Azerthoth</a></blockquote>
+Anyways ... install from a minimal Debian install. You can get the new Debian 5 at the usual place. Get your apt-get all how you like it, update and upgrade the initial minimal install.
+
+I like my /etc/apt/sources.list like:
+<blockquote>deb http://ftp.us.debian.org/debian/ lenny main contrib non-free
+deb-src http://ftp.us.debian.org/debian/ lenny main contrib non-free
+
+deb http://security.debian.org/ lenny/updates main
+deb-src http://security.debian.org/ lenny/updates main</blockquote>
+<small>Replace "lenny" with "etch" if you are still using Debian 4.</small>
+
+Now to the good stuff. A large chuck of the following content has been taken from Azerthoth's inspiraton article, "<a href="http://www.debian-administration.org/articles/432">A minimal setup with X</a>". So ... mad props to him! You will find my comments interspersed.
+<ol>
+	<li><code>apt-get install xserver-xorg-core xorg xfs</code> and accept the defaults.</li>
+	<li>See <a href="http://www.debian-administration.org/articles/432">Azerthoth's article</a> (#8) for more information about what type of login manager you want to use. I rolled xdm: <code>apt-get install xdm</code></li>
+	<li>Again I did not want a large X-Window manager package installed on my machine plus a bunch of dependencies. So I went with <a href="http://www.fluxbox.org/">Fluxbox</a>: <code>apt-get install fluxbox</code></li>
+</ol>
+&nbsp;
+
+The next part of the setup was taken from Daniel Rigal's article on "<a href="http://homepage.ntlworld.com/daniel.rigal/xdmvnc.html">How to enable XDM and VNC for Linux and Solaris</a>". If you want background information on the process see the article for yourself.
+<ol>
+	<li><code>vi /etc/X11/xdm/xdm-config</code> and comment out the last line "<code>DisplayManager.requestPort: 0</code>" by adding an "!" on the front.</li>
+	<li><code>vi /etc/X11/xdm/Xaccess</code> and uncomment the line "<code>#* #any host can get a login window</code>" by removing the first "#".</li>
+	<li><code>vi /etc/X11/fs/config</code> and comment out the last line "<code>no-listen = tcp</code>" by putting a "#" in front. Now restart the font server: <code>/etc/init.d/xfs restart</code>.</li>
+</ol>
+&nbsp;
+
+If you have followed my instructions so far, now it is time to install a VNC server and some dependencies, fonts, and xterm (the X-Window terminal emulator). I will be going with <a href="http://www.tightvnc.com/">TightVNC</a>.
+<ol>
+	<li><code>apt-get install xutils xbase-clients xfonts-base xfonts-75dpi xfonts-100dpi xterm tightvncserver</code></li>
+	<li><code>vi /etc/X11/xdm/Xservers</code>, comment out all other lines, and add "<code>:0 /usr/bin/Xtightvnc /usr/bin/Xtightvnc -depth 24 -geometry 1280x1024"</code>. Modify the 1280x1024 if you want a smaller or larger screen resolution. I think 1280x1024 is about the max resolution you can use comfortably over a broadband connection without experiencing too much network lag. In my LAN it responds just like I am at a physical KVM.</li>
+</ol>
+&nbsp;
+
+A few final things.
+<ol>
+	<li>Restart the font server, "<code>/etc/init.d/xfs restart</code>", and the xdm server: "<code>/etc/init.d/xdm restart</code>". If your iptables are configured correctly you should now be able to connect via tightvnc to your Linux box.</li>
+	<li>Quoting Daniel Rigal:
+<blockquote>None of these three protocols is secure! You should not allow access to them through your firewall. If you want to deploy VNC over the internet you should tunnel it over SSH or some sort of VPN. Doing this is not covered in this document which assumes you are setting this up for use within your LAN or over a private dial-up service.</blockquote>
+</li>
+	<li>Enjoy!</li>
+</ol>
+&nbsp;

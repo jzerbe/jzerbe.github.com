@@ -1,0 +1,39 @@
+--- 
+layout: post
+title: OpenVPN inside of a Debian OpenVZ node
+tags: 
+- CentOS
+- debian
+- Internet
+- Linux
+- openvpn
+- openvz
+- Server
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+I have been searching for a way to visualize an OpenVPN setup for some time now. I need it to be virtual because of my lack of physical machines. I have had OpenVPN running before using Ethernet bridging, but without the adequate hardware, it is time to go virtual and use routing methods instead of bridging.
+
+With a little bit of google searching I found <a href="http://www.biogeogen.com/?p=43">"Adding openvpn support to openvz VPS" on <em>biogeogen.com</em></a>. The post in question gets you started, but leaves out a few pointers.
+
+1) Don't use the <code>/etc/modules.conf</code> file, just throw up <code>modprobe tun</code> inside of <code>/etc/rc.d/rc.local</code>. So the command will be executed each boot time. This is of course if after using <code>lsmod | grep tun</code>, you discover that tun support is not automatically loaded.
+2) You need to have the virtual node off before running the following command on it: <code>vzctl set 101 --capability net_admin:on --save</code>. Where 101 is the VEID.
+3) To execute commands on said virtual node with <code>vzctl exec</code>, you then need it to be started.
+
+
+
+So the revised pastie:
+<blockquote><code>lsmod | grep tun</code>
+[no output, then -->] <code>modprobe tun</code>
+[stop the container]
+<code>vzctl set 101 --devices c:10:200:rw --save
+vzctl set 101 --capability net_admin:on --save</code>
+[start the container]
+<code>vzctl exec 101 mkdir -p /dev/net
+vzctl exec 101 mknod /dev/net/tun c 10 200
+vzctl exec 101 chmod 600 /dev/net/tun</code></blockquote>
+
+For setting up OpenVPN inside of the virtual node see: <a href="http://www.lizardking.biz/2009/02/openvpn-on-debian-linux/">OpenVPN on Debian linux</a>.

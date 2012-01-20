@@ -1,0 +1,91 @@
+--- 
+layout: page
+title: Projects
+tags: []
+
+status: publish
+type: page
+published: true
+meta: 
+  _edit_last: "1"
+  _wp_page_template: default
+---
+<style type="text/css">
+    .hentry {
+	padding-top: 0 !important;
+    }
+    .entry-header {
+	display: none !important;
+    }
+    .entry-content {
+	width: 100% !important;
+    }
+    #content .project {
+	margin: 5px 0 10px 0;
+	padding: 5px 10px 0 10px;
+	border: 1px dotted gray;
+    }
+    #content .text {
+	margin: 0;
+	padding: 0;
+    }
+    #content .text ul {
+	list-style-position: inside;
+	margin: 0 0 0 10px;
+    }
+    #content .thumb {
+	float: left;
+	margin: 0 5px 0 0;
+	padding: 0;
+	max-width: 60%;
+    }
+    .clear {
+	margin: 0;
+	padding: 0;
+	clear: both;
+    }
+</style>
+<h3 style="text-align: center;">Personal Projects</h3>
+<div class="project"><a href="http://vraidsys.com/musiczones/"><img alt="MMC library page" src="http://dl.dropbox.com/u/44649188/blog_includes/software/mmc_ml.png" class="thumb" title="MusicZones library" /></a><div class="text"><strong>MusicZones</strong> - Fall/Winter 2011<br />A music zone controller and player for running on a machine with Java (1.5+) support. Instead of buying a $3K+ whole-home music hardware/software solution, I built my own software for controlling the audio output of a Windows/Mac/Linux machine via any relatively modern JavaScript enabled web browser, including mobile browsers (using <a href="http://jquerymobile.com/">jQuery Mobile framework</a>). This software runs on any commodity hardware; currently I have it running on several laptops with broken screens. This application requires that a <a href="http://www.mplayerhq.hu/">mplayer</a> binary be present in the system somewhere. I suggest <a href="http://smplayer.sourceforge.net/">SMPlayer</a> for Windows, (apt-get install) mplayer for Linux (or equivalent), or <a href="http://mplayerosx.sourceforge.net/">MPlayerOSX</a> for OSX. Checkout the project on GitHub: <a href="https://github.com/jzerbe/MusicZones">jzerbe / MusicZones</a>.</div><div class="clear">&nbsp;</div>
+</div>
+<div class="project"><div class="text"><strong>free web access from T-Mobile</strong> - September 2010, January 2011<br />After many unsuccessful attempts to use my various mobile phones as data modems to dial-in to my home network, I &quot;accidentally&quot; figured out that I could get free web access as long as the keyword &quot;tmobile&quot; was in the URL somewhere. So I initially built this semi-private web proxy - tmobile.vraidsys.com - optimized for mobile devices using the Glype framework. Here is the main idea for DIY types: <a href="http://modmyi.com/forums/t-mobile/723747-how-roll-your-own-proxy-browse-edge-free.html" rel="nofollow">http://modmyi.com/forums/t-mobile/723747-how-roll-your-own-proxy-browse-edge-free.html</a>.<br /><br />
+I had always been hoping to build a better system than using web proxies and crappy built-in cell phone browsers. Ever heard of <a href="http://www.opera.com/mobile/">Opera Mini</a>? In my opinion, it is by far one of the best browsers for mobile devices. Although, it isn't exactly a real browser, as all of the "mobilizing" and markup interpretation is done on Opera&#39;s servers; think of it more as a thin client. Anyways, I mapped two <a href="http://en.wikipedia.org/wiki/CNAME_record">CNAME</a>s tmobile4.vraidsys.com and tmobile4-1.vraidsys.com to server4.operamini.com, and updated the v4 advanced jar. Presto! Free mobile web access through loopholes in the T-Mobile service. For more information and download links see this blog post: <a href="/2011/01/opera-mini-v4-patched-for-free-web-access/">Opera Mini v4 patched for free web access</a>.</div><div class="clear">&nbsp;</div>
+</div>
+<div class="project"><img src="http://dl.dropbox.com/u/44649188/blog_includes/designs/v9sys_main.png" class="thumb" alt="v9sys main image" /><div class="text"><strong>Virtual 9 Systems</strong> - September 2009<br />A study in <a href="https://openid.org/home">OpenID</a>, <a href="http://oauth.net/">OAuth</a>, and <a href="http://www.janrain.com/products/engage">Janrain Engage (RPX)</a> user authentication, this service provided a master server frontend for authenticating users to a private proxy network.</div><div class="clear">&nbsp;</div>
+</div>
+<div class="project"><img alt="PL2X UI" src="http://dl.dropbox.com/u/44649188/blog_includes/software/pl2x_pre.jpg" class="thumb" /><div class="text"><strong>Pipeline2 eXchange</strong> - music creation instant messenger - May 2008<br />
+This project has been sitting on the back burner for quite some time now. The idea is to use IPv6 and its built-in multicast capabilities to allow musicians to jam and record together online. The client is written completely in Java and is managed by a webservice written in Python, running off of <a href="http://appengine.google.com/">Google App Engine</a>. The client makes use of UPNPLib by (now defunct) SBBI.net for NAT auto-configuration.</div><div class="clear">&nbsp;</div>
+</div>
+<div class="clear">&nbsp;</div>
+<br /><br />
+<h3 style="text-align: center;">Contract Work</h3>
+<div class="project"><a href="http://thriftywrench.com/" title="Thrifty Wrench"><img src="http://dl.dropbox.com/u/44649188/blog_includes/webapps/thrifty_wrench.png" class="thumb" alt="Thrifty Wrench login screen capture" /></a><div class="text"><strong><a href="http://thriftywrench.com/">Thrifty Wrench</a></strong> - March 2011<br />After spending several months trying to find an internship for the summer, I was messaged by Jon Stojan, wondering if I could come work on Thrifty Wrench. He said he was "looking for a talented local programmer to help create an online system to connect automotive businesses to local customers". I did not end up "interning" on his project this summer, but we came to a contract agreement instead. I overhauled quite a bit of the legacy database (PHP/MySQL) code and added new form validation JavaScript. I highly recommend using <a href="http://docs.jquery.com/Plugins/validation">jQuery's Validation Plugin</a>, which is a really slick way of doing Ajax validation calls.</div><div class="clear">&nbsp;</div>
+</div>
+<div class="project"><div class="text"><strong><a href="http://nateuridesigns.com/">nate.uri|DESIGNS</a></strong> - June to August 2010<br />I was able to work with Nate during the summer of 2010. First, a probationary gig, and then he continued to hand off some pretty serious stuff, along with the usual xhtml/css/jQuery stuffs that I get quite often. Did some things with jQuery and PNG layering that should be done with Flash. But hey ... why not? Search engines like text. Anyways ... cools things continued to happen.  Ever heard of <a href="http://codeigniter.com/">CodeIgniter</a>? Pretty bomb <a href="http://en.wikipedia.org/wiki/Model%E2%80%93View%E2%80%93Controller"><abbr title="Model View Controller">MVC</abbr> framework</a> which powers this cool dating site I got to work on called <a href="http://plumeblue.com/">Plume Blume</a>. I also had the chance to integrate the <a href="http://www.twilio.com/docs/index">Twilio API</a> into Plume Blue. Hopefully I get the chance to work with Nate on some other projects!</div><div class="clear">&nbsp;</div>
+</div>
+<div class="project"><a href="http://apps.facebook.com/swizz-store/" title="Swizz Apparel Co. Facebook App"><img src="http://dl.dropbox.com/u/44649188/blog_includes/webapps/swizz_fb_store.jpg" class="thumb" alt="Swizz FB store screen capture" /></a><div class="text"><strong><a href="http://apps.facebook.com/swizz-store/">Swizz Apparel Co. Facebook App</a></strong> - October 2009, August 2010<br />I built this e-commerce Facebook app for Ethan Schweizer as an easy way to sell and market his <i>Swizz Apparel</i> line of clothes. The cool things about this is that it provides a more private merchandise area than the general Facebook Marketplace with the added bonus of going viral. Purchases can be made seamlessly through PayPal without installing app by visiting the <a href="http://www.facebook.com/Swizz.Apparel.Co">Swizz Apparel Co. Facebook page</a>. In addition I managed the PHP/MySQL backend hosting.<br /><br />
+	Update 08/2010: Facebook continues to play with their <a href="http://developers.facebook.com/docs/guides/canvas/#canvas">API (new graph stuff?)</a>, and I had to make updates to the app to keep it running. Specifically, they modified how one gets data about users, and how an app interacts with the API. Had to fix some phased-out function calls.<br /><br />
+	Update 09/2010: Ethan decided that we should kill the Facebook app, in anticipation of releasing a full-fledged web store.</div><div class="clear">&nbsp;</div>
+</div>
+<div class="project"><div class="text"><strong><a href="http://www.essentialservicesinc.com/">Essential Services Inc</a></strong> - August 2009 through May 2010<br />craigslist served me well again and I met Henry Passot, co-owner of Essential Services Inc. We met at a Starbucks and he had me build a <a href="http://flowplayer.org/">FlowPlayer</a> component implemented on several websites (that I cannot name due to our business agreement) that works flawlessly with IE 6-8, FF, Chrome, Opera and Safari. At which point I became his goto guy for more code-intensive parts of web-design, SEO, and widgets. I created several wordpress installations and Themes, a Javascript captcha component based on <a href="http://www.archreality.com/jcap/">jcap</a> that protects several high-profile businesses. Along with the many hours of troubleshooting, support, and upkeep of development/production environments.</div><div class="clear">&nbsp;</div>
+</div>
+<div class="project"><img alt="LAX template image" src="http://dl.dropbox.com/u/44649188/blog_includes/designs/stringdat_template_v2.png" class="thumb" title="lacross stringing template" /><div class="text"><strong>Stringdat-Lax.net</strong> - August 2009<br />This was a funny little gig I got from my first business dealing Ethan Schweizer. We met in gym class of all places! He was working on starting a lacross stringing home business and wanted to set up a web presence. Ethan is pretty good with photoshop and I am pretty good with code so he gave me a photoshop mockup and I converted it to a valid XHTML strict and CSS level 2.1 compliant website design.</div><div class="clear">&nbsp;</div>
+</div>
+<div class="project"><a href="http://www.solitechgmbh.com/" title="SoliTech GmbH"><img alt="SoliTech GmbH logo"  src="http://dl.dropbox.com/u/44649188/blog_includes/webapps/liquidsolitechsmall.jpg" class="thumb" /></a><div class="text"><strong><a href="http://www.solitechgmbh.com/">SoliTech GmbH</a></strong> - Summer 2009<br />I got lucky when I met Gyuri Papp after responding to a <a href="http://www.craigslist.org/about/sites">craigslist</a> posting. During that summer he was into social games. Gyuri had me working on the "<i>I Am Rich</i>" <a href="http://apps.facebook.com/iamrichfb/">Facebook</a> and <a href="http://profile.myspace.com/Modules/Applications/Pages/Canvas.aspx?appId=130038">MySpace</a> applications. In addition, my Linux knowledge came into play and I did some work on SoliTech&#39;s production servers.</div><div class="clear">&nbsp;</div>
+</div>
+<div class="project"><a href="http://www.securevertexonline.com/" title="check out Secure Vertex Online"><img alt="SVO screen cap" src="http://dl.dropbox.com/u/44649188/blog_includes/designs/svo.jpg" class="thumb" /></a><div class="text"><strong><a href="http://www.securevertexonline.com/">Secure Vertex Online</a></strong> - April 2009<br />This was a somewhat random project request I got from a fellow Physics classmate (William Ibarra) while at <a href="http://www.century.edu/">Century College</a>. Apparently he wanted me to setup a website for him. Will had a domain and everything and just wanted me to craft a suitable way for him to publish some content. Not quite sure what he has done with the thing ... whatever. I custom coded a xhtml 1.0 strict &amp; css level 2.1 wordpress theme and configured email/web hosting, dns setup, and the wordpress setup.</div><div class="clear">&nbsp;</div>
+</div>
+<div class="project"><img alt="H3 main screen capture" src="http://dl.dropbox.com/u/44649188/blog_includes/designs/hulla.jpg" class="thumb" title="Version 3 homepage screen capture" /><div class="text"><strong>Hullabaloo Apparel</strong> - September 2008 to February 2009<br />
+	Who would have thought that business and philosophy would mix? Well I first met Yuriah Souder in a Western Philosophy class at <a href="http://www.century.edu/">Century College</a>. He had this new apparel company idea that he was starting with Erik Brust. Yuri got me on board after learning that I build websites. A few of the things I did with them:
+	<ul>
+	    <li>custom flash animation using the HullaBaloon brand</li>
+	    <li>integration of PayPal shopping cart and checkout</li>
+	    <li>custom css and xhtml design that works in all major browsers (Firefox, Internet Explorer, Safari)</li>
+	    <li>wordpress integration/theming</li>
+	    <li>managed web (via <a href="https://www.nearlyfreespeech.net/">NearlyFreeSpeech.net</a>) and email hosting (from <a href="http://www.google.com/apps">Google Apps</a>)</li>
+	    <li>consulting on future Internet expansion</li>
+	</ul></div><div class="clear">&nbsp;</div>
+</div>
+<div class="project"><img alt="workflow tracking main" src="http://dl.dropbox.com/u/44649188/blog_includes/designs/workflow_tracking_system.jpg" class="thumb" title="Workflow Tracking System" /><div class="text"><strong>Workflow Tracking System</strong> built for <a href="http://www.priorcreative.com/">Prior Creative Images, LLC</a> - July 2008<br />This was an early PHP/MySQL/Ajax web app I created for order tracking. I made a simple xhtml 1.0 strict &amp; css level 2.1 html template. I put together an easy to use setup script for autogenerating .htaccess and mysql table stuffs. Integrated a javascript date picker and made some Ajax edit locking and updating.</div><div class="clear">&nbsp;</div>
+</div>
+<div class="clear">&nbsp;</div>

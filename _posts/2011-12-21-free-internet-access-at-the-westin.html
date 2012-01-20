@@ -1,0 +1,16 @@
+--- 
+layout: post
+title: free Internet access at The Westin
+tags: 
+- Cracking/Hacking
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+It was rather unexpected to have to pay extra for Internet access at a hotel, especially The Westin, being all expensive and whatnot. In the end I payed out, well the company who was paying for me payed out ($15 for 24 hrs?!?!), but had I set up a few things before getting there, there would have been no need to pay.
+
+I stayed at <a href="http://www.starwoodhotels.com/westin/property/overview/index.html?propertyID=1555">The Westin Bellevue</a>, and would assume that many other <em>Starwood Hotels and Resorts</em> locations must employ similar captive portal filtering. At this particular Westin location there were three wireless networks: WestinLobby, WestinMeetingRooms, WestingGuestRooms. They all employed the same captive portal filtering based on hostnames.
+
+Attempting to ICMP ECHO (ping) <em>vraidsys.com</em> would fail, but pinging <em>starwoodhotels.com.vraidsys.com</em> worked. Similarly an HTTP GET request to <em>mail.zerbe.biz</em> would fail, but <em>starwoodhotels.com.zerbe.biz</em> worked. If only I had an SSH host for tunneling with a "valid" hostname, then there would have been no need to pay for this extortion.

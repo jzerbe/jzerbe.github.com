@@ -1,0 +1,37 @@
+--- 
+layout: post
+title: Snapdragon 8655 MDP adb and fastboot setup on WinXP
+tags: 
+- Android
+- Mobile
+- Software
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+I finally found the full developer specs on my 8655 MDP (<a href="http://store.bsquare.com/doc_library/docs/Snapdragon_8655_MDP_UG_rev2_0_Final_122310.pdf">BSQUARE</a>) (<a href="http://dl.dropbox.com/u/44649188/SnapDragon%20MSM8655%20MDP/Snapdragon_8655_MDP_UG_rev2_0_Final_122310.pdf">mirror</a>), along with the USB driver installation instructions (<a href="http://store.bsquare.com/doc_library/docs/App_Note_Installing_USB_driver_on_Windows.pdf">BSQUARE</a>) (<a href="http://dl.dropbox.com/u/44649188/SnapDragon%20MSM8655%20MDP/App_Note_Installing_USB_driver_on_Windows.pdf">mirror</a>).
+
+The USB driver installation instructions that BSQUARE published are rather out-of-date for working with version 15 of the Android SDK. This documents my current driver setup on my 32-bit Windows XP machine.
+<ol>
+	<li><a href="http://developer.android.com/sdk/">Download and Install the Android SDK</a> (v15 at time of writing)</li>
+	<li>Start up the SDK Manager GUI (pop open the Tool -&gt; Options menu and select "force https source to be fetched over http", had some weird errors otherwise) and install: Tools -&gt; Android SDK Tools, Tools -&gt; Android SDK Platform-tools, Extras -&gt; Google USB Driver package</li>
+	<li>After the odiously slow process finishes, copy <code>[Android SDK Root]\extras\google\usb_driver</code> to <code>[Android SDK Root]\msm8655-mdp_usb_driver</code></li>
+	<li>Open up the <code>android_winusb.inf</code> (inside of the newly created directory) file in Notepad or other non-format appending text editor. Clear out the contents of the <code>[Google.NTx86]</code> and <code>[Google.NTamd64]</code> paragraphs so that they just contain the following:
+<blockquote><code>[Google.NTx86]
+;BSQUARE MDP8655
+%SingleAdbInterface% = USB_Install, USB\VID_0956&amp;PID_9025&amp;MI_00
+%CompositeAdbInterface% = USB_Install, USB\VID_0956&amp;PID_9025&amp;MI_01
+%SingleBootLoaderInterface% = USB_Install, USB\VID_0956&amp;PID_9025&amp;MI_02</code>
+<code>[Google.NTamd64]
+;BSQUARE MDP8655
+%SingleAdbInterface% = USB_Install, USB\VID_0956&amp;PID_9025&amp;MI_00
+%CompositeAdbInterface% = USB_Install, USB\VID_0956&amp;PID_9025&amp;MI_01
+%SingleBootLoaderInterface% = USB_Install, USB\VID_0956&amp;PID_9025&amp;MI_02</code></blockquote>
+</li>
+	<li>Create and/or open the <code>C:\Documents and Settings\[your username]\.android\adb_usb.ini</code> file and make sure it just contains the hex string: <code>0x0956</code></li>
+	<li>Power on your device and connect it to your development machine. Be sure to point Windows to your newly created USB driver directory for your MSM8655. If Windows is unable to find the needed driver(s), point the dirver search to the original USB driver located in <code>[Android SDK Root]\extras\google\usb_driver</code>. If Windows still does not find the necessary driver just hit finish and go without. This seemed to be the case when I rebooted into the bootloader on some occasions.</li>
+	<li>Restart the SDK and see if your device is connected - <code>[Android SDK Root]\platform-tools\adb.exe devices</code> - should spit out "<code>1234567890ABCDEF device</code>".</li>
+	<li>For a working fastboot binary for flashing, one can grab a fresh copy from the android-roms project [<a href="http://code.google.com/p/android-roms/downloads/detail?name=fastboot-win32.zip">info</a>] or the one I used for this tutorial from my dropbox [<a href="http://dl.dropbox.com/u/44649188/android_windows-dev/fastboot-win32.zip">link</a>]. Once you download: unzip and move the .exe to <code>[Android SDK Root]\platform-tools\</code>.</li>
+</ol>

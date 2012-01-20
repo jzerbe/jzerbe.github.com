@@ -1,0 +1,48 @@
+--- 
+layout: post
+title: TightVNC on Debian linux
+tags: 
+- debian
+- Linux
+- Server
+- vnc
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+<strong>Introduction</strong>
+I have been wanting to run a Halo Custom Edition dedicated server on one of my OpenVZ nodes for quite some time, so this afternoon I finally started on a fun little bit of research. Running Halo (full featured edition or dedicated server) on Linux requires Wine, which if run headless over a network requires VNC. Virtual Network Computing (VNC) is a graphical desktop sharing system which uses the RFB protocol to remotely control another [<a href="http://en.wikipedia.org/wiki/VNC">wikipedia</a>]. <em>Unfortunately as I found out later, the Halo dedicated servers require some OpenGL stuffs (specifically an extension by the name of "GLX"). In an upcoming post I guess I'll try again and get an install that will be able to run the Halo client/dedicated server on linux. Ah well, in any case I've now got a X-Window system set up.</em> Now all that I will have to do is install KDE or Gnome. Although maybe next time I'll go with xorg-server instead; from what I have read it has a much easier setup procedure and integrates various OpenGL drivers.
+
+The following assumes that:
+<ol>
+	<li>you have a functioning Debian or Ubuntu - like system</li>
+	<li>you are logged in as root or are capable or running "sudo" commands. add in "sudo" where necessary, typically on the apt-get commands.</li>
+</ol>
+&nbsp;
+&nbsp;
+<strong>Installation</strong>
+Now that the basics are out of the way, it is time to install some dependencies for vnc.
+<code>apt-get install xutils xbase-clients xfonts-base xfonts-75dpi xfonts-100dpi xterm</code>
+
+What just happened: X11, required X11 fonts, and the X-Window terminal emulator just got installed. All that is left to do is install your vnc server of choice (I personally prefer <a href="http://www.tightvnc.com/">TightVNC</a>): <code>apt-get install tightvncserver</code>
+
+Cool so everything should be ready to start-up properly. So start tightvncserver for the first time: <code>tightvncserver :1 -geometry 1024x768 -depth 16</code>. If all goes according to plan it should ask you to enter a password, this will be your login password via vnc for the account you are currently logged in through (root). You can always modify the screen resolution and depth commands to match whatever resolution and pixel depth you please. Login via a vnc client (I suggest TightVNC viewer), to check if you can login, then close the session and kill the vnc server: <code>tightvncserver -kill :1</code>. We have some customizations to do yet.
+
+
+
+If you execute "cat .vnc/xstartup" in your terminal session, you should probably get something like the following outputted to your terminal session.
+<blockquote><code>#!/bin/sh</code>
+
+xrdb $HOME/.Xresources
+xsetroot -solid grey
+x-terminal-emulator -geometry 160x50+10+10 -ls -title "$VNCDESKTOP Desktop" &amp;
+x-window-manager &amp;</blockquote>
+This is the current start up script for your vnc server. Be sure to have the line starting with "x-terminal-emulator" in your start up script, because we will be needing terminal access via vnc to mess around with the Halo dedicated server. If you want to have your terminal window larger, modify that line accordingly (160x50+10+10 is plenty for me).
+
+Now start the (tight)vncserver again and get into your cool graphical terminal session screen. For more information on VNC commands check out this <a href="http://www.penlug.org/twiki/bin/view/Main/TightVNC">article about vnc servers on the TWiki</a>.
+
+<strong>Conclusion</strong>
+This setup is a great starting point. VNC and X-Window sessions are ready to go, and even will auto-restart after a power cycle. Unfortunately my goal of having a Halo dedicated server running on this setup, did not come to fruition. It requires some other dependencies and/or a completely different X-Window setup.
+

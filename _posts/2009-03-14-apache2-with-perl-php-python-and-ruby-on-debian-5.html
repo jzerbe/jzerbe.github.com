@@ -1,0 +1,150 @@
+--- 
+layout: post
+title: Apache2 with Perl, PHP, Python and Ruby on Debian 5
+tags: 
+- apache
+- debian
+- Internet
+- Linux
+- Server
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+This install assumes a semi-clean Debian 5 install and some access to a root console. The node must have around 220MB ram +/- 20 MB (or a large swap partition and a fast hard drive). The initial installs of some of these services take a heavy toll on ram. Tweaking will be done to speed up the services. This is meant as a multi-user development server, not a production server. I will be working on getting this working on nginx, so the speed and performance will be much better. For ease of installation, apache2 will have to do.
+
+To do this with &lt;400MB of ram we need to keep the applications that apt-get installs from starting.
+<blockquote>1) Create a file /usr/sbin/policy-rc.d containing:
+
+#!/bin/sh
+exit 101
+
+2) chmod +x /usr/sbin/policy-rc.d
+
+After that, packages will install correctly, but not start.
+
+Once you're done and ready to snapshot your pristine chroot/image, just delete that file. That will let the service start as normal on future boots.</blockquote>
+<a href="http://ubuntuforums.org/showthread.php?t=856815">http://ubuntuforums.org/showthread.php?t=856815</a>
+
+install everything we need in one big apt-get install command
+<code>apt-get install ssh mysql-server apache2 php5 phpmyadmin openssl vsftpd libapache2-mod-python libapache2-mod-ruby rubygems libapache2-mod-perl2 libapache2-mod-wsgi libapache2-reload-perl libapache2-request-perl libapache2-mod-fcgid libfcgi-ruby1.8 libmysql-ruby libapache2-mod-scgi ruby libzlib-ruby rdoc irb rubygems rails eruby</code>
+
+[ad#hostgator-banner-refer]
+
+Once the installation is done, remove "/usr/sbin/policy-rc.d" - <code>rm /usr/sbin/policy-rc.d</code> - so that the various applications will be able to start.
+
+I don't know a whole lot about exim4, so I just start it without messing with the config files.
+<code>/etc/init.d/exim4 start</code>
+
+edit mysql config file - <code>/etc/mysql/my.cnf</code>
+I like to comment out the <code>bind-address</code> line so that I can access the mysql database remotely in my other test environments.
+start it when done: <code>/etc/init.d/mysql start</code>
+
+edit vsftpd config file to your liking - <code>/etc/vsftpd.conf</code>
+and start it: <code>/etc/init.d/vsftpd start</code>
+
+edit apache2 main configuration file so that it takes up less ram
+<code>vi /etc/apache2/apache2.conf</code>
+
+---- Start File Excerpt ----
+<code>#
+# Timeout: The number of seconds before receives and sends time out.
+#
+Timeout 60</code>
+
+#
+# KeepAlive: Whether or not to allow persistent connections (more than
+# one request per connection). Set to "Off" to deactivate.
+#
+KeepAlive Off
+
+#
+# MaxKeepAliveRequests: The maximum number of requests to allow
+# during a persistent connection. Set to 0 to allow an unlimited amount.
+# We recommend you leave this number high, for maximum performance.
+#
+MaxKeepAliveRequests 100
+
+#
+# KeepAliveTimeout: Number of seconds to wait for the next request from the
+# same client on the same connection.
+#
+KeepAliveTimeout 15
+
+##
+## Server-Pool Size Regulation (MPM specific)
+##
+
+# prefork MPM
+# StartServers: number of server processes to start
+# MinSpareServers: minimum number of server processes which are kept spare
+# MaxSpareServers: maximum number of server processes which are kept spare
+# MaxClients: maximum number of server processes allowed to start
+# MaxRequestsPerChild: maximum number of requests a server process serves
+&lt;IfModule mpm_prefork_module&gt;
+StartServers          1
+MinSpareServers       1
+MaxSpareServers       1
+MaxClients            3
+MaxRequestsPerChild  20
+&lt;/IfModule&gt;
+
+# worker MPM
+# StartServers: initial number of server processes to start
+# MaxClients: maximum number of simultaneous client connections
+# MinSpareThreads: minimum number of worker threads which are kept spare
+# MaxSpareThreads: maximum number of worker threads which are kept spare
+# ThreadsPerChild: constant number of worker threads in each server process
+# MaxRequestsPerChild: maximum number of requests a server process serves
+&lt;IfModule mpm_worker_module&gt;
+StartServers          1
+MaxClients           20
+MinSpareThreads      25
+MaxSpareThreads      75
+ThreadsPerChild      25
+MaxRequestsPerChild  20
+&lt;/IfModule&gt;
+---- End File Excerpt ----
+
+enable various apache2 modules that we need
+<code>a2enmod ssl
+a2enmod rewrite
+a2enmod suexec
+a2enmod include</code>
+
+
+
+edit apache vhost configuration file [<a href="http://dl.dropbox.com/u/44649188/blog_includes/article-includes/apache2_all_in_1/default.txt">/etc/apache2/sites-available/default</a>] or .htaccess file to enable perl, python, and ruby. php should already be setup and good to go.
+
+---- Start File Excerpt ----
+<code>&lt;VirtualHost *:80&gt;
+ServerAdmin jzerbe@lizardking.biz
+DocumentRoot /home/jason/www/
+&lt;Directory /home/jason/www/&gt;
+Options Indexes FollowSymLinks MultiViews
+AllowOverride None
+Order allow,deny
+allow from all
+AddHandler mod_python .py
+PythonHandler mod_python.publisher
+PythonDebug On
+&lt;/Directory&gt;
+&lt;Directory /home/jason/www/&gt;
+Options +ExecCGI
+AddHandler cgi-script rb cgi pl
+&lt;/Directory&gt;
+&lt;/VirtualHost&gt;</code>
+---- End File Excerpt ----
+
+finally start apache2
+<code>/etc/init.d/apache2 start</code>
+
+To test that this works, try the following test scripts: <a href="http://dl.dropbox.com/u/44649188/blog_includes/article-includes/apache2_all_in_1/test.rb.txt">test.rb</a>, <a href="http://dl.dropbox.com/u/44649188/blog_includes/article-includes/apache2_all_in_1/test.pl.txt">test.pl</a>, <a href="http://dl.dropbox.com/u/44649188/blog_includes/article-includes/apache2_all_in_1/test.py.txt">test.py</a>, and <a href="http://dl.dropbox.com/u/44649188/blog_includes/article-includes/apache2_all_in_1/test.php.txt">test.php</a>.
+
+For more information about the ruby on rails installation see <a href="http://www.howtoforge.com/ruby_on_rails_debian_etch">this howtoforge.com article</a>.
+
+
+
+On a side note: I was doing this on a vmware node and ran out of space, expanding a vmdisk is pretty easy to do: 1) cd into VMware Workstation/Server directory 2) <code>vmware-vdiskmanager -x [500MB/5GB/etc.] "[path to vmdisk].vmdk"</code> 3) program expands virtual disk.

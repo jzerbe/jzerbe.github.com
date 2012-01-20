@@ -1,0 +1,43 @@
+--- 
+layout: post
+title: CentOS 5.5 ImageMagick install + php module
+tags: 
+- CentOS
+- ImageMagick
+- Linux
+- Server
+- Software
+status: publish
+type: post
+published: true
+meta: 
+  _wp_old_slug: ""
+  _edit_last: "1"
+---
+Working this morning, I had to get ImageMagick working on a CentOS 5.5 VM. Pretty easy with YUM right? Well there were some complications installing the associated PHP module. So after doing the usual <code>yum update</code>, here is what you should do.
+<ol>
+	<li>yum install ImageMagick ImageMagick-devel</li>
+	<li>If you are lucky "pecl install imagick" will work, if so skip to last 2 steps. If not continue along. I got the $PHP_AUTOCONF error.</li>
+	<li>Head over to - <a href="http://pecl.php.net/package/imagick">http://pecl.php.net/package/imagick</a> - and download the latest tarball (wget or whatever you fancy). At time of writing, I used "<a href="http://pecl.php.net/get/imagick-3.0.0RC2.tgz">imagick-3.0.0RC2.tgz</a>".</li>
+	<li>tar xzvf [da archive name] and cd into said archive</li>
+	<li>gotta compile this thing from source: a) <code>phpize</code> b) <code>./configure</code> c) <code>make</code> d) <code>make install</code> (as root ... duh!) [check out <a href="http://www.webhostingtalk.com/showpost.php?p=4215404&amp;postcount=10">Steven's post on webhostingtalk.com</a>]</li>
+	<li>load &amp; restart: a) <code>echo "extension=imagick.so" &gt; /etc/php.d/imagick.ini</code> b) <code>/etc/init.d/httpd restart</code></li>
+	<li>check to see if it was installed: <code>php -m | grep imagick</code></li>
+</ol>
+Now let's check to see if imagemagick "works". Create a .php file on the server and access it with your web browser. Excerpted from <a href="http://www.astahost.com/info.php/Find-Test-Imagemagick-Php_t18769.html">docduke's post on astahost.info</a>.
+<blockquote>&lt;html&gt; &lt;head&gt; &lt;title&gt;Test for  ImageMagick&lt;/title&gt; &lt;/head&gt;
+&lt;body&gt; &lt;?
+function  alist ($array) {  //This function prints a text array as an html list.
+$alist  = "&lt;ul&gt;";
+for ($i = 0; $i &lt; sizeof($array); $i++) {
+$alist  .= "&lt;li&gt;$array[$i]";
+}
+$alist .= "&lt;/ul&gt;";
+return  $alist;
+}
+exec("convert -version", $out, $rcode); //Try to get  ImageMagick "convert" program version number.
+echo "Version return  code is $rcode &lt;br&gt;"; //Print the return code: 0 if OK, nonzero if  error.
+echo alist($out); //Print the output of "convert -version"
+//Additional  code discussed below goes here.
+?&gt; &lt;/body&gt; &lt;/html&gt;</blockquote>
+

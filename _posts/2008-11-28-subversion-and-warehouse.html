@@ -1,0 +1,63 @@
+--- 
+layout: post
+title: subversion and warehouse
+tags: 
+- Code
+- Linux
+- mysql
+- Server
+- Software
+- subversion
+- swig
+- warehouse
+- WebDAV
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+I had first heard about the <a href="http://www.warehouseapp.com/">Warehouse subversion browser</a> a couple of months back. At the time it was still closed source and cost $30 per server license. Recently though, it went open source and is now freely available. For those of you with about 1-2 hours of time and know how to setup and <a href="http://svnbook.red-bean.com/en/1.1/ch05s02.html">run</a> subversion on a Linux/Unix box (with <a href="http://www.debian-administration.org/articles/285">WebDAV</a>) it really isn't that hard to get up and running.
+
+I installed this on one of my home Debian Etch (4) servers and it took me about 30 minutes once I understood the entire process.
+<ol>
+	<li>Install some necessary dependencies for building (I prolly left out a few) - make, rake, unzip, zip, tar, gzip, bzip2, libc6, gcc, cpp, g++</li>
+	<li>Install Ruby
+<ul>
+	<li>download the latest tarball (source code in tar.gz) here - <a href="http://www.ruby-lang.org/en/downloads/">http://www.ruby-lang.org/en/downloads/</a> - <em>wget ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7-p72.tar.gz</em><a href="http://www.ruby-lang.org/en/downloads/">
+</a></li>
+	<li>run - <em>tar xzvf ruby*.tar.gz</em> - to open up the archive</li>
+	<li>cd into the directory - <em>cd ruby*</em></li>
+	<li>configure, make and then install --&gt; 1) <em>./configure</em> 2) <em>make</em> 3) <em>make install</em> (as root)</li>
+</ul>
+</li>
+	<li>Install Swig
+<ul>
+	<li>download one of the latest tarballs - <em>wget http://internap.dl.sourceforge.net/sourceforge/swig/swig-1.3.31.tar.gz</em></li>
+	<li>unarchive the archive - <em>tar xzvf swig-1.3.31.tar.gz </em></li>
+	<li>get into the directory - <em>cd swig-1.3.31</em></li>
+	<li>configure, make, then install --&gt; 1) <em>./configure</em> 2) <em>make</em> 3) <em>make install</em> (as root)</li>
+</ul>
+</li>
+	<li>Install Subversion and the Swig-Ruby bindings
+<ul>
+	<li>download one of the latest subversion archives - <em>wget http://subversion.tigris.org/downloads/subversion-1.5.5.tar.gz</em></li>
+	<li>unarchive that sucker - <em>tar xzvf subversion*.tar.gz</em></li>
+	<li>get into the directory that was just created - <em>cd subversion*</em></li>
+	<li>configure for installation (and if you are missing anything be sure to install it!) - <em>./configure --enable-shared --enable-static --enable-debug --with-ssl --with-swig</em></li>
+	<li>make and install --&gt; 1) <em>make</em> 2) <em>make install</em></li>
+	<li>now install the swig-ruby bindings --&gt; 1) <em>make swig-rb</em> 2) <em>make install-swig-rb</em></li>
+</ul>
+</li>
+	<li>Install various dependencies for later: apache2 with WebDAV support, ruby gems, MySQL server/client, PHPMyAdmin might be handy as well</li>
+	<li>Download the Warehouse source code - <a href="http://github.com/entp/warehouse/tree/master">http://github.com/entp/warehouse/tree/master</a></li>
+	<li>Untar into where you want Warehouse to start from: tar xvzf, mv, and whatnot.</li>
+	<li>Setup a 3 MySQL databases (warehouse_test, warehouse_production, warehouse_dev) that can be accessed by 1 user for testing, production and development.</li>
+	<li>Now run the warehouse bootstrapping program and setup procedures. (No registration key needed now that it is open source, so leave that field blank.) - <a href="http://www.warehouseapp.com/installing/installing-and-registering-warehouse">http://www.warehouseapp.com/installing/installing-and-registering-warehouse</a></li>
+	<li>In the Warehouse settings, be sure to <a href="http://warehouseapp.com/faqs/what-are-these-admin-settings-for">setup warehouse so that it updates your WebDAV permissions and passwords</a>.
+<ul>
+	<li>Shell command to run when permissions are updated. This will auto-generate the necessary permission file for WebDAV: <code>rake warehouse:build_config CONFIG=[warehouse directory]/config/access.conf</code></li>
+	<li>Shell command to run when someone's password is updated. This will auto-generate the necessary password file for WebDAV: <code>rake warehouse:build_htpasswd CONFIG=[warehouse directory]/config/htpasswd.conf</code></li>
+</ul>
+</li>
+</ol>

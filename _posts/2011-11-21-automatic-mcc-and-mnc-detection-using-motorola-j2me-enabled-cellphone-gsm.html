@@ -1,0 +1,19 @@
+--- 
+layout: post
+title: automatic MCC and MNC detection using Motorola J2ME enabled cellphone [GSM]
+tags: 
+- Code
+- Mobile
+- Motorola
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+  _wp_old_slug: automatic-mcc-and-mnc-detection-using-motorola-j2me-enabled-cellphone
+---
+Been playing around with the <abbr title="Access Point Name"><a href="http://en.wikipedia.org/wiki/Access_Point_Name">APN</a></abbr> settings on my Qualcomm Android dev phone. I wanted to make sure I had the right <abbr title="Mobile Country Code">MCC</abbr> and <abbr title="Mobile Network Code">MNC</abbr>, since I knew I had the correct network id.
+
+I threw together a J2ME app, <i><a href="http://dl.dropbox.com/u/44649188/blog_hacks/MotorolaCellInfo.jar" rel="nofollow">MotorolaCellInfo.jar</a></i>, that detects these values from my SIM card when I use it in my Motorola phone. This uses functionality that is only guaranteed to work on Motorola devices. For more, please see the source I used: <i><a href="http://ajay-mobileappdev.blogspot.com/2008/05/getiing-network-information-without-gps.html" rel="nofollow">Getiing Location Information (IMEI,MCC,MNC,LAC,CELLID) without GPS</a></i>.
+
+If you are the hacker type, check out the NetBeans project+source [<a href="http://dl.dropbox.com/u/44649188/blog_hacks/MotorolaCellInfo.zip" rel="nofollow">zip</a>].

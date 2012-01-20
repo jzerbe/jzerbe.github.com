@@ -1,0 +1,62 @@
+--- 
+layout: post
+title: actiontec gt701-wg telnet modifications
+tags: 
+- Actiontec
+- Cracking/Hacking
+- Linux
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+I thought I might document some of the modifications I make to my <a href="http://www.nettwerked.net/actiontec.html">Actiontec GT701-WG</a> on a regular basis via Telnet. Sure these changes are not permanent, as they get reset every time you power-cycle the device. But I did not want to take the time to try and figure out how to recompile a whole new flash image, or chance bricking  my only <em>reliable</em> Internet connection. Explanation follows semi-pastable.
+
+<blockquote>
+<code>echo "nameserver 208.67.222.222
+nameserver 208.67.220.220" > /etc/resolv.conf
+
+echo "127.0.0.1 localhost
+192.168.0.1 gateway gateway.[yourdomain].com
+192.168.0.# ntinstall [host] [host].[yourdomain].com" > /etc/hosts
+
+echo "start 192.168.0.51
+end 192.168.0.254
+interface br0
+opt router 192.168.0.1
+opt dns 208.67.222.222 208.67.220.220
+opt subnet 255.255.255.0
+opt lease 86400
+conflict_time 86400
+lease_file /var/tmp/landhcps0.leases
+siaddr 192.168.0.#
+sname [hostname]
+boot_file pxelinux.0" > /etc/udhcpd.conf</code>
+</blockquote>
+
+All of the code above assumes you are operating your network in the default 192.168.0.0/24 IPv4 local block. In addition, all of the changes happen nearly instantaneously in regards to reshaping network traffic.
+
+The first chunk sets the default name servers that the gateway device uses to the <em>fast</em> <a href="http://www.opendns.com/">OpenDNS</a> servers. It also clears out the other crap that makes DNS queries time out trying to lookup domains in the actdsltmp local domain that is set by default. In the web interface I suggest setting the DNS servers to OpenDNS's servers as well (those changes should be permanent).
+
+The 2nd block is for those of you with your own domains that would like to set up the gateway so it refers to itself within your domain. The last line of the 2nd block - "192.168.0.# ntinstall [host] [host].[yourdomain].com" - overrides certain gateway DNS lookups and routes the particular name to an IPv4 address "192.168.0.#". I use this line for my <a href="http://unattended.sourceforge.net/">Unattended Windows installations</a>, as it by default looks for a host by the name of "ntinstall" if you haven't specified a hostname.
+
+The 3rd pastie-grouping deals with the DHCP server that is built into the gateway. I enjoy the speed of OpenDNS queries on my LAN hosts as well, hence - "opt dns 208.67.222.222 208.67.220.220". The last three lines of the 3rd block deal with my TFTP/PXE server. "siaddr 192.168.0.#" specifies a TFTP server at IPv4 address "192.168.0.#" (replace # with a number). "sname [hostname]" - replace "[hostname]" with the hostname of the server at address "192.168.0.#". "boot_file pxelinux.0" specifies that I wish to have my PXE client boot a file by the name of "pxelinux.0" that is in the root of my TFTP server.
+
+
+
+Did you know you can also run full websites off your gateway? Using a TFTP server on your network and built-in binaries on your gateway make it possible.
+
+<blockquote><code>mkdir /var/www
+chmod 755 /var/www
+tftp -g -l /var/www/index.html -r public/gateway-site/index.html 192.168.0.#
+chmod 644 /var/www/index.html
+tftp -g -l /var/www/cgi.cgi -r public/gateway-site/cgi.cgi 192.168.0.#
+chmod 755 /var/www/cgi.cgi
+thttpd -d /var/www -u root -p 81 -c /var/www/**.cgi</code></blockquote>
+
+To my knowledge, the /var directory on the Actiontec GT701-WG is the only directory one can write to. So first a directory is created for the website to reside in, and the necessary permissions (chmod) to make the site accessible. Then using the tftp client, "index.html" is grabbed from the "public/gateway-site/" directory on the tftp server at IPv4 address "192.168.0.#" (where # is a number), and this file is stuck in the "/var/www" directory. Then the "index.html" file is set to the proper permissions so it can be accessed - 644 for data/non-cgi files. A similar process happens for the cgi file, although this time it needs to be set to 755 so it can be executed when accessed.
+
+I still can't quite get cgi files compiled properly for the Actiontec GT701-WG, but I'm assuming one needs to do some cross-compiling to the MIPS 4KEc V4.8 32-bit chip that runs this. Article on compiling CGI stuffs: <a href="http://devhood.com/Tutorials/tutorial_details.aspx?tutorial_id=301">http://devhood.com/Tutorials/tutorial_details.aspx?tutorial_id=301</a>.
+
+

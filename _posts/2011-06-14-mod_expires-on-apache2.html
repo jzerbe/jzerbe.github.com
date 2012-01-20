@@ -1,0 +1,20 @@
+--- 
+layout: post
+title: mod_expires on apache2
+tags: 
+- apache
+- Server
+- Web
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+While I was updating the VM that hosts this and several other websites, I decided to give <a href="http://httpd.apache.org/docs/2.0/mod/mod_expires.html">mod_expires (for apache)</a> a try. According to <a href="http://pagespeed.googlelabs.com/">Google's "Page Speed Online"</a> for automated page-load speed testing (analyzes for both Desktop and Mobile devices), I just needed to minify my JS &amp; CSS, and start using the <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html">Expires HTTP header</a> on my HTTP server to see increased page load times for my visitors (and less load per user).
+
+Fixed with two things:
+<ol>
+	<li>Following "<a href="http://www.howtoforge.com/make-browsers-cache-static-files-with-mod_expires-on-apache2-debian-squeeze">Make Browsers Cache Static Files With mod_expires On Apache2 (Debian Squeeze)</a>", which essentially comes down to <code>a2enmod expires</code> and fragments for various mime-types, such as: <code>ExpiresByType image/jpg "access plus 60 days"</code></li>
+	<li>installing the <a href="http://wordpress.org/extend/plugins/wp-minify/installation/">WP Minify plugin</a> which automates the compression and combining of served JS &amp; CSS</li>
+</ol>

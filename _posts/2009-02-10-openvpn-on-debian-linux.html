@@ -1,0 +1,132 @@
+--- 
+layout: post
+title: OpenVPN on Debian linux
+tags: 
+- debian
+- Linux
+- openvpn
+- Server
+- Software
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+It is rather problematic accessing resources on my home development cluster when I am in other locations. After witnessing the functionality of my Dad's work VPN, I figured why not have a whack at a VPN setup. SSH tunneling just does not cut it in some cases. In this walk through, I will be installing <a href="http://www.openvpn.net/">OpenVPN</a> on a <a href="http://www.debian.org/CD/netinst/">minimal Debian Linux 4.0 installation</a> on a 1.5GHZ/1GB RAM/12 GB hard drive host node. I tried doing this on a <a href="http://openvz.org/">OpenVZ</a> virtual node, and it did not work too well dealing with all of the low level (virtual) hardware calls, linux kernel dependencies, and creating a bridged interface within a bridged interface. Use a physical server!
+
+<strong>System Requirements</strong>
+<ol>
+	<li>A computer that meets the following minimum system requirments: 300MHZ, 128MB RAM, 2GB HDD</li>
+	<li>Some sort of Linux installation on said computer. I'll be using Debian Linux so those of you using Ubuntu, Slackware, Mandrake or any other distro with apt-get luckily won't have to compile from source (too often).</li>
+	<li>Root terminal access to the computer (via ssh or KVM)</li>
+	<li>Knowledge of IPv4 routing in your Local Area Network</li>
+	<li>YOU NEED bridge-utils (apt-get install bridge-util)! Try and get any of this going without this package and your ifconfig setup will implode! It happened to me both times I tried this because I FORGOT!!!</li>
+</ol>
+
+
+<strong>Downloading and Installing OpenVPN</strong>
+<ol>
+	<li>Use your built-in repository application. In my case "apt-get install openvpn openssl" and I was good to go. For some reason, even though <a href="http://openssl.org/">openssl</a> is required for setting up a secured VPN connection, it wasn't auto-included. For more information on downloading and installing on RHEL based systems (CentOS, OpenSUSE, Red Hat, Fedora) see <a href="http://openvpn.net/index.php/documentation/howto.html#install">the OpenVPN howto</a>.</li>
+	<li>Then determine whether you want to use routed or bridged mode: <a href="http://openvpn.net/index.php/documentation/howto.html#vpntype">http://openvpn.net/index.php/documentation/howto.html#vpntype</a></li>
+	<li>Now copy the contents of "/usr/share/doc/openvpn/examples/easy-rsa/" to some place more accessible and so to keep a backup copy of the original. I moved it to "/etc/openvpn/".</li>
+</ol>
+The setup on the server (needs openssl installed first)
+<ol>
+	<li>Get into the new copy of your "easy-rsa" directory and run the following commands to get your server's Certificate Authority ready.
+<blockquote><code>. ./vars
+./clean-all
+./build-ca</code></blockquote>
+According to the documentation on openvpn.net:
+<blockquote>The only parameter which must be explicitly entered is the Common Name. [...] I used "OpenVPN-CA".</blockquote>
+</li>
+	<li>Now build the server key: <code>./build-key-server server</code>. According to the documentation:
+<blockquote>When the Common Name is queried, enter "server". Two other queries require positive responses, "Sign the certificate? [y/n]" and "1 out of 1 certificate requests certified, commit? [y/n]".</blockquote>
+Enter "y" for both to continue.</li>
+	<li>Build the various client keys and certificates: <code>./build-key client<em>n</em></code>. Where "n" is a integer.
+<blockquote>Remember that for each client, make sure to type the appropriate Common Name when prompted, i.e. "client1", "client2", or "client3". Always use a unique common name for each client.</blockquote>
+</li>
+	<li>Now execute, "<code>./build-dh</code>", to build the necessary Diffie-Hellman parameters.</li>
+	<li>To add a further level of security with a HMAC signature, generate a key for tls-auth by running "<code>openvpn --genkey --secret ta.key</code>" while in your new "easy-rsa/keys" directory. See the section in the documentation on <a href="http://openvpn.net/index.php/documentation/howto.html#security">Hardening OpenVPN Security</a>.</li>
+	<li>Finally copy the various generated keys and certificates to the various hosts that will be utilizing the virtual private network. See below table obtained from: <a href="http://openvpn.net/index.php/documentation/howto.html#pki">http://openvpn.net/index.php/documentation/howto.html#pki</a>.
+<table border="1" cellspacing="0" cellpadding="8">
+<tbody>
+<tr>
+<td><strong>Filename</strong></td>
+<td><strong>Needed By</strong></td>
+<td><strong>Purpose</strong></td>
+<td><strong>Secret</strong></td>
+</tr>
+<tr>
+<td>ca.crt</td>
+<td>server + all clients</td>
+<td>Root CA certificate</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>ca.key</td>
+<td>key signing machine only</td>
+<td>Root CA key</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>dh{n}.pem</td>
+<td>server only</td>
+<td>Diffie Hellman parameters</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>server.crt</td>
+<td>server only</td>
+<td>Server Certificate</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>server.key</td>
+<td>server only</td>
+<td>Server Key</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>client1.crt</td>
+<td>client1 only</td>
+<td>Client1 Certificate</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>client1.key</td>
+<td>client1 only</td>
+<td>Client1 Key</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>client2.crt</td>
+<td>client2 only</td>
+<td>Client2 Certificate</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>client2.key</td>
+<td>client2 only</td>
+<td>Client2 Key</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>client3.crt</td>
+<td>client3 only</td>
+<td>Client3 Certificate</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>client3.key</td>
+<td>client3 only</td>
+<td>Client3 Key</td>
+<td>YES</td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+
+
+<strong>Configuration Files and the Rest</strong>
+From here on out the <a href="http://openvpn.net/index.php/documentation/howto.html#config">rest of the documentation (on setting up configuration files and running OpenVPN)</a> is pretty self explanatory. I don't really want to take the time and re-create the end of the tutorial.
