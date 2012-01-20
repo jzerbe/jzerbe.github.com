@@ -1,16 +1,26 @@
 ---
 layout: default
 ---
-<div id="post">
-{{ content }}
-</div>
 
-<div id="related">
-  <h2>Related Posts</h2>
-  <ul class="posts">
-    {% for post in site.related_posts limit:3 %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<div data-role="page">
+    <div data-role="header">
+        <a rel="external" href="/search.html" data-icon="search">Search</a>
+        <h1>{{ page.title }} - {{ page.date | date_to_string }}</h1>
+    </div>
 
+    <div data-role="content">
+        {{ content }}
+        <hr />
+        Want to comment or have a question? Drop me a line on
+        <a href="https://twitter.com/@jasonzerbe/">twitter: @jasonzerbe</a>
+    </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="/" class="ui-btn-active">Blog</a></li>
+            <li><a href="/about-jason-zerbe.html">About Jason</a></li>
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/resume.html">Resume</a></li>
+        </ul>
+    </div>
+</div>
