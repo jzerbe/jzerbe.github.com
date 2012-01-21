@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>404&#39;d!</title>
+        <meta name="author" content="Jason Zerbe" />
+        <link href="http://vraidsys.com/atom.xml" rel="alternate" title="Jason Zerbe" type="application/atom+xml" />
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+        <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+        <script type="text/javascript">
+            $.mobile.fixedToolbars.setTouchToggleEnabled(false);
+        </script>
+
+        <link rel="stylesheet" href="/style.css" type="text/css" media="screen, projection" />
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-2372567-8']);
+            _gaq.push(['_setDomainName', 'vraidsys.com']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+                <a rel="external" href="/" data-icon="home">Home</a>
+                <h1>404&#39;d!</h1>
+            </div>
+
+            <div data-role="content">
+                Sorry but you are looking for something that does not exist.
+                Maybe searching will help?<br />
+                <br />
+                <div id="cse" style="width: 100%;">Loading</div>
+                <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+                <script type="text/javascript">
+                    google.load('search', '1', {language : 'en', style : google.loader.themes.MINIMALIST});
+                    google.setOnLoadCallback(function() {
+                        var customSearchOptions = {};
+                        var customSearchControl = new google.search.CustomSearchControl(
+                        '014722425947596152422:uikm2inm8ae', customSearchOptions);
+                        customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+                        customSearchControl.draw('cse');
+                    }, true);
+                </script>
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a rel="external" href="/">Blog</a></li>
+                        <li><a rel="external" href="/about-jason-zerbe.html">About Jason</a></li>
+                        <li><a rel="external" href="/projects.html">Projects</a></li>
+                        <li><a rel="external" href="/resume.html">Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
