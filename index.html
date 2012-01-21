@@ -4,7 +4,7 @@ title: Jason Zerbe's draftbook | building digital products and services
 ---
 
 <div data-role="page">
-    <div data-role="header" data-position="inline">
+    <div data-role="header" data-position="fixed">
         {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
         <a class="previous" href="/" data-icon="arrow-l">Previous</a>
@@ -30,12 +30,14 @@ title: Jason Zerbe's draftbook | building digital products and services
         {% endfor %}
     </div>
 
-    <div data-role="navbar">
-        <ul>
-            <li><a href="/" class="ui-btn-active">Blog</a></li>
-            <li><a href="/about-jason-zerbe.html">About Jason</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/resume.html">Resume</a></li>
-        </ul>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="/" class="ui-btn-active">Blog</a></li>
+                <li><a href="/about-jason-zerbe.html">About Jason</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/resume.html">Resume</a></li>
+            </ul>
+        </div>
     </div>
 </div>
