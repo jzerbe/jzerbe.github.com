@@ -7,18 +7,18 @@ title: Jason Zerbe's draftbook | building digital products and services
     <div data-role="header" data-position="fixed">
         {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-        <a class="previous" href="/" data-icon="arrow-l">Previous</a>
+        <a class="previous" href="/" data-icon="arrow-l">Newer</a>
         {% else %}
-        <a class="previous" href="/page{{paginator.previous_page}}" data-icon="arrow-l">Previous</a>
+        <a class="previous" href="/page{{paginator.previous_page}}" data-icon="arrow-l">Newer</a>
         {% endif %}
         {% else %}
         <a rel="external" href="/search.html" data-icon="search">Search</a>
         {% endif %}
         <h1>{{ page.title }}</h1>
         {% if paginator.next_page %}
-        <a class="next" href="/page{{paginator.next_page}}" data-icon="arrow-r">Next</a>
+        <a class="next" href="/page{{paginator.next_page}}" data-icon="arrow-r">Older</a>
         {% else %}
-        <a class="next disabled" href="#" data-icon="arrow-r">Next</a>
+        <a class="next disabled" href="#" data-icon="arrow-r">Older</a>
         {% endif %}
     </div>
 
