@@ -1,7 +1,7 @@
---- 
+---
 layout: post
 title: OpenVZ on CentOS 5.2
-tags: 
+tags:
 - CentOS
 - Linux
 - openvz
@@ -9,47 +9,60 @@ tags:
 status: publish
 type: post
 published: true
-meta: 
-  _edit_last: "1"
+meta:
+_edit_last: "1"
 ---
 OpenVZ setup procedure followed - January 6th, 2009
 host machine - 1.5ghz Pentium 4 (i386), 1GB ram, 40GB hard disk drive
 host os - CentOS 5.2
-for more detailed installation information see: <a href="http://download.openvz.org/doc/OpenVZ-Users-Guide.pdf">http://download.openvz.org/doc/OpenVZ-Users-Guide.pdf</a>
-
-This installation of CentOS 5.2 is on a i386 machine, be sure to substitute in for a 64-bit machine if you have one. Following most/all of the instructions will give you an OpenVZ CentOS 5.2 host with browser-based administration of your VPS(es) with <a href="http://www.vtonf.com/">vtonf</a>. This cookbook assumes running knowledge of how to <a href="http://www.yolinux.com/TUTORIALS/LinuxTutorialAdvanced_vi.html">edit configuration files via "vi"</a>, <a href="http://www.linuxquestions.org/linux/answers/Applications_GUI_Multimedia/Using_yum_to_update_and_install_applications">using yum to install dependencies/software</a>, and <a href="http://ubuntuforums.org/showthread.php?t=244832">how to install via tarballs (.tar.gz)</a>.
+for more detailed installation information see:
+<a href="http://download.openvz.org/doc/OpenVZ-Users-Guide.pdf">http://download.openvz.org/doc/OpenVZ-Users-Guide.pdf</a><br />
+<br />
+This installation of CentOS 5.2 is on a i386 machine, be sure to substitute in for a
+64-bit machine if you have one. Following most/all of the instructions will give you an
+OpenVZ CentOS 5.2 host with browser-based administration of your VPS(es) with <a href="http://www.vtonf.com/">vtonf</a>.
+This cookbook assumes running knowledge of how to
+<a href="http://www.yolinux.com/TUTORIALS/LinuxTutorialAdvanced_vi.html">edit configuration files via "vi"</a>,
+<a href="http://www.linuxquestions.org/linux/answers/Applications_GUI_Multimedia/Using_yum_to_update_and_install_applications">using yum to install dependencies/software</a>,
+and <a href="http://ubuntuforums.org/showthread.php?t=244832">how to install via tarballs (.tar.gz)</a>.
 <ol>
-	<li>Install latest CentOS distro on physical server (at the time of writing this, it was 5.2)
-<ul>
-	<li>minimal install only requires disc 1 - "CentOS-5.2-i386-bin-1of6.iso"</li>
-	<li>choose your mirror: <a href="http://www.howtoforge.com/installing-and-using-openvz-on-centos5.2">http://isoredirect.centos.org/centos/5/isos/i386/</a></li>
-	<li>partition setup note: 5GB for root filesystem, 1.25X-2X size of RAM for swap, rest of space for /vz (the VPS nodes and OS templates)</li>
-	<li>During the category/task selection, deselect all package categories, and choose the "Customize now" option at the bottom of screen. During the customized package selection, deselect everything. This will allow for a "minimal" install with only disc 1.</li>
-</ul>
-</li>
-	<li>Configure static ipv4/ipv6 address(es) - /etc/sysconfig/network/</li>
-	<li>Setup dns nameservers - /etc/resolv.conf</li>
-	<li>Run an update: yum update</li>
-	<li>Follow hotwo: <a href="http://www.howtoforge.com/installing-and-using-openvz-on-centos5.2">http://www.howtoforge.com/installing-and-using-openvz-on-centos5.2</a></li>
-	<li>Download VTONF - http://vtonf.com/downloads.html</li>
-	<li>tar xzvf on the archive you just downloaded and cd into the created directory</li>
-	<li>Follow on screen instructions to complete setup</li>
-	<li>If you wanna go crazy with the customizations get into the "/etc/vtonf/" directory and check things out</li>
-	<li>To allow connections to vtonf from IPv4/6 addresses other than through the localhost, modify the code block within "/etc/vtonf/vtonf.conf" so it looks like the below code block. Note the second line!
-
-<code>fastcgi.server = ( ".php" =&gt;
-( "*" =&gt;
-(  "socket" =&gt; "/tmp/vtonf.socket",
-"bin-path" =&gt; "/usr/local/vtonfphp/bin/php",
-"max-procs" =&gt; 1,
-"bin-environment" =&gt; (
-"PHP_FCGI_CHILDREN" =&gt; "4",
-"PHP_FCGI_MAX_REQUESTS" =&gt; "10000"
-),
-)
-)
-)</code></li>
-	<li>Remember to modify the <a href="http://wiki.openvz.org/Setting_up_an_iptables_firewall">OpenVZ host IPTABLES rules</a> so that it allows traffic to the VPS nodes. I just turned mine off (service iptables stop; chkconfig iptables off), because I got an external firewall/router in my home LAN.</li>
+    <li>Install latest CentOS distro on physical server (at the time of writing this, it was 5.2)
+        <ul>
+            <li>minimal install only requires disc 1 - "CentOS-5.2-i386-bin-1of6.iso"</li>
+            <li>choose your mirror:
+                <a href="http://www.howtoforge.com/installing-and-using-openvz-on-centos5.2">http://isoredirect.centos.org/centos/5/isos/i386/</a></li>
+            <li>partition setup note: 5GB for root filesystem, 1.25X-2X size of RAM for swap, rest of space for /vz (the VPS nodes and OS templates)</li>
+            <li>During the category/task selection, deselect all package categories, and choose the
+                "Customize now" option at the bottom of screen. During the customized package selection,
+                deselect everything. This will allow for a "minimal" install with only disc 1.</li>
+        </ul>
+    </li>
+    <li>Configure static ipv4/ipv6 address(es) - /etc/sysconfig/network/</li>
+    <li>Setup dns nameservers - /etc/resolv.conf</li>
+    <li>Run an update: yum update</li>
+    <li>Follow hotwo:
+        <a href="http://www.howtoforge.com/installing-and-using-openvz-on-centos5.2">http://www.howtoforge.com/installing-and-using-openvz-on-centos5.2</a></li>
+    <li>Download VTONF - http://vtonf.com/downloads.html</li>
+    <li>tar xzvf on the archive you just downloaded and cd into the created directory</li>
+    <li>Follow on screen instructions to complete setup</li>
+    <li>If you wanna go crazy with the customizations get into the "/etc/vtonf/" directory and check things out</li>
+    <li>To allow connections to vtonf from IPv4/6 addresses other than through the localhost,
+        modify the code block within "/etc/vtonf/vtonf.conf" so it looks like the below code block. Note the second line!<br />
+        <br />
+        <code>fastcgi.server = ( ".php" =&gt;<br />
+            ( "*" =&gt;<br />
+            (  "socket" =&gt; "/tmp/vtonf.socket",<br />
+            "bin-path" =&gt; "/usr/local/vtonfphp/bin/php",<br />
+            "max-procs" =&gt; 1,<br />
+            "bin-environment" =&gt; (<br />
+            "PHP_FCGI_CHILDREN" =&gt; "4",<br />
+            "PHP_FCGI_MAX_REQUESTS" =&gt; "10000"<br />
+            ),<br />
+            )<br />
+            )<br />
+            )</code></li>
+    <li>Remember to modify the <a href="http://wiki.openvz.org/Setting_up_an_iptables_firewall">OpenVZ host IPTABLES rules</a>
+        so that it allows traffic to the VPS nodes. I just turned mine off (service iptables stop;
+        chkconfig iptables off), because I got an external firewall/router in my home LAN.</li>
 </ol>
 That's it you are good to go to start reselling VPSes to clients!
-

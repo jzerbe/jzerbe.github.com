@@ -1,7 +1,7 @@
---- 
+---
 layout: post
 title: network boot without a proper DHCP setup for PXE
-tags: 
+tags:
 - iPXE
 - lighttpd
 - Linux
@@ -10,27 +10,39 @@ tags:
 status: publish
 type: post
 published: true
-meta: 
-  _edit_last: "1"
+meta:
+_edit_last: "1"
 ---
-Now that we are running <a href="http://www.clear.com/">Clear</a> [<a href="https://twitter.com/#!/jasonzerbe/status/76660043583455232">6-13Mbps down</a> / 1Mbps up + (unlimited North America) VoIP @ $60/month] for our home connection instead of <a href="http://www.qwest.com/">Qwest</a> [1.2 Mbps down / 0.8 Mbps up + Local Phone @ $55/month], I no longer have the niceties of an <a href="http://vraidsys.com/2010/03/qwest-actiontec-gt701-wg-ppoe-openwrt/">Actiontec GT701-WG running OpenWRT</a>, and I really don't want to do too much <a href="http://code.google.com/p/wimax-hacking/wiki/WIXB175MiscNotes">modding to our (Clear) WIXB175 WiMax gateway</a>.
-
-I needed an alternative to the slickness of a network-wide PXE setup. Most of my machines are older and their NICs don't have built-in support for PXE, so I was already throwing floppies in or booting from small flash drives. Thus, I had essentially the same process to go from zero to a sweet CentOS or Debian install. The following is how I have my local file-server configured:
+Now that we are running <a href="http://www.clear.com/">Clear</a> [<a href="https://twitter.com/#!/jasonzerbe/status/76660043583455232">6-13Mbps down</a>
+/ 1Mbps up + (unlimited North America) VoIP @ $60/month] for our home connection instead of <a href="http://www.qwest.com/">Qwest</a>
+[1.2 Mbps down / 0.8 Mbps up + Local Phone @ $55/month], I no longer have the niceties of an
+<a href="http://vraidsys.com/2010/03/qwest-actiontec-gt701-wg-ppoe-openwrt/">Actiontec GT701-WG running OpenWRT</a>, and I really don't
+want to do too much <a href="http://code.google.com/p/wimax-hacking/wiki/WIXB175MiscNotes">modding to our (Clear) WIXB175 WiMax gateway</a>.<br />
+<br />
+I needed an alternative to the slickness of a network-wide PXE setup. Most of my machines are older and their NICs don't have built-in
+support for PXE, so I was already throwing floppies in or booting from small flash drives. Thus, I had essentially the same process to
+go from zero to a sweet CentOS or Debian install. The following is how I have my local file-server configured:
 <ol>
-	<li>Make your previous tftp directory accessible over HTTP and said HTTP server should be able to run php scripts. I currently have nginx and lighttpd's spawn-fcgi being overseen by supervisor, very similar to <a href="http://agiletesting.blogspot.com/2010/06/setting-up-php5fastcgi-with-nginx.html">Grig Gheorghiu's "Setting up PHP5/FastCGI with nginx"</a></li>
-	<li>Throw up a php script in the same directory as where your pxelinux.0 is located. Check out my <a href="http://dl.dropbox.com/u/44649188/blog_includes/article-includes/ipxe_boot.php.txt">example ipxe_boot</a>.</li>
-	<li>Create a custom .ipxe boot script for adding into your iPXE boot image. For more on <a href="http://ipxe.org/scripting">scripting with iPXE</a>; also take a look at my current <a href="http://dl.dropbox.com/u/44649188/blog_includes/article-includes/custom.ipxe">custom.ipxe script</a>.</li>
-	<li>Grab a copy [<a href="http://ipxe.org/download">download/build info page</a>] of the source code from git and build it with your custom .ipxe file attached.
-<blockquote><code>git clone git://git.ipxe.org/ipxe.git
-cd ipxe/src</code>
-
-Bootable floopy disk:
-<code>make bin/ipxe.dsk EMBEDDED_IMAGE=../../custom.ipxe
-cat bin/ipxe.dsk &gt; /dev/fd0</code>
-
-Bootable usb PXE replacement:
-<code>make bin/ipxe.usb EMBEDDED_IMAGE=../../custom.ipxe
-dd if=bin/ipxe.usb of=/dev/sdb</code></blockquote>
-</li>
+    <li>Make your previous tftp directory accessible over HTTP and said HTTP server should be able to run php scripts.
+        I currently have nginx and lighttpd's spawn-fcgi being overseen by supervisor, very similar to
+        <a href="http://agiletesting.blogspot.com/2010/06/setting-up-php5fastcgi-with-nginx.html">Grig Gheorghiu's "Setting up PHP5/FastCGI with nginx"</a></li>
+    <li>Throw up a php script in the same directory as where your pxelinux.0 is located. Check out my
+        <a href="http://dl.dropbox.com/u/44649188/blog_includes/article-includes/ipxe_boot.php.txt">example ipxe_boot</a>.</li>
+    <li>Create a custom .ipxe boot script for adding into your iPXE boot image. For more on
+        <a href="http://ipxe.org/scripting">scripting with iPXE</a>; also take a look at my current
+        <a href="http://dl.dropbox.com/u/44649188/blog_includes/article-includes/custom.ipxe">custom.ipxe script</a>.</li>
+    <li>Grab a copy [<a href="http://ipxe.org/download">download/build info page</a>] of the source code from
+        git and build it with your custom .ipxe file attached.
+        <blockquote><code>git clone git://git.ipxe.org/ipxe.git<br />
+                cd ipxe/src</code><br />
+            <br />
+            Bootable floopy disk:<br />
+            <code>make bin/ipxe.dsk EMBEDDED_IMAGE=../../custom.ipxe<br />
+                cat bin/ipxe.dsk &gt; /dev/fd0</code><br />
+            <br />
+            Bootable usb PXE replacement:<br />
+            <code>make bin/ipxe.usb EMBEDDED_IMAGE=../../custom.ipxe<br />
+                dd if=bin/ipxe.usb of=/dev/sdb</code></blockquote>
+    </li>
 </ol>
 Do be sure that your usb drive is actually /dev/sdb!

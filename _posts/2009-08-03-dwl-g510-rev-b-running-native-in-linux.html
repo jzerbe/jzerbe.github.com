@@ -1,24 +1,30 @@
---- 
+---
 layout: post
 title: DWL-G510 rev B running native in Linux
-tags: 
+tags:
 - d-link
 - Hardware
 - Linux
 status: publish
 type: post
 published: true
-meta: 
-  _edit_last: "1"
+meta:
+_edit_last: "1"
 ---
-After some searching around on the Google machine, I came across "<a href="http://linux-wless.passys.nl/">Linux wireless LAN support</a>". It's one of the most complete directories I've seen for a very long time. I had a suspicion that my DWL-G510 pci card might work, as it is old enough and I've read about other similar models of D-Link card being supported natively. It turns out that mine works seamlessly with stuff from the <a href="http://madwifi-project.org/">MadWifi project</a>. Because I was feeling lazy and wanted a tried and true install method, I found "<em><a href="http://www.sumardi.net/2007/06/21/how-to-install-madwifi-on-debian-40-etch/">How To Install MadWifi On Debian 4.0 (Etch)</a></em>" by <a href="http://www.sumardi.net/about/">Sumardi Shukor</a>. The following is based on the article on his blog.
-<blockquote><code>vi /etc/apt/source.list</code> [add "contrib non-free" after "main" to the various lines]
-<code>apt-get update
-apt-get install build-essential module-assistant wireless-tools
-module-assistant
-module-assistant auto-install madwifi-source
-modprobe ath_pci
-ifconfig ath0 up [bring up the wireless interface]
-iwlist ath0 scanning [scan for a wireless network to connect to]</code></blockquote>
+After some searching around on the Google machine, I came across
+"<a href="http://linux-wless.passys.nl/">Linux wireless LAN support</a>". It's one of the most complete
+directories I've seen for a very long time. I had a suspicion that my DWL-G510 pci card might work,
+as it is old enough and I've read about other similar models of D-Link card being supported natively.
+It turns out that mine works seamlessly with stuff from the <a href="http://madwifi-project.org/">MadWifi project</a>.
+Because I was feeling lazy and wanted a tried and true install method, I found
+"<em><a href="http://www.sumardi.net/2007/06/21/how-to-install-madwifi-on-debian-40-etch/">How To Install MadWifi On Debian 4.0 (Etch)</a></em>"
+by <a href="http://www.sumardi.net/about/">Sumardi Shukor</a>. The following is based on the article on his blog.
+<blockquote><code>vi /etc/apt/source.list</code> [add "contrib non-free" after "main" to the various lines]<br />
+    <code>apt-get update<br />
+        apt-get install build-essential module-assistant wireless-tools<br />
+        module-assistant<br />
+        module-assistant auto-install madwifi-source<br />
+        modprobe ath_pci<br />
+        ifconfig ath0 up</code> [bring up the wireless interface]<br />
+    <code>iwlist ath0 scanning</code> [scan for a wireless network to connect to]</blockquote>
 I suggest using a GUI app to do the rest, such as <a href="http://wicd.sourceforge.net/">wicd</a>.
-

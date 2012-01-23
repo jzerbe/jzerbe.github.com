@@ -1,7 +1,7 @@
---- 
+---
 layout: post
 title: Counter Strike Debian linux server setup
-tags: 
+tags:
 - counter strike
 - debian
 - Gaming
@@ -10,75 +10,82 @@ tags:
 status: publish
 type: post
 published: true
-meta: 
-  _edit_last: "1"
+meta:
+_edit_last: "1"
 ---
 Counter Strike server setup procedure on Debian linux - January 7th, 2008
 Based upon - <a href="http://www.cstrike-planet.com/tutorial/1/5">http://www.cstrike-planet.com/tutorial/1/5</a> - Props to whoever wrote it!
-<del datetime="2009-05-06T13:51:51+00:00">IT IS ADVISABLE TO RUN THE VARIOUS INSTALL PROCESSES AS ROOT!</del> Edit: You can actually run all of these from a regular system user account.
-
-handy tip - to measure current directory size: du -h
-
+<del datetime="2009-05-06T13:51:51+00:00">IT IS ADVISABLE TO RUN THE VARIOUS INSTALL PROCESSES AS ROOT!</del>
+Edit: You can actually run all of these from a regular system user account.<br />
+<br />
+handy tip - to measure current directory size: du -h<br />
+<br />
 This setup procedure assumes that you (the installer) currently possess:
 <ol>
-	<li>knowledge of how to use a command line text editor in linux (vi, nano, etc.)</li>
-	<li>knowledge of how to use apt-get or yum to install dependencies</li>
-	<li>a preexisting linux installation, and root access on said box (you are able to login as "root")</li>
+    <li>knowledge of how to use a command line text editor in linux (vi, nano, etc.)</li>
+    <li>knowledge of how to use apt-get or yum to install dependencies</li>
+    <li>a preexisting linux installation, and root access on said box (you are able to login as "root")</li>
 </ol>
-I'm doing this installation on a Debian Etch (4.0) minimal installation within a VPS. You do not necessarily have to install a separate Counter Strike dedicated server on a separate VPS. All you have to do is setup the Counter Strike dedicated server to <a href="http://forums.steampowered.com/forums/showthread.php?t=292495&amp;page=9#post_message_8842952">run on different port/IP addresses</a>. So let's get going!
-
+I'm doing this installation on a Debian Etch (4.0) minimal installation within a VPS.
+You do not necessarily have to install a separate Counter Strike dedicated server on a
+separate VPS. All you have to do is setup the Counter Strike dedicated server to
+<a href="http://forums.steampowered.com/forums/showthread.php?t=292495&amp;page=9#post_message_8842952">run on different port/IP addresses</a>.
+So let's get going!<br />
+<br />
 <ol>
-	<li>Create an install directory and dl the installer
-<ul>
-	<li>mkdir srcds (the directory for Counter Strike: Source dedicated server)</li>
-	<li>cd srcds</li>
-	<li>wget http://www.cstrike-planet.com/dls/hldsupdatetool.bin</li>
-</ul>
-</li>
-	<li>Make the installer executable and execute it
-<ul>
-	<li>chmod +x hldsupdatetool.bin</li>
-	<li>./hldsupdatetool.bin</li>
-</ul>
-</li>
-	<li>Agree to the terms and conditions by typing "yes" and "steam" will be created in the same directory</li>
-	<li>Now run the steam installer that will dowload a new version of HLDSUpdateTool
-<ul>
-	<li>just to be on the same side, why not make it executable (if it isn't already) - chmod +x steam</li>
-	<li>run steam: ./steam - it took about 10 minutes for it to update. all depends upon the steam server loads.</li>
-</ul>
-</li>
-	<li>We are now ready to download and install Counter Strike Source. be sure the trailing dot stays in the command! It is there so that the install goes into the current directory.
-<ul>
-	<li>./steam -command update -game "Counter-Strike Source" -dir .</li>
-	<li>the install size is ~ 1.1GB uncompressed</li>
-</ul>
-</li>
-	<li>The server is now ready for various customizations. I'll be writing more on that later ...</li>
+    <li>Create an install directory and dl the installer
+        <ul>
+            <li>mkdir srcds (the directory for Counter Strike: Source dedicated server)</li>
+            <li>cd srcds</li>
+            <li>wget http://www.cstrike-planet.com/dls/hldsupdatetool.bin</li>
+        </ul>
+    </li>
+    <li>Make the installer executable and execute it
+        <ul>
+            <li>chmod +x hldsupdatetool.bin</li>
+            <li>./hldsupdatetool.bin</li>
+        </ul>
+    </li>
+    <li>Agree to the terms and conditions by typing "yes" and "steam" will be created in the same directory</li>
+    <li>Now run the steam installer that will dowload a new version of HLDSUpdateTool
+        <ul>
+            <li>just to be on the same side, why not make it executable (if it isn't already) - chmod +x steam</li>
+            <li>run steam: ./steam - it took about 10 minutes for it to update. all depends upon the steam server loads.</li>
+        </ul>
+    </li>
+    <li>We are now ready to download and install Counter Strike Source. be sure the trailing dot stays in the command!
+        It is there so that the install goes into the current directory.
+        <ul>
+            <li>./steam -command update -game "Counter-Strike Source" -dir .</li>
+            <li>the install size is ~ 1.1GB uncompressed</li>
+        </ul>
+    </li>
+    <li>The server is now ready for various customizations. I'll be writing more on that later ...</li>
 </ol>
 
 This next installation method is for the Counter Strike 1.6 linux dedicated server
 Based upon - <a href="http://www.cstrike-planet.com/tutorial/1-Linux-Install-CS-16/6">http://www.cstrike-planet.com/tutorial/1-Linux-Install-CS-16/6</a>
 <ol>
-	<li> Repeat steps 1-5 in previous installation but in different root directory. so instead of "srcds" let's put the installation in "hlds". Step 2 of the previous method should this time be:
-<ul>
-	<li>mkdir hlds</li>
-	<li>cd hlds</li>
-</ul>
-</li>
-	<li>Run the various steps outlined above, and now to install the cstrike1.6 linux dedicated server.
-<ul>
-	<li>./steam -command update -game cstrike -dir .</li>
-	<li>the install is ~ 360MB</li>
-</ul>
-</li>
+    <li> Repeat steps 1-5 in previous installation but in different root directory. so instead of "srcds" let's put the installation in "hlds". Step 2 of the previous method should this time be:
+        <ul>
+            <li>mkdir hlds</li>
+            <li>cd hlds</li>
+        </ul>
+    </li>
+    <li>Run the various steps outlined above, and now to install the cstrike1.6 linux dedicated server.
+        <ul>
+            <li>./steam -command update -game cstrike -dir .</li>
+            <li>the install is ~ 360MB</li>
+        </ul>
+    </li>
 </ol>
-Q and A time
-Q: How can I keep hlds running while I am not logged into the server with SSH?
-A: Start your dedicated server with screen: <code>screen -S hlds ./hlds_run </code>. And then when you want to access the running server process once logged back in: <code>screen -r hlds</code>.
-
-Q: How many CS virtual servers can I get on one machine?
-A: see - http://www.webhostingtalk.com/showthread.php?t=743585
-
-Q: What does the "tickrate" have anything to do with anything? What is it?
-A: see - http://www.counter-strike.com/tickrate.php
+Q and A time<br />
+Q: How can I keep hlds running while I am not logged into the server with SSH?<br />
+A: Start your dedicated server with screen: <code>screen -S hlds ./hlds_run </code>.
+And then when you want to access the running server process once logged back in: <code>screen -r hlds</code>.<br />
+<br />
+Q: How many CS virtual servers can I get on one machine?<br />
+A: see - <a href="http://www.webhostingtalk.com/showthread.php?t=743585">http://www.webhostingtalk.com/showthread.php?t=743585</a><br />
+<br />
+Q: What does the "tickrate" have anything to do with anything? What is it?<br />
+A: see - <a href="http://www.counter-strike.com/tickrate.php">http://www.counter-strike.com/tickrate.php</a>

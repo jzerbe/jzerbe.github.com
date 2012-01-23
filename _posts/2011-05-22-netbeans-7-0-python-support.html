@@ -1,7 +1,7 @@
---- 
+---
 layout: post
 title: Netbeans 7.0 Python support
-tags: 
+tags:
 - Code
 - Netbeans
 - Python
@@ -9,19 +9,22 @@ tags:
 status: publish
 type: post
 published: true
-meta: 
-  _edit_last: "1"
+meta:
+_edit_last: "1"
 ---
-Upgrading to Netbeans 7.0 had a bunch of perks, my personal favorites being: the faster cold and warm start-up times, Git support, and (what seems like) faster C++ library refresh/load times. The down-side to this update was the lack of out-of-the-box Python support. Fortunately there is a quick fix for this.
-
+Upgrading to Netbeans 7.0 had a bunch of perks, my personal favorites being: the faster cold and warm start-up times,
+Git support, and (what seems like) faster C++ library refresh/load times. The down-side to this update was
+the lack of out-of-the-box Python support. Fortunately there is a quick fix for this.<br />
+<br />
 From Wade Chandler, in response to "<a href="http://forums.netbeans.org/ptopic38275.html">Howto activate python in NB 7.0</a>" on the netbeans forums:
-<blockquote>You can use the dev auto update center. Python seems to still work though I'm a python newbie: http://deadlock.netbeans.org/hudson/job/nbms-and-javadoc/lastStableBuild/artifact/nbbuild/nbms/updates.xml.gz</blockquote>
+<blockquote>You can use the dev auto update center. Python seems to still work though I'm a python newbie:
+    http://deadlock.netbeans.org/hudson/job/nbms-and-javadoc/lastStableBuild/artifact/nbbuild/nbms/updates.xml.gz</blockquote>
 So, from the main NetBeans IDE window menu bar:
 <ol>
-	<li>Tools-&gt;Plugins (which opens the Plugins window)</li>
-	<li>Select the "Settings" tab</li>
-	<li>Hit the "Add" button (bottom right)</li>
-	<li>enter "Last Stable Build" and "http://deadlock.netbeans.org/hudson/job/nbms-and-javadoc/lastStableBuild/artifact/nbbuild/nbms/updates.xml.gz"</li>
-	<li>go back to the "Updates" tab and hit the "Reload Catalog" button</li>
-	<li>This should give you access to the latest stable build (development) plugins, which should allow you to install the Python plugins of your choosing</li>
+    <li>Tools-&gt;Plugins (which opens the Plugins window)</li>
+    <li>Select the "Settings" tab</li>
+    <li>Hit the "Add" button (bottom right)</li>
+    <li>enter "Last Stable Build" and "http://deadlock.netbeans.org/hudson/job/nbms-and-javadoc/lastStableBuild/artifact/nbbuild/nbms/updates.xml.gz"</li>
+    <li>go back to the "Updates" tab and hit the "Reload Catalog" button</li>
+    <li>This should give you access to the latest stable build (development) plugins, which should allow you to install the Python plugins of your choosing</li>
 </ol>

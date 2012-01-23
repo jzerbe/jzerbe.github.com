@@ -1,7 +1,7 @@
---- 
+---
 layout: post
 title: CentOS 4.4 in Malaysia
-tags: 
+tags:
 - CentOS
 - Internet
 - Linux
@@ -9,14 +9,39 @@ tags:
 status: publish
 type: post
 published: true
-meta: 
-  _edit_last: "1"
+meta:
+_edit_last: "1"
 ---
-<strong>The setup</strong>
-Recently I started leasing an OpenVZ VPS (virtual private server) from <a title="Shinjiru Offshore Hosting" href="http://shinjiru.com/" target="_blank">Shinjiru hosting</a>. Their servers are located in Malaysia in seven different data centers. Mine happens to be located in Kuala Lumpur. The customer support I experienced was very good. The sales reps responded to my emails in less than a business day, with English that was pretty good for not being native speakers. I was even able to negotiate a lower priced VPS plan, since I didn't need any control panel.
 
-<strong>The technical details</strong>
-The choices for operating systems are <a href="https://247livesupport.biz/ticket/index.php?_m=knowledgebase&amp;_a=viewarticle&amp;kbarticleid=79&amp;nav=0" target="_blank">a bit old</a>. I was hoping to use Debian 4.1 or CentOS 5, but the best I could get was CentOS 4.4. Their default VPS image install includes SSHd (obviously), Apache 2 with Perl, PHP, PHPMyAdmin, AWstats, Analog, MySQL, sendmail and a POP3 server. Unfortunately YUM was not installed, so I had <a title="YUM 2.0 compatable with CentOS 4.4" href="http://linux.duke.edu/projects/yum/download/2.0/" target="_blank">download the source</a> and compile it. Not that it is extremely difficult, but processing tar.gz files and getting the install configured just right is tedious. After I compiled yum I then had to get the <a href="http://www.forum.psoft.net/showthread.php?t=12567" target="_blank">configuration files just right</a>. I learned that certain packages don't like to be updated or installed in an OpenVZ VPS, such as gcc or any gcc dependencies. Thanks to the <a href="http://rpm.pbone.net/" target="_blank">RPM Search</a>, I managed to get all the dependencies worked out and installed. My first priority after getting yum to work was killing off ftpd and installing <a href="http://vsftpd.beasts.org/" target="_blank">vftpd</a>. After getting things cleaned up, I installed the <a title="Webmin free server control panel" href="http://webmin.com/" target="_blank">Webmin</a> <a href="http://webmin.com/download.html" target="_blank">minimal version (from source)</a>. I didn't want to use yum on this one, because the full version has all these extra utilities with the package that I don't need.
-
-<strong>The conclusion</strong>
-Shinjiru offers great offshore hosting. It would be even better if they had newer operating systems. The latency is pretty good as offshore servers go. The latency for my VPS runs around 300 - 330ms when I ping it from my home DSL connection (Qwest DSL in St. Paul, Minnesota). If you want some great offshore hosting (where even warez is ok) then I would say that <a href="http://shinjiru.com/" target="_blank">Shinjiru</a> is going to be your best bet.
+<strong>The setup</strong><br />
+Recently I started leasing an OpenVZ VPS (virtual private server) from
+<a title="Shinjiru Offshore Hosting" href="http://shinjiru.com/" target="_blank">Shinjiru hosting</a>.
+Their servers are located in Malaysia in seven different data centers. Mine happens to be located in
+Kuala Lumpur. The customer support I experienced was very good. The sales reps responded to my emails
+in less than a business day, with English that was pretty good for not being native speakers. I was even
+able to negotiate a lower priced VPS plan, since I didn't need any control panel.<br />
+<br />
+<strong>The technical details</strong><br />
+The choices for operating systems are
+<a href="https://247livesupport.biz/ticket/index.php?_m=knowledgebase&amp;_a=viewarticle&amp;kbarticleid=79&amp;nav=0" target="_blank">a bit old</a>.
+I was hoping to use Debian 4.1 or CentOS 5, but the best I could get was CentOS 4.4. Their default VPS
+image install includes SSHd (obviously), Apache 2 with Perl, PHP, PHPMyAdmin, AWstats, Analog, MySQL,
+sendmail and a POP3 server. Unfortunately YUM was not installed, so I had
+<a title="YUM 2.0 compatable with CentOS 4.4" href="http://linux.duke.edu/projects/yum/download/2.0/" target="_blank">download the source</a>
+and compile it. Not that it is extremely difficult, but processing tar.gz files and getting the install
+configured just right is tedious. After I compiled yum I then had to get the
+<a href="http://www.forum.psoft.net/showthread.php?t=12567" target="_blank">configuration files just right</a>.
+I learned that certain packages don't like to be updated or installed in an OpenVZ VPS, such as gcc or any
+gcc dependencies. Thanks to the <a href="http://rpm.pbone.net/" target="_blank">RPM Search</a>, I managed
+to get all the dependencies worked out and installed. My first priority after getting yum to work was
+killing off ftpd and installing <a href="http://vsftpd.beasts.org/" target="_blank">vftpd</a>. After getting
+things cleaned up, I installed the <a title="Webmin free server control panel" href="http://webmin.com/" target="_blank">Webmin</a>
+<a href="http://webmin.com/download.html" target="_blank">minimal version (from source)</a>. I didn't want to use yum
+on this one, because the full version has all these extra utilities with the package that I don't need.<br />
+<br />
+<strong>The conclusion</strong><br />
+Shinjiru offers great offshore hosting. It would be even better if they had newer operating systems.
+The latency is pretty good as offshore servers go. The latency for my VPS runs around 300 - 330ms
+when I ping it from my home DSL connection (Qwest DSL in St. Paul, Minnesota). If you want some great
+offshore hosting (where even warez is ok) then I would say that
+<a href="http://shinjiru.com/" target="_blank">Shinjiru</a> is going to be your best bet.

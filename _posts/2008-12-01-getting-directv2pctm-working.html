@@ -1,7 +1,7 @@
---- 
+---
 layout: post
 title: getting DirecTV2PC(TM) working
-tags: 
+tags:
 - Cyberlink
 - DirecTV
 - Hardware
@@ -10,28 +10,42 @@ tags:
 status: publish
 type: post
 published: true
-meta: 
-  _edit_last: "1"
+meta:
+_edit_last: "1"
 ---
-For those of you who don't know about <a href="http://www.directv.com/directv2pc">DirecTV2PC</a> ... check it out! It's pretty awesome (if you have a Windows PC and a DirecTV DVR).
-
+For those of you who don't know about <a href="http://www.directv.com/directv2pc" target="_blank">DirecTV2PC</a>
+... check it out! It's pretty awesome (if you have a Windows PC and a DirecTV DVR).<br />
+<br />
 Here is what I did to get DirecTV2PC working in my Local Area Network with two HR20 set top boxes.
 <ol>
-	<li>Go to <a href="http://www.directv.com/directv2pc" target="_blank">http://www.directv.com/directv2pc</a> and click the <em>Download Beta</em> button on the right side of the page</li>
-	<li>When the pop-up comes up, click <a href="http://www.cyberlink.com/prog/event/2008/directv2pc/enu/index.jsp" target="_blank">Continue to Beta download</a></li>
-	<li>Click <em>Download Now</em> to download the DirecTV PC Playback Advisor application to see if you pc is up to running the DirecTV2PC application.  Once you finish the download run the installation and then run the application. The application sometimes falsely identifies your system specs. As long as your PC is running Windows XP with Service Pack 2 or Windows Vista with Service Pack 1, a 2Ghz processor, and 512MB ram you should be good to go.</li>
-	<li>If you PC passes the application or you believe it should be able to handle the application according to the rules of thumb  I laid out in the previous step, then enter your name and email on the page and click the <em>Submit</em> button. The DirecTV2PC application download will then start. It is a 32 MB file, but it may take awhile to download. The average speed I rolled for the download was 20kb/sec. It took about 30 minutes to download ... atrocious! <span style="text-decoration: line-through;">Once your download completes, you will be sent an activation code to the email you provided earlier.</span> Edit (1/22/2009): You only have to start the download, then you will be emailed an activation code.</li>
-	<li>Run the installer and fill out the various fields.</li>
-	<li>Now run the application, for the application to properly activate you will need to:
-<ul>
-	<li>be connected to the Internet</li>
-	<li>open TCP port 443 (incoming and outgoing) on your router's firewall</li>
-	<li>open your PC's firewall for the DirecTV2PC application (you should be automatically prompted by Windows)</li>
-</ul>
-</li>
-	<li>If the application still does not activate properly, that means that your ISP's DNS servers have not updated Cyberlink's new IPv4 address for the A record <em>activation.cyberlink.com</em>. (Or Cyberlink is jerking around with their IPv4 addresses again ... bah!)
-<em>Here is what you do</em>:
-add exactly what is in quotes: "203.73.94.101 activation.cyberlink.com"
-to the file "c:/windows/system32/drivers/etc/hosts" (if your main hard disk drive is lettered "c")</li>
-	<li>Enjoy your DVR's movies!</li>
+    <li>Go to <a href="http://www.directv.com/directv2pc" target="_blank">http://www.directv.com/directv2pc</a>
+        and click the <em>Download</em> link near the bottom of the page</li>
+    <li>Click <em>Download Now</em> to download the DirecTV PC Playback Advisor application to see if your pc is up
+        to running the DirecTV2PC application. Once you finish the download run the installation and then run the
+        application. The application sometimes falsely identifies your system specs. As long as your
+        PC is running Windows XP with Service Pack 2 or Windows Vista with Service Pack 1,
+        a 2Ghz processor, and 512MB ram you should be good to go.</li>
+    <li>If you PC passes the application or you believe it should be able to handle the application
+        according to the rules of thumb I laid out in the previous step, then enter your name and email
+        on the page and click the <em>Submit</em> button. The DirecTV2PC application download will then start.
+        It is a 32 MB file, but it may take awhile to download. The average speed I rolled for the download was 20kb/sec.
+        It took about 30 minutes to download ... atrocious!
+        <span style="text-decoration: line-through;">Once your download completes, you will be
+            sent an activation code to the email you provided earlier.</span> Edit (1/22/2009):
+        You only have to start the download, then you will be emailed an activation code.</li>
+    <li>Run the installer and fill out the various fields.</li>
+    <li>Now run the application, for the application to properly activate you will need to:
+        <ul>
+            <li>be connected to the Internet</li>
+            <li>open your PC's firewall for the DirecTV2PC application (you should be automatically prompted by Windows)</li>
+            <li>(maybe) open TCP port 443 (incoming and outgoing) on your router's firewall</li>
+        </ul>
+    </li>
+    <li>If the application still does not activate properly, that means that your ISP's DNS servers
+        have not updated Cyberlink's IPv4 address for the A record <em>activation.cyberlink.com</em>.
+        (Or Cyberlink is jerking around with their IPv4 addresses again ... bah!)
+        <em>Here is what you do</em>:
+        add exactly what is in quotes: "203.73.94.101 activation.cyberlink.com"
+        to the file "c:/windows/system32/drivers/etc/hosts" (if your main hard disk drive is lettered "c")</li>
+    <li>Enjoy your DVR's movies!</li>
 </ol>
