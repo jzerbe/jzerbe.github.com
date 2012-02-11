@@ -1,0 +1,70 @@
+---
+layout: post
+title: J2EE WAR boilerplate configuration for JDBC, JSP, JSTL, Servlets
+tags:
+- J2EE
+- JDBC
+- JSP
+- JSTL
+- Web
+status: publish
+type: post
+published: true
+meta:
+_edit_last: "1"
+---
+I found out the long way that building a properly working
+<a href="http://en.wikipedia.org/wiki/WAR_file_format_(Sun)">.war</a>
+is all about the correct archive structure. For this particular situation I
+was deploying to a <a href="http://en.wikipedia.org/wiki/Apache_Tomcat">Tomcat</a>
+6 instance. This walk-through assumes you already have
+a working web server/Servlet container with some way to deploy your .war.<br />
+<br />
+To create a project that will deploy with support for
+<abbr title="JavaServer Pages">
+    <a href="http://en.wikipedia.org/wiki/JavaServer_Pages">JSP</a>
+</abbr>,
+<abbr title="JavaServer Pages Standard Tag Library">
+    <a href="http://en.wikipedia.org/wiki/JavaServer_Pages_Standard_Tag_Library">JSTL</a>
+</abbr>,
+<a href="http://en.wikipedia.org/wiki/Java_Servlet">Servlets</a>, and
+<a href="http://en.wikipedia.org/wiki/MySQL">MySQL</a> (via their custom
+<a href="http://dev.mysql.com/downloads/connector/j/">JDBC driver</a>),
+you will need something like the following structure in place:<br />
+<br />
+<code>- j2ee_war/<br />
+    | -&gt; <a href="http://dl.dropbox.com/u/44649188/blog_includes/j2ee_war/build.xml">build.xml</a><br />
+    | -&gt; META-INF/<br />
+    | | -&gt; <a href="http://dl.dropbox.com/u/44649188/blog_includes/j2ee_war/META-INF/context.xml">context.xml</a><br />
+    | -&gt; src/<br />
+    | | -&gt; config/<br />
+    | | | -&gt; <a href="http://dl.dropbox.com/u/44649188/blog_includes/j2ee_war/src/config/DbConn.java">DbConn.java</a><br />
+    | | -&gt; database/<br />
+    | | | -&gt; <a href="http://dl.dropbox.com/u/44649188/blog_includes/j2ee_war/src/database/UserManager.java">UserManager.java</a><br />
+    | | -&gt; servlets/<br />
+    | | | -&gt; <a href="http://dl.dropbox.com/u/44649188/blog_includes/j2ee_war/src/servlets/MyInfo.java">MyInfo.java</a><br />
+    | -&gt; war-no-include/<br />
+    | | -&gt; <a href="http://dl.dropbox.com/u/44649188/blog_includes/j2ee_war/war-no-include/jsp-api.jar">jsp-api.jar</a><br />
+    | | -&gt; <a href="http://dl.dropbox.com/u/44649188/blog_includes/j2ee_war/war-no-include/servlet-api.jar">servlet-api.jar</a><br />
+    | -&gt; web/<br />
+    | | -&gt; <a href="http://dl.dropbox.com/u/44649188/blog_includes/j2ee_war/web/favicon.ico">favicon.ico</a><br />
+    | | -&gt; <a href="http://dl.dropbox.com/u/44649188/blog_includes/j2ee_war/web/index.html">index.html</a><br />
+    | | -&gt; login.jsp<br />
+    | -&gt; WEB-INF/<br />
+    | | -&gt; <a href="http://dl.dropbox.com/u/44649188/blog_includes/j2ee_war/WEB-INF/web.xml">web.xml</a><br />
+    | | -&gt; lib/<br />
+    | | | -&gt; <a href="http://dl.dropbox.com/u/44649188/blog_includes/j2ee_war/WEB-INF/lib/jstl-1.2.jar">jstl-1.2.jar</a><br />
+    | | | -&gt; <a href="http://dl.dropbox.com/u/44649188/blog_includes/j2ee_war/WEB-INF/lib/mysql-connector-java-5.1.18-bin.jar">mysql-connector-java-5.1.18-bin.jar</a><br />
+</code><br />
+[<a href="http://dl.dropbox.com/u/44649188/blog_includes/j2ee_war.zip">j2ee_war.zip</a>]<br />
+<br />
+<strong>NOTE</strong>:<br />
+1) The libraries in the &quot;war-no-include&quot; directory need to be in the build
+class path when compiling beans and servlets, but should not be in the deployed war
+as the servlet container provides its own version of these libraries. This is
+taken care of in the included <a href="http://en.wikipedia.org/wiki/Apache_Ant">ant</a>
+build.xml file.<br />
+2) The &quot;jstl-1.2.jar&quot; library (for JSTL support) contains both the API
+and implementation. See <a href="http://stackoverflow.com/a/8045562">BalusC's
+    response to javax.servlet.ServletException: java.lang.NoClassDefFoundError:
+    javax/servlet/jsp/jstl/core/ConditionalTagSupport</a>.
