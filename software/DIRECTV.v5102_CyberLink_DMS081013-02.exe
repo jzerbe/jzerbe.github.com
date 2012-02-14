@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>DIRECTV.v5102_CyberLink_DMS081013-02.exe</title>
+        <meta name="author" content="Jason Zerbe" />
+        <link href="http://vraidsys.com/atom.xml" rel="alternate" title="Jason Zerbe" type="application/atom+xml" />
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+        <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+        <script type="text/javascript">
+            $.mobile.fixedToolbars.setTouchToggleEnabled(false);
+        </script>
+
+        <link rel="stylesheet" href="/style.css" type="text/css" media="screen, projection" />
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-2372567-8']);
+            _gaq.push(['_setDomainName', 'vraidsys.com']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+                <a rel="external" href="/" data-icon="home">Home</a>
+                <h1>DIRECTV.v5102_CyberLink_DMS081013-02.exe</h1>
+            </div>
+
+            <div data-role="content">
+                You are looking for an application that I no longer host on this site.
+                Please find the DTV2PC app at the following URL (on the vendor&#39;s servers):
+                <a href="http://update.cyberlink.com/ftpdload/web/directv/DIRECTV.v5102_CyberLink_DMS081013-02.exe">
+                    http://update.cyberlink.com/ftpdload/web/directv/DIRECTV.v5102_CyberLink_DMS081013-02.exe
+                </a>. I will start hosting this locally again if they take it down.<br />
+                <br />
+                Thanks for dropping by regardless.
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a rel="external" href="/">Blog</a></li>
+                        <li><a rel="external" href="/contact.html">Contact</a></li>
+                        <li><a rel="external" href="/projects.html">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
