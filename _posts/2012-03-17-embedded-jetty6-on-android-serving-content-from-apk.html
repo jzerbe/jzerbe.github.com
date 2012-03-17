@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Embedded Jetty6 on Android: serving content from within an APK
+title: Embedded Jetty6 on Android serving content from APK
 tags:
 - Jetty6
 - Android
@@ -40,7 +40,7 @@ I am rocking a singleton instance to control my embedded Jetty6 server:<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ServletHandler aServletHandler = new ServletHandler();<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aServletHandler.addServletWithMapping(new ServletHolder(new CoolServlet1()), "/servlets/cool1");<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aServletHandler.addServletWithMapping(new ServletHolder(new CoolServlet2()), "/servlets/cool2");<br />
-...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aServletHandler.addServletWithMapping(new ServletHolder(new StaticProxy()), "/*");<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jws_serverInstance.addHandler(aServletHandler);<br />
 &nbsp;&nbsp;&nbsp;&nbsp;}<br />
@@ -51,8 +51,10 @@ I am rocking a singleton instance to control my embedded Jetty6 server:<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return jws_SingleInstance;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;}<br />
-...<br />
-...<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+<br />
 }
 </code><br />
 <br />
