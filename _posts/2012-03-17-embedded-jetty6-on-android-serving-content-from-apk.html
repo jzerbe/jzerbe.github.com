@@ -93,7 +93,7 @@ and tries to find matching resources in the <code>assets</code> directory of the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String aRequestedFileExtension = aRequestedFileNameArray[(aRequestedFileNameArray.length - 1)];<br />
 <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String aRequestAssetsPath = "webapp" + aRequestedUri;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InputStream aResourceInputStream = MusicZones.getAssets().open(aRequestAssetsPath);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InputStream aResourceInputStream = MainActivity.getAssets().open(aRequestAssetsPath);<sup>[<a name="getAssets" href="#ftn.getAssets">1</a>]</sup><br />
 <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resp.setContentType(myExtensionMap.get(aRequestedFileExtension));<br />
 <br />
@@ -110,3 +110,8 @@ and tries to find matching resources in the <code>assets</code> directory of the
 <br />
 }
 </code><br />
+<br />
+<sup>[<a name="ftn.getAssets" href="#getAssets">1</a>]</sup> The <code>MainActivity.getAssets()</code> static method returns an
+<a href="http://developer.android.com/reference/android/content/res/AssetManager.html"><code>AssetManager</code></a> instance I previously
+initialized from my main <a href="http://developer.android.com/reference/android/app/Activity.html"><code>Activity</code></a> in its
+<code>onCreate</code> method with a call to <code>getAssets()</code>.
