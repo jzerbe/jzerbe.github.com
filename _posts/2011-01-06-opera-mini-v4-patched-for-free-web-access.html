@@ -15,7 +15,7 @@ _edit_last: "1"
 _wp_old_slug: ""
 ---
 <strong>NOTE</strong>: <a href="https://twitter.com/jasonzerbe/status/182675503294070784">
-no more free T-Mobile web service with keyword hole</a>.<br />
+    no more free T-Mobile web service with keyword hole</a>.<br />
 <br />
 I just wanted to say that before any of you on AT&amp;T, Verizon, Virgin, or other (excessively over-priced)
 mobile transit providers get excited, that <strong>I have just tested this on T-Mobile</strong>
@@ -37,10 +37,10 @@ no idea if they would work or not; until it worked (tested on my Motorola V195S 
         now have a bunch of files along with the original jar file. DON'T OPEN ANY OF THE FILES WITH ANY OLD EDITOR,
         IT WILL SCREW UP THE FILE FORMATTING. I mention this, because I fell into this trap trying to edit h.class with vi.</li>
     <li>Using a hex editor, I suggest <a href="http://mh-nexus.de/en/hxd/">HxD</a>. Open up h.class.</li>
-    <li>Search and replace the string "server4.opermini.com" with "tmobile4.vraidsys.com". Save your changes and close up your hex editor.
-        <strong>Edit August 6 2011</strong>: "tmobile4.vraidsys.com" is a CNAME that points to "server4.opermini.com"
+    <li>Search and replace the string "server4.operamini.com" with "tmobile4.vraidsys.com". Save your changes and close up your hex editor.
+        <strong>Edit August 6 2011</strong>: "tmobile4.vraidsys.com" is a CNAME that points to "server4.operamini.com"
         so that one can make it appear as if the Opera Mini thin client is making backend calls to a tmobile service.
-        I also had to add a "tmobile4-1.vraidsys.com" CNAME to my DNS records pointing to "server4.opermini.com" so
+        I also had to add a "tmobile4-1.vraidsys.com" CNAME to my DNS records pointing to "server4.operamini.com" so
         that the initial install of Opera Mini would work correctly.</li>
     <li>Now, open up a terminal/command line window and issue the command <code>jar -uf opera-mini-4-advanced-en-us.jar h.class</code> to
         update the original archive with the modified class file. If you get a command not found error, you might have to do some
