@@ -1,1 +1,0 @@
-HTML5/CSS3/JavaScript that powers static site jzerbe.github.com aka vraidsys.com. Uses jekyll to generate static site.
