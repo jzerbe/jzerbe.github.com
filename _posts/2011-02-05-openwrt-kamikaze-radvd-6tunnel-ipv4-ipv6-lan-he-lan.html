@@ -42,11 +42,11 @@ your OpenWRT device. Insert the following into <code>/etc/config/firewall</code>
         option proto    ICMP<br />
         option target   ACCEPT</code></blockquote>
 Next let's configure the <code>/etc/firewall.user</code> script to auto-configure ip6tables for wan/br-lan devices on
-start/restart/stop. [<a href="http://dl.dropbox.com/u/44649188/blog_includes/article-includes/openwrt/firewall.user">firewall.user script</a>]<br />
+start/restart/stop. [<a href="https://docs.google.com/file/d/0B0yT30uCaFvvUW0tTlQ0NDlnbEE/edit?pli=1">firewall.user script</a>]<br />
 <br />
 Now to tie your tunnel and LAN together (such that your LAN obtains globally routable IPv6 addresses), you are going to need to
 get at your <a href="http://wiki.openwrt.org/doc/uci/radvd">Router Advertisement (radvd) configuration</a> -
-<code>/etc/conf/radvd</code> - [<a href="http://dl.dropbox.com/u/44649188/blog_includes/article-includes/openwrt/radvd">radvd conf file</a>].
+<code>/etc/conf/radvd</code> - [<a href="https://docs.google.com/file/d/0B0yT30uCaFvvVVVleV8zaEpQZkk/edit?pli=1">radvd conf file</a>].
 Be sure to enable radvd to start on system startup: <code>/etc/init.d/radvd enable</code>.<br />
 <br />
 <strong>UPDATE February 10</strong>: You are going to need to restart radvd manually each time you bring your
@@ -71,7 +71,7 @@ said page, localip6 = "Client IPv6 address", remoteip6 = "Server IPv6 address", 
 "Routed /48" if you need something that big. localip4 will be auto-detected the customized 6tunnel init.d
 script, and thus can be commented out/left blank/doesn't matter.<br />
 <br />
-The init.d file for 6tunnel [<a href="http://dl.dropbox.com/u/44649188/blog_includes/article-includes/openwrt/6tunnel">6tunnel init script</a>]
+The init.d file for 6tunnel [<a href="https://docs.google.com/file/d/0B0yT30uCaFvvck54ZGFIRHN5TG8/edit?pli=1">6tunnel init script</a>]
 is an amalgamation of the original init script, linux-route-2 commands as suggested by HE, and inspirations from
 <a href="https://forum.openwrt.org/viewtopic.php?pid=111999#p111999">andyballon's post on the openwrt forums</a>.
 This doesn't seem to work quite properly on system startup for me, but if you want to give it a try - <code>/etc/init.d/6tunnel enable</code> -
