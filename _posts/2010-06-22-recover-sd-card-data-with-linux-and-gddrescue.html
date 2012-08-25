@@ -18,7 +18,7 @@ gddrescue is included in the main <a href="http://packages.debian.org/search?key
 an "<code>apt-get install gddrescue</code>".<br />
 <br />
 Plug in your sd card and watch dmesg for the sd card. Mine was added to /dev/sda as one can see from the following output:
-<blockquote>[ 2540.580007] usb 5-4: new high speed USB device using ehci_hcd and address 2<br />
+<blockquote><code>[ 2540.580007] usb 5-4: new high speed USB device using ehci_hcd and address 2<br />
     [ 2540.776619] usb 5-4: configuration #1 chosen from 1 choice<br />
     [ 2540.781484] scsi1 : SCSI emulation for USB Mass Storage devices<br />
     [ 2540.781939] usb 5-4: New USB device found, idVendor=090c, idProduct=6000<br />
@@ -38,8 +38,8 @@ Plug in your sd card and watch dmesg for the sd card. Mine was added to /dev/sda
     [ 2545.787949] sd 1:0:0:0: [sda] Write Protect is off<br />
     [ 2545.787958] sd 1:0:0:0: [sda] Mode Sense: 4b 00 00 08<br />
     [ 2545.787963] sd 1:0:0:0: [sda] Assuming drive cache: write through<br />
-    [ 2545.788050]  sda: unknown partition table<br />
-    [ 2545.795255] sd 1:0:0:0: [sda] Attached SCSI removable disk</blockquote>
+    [ 2545.788050] sda: unknown partition table<br />
+    [ 2545.795255] sd 1:0:0:0: [sda] Attached SCSI removable disk</code></blockquote>
 While logged in as root (or using sudo) make a copy of the sd card: ddrescue [/dev/device] [recovery image output] [logfile]<br />
 <br />
 Now we will also need testdisk, so install that [<a href="http://packages.debian.org/search?keywords=testdisk">Debian</a>]
