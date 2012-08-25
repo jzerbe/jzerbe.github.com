@@ -1,0 +1,71 @@
+---
+layout: post
+title: Spring 3 MVC: enable Cross Origin Resource Sharing
+tags:
+- Spring
+- MVC
+- CORS
+status: publish
+type: post
+published: true
+meta:
+_edit_last: "1"
+---
+I am using a Spring 3 MVC annontation driven setup, and I needed to enable
+<abbr title="Cross-Origin Resource Sharing">CORS</abbr>. Relevant reading:
+<ul>
+    <li><a href="http://www.w3.org/TR/cors/">W3C spec</a> is informative but not immediately helpful</li>
+    <li>the <a href="http://enable-cors.org/">enable CORS cheat-sheet</a> has a fast-action listing of relevant headers</li>
+    <li>build <a href="http://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/">
+        CORS in vanilla JavaScript
+    </a></li>
+    <li>build <a href="http://www.xul.fr/en-xml-ajax.html">AJAX in vanilla JavaScript</a></li>
+</ul>
+<br />
+<strong>update web.xml</strong><br />
+Update the DispatcherServlet section of your web.xml file (typically in WEB-INF)
+so that it dispatches HTTP OPTIONS requests to controllers instead of pushing back the
+default response that does not include the relevant <i>Access-Control-Allow</i>
+headers.
+<blockquote>
+<code>
+&lt;servlet&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;servlet-name&gt;spring-servlet&lt;/servlet-name&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;servlet-class&gt;org.springframework.web.servlet.DispatcherServlet&lt;/servlet-class&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;init-param&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;param-name&gt;dispatchOptionsRequest&lt;/param-name&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;param-value&gt;true&lt;/param-value&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/init-param&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;<br />
+&lt;/servlet&gt;<br />
+&lt;servlet-mapping&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;servlet-name&gt;spring-servlet&lt;/servlet-name&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;url-pattern&gt;/*&lt;/url-pattern&gt;<br />
+&lt;/servlet-mapping&gt;<br />
+</code>
+</blockquote>
+<br />
+<strong>create an OPTIONS RequestMapping</strong><br />
+In my case I want CORS to always work for any HTTP end-points, so I created a
+"CorsCommon" class that I extend all my other controllers from.
+NOTE: In my experience, one cannot just use "*" for <i>Access-Control-Allow-Headers</i>,
+so if your CORS request is going to be using any additional headers, be sure to list them
+where "my-cool-header" is. jQuery likes to use the "x-requested-with" header.
+<blockquote>
+<code>public class CorsCommon {<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;@RequestMapping(method = RequestMethod.OPTIONS)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;public void commonOptions(HttpServletResponse theHttpServletResponse) throws IOException {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;theHttpServletResponse.addHeader("Access-Control-Allow-Headers", "origin, content-type, accept, x-requested-with, my-cool-header");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;theHttpServletResponse.addHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;theHttpServletResponse.addHeader("Access-Control-Allow-Origin", "*");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+}<br />
+</code>
+</blockquote>
+<br />
+<strong>add Access-Control-Allow-Origin to your existing RequestMapping</strong><br />
+For every single RequestMapping that you want CORS to work with, one will have to
+add something like <code>theHttpServletResponse.addHeader("Access-Control-Allow-Origin", "*");</code>
+to said RequestMapping.<br />
+<br />
