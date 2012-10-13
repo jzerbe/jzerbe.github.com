@@ -1,0 +1,246 @@
+---
+layout: post
+title: nginx 1.2.4 SSL virtual hosting with upstream Tomcat 7
+tags:
+- nginx
+- tomcat
+- ssl
+status: publish
+type: post
+published: true
+meta:
+_edit_last: "1"
+---
+Fact: fronting Tomcat or Jetty with any <i>actual</i> webserver
+will make page load times faster by caching most if not all
+non-servlet requests; mileage with vary, depends on caching/upstream config.<br />
+<br />
+I chose to work with nginx, because of great experiences in the past.
+Unfortunately no mainline support for
+<a href="http://en.wikipedia.org/wiki/Apache_JServ_Protocol">AJP</a>.
+There is an addon module,
+<a href="https://github.com/yaoweibin/nginx_ajp_module">nginx_ajp_module</a>,
+but I just could
+not get it to compile with nginx 1.2.4, even after some hackish patching.
+Will have to fork and dig around with it further at some point.<br />
+<br />
+<strong>the download/build/install</strong><br />
+I use the "--no-check-certificate" option with wget because the AWS image
+bundling procedure eats .pem files on some of my boxes. The apt-get command
+should get you all the dependencies you need to compile nginx with everything
+except <i>pcre-jit</i> enabled.
+<blockquote>
+    <code>
+        wget http://nginx.org/download/nginx-1.2.4.tar.gz<br />
+        tar xzvf nginx-1.2.4.tar.gz<br />
+        <br />
+        wget --no-check-certificate https://github.com/gnosek/nginx-upstream-fair/tarball/master<br />
+        mv master gnosek-nginx-upstream-fair.tar.gz<br />
+        tar xzvf gnosek-nginx-upstream-fair.tar.gz<br />
+        <br />
+        apt-get install build-essential libpcre++0 libpcre++-dev zlib1g-dev zlib1g openssl libssl-dev<br />
+        <br />
+        cd nginx-1.2.4<br />
+        ./configure --add-module=../gnosek-nginx-upstream-fair-* --with-http_ssl_module<br />
+        <br />
+        make<br />
+        make install<br />
+    </code>
+</blockquote>
+<br />
+<strong>the start-up config</strong><br />
+for all your dependency-based Debian booting needs<br />
+<code>/etc/init.d/nginx</code>
+<blockquote>
+    <code>
+        #! /bin/sh<br />
+        <br />
+        ### BEGIN INIT INFO<br />
+        # Provides: nginx<br />
+        # Required-Start: $all<br />
+        # Required-Stop: $all<br />
+        # Default-Start: 2 3 4 5<br />
+        # Default-Stop: 0 1 6<br />
+        # Short-Description: starts the nginx web server<br />
+        # Description: starts nginx using start-stop-daemon<br />
+        ### END INIT INFO<br />
+        <br />
+        PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin<br />
+        DAEMON=/usr/local/nginx/sbin/nginx<br />
+        NAME=nginx<br />
+        DESC=nginx<br />
+        <br />
+        test -x $DAEMON || exit 0<br />
+        <br />
+        set -e<br />
+        <br />
+        case "$1" in<br />
+        &nbsp;&nbsp;start)<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;echo -n "Starting $DESC: "<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;start-stop-daemon --start --quiet --pidfile /usr/local/nginx/logs/nginx.pid \<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--exec $DAEMON -- $DAEMON_OPTS<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;echo "$NAME."<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;;;<br />
+        &nbsp;&nbsp;stop)<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;echo -n "Stopping $DESC: "<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;start-stop-daemon --stop --quiet --pidfile /usr/local/nginx/logs/nginx.pid \<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--exec $DAEMON<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;echo "$NAME."<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;;;<br />
+        &nbsp;&nbsp;restart|force-reload)<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;echo -n "Restarting $DESC: "<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;start-stop-daemon --stop --quiet --pidfile \<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/usr/local/nginx/logs/nginx.pid --exec $DAEMON<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;sleep 1<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;start-stop-daemon --start --quiet --pidfile \<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/usr/local/nginx/logs/nginx.pid --exec $DAEMON -- $DAEMON_OPTS<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;echo "$NAME."<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;;;<br />
+        &nbsp;&nbsp;reload)<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;echo -n "Reloading $DESC configuration: "<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;start-stop-daemon --stop --signal HUP --quiet --pidfile /usr/local/nginx/logs/nginx.pid \<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--exec $DAEMON<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;echo "$NAME."<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;;;<br />
+        &nbsp;&nbsp;*)<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;N=/etc/init.d/$NAME<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;echo "Usage: $N {start|stop|restart|force-reload}" >&2<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;exit 1<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;;;<br />
+        esac<br />
+        <br />
+        exit 0<br />
+    </code>
+</blockquote>
+<br />
+<strong>the main nginx.conf</strong><br />
+located at <code>/usr/local/nginx/conf/nginx.conf</code><br />
+Please see the
+<a href="http://wiki.nginx.org/HttpCoreModule">HttpCoreModule wiki page</a>
+for more information about core directives. For additonal information about
+the directives to use with the
+<a href="http://wiki.nginx.org/HttpUpstreamFairModule">HttpUpstreamFairModule</a>.<br />
+<blockquote>
+    <code>
+        #user nobody;<br />
+        worker_processes 3; #make use of multiple cores efficiently<br />
+        <br />
+        events {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;worker_connections 1024;<br />
+        }<br />
+        <br />
+        <br />
+        http {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;include mime.types;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;default_type application/octet-stream;<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;sendfile on;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;tcp_nopush on;<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;keepalive_timeout 2; #in seconds<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;gzip on;<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;client_max_body_size 2m; #handle &lt;2MB media uploads<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;proxy_connect_timeout 10s;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;proxy_read_timeout 40s; #max loading response for long AJAX processing time<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;upstream dev {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;server 192.168.11.11:8081;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;server 192.168.21.21:8081;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;server 127.0.0.1:8081;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fair;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;upstream production {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;server 192.168.10.10:8080;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;server 192.168.20.20:8080;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;server 127.0.0.1:8080;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fair;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;include /usr/local/nginx/conf/nginx_host.conf;<br />
+        }<br />
+    </code>
+</blockquote>
+<br />
+<strong>the nginx_host.conf</strong><br />
+For more on creating unified CRTs:
+<a href="https://www.startssl.com/?app=42">https://www.startssl.com/?app=42</a><br />
+located at <code>/usr/local/nginx/conf/nginx_host.conf</code><br />
+<blockquote>
+    <code>
+        #redirect all HTTP requests not handled to HTTPS
+        server {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;listen 80 default;<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;rewrite ^(.*) https://$host$1 permanent;<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;access_log /dev/null;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;error_log /dev/null;<br />
+        }<br />
+        <br />
+        #production<br />
+        server {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;ssl on;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;listen 443;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;server_name production.myservice.com;<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;ssl_certificate /srv/tls/production-unified.crt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;ssl_certificate_key /srv/tls/production.key;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;ssl_ciphers RC4:HIGH:!aNULL:!MD5;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;ssl_prefer_server_ciphers on;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;ssl_session_cache shared:SSL:10m;<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;location = /favicon.ico {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expires max;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add_header Cache-Control public;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;# serve static files<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;location ~ ^/(css|images|javascript|js|script|style)/ {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expires 2d;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;location / {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_set_header X-Forwarded-Host $host;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_set_header X-Forwarded-Server $host;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_pass http://production;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;access_log /dev/null;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;error_log /dev/null;<br />
+        }<br />
+        <br />
+        #dev<br />
+        server {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;ssl on;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;listen 443;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;server_name dev.myservice.com;<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;ssl_certificate /srv/tls/dev-unified.crt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;ssl_certificate_key /srv/tls/dev.key;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;ssl_ciphers RC4:HIGH:!aNULL:!MD5;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;ssl_prefer_server_ciphers on;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;ssl_session_cache shared:SSL:10m;<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;location = /favicon.ico {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expires max;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add_header Cache-Control public;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;location / {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_set_header X-Forwarded-Host $host;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_set_header X-Forwarded-Server $host;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proxy_pass http://dev;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;access_log /dev/null;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;error_log /dev/null;<br />
+        }<br />
+    </code>
+</blockquote>
+<br />
