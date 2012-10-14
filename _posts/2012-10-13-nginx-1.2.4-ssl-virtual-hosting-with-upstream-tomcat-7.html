@@ -243,4 +243,20 @@ located at <code>/usr/local/nginx/conf/nginx_host.conf</code><br />
         }<br />
     </code>
 </blockquote>
+Please see
+<i><a href="http://nginx.org/en/docs/http/configuring_https_servers.html">Configuring HTTPS servers</a></i>
+for more information on configuring nginx with HTTPS.<br />
+<br />
+<strong>notes on HTTPS virtual hosting</strong><br />
+<a href="http://en.wikipedia.org/wiki/Server_Name_Indication">Server Name Indication</a>,
+which allows for TLS name-based virtual hosting
+(using different CRTs per virtual host) is not supported by all
+HTTPS clients or HTTPS servers. If you really want to host a bunch of HTTPS
+subdomains (*.yourdomain.com) purchase a wildcard SSL certificate. I ran into
+trouble getting <a href="http://jenkins-ci.org/">Jenkins CI</a> jobs kicked off
+<a href="https://confluence.atlassian.com/display/BITBUCKET/Setting+Up+the+Bitbucket+Jenkins+Service">from bitbucket commits</a>
+because <a href="http://savannah.gnu.org/bugs/?26786">old versions of GNU Wget do not support TLS SNI</a>.
+I know I am
+<a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=653267">still waiting for the latest stable Debian release</a>
+to include the GNU Wget update.<br />
 <br />
