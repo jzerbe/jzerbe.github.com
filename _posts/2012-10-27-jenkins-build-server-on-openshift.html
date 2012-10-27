@@ -23,7 +23,7 @@ password for use with connecting over HTTPS, as I do not want to divulge
 my actual account password in the Jenkins config.<br />
 <br />
 
-<strong>auto-install Jenkins</strong>
+<strong>auto-install Jenkins</strong><br />
 The OpenShift application maintenance panel provides an option to create a
 Jenkins build server &quot;gear&quot; when digging around in your existing
 application settings. The &quot;Enable Jenkins builds&quot; button is your
@@ -32,7 +32,7 @@ friend.<br />
 
 <strong>with the OpenShift app&#39;s internal GIT repo</strong><br />
 When you log in for the first time to your new Jenkins gear, you should see a
-<i>somethingsomething</i>-build job already created. If you are using the
+<code><i>somethingsomething</i>-build</code> job already created. If you are using the
 GIT repo associated with your application and do not touch any configuration
 files, then everything should work out of the box. However, I wanted to be
 be able to build any type of project.<br />
@@ -55,8 +55,8 @@ be able to build any type of project.<br />
     </li>
     <li>
         The Maven plugin and binaries are also already installed, one may need
-        to set up the naming - <code>Maven 3.0.3</code>, with
-        MAVEN_HOME <code>/usr/bin</code>. On OpenShift, the only option for
+        to set up the naming => <code>Maven 3.0.3</code>, with
+        <code>MAVEN_HOME</code> = <code>/usr/bin</code>. On OpenShift, the only option for
         Maven repository information will be to use the
         &quot;Local to workspace&quot; option; nothing else is writable.
     </li>
@@ -74,8 +74,8 @@ be able to build any type of project.<br />
 <ol>
     <li>
         Create a <b>New Job</b> copied from the existing
-        <i>somethingsomething</i>-build job. I called mine
-        <i>somethingsomething</i>-custom.
+        <code><i>somethingsomething</i>-build</code> job. I called mine
+        <code><i>somethingsomething</i>-custom</code>.
     </li>
     <li>
         May want to do something about: <i>Discard Old Builds</i>
@@ -97,24 +97,22 @@ be able to build any type of project.<br />
         Input a long-ish string that is secret. Then in the <i>Services</i>
         section of <code>cool_repo</code>: <code>Token</code> would be set to
         said long-ish string, <code>Project name</code> =
-        <i>somethingsomething</i>-custom, <code>Endpoint</code> =
+        <code><i>somethingsomething</i>-custom</code>, <code>Endpoint</code> =
         <code>https://[user]:[API token]@jenkins-[namespace].rhcloud.com</code>.
     </li>
 </ol>
 <br />
 
 <strong>split up the Build steps</strong><br />
-All WARs build by ANT get put into <code>deployments</code> directory and
-pushed onto OpenShift gear for production use. You will need to add the
+Summary: all WARs build by ANT get put into <code>deployments</code> directory
+and pushed onto OpenShift gear for production use. You will need to add the
 public key version of the <code>jenkins_id_rsa</code> SSH key to your OpenShift
 account&#39;s list of trusted keys.<br />
 <blockquote>
-    <strong>ssh-wrapper script</strong>
+    <strong>ssh-wrapper script</strong><br />
     <code>
         #!/bin/bash<br />
-        <br />
         ID_RSA="$OPENSHIFT_DATA_DIR/.ssh/jenkins_id_rsa"<br />
-        <br />
         ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i $ID_RSA $1 $2<br />
     </code>
 </blockquote>
@@ -138,7 +136,7 @@ account&#39;s list of trusted keys.<br />
     </li>
     <li>
         <b>Invoke Ant</b><br />
-        Ant 1.X.X, your-build-target
+        Ant 1.X.X, your-build-target<br />
     </li>
     <li>
         <b>Execute shell</b>
