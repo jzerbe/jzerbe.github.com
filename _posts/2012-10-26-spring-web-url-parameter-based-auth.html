@@ -1,0 +1,56 @@
+---
+layout: post
+title: Spring Web URL parameter based auth
+tags:
+- Spring
+- Web
+- parameter
+status: publish
+type: post
+published: true
+meta:
+_edit_last: "1"
+---
+For some webservices, authentication needs to happen based on URL
+parameters. That JSON client you built into your iOS app is not going to like
+rando form login HTML coming in. Let us make Spring bend to our will. This is
+based on a pruned down version of
+<a href="http://www.objectpartners.com/2011/06/16/implementing-rest-authentication/">
+    <i>Implementing REST Authentication</i>
+</a> I have been using in production code. Just the good parts.
+<br />
+<strong>extend OncePerRequestFilter</strong><br />
+This guy comes from org.springframework.web.filter.OncePerRequestFilter, which
+is in the
+<a href="http://mvnrepository.com/artifact/org.springframework/spring-web">
+    <b>spring-web</b> class library
+</a>.
+<blockquote>
+<code>public class ParameterAuthFilter extends OncePerRequestFilter {<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;@Override<br />
+&nbsp;&nbsp;&nbsp;&nbsp;protected void doFilterInternal(final HttpServletRequest request, final HttpServletResponse response, final FilterChain theFilterChain) throws ServletException, IOException {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (isValidAuthBasedOnParams(request)) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;theFilterChain.doFilter(request, response);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "invalid parameter authentication");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+}<br />
+</code>
+</blockquote>
+<br />
+<strong>update web.xml</strong>
+<blockquote>
+<code>
+&lt;filter&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;filter-name&gt;signatureFilter&lt;/filter-name&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;filter-class&gt;com.vraidsys.auth.ParameterAuthFilter&lt;/filter-class&gt;<br />
+&lt;/filter&gt;<br />
+&lt;filter-mapping&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;filter-name&gt;signatureFilter&lt;/filter-name&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;url-pattern&gt;/api/*&lt;/url-pattern&gt;<br />
+&lt;/filter-mapping&gt;<br />
+</code>
+</blockquote>
+<br />
