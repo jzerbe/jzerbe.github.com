@@ -25,12 +25,18 @@ go from zero to a sweet CentOS or Debian install. The following is how I have my
 <ol>
     <li>Make your previous tftp directory accessible over HTTP and said HTTP server should be able to run php scripts.
         I currently have nginx and lighttpd's spawn-fcgi being overseen by supervisor, very similar to
-        <a href="http://agiletesting.blogspot.com/2010/06/setting-up-php5fastcgi-with-nginx.html">Grig Gheorghiu's "Setting up PHP5/FastCGI with nginx"</a></li>
+        <a href="http://agiletesting.blogspot.com/2010/06/setting-up-php5fastcgi-with-nginx.html">Grig Gheorghiu's "Setting up PHP5/FastCGI with nginx"</a>\
+    </li>
     <li>Throw up a php script in the same directory as where your pxelinux.0 is located. Check out my
-        <a href="https://docs.google.com/folder/d/0B0yT30uCaFvvcldSOVdGR3QxNzQ/edit?pli=1#docId=0B0yT30uCaFvvWjM5cWtaUFZyU0k">example ipxe_boot</a>.</li>
+        <a href="https://docs.google.com/folder/d/0B0yT30uCaFvvcldSOVdGR3QxNzQ/edit?pli=1#docId=0B0yT30uCaFvvWjM5cWtaUFZyU0k">example ipxe_boot</a>.
+        Check the GDoc comments for using TFTP if you experience freeze-up problems when booting
+        a VM like I did or as described in
+        <a href="http://forum.ipxe.org/showthread.php?tid=5514">VMware/VirtualBox is freezing when loading a kernel/initrd</a>.
+    </li>
     <li>Create a custom .ipxe boot script for adding into your iPXE boot image. For more on
         <a href="http://ipxe.org/scripting">scripting with iPXE</a>; also take a look at my current
-        <a href="https://docs.google.com/folder/d/0B0yT30uCaFvvcldSOVdGR3QxNzQ/edit?pli=1#docId=0B0yT30uCaFvvZkJMYWFCaG5wSjA">custom.ipxe script</a>.</li>
+        <a href="https://docs.google.com/folder/d/0B0yT30uCaFvvcldSOVdGR3QxNzQ/edit?pli=1#docId=0B0yT30uCaFvvZkJMYWFCaG5wSjA">custom.ipxe script</a>.
+    </li>
     <li>Grab a copy [<a href="http://ipxe.org/download">download/build info page</a>] of the source code from
         git and build it with your custom .ipxe file attached.
         <blockquote><code>git clone git://git.ipxe.org/ipxe.git<br />
