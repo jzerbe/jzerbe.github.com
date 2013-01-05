@@ -70,3 +70,14 @@ For every single RequestMapping that you want CORS to work with, one will have t
 add something like <code>theHttpServletResponse.addHeader("Access-Control-Allow-Origin", "*");</code>
 to said RequestMapping.<br />
 <br />
+<strong>example files</strong><br />
+For more contextually complete examples, take a look at the following files from
+the
+<a href="https://github.com/jzerbe/spring-security-gwt-template"><i>spring-security-gwt-template</i></a>
+example repo I put up on GitHub:
+<ul>
+    <li><a href="https://github.com/jzerbe/spring-security-gwt-template/blob/master/WEB-INF/web.xml">web.xml</a></li>
+    <li><a href="https://github.com/jzerbe/spring-security-gwt-template/blob/master/src/com/vraidsys/server/CorsController.java">CorsController.java</a></li>
+    <li><a href="https://github.com/jzerbe/spring-security-gwt-template/blob/master/src/com/vraidsys/server/FooController.java">FooController.java</a></li>
+</ul>
+<br />
