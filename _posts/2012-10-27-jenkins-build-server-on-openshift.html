@@ -144,29 +144,31 @@ account&#39;s list of trusted keys.<br />
             <code>
                 source /usr/libexec/stickshift/cartridges/abstract/info/lib/jenkins_util<br />
                 <br />
+                # set deploy user and endpoint<br />
+                DEPLOY_ENDPOINT=<b>[username]@somethingsomething-[namespace].rhcloud.com</b><br />
+                <br />
                 # set $GIT_SSH wrapper script and backup for later<br />
                 GIT_SSH_BAK=$GIT_SSH<br />
                 GIT_SSH=$OPENSHIFT_DATA_DIR/ssh-wrapper<br />
                 <br />
                 # Stop app<br />
-                $GIT_SSH [username]@somethingsomething-[namespace].rhcloud.com 'ctl_all stop'<br />
+                $GIT_SSH $DEPLOY_ENDPOINT 'ctl_all stop'<br />
                 <br />
                 # Push content back to application<br />
                 GIT_SSH=$GIT_SSH_BAK<br />
-                rsync --delete-after -az -e 'ssh -o UserKnownHostsFile=/dev/null
+                rsync -az -e 'ssh -o UserKnownHostsFile=/dev/null
                 -o StrictHostKeyChecking=no
                 -i /var/lib/stickshift/[...]/app-root/data/.ssh/jenkins_id_rsa'
                 --exclude='*.deployed' --exclude='*.deploying' --exclude='*.isundeploying'
-                $WORKSPACE/deployments/.
-                [username]@somethingsomething-[namespace].rhcloud.com:~/app-root/repo/deployments/<br />
+                $WORKSPACE/deployments/. $DEPLOY_ENDPOINT:~/app-root/repo/deployments/<br />
                 <br />
                 # Configure / start app<br />
                 GIT_SSH=$OPENSHIFT_DATA_DIR/ssh-wrapper<br />
-                $GIT_SSH [username]@somethingsomething-[namespace].rhcloud.com deploy.sh<br />
+                $GIT_SSH $DEPLOY_ENDPOINT deploy.sh<br />
                 <br />
-                jenkins_start_app [username]@somethingsomething-[namespace].rhcloud.com<br />
+                jenkins_start_app $DEPLOY_ENDPOINT<br />
                 <br />
-                $GIT_SSH [username]@somethingsomething-[namespace].rhcloud.com post_deploy.sh<br />
+                $GIT_SSH $DEPLOY_ENDPOINT post_deploy.sh<br />
             </code>
         </blockquote>
     </li>
