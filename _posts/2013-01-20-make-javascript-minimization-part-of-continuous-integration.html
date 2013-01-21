@@ -1,0 +1,33 @@
+---
+layout: post
+title: Make JavaScript minimization part of continuous integration
+tags:
+- JavaScript
+- minimization
+- continuous integration
+status: publish
+type: post
+published: true
+meta:
+_edit_last: "1"
+---
+Google has put their Closure JavaScript compiler up on App Engine at
+<a href="http://closure-compiler.appspot.com">closure-compiler.appspot.com</a>.
+<br /><br />
+I think it links in real nice with a
+<a href="http://jenkins-ci.org/">Jenkins continuous integration</a> setup
+via a simple <b>Execute shell</b> block:
+<blockquote>
+    <code>
+        wget --post-data &quot;compilation_level=SIMPLE_OPTIMIZATIONS&output_format=text&output_info=compiled_code&code_url=https://bitbucket.org/ninja_metrics/kapi-javascript-lib/raw/`git rev-parse HEAD`/KApi.js&quot; --output-document &quot;KApi-min.js&quot; http://closure-compiler.appspot.com/compile
+    </code>
+</blockquote>
+Translation: output just the minimized JavaScript to &quot;KApi-min.js&quot; in
+the current Jenkins workspace based on the latest version of the repository.
+The workspace currently contains code pulled from <code>origin/master</code>
+of <a href="https://bitbucket.org/ninja_metrics/kapi-javascript-lib">
+    https://bitbucket.org/ninja_metrics/kapi-javascript-lib</a>.<br />
+<br />
+For more on tweaking for your particular setup, see the
+<a href="https://developers.google.com/closure/compiler/docs/api-ref">
+    <i>Closure Compiler Service API Reference</i></a>.
