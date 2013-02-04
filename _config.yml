@@ -1,4 +1,3 @@
 lsi: false
-markdown: rdiscount
 paginate: 3
 permalink: /:year/:month/:title/
