@@ -11,6 +11,7 @@ layout: nil
     <author>
         <name>Jason Zerbe</name>
         <email>jzerbe@vraidsys.com</email>
+        <uri>http://vraidsys.com/</uri>
     </author>
 
     {% for post in site.posts %}
