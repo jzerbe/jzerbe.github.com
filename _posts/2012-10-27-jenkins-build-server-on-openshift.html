@@ -170,6 +170,9 @@ account&#39;s list of trusted keys.<br />
                 # Delete old APP version<br />
                 $GIT_SSH $DEPLOY_ENDPOINT "rm -fr ~/app-root/repo/deployments/$WAR_FILE"<br />
                 <br />
+                # Force retry of failed APPs<br />
+                $GIT_SSH $DEPLOY_ENDPOINT "rm -fr ~/app-root/repo/deployments/*.failed"<br />
+                <br />
                 # Push content to application<br />
                 rsync -az -e 'ssh -o UserKnownHostsFile=/dev/null
                 -o StrictHostKeyChecking=no
