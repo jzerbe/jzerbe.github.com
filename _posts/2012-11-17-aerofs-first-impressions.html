@@ -30,16 +30,21 @@ auto-magically synching with Dropbox. I really do not want to be synching 50GB
 (and growing) of content across the crappy DSL line I am on.<br />
 <br />
 
-<strong>AeroFS NAS set-up</strong><br />
+<strong>AeroFS NAS/headless set-up</strong><br />
 I am running this on CentOS release 5.8 (Final). Pick up the tarball from
 <a href="https://www.aerofs.com/download?os=linux">https://www.aerofs.com/download?os=linux</a>.
 <blockquote>
     <code>
         yum install java-1.6.0-openjdk sharutils procps screen<br />
+        tar xzvf aerofs-installer.tgz<br />
+        mv aerofs /srv/AeroFS_bin<br />
+        chmod -R +x /srv/AeroFS_bin<br />
         screen -dmS AeroFS /srv/AeroFS_bin/aerofs-cli<br />
     </code><br />
     I added the <code>screen</code> line to <code>/etc/rc.local</code> so it
-    always runs on start-up. Not the best practice, but it works.
+    always runs on start-up. Not the best practice, but it works. You will have
+    to pop open the <code>screen</code> instance - <code>screen -r AeroFS</code>
+    - on first run to go through the CLI wizard.
 </blockquote>
 <br />
 
