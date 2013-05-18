@@ -1,0 +1,40 @@
+---
+layout: post
+title: cross-compile Tvheadend for ARM Cortex A9
+tags:
+- cross-compile
+- Tvheadend
+- ARM
+status: publish
+type: post
+published: true
+meta:
+_edit_last: "1"
+---
+Process I followed on Win 7 (64 bit) Cygwin
+install various devel stuffs: svn, cmake,http://llvm.org/docs/GettingStarted.html#software
+
+From http://llvm.org/docs/GettingStarted.html#getting-started-quickly-a-summary
+
+svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm
+cd llvm/tools
+svn co http://llvm.org/svn/llvm-project/cfe/trunk clang
+cd ../projects
+svn co http://llvm.org/svn/llvm-project/compiler-rt/trunk compiler-rt
+cd ../
+
+mkdir build
+cd build
+
+../configure --prefix=/usr/local --enable-optimized --enable-assertions
+make
+--> 30-45 minutes <--
+make install
+
+
+From http://wiki.osdev.org/LLVM_Cross-Compiler#Usage
+
+pkg-config for cygwin
+need ssl devel for tvheadend
+
+
