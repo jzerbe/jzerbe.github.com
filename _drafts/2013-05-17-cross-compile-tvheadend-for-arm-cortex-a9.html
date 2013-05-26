@@ -11,30 +11,27 @@ published: true
 meta:
 _edit_last: "1"
 ---
-Process I followed on Win 7 (64 bit) Cygwin
-install various devel stuffs: svn, cmake,http://llvm.org/docs/GettingStarted.html#software
+cs ARM EABI, gnu linux
+just fine with the first
 
-From http://llvm.org/docs/GettingStarted.html#getting-started-quickly-a-summary
+apt-get install linux-headers-$(uname -r)
 
-svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm
-cd llvm/tools
-svn co http://llvm.org/svn/llvm-project/cfe/trunk clang
-cd ../projects
-svn co http://llvm.org/svn/llvm-project/compiler-rt/trunk compiler-rt
-cd ../
+~/.profile
+PATH="/root/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_GNU_Linux/bin:/root/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin:$PATH"
 
-mkdir build
-cd build
+./configure --cc=arm-none-linux-gnueabi-gcc --host=armle-unknown-linux --target=armle-unknown-linux --build=i686-pc-linux --disable-avahi --release
 
-../configure --prefix=/usr/local --enable-optimized --enable-assertions
-make
---> 30-45 minutes <--
-make install
+ln -s /opt/openssl-arm/include/openssl/ openssl
+ln -s /opt/zlib-arm/include/zlib.h zlib.h
+ln -s /opt/zlib-arm/include/zconf.h zconf.h
+
+make CC="arm-none-linux-gnueabi-gcc -march=armv7-a -mcpu=cortex-a9 -marm -mlittle-endian -mglibc"
 
 
-From http://wiki.osdev.org/LLVM_Cross-Compiler#Usage
+export LD_LIBRARY_PATH=/media/sdcard/lib
 
-pkg-config for cygwin
-need ssl devel for tvheadend
+/media/sdcard/hdhomerun/userhdhomerun -f -u root -g root -l /media/sdcard/hdhomerun/dvb.log
+/media/sdcard/tvheadend-3.2patch2/tvheadend -f -u root -g root -C -c /media/sdcard/tvheadend-3.2patch2/config
 
-
+killall tvheadend
+killall userhdhomerun
