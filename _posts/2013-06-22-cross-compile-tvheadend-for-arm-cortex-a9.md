@@ -14,7 +14,7 @@ This will be the first in a series of posts as I get
 [libhdhomerun](https://github.com/jzerbe/libhdhomerun), and
 [dvbhdhomerun](https://github.com/jzerbe/dvbhdhomerun) running on my
 [XIOS DS Media Play](http://www.pivosgroup.com/xios.html).
-I am doing all of this on a Debian 7 VM.
+I am doing all of the building on a Debian 7 VM.
 
 setup CROSS_COMPILE env
 ------------
@@ -27,15 +27,16 @@ and gave up. Everything was so much easier on a Debian 7 VM.
 `PATH="/root/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_GNU_Linux/bin:$PATH"`
 ... or wherever you pointed the installer to.
 
-build zlib and OpenSSL for ARM
+zlib + OpenSSL to match ARM buildroot
 ------------
-I followed along with http://stackoverflow.com/questions/11841919/cross-compile-openssh-for-arm/14541123#14541123
+I based my approach on:
+http://stackoverflow.com/questions/11841919/cross-compile-openssh-for-arm/14541123#14541123
 
 ```Bash
 cd /opt
-wget http://zlib.net/zlib-1.2.8.tar.gz
-tar xzvf zlib-1.2.8.tar.gz
-cd zlib-1.2.8
+wget http://zlib.net/zlib-1.2.5.tar.gz
+tar xzvf zlib-1.2.5.tar.gz
+cd zlib-1.2.5
 CC=arm-none-linux-gnueabi-gcc
 ./configure --prefix=/opt/zlib-arm
 make
@@ -44,9 +45,9 @@ make install
 
 ```Bash
 cd /opt
-wget http://www.openssl.org/source/openssl-1.0.1e.tar.gz
-tar xzvf openssl-1.0.1e.tar.gz
-cd openssl-1.0.1e
+wget http://www.openssl.org/source/openssl-1.0.0a.tar.gz
+tar xzvf openssl-1.0.0a.tar.gz
+cd openssl-1.0.0a
 export cross=arm-none-linux-gnueabi-
 ./Configure dist --prefix=/opt/openssl-arm
 make CC="${cross}gcc" AR="${cross}ar r" RANLIB="${cross}ranlib"
@@ -67,4 +68,9 @@ ln -s /opt/zlib-arm/include/zconf.h zconf.h
 ./configure --cc=arm-none-linux-gnueabi-gcc --host=armle-unknown-linux --target=armle-unknown-linux --build=i686-pc-linux --disable-avahi --release
 ```
 
-
+```Bash
+cd /opt/tvheadend
+cp build.linux/tvheadend .
+cd ..
+zip -r tvheadend.zip tvheadend
+```
