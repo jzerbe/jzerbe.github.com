@@ -64,7 +64,7 @@ every time I switched 802.11 wireless networks.
 ###environment setup###
 0. Dependencies: [JDK](https://github.com/jzerbe/java-tool-chain-quick) 
 1. Download and install the [Android SDK](http://developer.android.com/sdk/index.html).
-You really only need the _SDK Tools Only_ for this procedure. Be sure run the
+You really only need the _SDK Tools Only_ for this procedure. Be sure to run the
 SDK manager and install the platform tools. You can run this just fine on a
 headless system, as long as you have _X11 Forwarding_ set up.
 2. Add `NIX_SDK_INSTALL/platform-tools` or `WIN_SDK_INSTALL\platform-tools`
@@ -72,24 +72,26 @@ to the system __PATH__ or __Path__
 3. Vendor ID initialization
     - Windows: `C:\Users\[current user]\.android\adb_usb.ini` should contain only the string `0x0956`.
     - Linux: `/etc/udev/rules.d/70-android.rules` should contain
-    `SUBSYSTEM=="usb", ATTRS{idVendor}=="0956", MODE="0666"`.
-    Sourced from: [Guide to setting up ADB for Ubuntu/Linux](http://forum.xda-developers.com/showthread.php?t=1024129)
+        `SUBSYSTEM=="usb", ATTRS{idVendor}=="0956", MODE="0666"`.
+        Sourced from: [Guide to setting up ADB for Ubuntu/Linux](http://forum.xda-developers.com/showthread.php?t=1024129)
 4. 8655 MDP driver install
     - Windows: download/extract
-    [msm8655-mdp_usb_driver.zip](https://docs.google.com/file/d/0B0yT30uCaFvvNjItRTl2Z25mOUE/edit?usp=sharing)
-    and update drivers of unknown devices by pointing at the root of this extracted directory
+        [msm8655-mdp_usb_driver.zip](https://docs.google.com/file/d/0B0yT30uCaFvvNjItRTl2Z25mOUE/edit?usp=sharing)
+        and update drivers of unknown devices by pointing at the root of this extracted directory
     - Linux: N/A
 5. Make sure your device is connected; `adb devices` should return a device id.
-6. Get into the extracted `8655MDP_Gingerbread_Update.201107131` directory.
+
+###the actual work###
+Get into the extracted `8655MDP_Gingerbread_Update.201107131` directory.
 Make sure the output of `fastboot getvar product` matches
 `MSM7630_1x`, `MSM7630_1X`, or `MSM7630_SURF`.
 The `FlashGingerbread.bat` update script did not work for me so I manually
 entered the following `adb` and `fastboot` commands:
 
     adb reboot-bootloader
-    
+
     fastboot getvar product
-    
+
     fastboot erase boot
     fastboot erase system
     fastboot erase recovery
@@ -97,17 +99,17 @@ entered the following `adb` and `fastboot` commands:
     fastboot erase userdata
     fastboot flash FOTA GingerbreadBL.img
     fastboot reboot
-    
+
     fastboot flash FOTA radio.img
     fastboot reboot
-    
+
     fastboot flash boot boot.img
     fastboot flash system system.img
     fastboot flash recovery recovery.img
     fastboot flash persist persist.img
     fastboot flash userdata userdata.img
     fastboot reboot
-    
+
     adb shell "echo WCN1312 > /persist/wlan_chip_id"
 
 Things got a bit funky, prior to initializing the `wlan_chip_id`,
