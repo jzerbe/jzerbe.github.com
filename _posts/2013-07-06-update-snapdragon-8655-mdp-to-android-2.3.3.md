@@ -75,9 +75,9 @@ to the system __PATH__ or __Path__
         `SUBSYSTEM=="usb", ATTRS{idVendor}=="0956", MODE="0666"`.
         Sourced from: [Guide to setting up ADB for Ubuntu/Linux](http://forum.xda-developers.com/showthread.php?t=1024129)
 4. 8655 MDP driver install
+    - Linux: N/A
     - Windows: download+extract [msm8655-mdp_usb_driver.zip](https://docs.google.com/file/d/0B0yT30uCaFvvNjItRTl2Z25mOUE/edit?usp=sharing)
     and update drivers of unknown devices by pointing at the root of this extracted directory
-    - Linux: N/A
 5. Make sure your device is connected; `adb devices` should return a device id.
 
 ###the actual work###
