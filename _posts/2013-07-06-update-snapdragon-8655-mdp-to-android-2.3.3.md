@@ -10,6 +10,11 @@ status: publish
 type: post
 published: true
 ---
+__NOTE__: IDK what happened, but after running through this I am no longer able to get an
+[adb](http://developer.android.com/tools/help/adb.html) connection. Screw this!
+Bought a [SGH-T959](http://forum.xda-developers.com/wiki/Samsung_Galaxy_S/SGH-T959)
+and rolling CyanogenMod on the [Vibrant](http://wiki.cyanogenmod.org/w/Vibrantmtd_Info).
+
 I bought a
 [Snapdragon 8655 MDP](https://developer.qualcomm.com/mobile-development/development-devices-boards/mobile-development-devices/snapdragon-mdp-legacy-devices)
 second-hand back in October 2011. I finally got access to the
@@ -113,4 +118,4 @@ entered the following `adb` and `fastboot` commands:
 
 Things got a bit funky, prior to initializing the `wlan_chip_id`,
 when I was running this on Windows 7. Switched over to a Debian 7 box and was
-__unable__ to get an adb connection ...
+still __unable__ to get an adb connection ...
