@@ -118,4 +118,4 @@ entered the following `adb` and `fastboot` commands:
 
 Things got a bit funky, prior to initializing the `wlan_chip_id`,
 when I was running this on Windows 7. Switched over to a Debian 7 box and was
-still __unable__ to get an adb connection ...
+still __unable__ to get an adb connection ... so no 802.11 networks.
