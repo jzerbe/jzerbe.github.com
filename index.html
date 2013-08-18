@@ -8,11 +8,11 @@ title: Jason Zerbe's draftbook | Blog
         {% if paginator.previous_page %}
             {% if paginator.previous_page == 1 %}
                 <a class="previous" href="/" data-icon="arrow-l">Newer</a>
-                {% else %}
+            {% else %}
                 <a class="previous" href="/page{{paginator.previous_page}}" data-icon="arrow-l">Newer</a>
             {% endif %}
         {% else %}
-            
+            <a rel="external" href="/search.html" data-icon="search">Search</a>
         {% endif %}
 
         <h1>{{ page.title }}</h1>
