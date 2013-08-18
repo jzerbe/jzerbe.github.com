@@ -17,7 +17,7 @@ published: true
 - 12:43pm return to car
 - 12:45pm downpour starts
 
-Stopped ~15 minutes on Democrat and Lincoln. Some people thought the West
+Stopped on Democrat and Lincoln ~15 minutes each. Some people thought the West
 descent of Bross was supposed to be a Class 1; it is not.
 
 ###Links###
