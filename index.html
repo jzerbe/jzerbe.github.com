@@ -11,16 +11,20 @@ title: Jason Zerbe's draftbook | building digital products and services
     </div>
 
     <div data-role="content">
-        {% for post in site.posts %}
-            {% if post.tags contains 'trails' %}
-                {% comment %} liquid is missing negation {% endcomment %}
-            {% else %}
-                <div class="postlet">
-                    {{ post.date | date_to_string }}
-                    <a href="{{ post.url }}" title="{{ post.title }} permalink">{{ post.title }}</a>
-                </div>
-            {% endif %}
-        {% endfor %}
+        <ul data-role="listview" data-inset="true">
+            {% for post in site.posts %}
+                {% if post.tags contains 'trails' %}
+                    {% comment %} liquid is missing negation {% endcomment %}
+                {% else %}
+                    <li>
+                        <a href="{{ post.url }}" title="{{ post.title }} permalink">
+                            <h2>{{ post.title }}</h2>
+                            <p>{{ post.date | date_to_string }}</p>
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
     </div>
 
     {% include footer_tech.html %}
