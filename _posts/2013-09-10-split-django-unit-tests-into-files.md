@@ -14,7 +14,7 @@ published: true
 I like having unit tests grouped into separate files as any self-respecting
 unit test framework typically allows. Kind of a shock that django didn't get
 things right out of the box. The start of my research landed me on
-[split django app tests in several files](http://stackoverflow.com/questions/6163108/split-django-app-tests-in-several-files/6163375#6163375).
+[split django app tests in several files](http://stackoverflow.com/a/6163375).
 
 ###create/update files###
 - I
