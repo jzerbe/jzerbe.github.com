@@ -18,7 +18,7 @@ things right out of the box. The start of my research landed me on
 
 ###create/update files###
 - I
-[forgot to add](https://github.com/jzerbe/taskifier/commit/e60af1652fd3e762752f52370c273a5579d04f9f#L0R25)
+[forgot to add](https://github.com/jzerbe/taskifier/commit/e60af1652fd3e762752f52370c273a5579d04f9f)
 my application to django's __INSTALLED_APPS__ constants in `settings.py`;
 don't make that mistake.
 
