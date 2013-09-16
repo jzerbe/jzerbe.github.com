@@ -32,3 +32,8 @@ don't make that mistake.
 or
 [polls/tests/forms.py](https://github.com/toastdriven/guide-to-testing-in-django/blob/master/polls/tests/forms.py)
 respectively.
+
+###usage###
+In the taskifier example, I can call all the tests by `python manage.py test taskifier`, a specific
+test case `python manage.py test taskifier.WorkerHelperTestCase`, or even a specific test method
+`python manage.py test taskifier.WorkerHelperTestCase.test_email_simple_validate`.
