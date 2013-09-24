@@ -22,9 +22,11 @@ Partially inspired from
 [Building – dvbhdhomerun](http://sourceforge.net/apps/trac/dvbhdhomerun/wiki/Building).
 
 
+
 ###install dev dependencies###
 
     apt-get install cvs build-essential cmake
+
 
 
 ###install Tvheadend##
@@ -34,6 +36,7 @@ Paraphrasing the important parts from
 1. repo key: `curl http://apt.tvheadend.org/repo.gpg.key | apt-key add -`
 2. append `/etc/apt/sources.list` with `deb http://apt.tvheadend.org/stable wheezy main`
 3. `apt-get update; apt-get install tvheadend`
+
 
 
 ###install SiliconDust drivers###
@@ -54,6 +57,7 @@ OR the easier version (might be slightly out of date)
     apt-get install libhdhomerun-dev hdhomerun-config
 
 
+
 ###setup linux kernel source###
 According to [KernelFAQ](https://wiki.debian.org/KernelFAQ), Debian does
 not have the standard `/proc/config.gz`, instead a plaintext file can be found
@@ -68,14 +72,15 @@ at `/boot/config-$(uname -r)`.
     make prepare scripts
 
 
+
 ###install dvbhdhomerun###
 
     wget http://sourceforge.net/projects/dvbhdhomerun/files/dvbhdhomerun_0.0.15.tar.gz
     tar xzf dvbhdhomerun_0.0.15.tar.gz
     cd dvbhdhomerun-0.0.15/kernel
 
-Alter the `KERNEL_DIR` variable to point to where we setup the
-linux kernel: `/usr/src/linux-source-3.2`.
+Alter the `KERNEL_DIR` variable in the _Makefile_ to point to where
+we setup the linux kernel: `/usr/src/linux-source-3.2`.
 
     make
     make install
@@ -88,11 +93,12 @@ Edit the `/etc/modules` file and create a new line with
 just `dvb_hdhomerun` on it.
 
 
+
 ###install userhdhomerun###
 
     cd ../userhdhomerun/
 
-If you manually built _libhdhomerun_, alter the
+If you manually built _libhdhomerun_, alter the _Makefile_
 `LIBHDHOMERUN_PATH` variable to point to where you downloaded
 libhdhomerun. Mine is located in `../../libhdhomerun`.
 
