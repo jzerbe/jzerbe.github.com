@@ -104,3 +104,28 @@ libhdhomerun. Mine is located in `../../libhdhomerun`.
 
     make; make install
 
+A quickly cobbled together init script:
+
+    #! /bin/sh
+    ### BEGIN INIT INFO
+    # Provides:          userhdhomerun
+    # Required-Start:    $local_fs $remote_fs udev
+    # Required-Stop:     $local_fs $remote_fs
+    # Default-Start:     2 3 4 5
+    # Default-Stop:      0 1 6
+    ### END INIT INFO
+    case "$1" in
+      start)
+            userhdhomerun -f
+            ;;
+      stop)
+            killall userhdhomerun
+            ;;
+      *)
+            echo "Usage: /etc/init.d/userhdhomerun {start|stop}" >&2
+            exit 3
+            ;;
+    esac
+    :
+
+Doesn't seem to work quite right at start-up, needs some tweaking.
