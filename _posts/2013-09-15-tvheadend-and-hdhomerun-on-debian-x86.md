@@ -68,6 +68,11 @@ at `/boot/config-$(uname -r)`.
     tar xjvf linux-source-3.2.tar.bz2
     cd linux-source-3.2
     cp /boot/config-$(uname -r) .config
+    
+Update the `Makefile` to match the output of `uname -r`. For example,
+the output for me is `3.2.0-4-i386`, so I have `VERSION = 3`,
+`PATCHLEVEL = 2`, `SUBLEVEL = 0`, and `EXTRAVERSION = -4-i386`.
+
     make oldconfig
     make prepare scripts
 
