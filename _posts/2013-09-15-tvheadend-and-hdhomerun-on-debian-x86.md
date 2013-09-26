@@ -63,11 +63,12 @@ According to [KernelFAQ](https://wiki.debian.org/KernelFAQ), Debian does
 not have the standard `/proc/config.gz`, instead a plaintext file can be found
 at `/boot/config-$(uname -r)`.
 
-    apt-get install linux-source-3.2
+    apt-get install linux-headers-`uname -r` linux-source-3.2
     cd /usr/src
     tar xjvf linux-source-3.2.tar.bz2
     cd linux-source-3.2
     cp /boot/config-$(uname -r) .config
+    ln -s /usr/src/linux-headers-$(uname -r)/Module.symvers Module.symvers
     
 Update the `Makefile` to match the output of `uname -r`. For example,
 the output for me is `3.2.0-4-i386`, so I have `VERSION = 3`,
