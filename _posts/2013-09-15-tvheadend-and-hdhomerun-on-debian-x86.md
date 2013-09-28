@@ -21,6 +21,9 @@ Installing on a headless box with X11 forwarding. Doing everything as root.
 Partially inspired from
 [Building – dvbhdhomerun](http://sourceforge.net/apps/trac/dvbhdhomerun/wiki/Building).
 
+Do note that the [HDHR3-US](http://www.silicondust.com/products/models/hdhr3-us/)
+can only handle the bandwidth requirements for up to 1080i broadcasts.
+
 
 
 ###install dev dependencies###
