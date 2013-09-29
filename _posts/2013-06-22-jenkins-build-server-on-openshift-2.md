@@ -64,3 +64,8 @@ is able to start builds:
     1. Overall: Read
     2. Job: Read, Discover, Build
     3. View: Read
+
+###git polling###
+__20130929 EDIT:__ Seems as though the Bitbucket POST service doesn't want
+to play ball anymore with my hosted Jenkins instance. Updated the
+__Build Triggers__ section to _Poll SCM_ every three minutes: `*/3 * * * *`.
