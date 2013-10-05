@@ -51,12 +51,12 @@ cartridge.
 
 ###hot deploy###
 For the JBoss EWS instance to automatically pick up WAR changes and redeploy the context, we have to add in
-the [_hot_deploy_ marker file](https://www.openshift.com/kb/kb-e1057-how-can-i-deploy-my-application-without-having-to-restart-it).
+the [hot deploy marker file](https://www.openshift.com/kb/kb-e1057-how-can-i-deploy-my-application-without-having-to-restart-it).
 
 1. Git clone the application's git repo: `ssh://[DEPLOY_ENDPOINT]/~/git/[cart name].git`
 2. From [_6.2. Layout and Deployment Options_ in the _OpenShift Origin Cartridge Guide_](http://openshift.github.io/documentation/oo_cartridge_guide.html)
 one removes the source build files: `git rm -r src pom.xml`
-3. Add the hot_deploy marker file: `touch .openshift\markers\hot_deploy; git add .openshift\markers\hot_deploy`
+3. Add the hot deploy marker file: `touch .openshift/markers/hot_deploy; git add .openshift/markers/hot_deploy`
 3. Commit and push the changes back to the application
 4. SSH into the application and restart everything: `ctl_all restart`
 
