@@ -63,7 +63,7 @@ server restart.
 
 
 ###service linking###
-![Bitbucket Jenkins service](/post-assets/bitbucket_jenkins_service.png)
+![Bitbucket Jenkins service](https://drive.google.com/uc?export=download&id=0B0yT30uCaFvvUTdmRnY4VU5KbEE)
 
 You can emulate what Bitbucket will do with the following command:
 `wget --auth-no-challenge --post-data="" http://[user]:[API token]@[cart]-[ns].rhcloud.com/job/[project name]/build?token=[token]`
