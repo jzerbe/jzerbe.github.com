@@ -1,0 +1,35 @@
+---
+layout: post
+title: power button does nothing on bare CentOS 5.8 install
+tags:
+- ACPId
+- CentOS
+- power
+- button
+published: true
+---
+Bare CentOS 5.8 install over the weekend.<br />
+When I mean bare, I mean disabling all packages in the installer;
+just linux kernel, init scripts, bash, networking.
+I had no idea that this would mean no ACPId ... which meant nothing
+happened when I pushed the power button.<br />
+<br />
+<strong>the package fix</strong><br />
+<blockquote>
+    <code>
+        yum install acpid<br />
+    </code>
+</blockquote>
+<br />
+<strong>the config file</strong><br />
+<code>/etc/acpi/events/power.conf</code><br />
+<blockquote>
+    <code>
+        # ACPID config to power down machine if powerbutton is pressed, but only if<br />
+        # no gnome-power-manager is running<br />
+        <br />
+        event=button/power.*<br />
+        action=/sbin/poweroff<br />
+    </code>
+</blockquote>
+<br />

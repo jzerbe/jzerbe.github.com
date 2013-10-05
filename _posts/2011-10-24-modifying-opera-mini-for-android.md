@@ -1,0 +1,47 @@
+---
+layout: post
+title: modifying Opera Mini for Android
+tags:
+- Android
+- Opera
+published: true
+---
+<strong>NOTE</strong>: <a href="https://twitter.com/jasonzerbe/status/182675503294070784">
+no more free T-Mobile web service with keyword hole</a>.<br />
+<br />
+<strong>NOTE</strong>: For the moment I do <strong>NOT</strong> have free mobile web-access using this method.
+I am trying to get this to function on T-Mobile's network with Android 2.2.1 with a valid
+<a href="http://prepaid-phones.t-mobile.com/pay-as-you-go-plans">pay-as-you-go</a> SIM card in a similar way to my previous
+<a title="Opera Mini v4 patched for free web access" href="http://vraidsys.com/2011/01/opera-mini-v4-patched-for-free-web-access/">J2ME Opera Mini v4 patching walk through</a>.
+I am pretty sure it has something to do with the APN settings. Download the
+<a href="https://docs.google.com/file/d/0B0yT30uCaFvvYmNJT05qaGtHMkk/edit?pli=1">modded Opera Mini APK here</a>.<br />
+<br />
+Ingredients:
+<ul>
+    <li>recent <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java SE JDK</a></li>
+    <li><a href="http://code.google.com/p/android-apktool/downloads/list">android-apktool</a> - apktool*.tar.bz2, and apktool-install-[platform]-*.tar.bz2</li>
+</ul>
+I will be performing this process from a Windows XP x64 (Windows Server 2003 based) laptop. If you are following
+along from a Windows (XP+) computer, you can use my prepackaged
+<a href="https://docs.google.com/file/d/0B0yT30uCaFvvdVc4dUZKSlRUblU/edit?pli=1">apktool.zip</a> archive.<br />
+<br />
+Process:
+<ul>
+    <li>Put the <a href="http://www.opera.com/mobile/download/versions/">Opera Mini</a> .apk into your apktool
+        directory (contains apktool.jar and platform specific files).</li>
+    <li>Open up a terminal/command prompt and run: <code>apktool d Opera_Mini_6_5_Android.apk</code> (or whatever version of Opera Mini you are using)</li>
+    <li>After the command finishes successfully, you should have a new directory filled with all the
+        decompiled assets. Use your favorite IDE or awk/grep/sed (like a boss) to change all the relevant
+        hardcoded URLs in the source files: "mini5.opera-mini.net" to "tmobile.vraidsys.com" and
+        "mini5resource.opera-mini.net" to "tmobile-resrc5m.vraidsys.com". I also had to create a "tmobile-1.vraidsys.com" CNAME pointing
+        to "mini5.opera-mini.net". I tried a few different hostname lengths, and got it working with same sized hostnames
+        ... give it a try with different ones if you are feeling adventurous? As long as your CNAMEs point to the right stuff.</li>
+    <li>recompile everything by running: <code>apktool b Opera_Mini_6_5_Android</code> (substitute for your decompiled root directory)</li>
+    <li>Finally we will need to sign the apk for installation to an Android device. a) generate a release key
+        (keep it safe, this one will last for 30 years): <code>"C:\Program Files\Java\jdk1.6.0_25\bin\keytool.exe"
+            -genkey -v -keystore my-release-key.keystore -alias opera-mini -keyalg RSA -keysize 2048 -validity 10950</code> b)
+        sign the apk: <code>"C:\Program Files\Java\jdk1.6.0_25\bin\jarsigner.exe" -verbose -keystore my-release-key.keystore
+            Opera_Mini_6_5_Android\dist\Opera_Mini_6_5_Android.apk opera-mini</code></li>
+</ul>
+For more information on using the android-apktool suite, please see
+<em><a href="http://www.miui-au.com/add-ons/apktool/">Use APKTool to Decompile, Edit, Translate and Recompile an APK</a></em>.

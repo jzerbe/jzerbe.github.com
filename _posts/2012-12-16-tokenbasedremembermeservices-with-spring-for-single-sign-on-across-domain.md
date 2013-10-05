@@ -1,0 +1,37 @@
+---
+layout: post
+title: TokenBasedRememberMeServices with Spring for single sign on across domain
+tags:
+- Spring Security
+- SSO
+- Token
+published: true
+---
+<strong>motivation</strong><br />
+The business requirements I have been working with dictate that users should be
+able to work across various deployed webapp contexts in our ecosystem with
+a single password-based login after registering. The databases are a convoluted
+collection of write-optimized administration tables and read-only datamart
+tables. The (horizontally scaled) Tomcat 7 application servers sit upstream
+nginx 1.2.6 in a single <a href="http://aws.amazon.com/vpc/">VPC</a>.
+For now I chose to use the
+<a href="http://static.springsource.org/spring-security/site/docs/3.1.x/apidocs/org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices.html">TokenBasedRememberMeServices</a>
+instead of the suggested
+<a href="http://static.springsource.org/spring-security/site/docs/3.1.x/apidocs/org/springframework/security/web/authentication/rememberme/PersistentTokenBasedRememberMeServices.html">PersistentTokenBasedRememberMeServices</a>
+to make things more straightforward for a first-run through.
+<a href="http://static.springsource.org/spring-security/site/docs/3.1.x/reference/remember-me.html">Remember-Me Authentication</a>
+may not be the best way to go about intra-domain auto-authentication,
+but sharing a single cookie for
+<code>example.com</code> across <code>app1.example.com</code> and
+<code>secure.example.com/app2/</code> is much easier to set-up and
+maintain .... for now.<br />
+<br />
+
+<strong>the code</strong><br />
+I created a complete example project at
+<a href="https://github.com/jzerbe/spring-security-gwt-template">jzerbe / spring-security-gwt-template</a>.
+For this blog post, the important files to take a look at are the
+<a href="https://github.com/jzerbe/spring-security-gwt-template/blob/master/WEB-INF/spring-security.xml">spring-security.xml</a>
+and
+<a href="https://github.com/jzerbe/spring-security-gwt-template/blob/master/src/com/vraidsys/server/data/RememberMeProvider.java">RememberMeProvider.java</a>
+files.
