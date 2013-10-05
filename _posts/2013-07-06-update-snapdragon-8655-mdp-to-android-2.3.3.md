@@ -6,8 +6,6 @@ tags:
 - 8655 MDP
 - Android 2.3.3
 - firmware update
-status: publish
-type: post
 published: true
 ---
 __NOTE__: IDK what happened, but after running through this I am no longer able to get an

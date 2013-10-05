@@ -3,10 +3,7 @@ layout: post
 title: Jenkins build server on OpenShift (2)
 tags:
 - Jenkins
-- build
 - OpenShift
-status: publish
-type: post
 published: true
 ---
 I originally wrote on spinning up a Jenkins server for intra-OpenShift

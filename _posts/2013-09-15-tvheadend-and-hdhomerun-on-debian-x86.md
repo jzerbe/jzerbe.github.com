@@ -6,8 +6,6 @@ tags:
 - HDHomeRun
 - Debian
 - x86
-status: publish
-type: post
 published: true
 ---
 ###motivation###
@@ -19,7 +17,7 @@ box. Can't watch Monday night football without a DVR.
 
 Installing on a headless box with X11 forwarding. Doing everything as root.
 Partially inspired from
-[Building – dvbhdhomerun](http://sourceforge.net/apps/trac/dvbhdhomerun/wiki/Building).
+[Building - dvbhdhomerun](http://sourceforge.net/apps/trac/dvbhdhomerun/wiki/Building).
 
 Do note that the [HDHR3-US](http://www.silicondust.com/products/models/hdhr3-us/)
 can only handle the bandwidth requirements for up to 1080i broadcasts.

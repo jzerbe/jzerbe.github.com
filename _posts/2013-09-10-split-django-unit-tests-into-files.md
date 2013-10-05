@@ -1,13 +1,10 @@
 ---
 layout: post
-title: split django unit tests into files
+title: split Django unit tests into files
 tags:
 - python
-- django
-- tests
-- split
-status: publish
-type: post
+- Django
+- unit test
 published: true
 ---
 ###motivation###

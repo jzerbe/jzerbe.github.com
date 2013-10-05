@@ -6,8 +6,6 @@ tags:
 - Colorado
 - mountain
 - trails
-status: publish
-type: post
 published: true
 ---
 ###Timetable###
@@ -22,5 +20,5 @@ descent of Bross was supposed to be a Class 1; it is not.
 
 ###Links###
 - [14ers.com : Combo) Democrat, Cameron, Lincoln, Bross](http://www.14ers.com/routemain.php?route=bros6&peak=Mt.+Bross)
-- [Custom Map](https://www.google.com/maps/ms?msid=201743294288417288391.0004e43babe8b1b1a4795&msa=0&ll=39.330779,-106.121063&spn=0.01922,0.042272)
+- [Custom Map](http://maps.google.com/maps/ms?ie=UTF&msa=0&msid=201743294288417288391.0004e43babe8b1b1a4795)
 - [Photos](https://www.dropbox.com/sc/ck2euokgfsf6m7g/Y4dpsADO2K)

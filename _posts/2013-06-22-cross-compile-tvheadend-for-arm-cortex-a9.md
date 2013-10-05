@@ -5,8 +5,6 @@ tags:
 - cross-compile
 - Tvheadend
 - ARM
-status: publish
-type: post
 published: true
 ---
 This will be the first in a series of posts as I get

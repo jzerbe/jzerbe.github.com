@@ -7,8 +7,6 @@ tags:
 - Colorado
 - mountain
 - trails
-status: publish
-type: post
 published: true
 ---
 ###Timetable###
