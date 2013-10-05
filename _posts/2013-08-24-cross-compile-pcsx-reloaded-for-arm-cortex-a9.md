@@ -5,9 +5,7 @@ tags:
 - cross-compile
 - MESS
 - ARM
-status: publish
-type: post
-published: true
+published: false
 ---
 http://www.x.org/wiki/CrossCompilingXorg/
 --> zlib cross
