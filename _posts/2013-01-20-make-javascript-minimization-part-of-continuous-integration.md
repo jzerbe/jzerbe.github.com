@@ -8,22 +8,18 @@ tags:
 published: true
 ---
 Google has put their Closure JavaScript compiler up on App Engine at
-<a href="http://closure-compiler.appspot.com">closure-compiler.appspot.com</a>.
-<br /><br />
+<http://closure-compiler.appspot.com>.
+
 I think it links in real nice with a
-<a href="http://jenkins-ci.org/">Jenkins continuous integration</a> setup
-via a simple <b>Execute shell</b> block:
-<blockquote>
-    <code>
-        wget --post-data &quot;compilation_level=SIMPLE_OPTIMIZATIONS&output_format=text&output_info=compiled_code&code_url=https://bitbucket.org/ninja_metrics/kapi-javascript-lib/raw/`git rev-parse HEAD`/KApi.js&quot; --output-document &quot;KApi-min.js&quot; http://closure-compiler.appspot.com/compile
-    </code>
-</blockquote>
-Translation: output just the minimized JavaScript to &quot;KApi-min.js&quot; in
+[Jenkins continuous integration](http://jenkins-ci.org/) setup
+via a simple __Execute shell__ block:
+
+    wget --post-data "compilation_level=SIMPLE_OPTIMIZATIONS&output_format=text&output_info=compiled_code&code_url=https://bitbucket.org/ninja_metrics/kapi-javascript-lib/raw/`git rev-parse HEAD`/KApi.js" --output-document "KApi-min.js" http://closure-compiler.appspot.com/compile
+
+Translation: output just the minimized JavaScript to "KApi-min.js" in
 the current Jenkins workspace based on the latest version of the repository.
-The workspace currently contains code pulled from <code>origin/master</code>
-of <a href="https://bitbucket.org/ninja_metrics/kapi-javascript-lib">
-    https://bitbucket.org/ninja_metrics/kapi-javascript-lib</a>.<br />
-<br />
+The workspace currently contains code pulled from `origin/master`
+of [https://bitbucket.org/ninja_metrics/kapi-javascript-lib](https://bitbucket.org/ninja_metrics/kapi-javascript-lib).
+
 For more on tweaking for your particular setup, see the
-<a href="https://developers.google.com/closure/compiler/docs/api-ref">
-    <i>Closure Compiler Service API Reference</i></a>.
+[_Closure Compiler Service API Reference_](https://developers.google.com/closure/compiler/docs/api-ref).

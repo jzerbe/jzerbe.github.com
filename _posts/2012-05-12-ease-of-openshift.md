@@ -7,52 +7,50 @@ tags:
 - J2EE
 published: true
 ---
-I originally heard of <a href="https://openshift.redhat.com/app/">Red Hat&#39;s OpenShift</a>
-<abbr title="Platform as a Service">PaaS</abbr> from
-<a href="http://chriswongdevblog.blogspot.com/2011/12/reconsidering-cloud.html"><i>CHRIS WONG&#39;S DEVELOPMENT BLOG</i></a>.
-He did not go into great detail about OpenShift, and I first played around with <a href="http://jelastic.com/">Jelastic</a>
+I originally heard of [Red Hat's OpenShift](https://openshift.redhat.com/app/)
+Platform as a Service from
+[_CHRIS WONG'S DEVELOPMENT BLOG_](http://chriswongdevblog.blogspot.com/2011/12/reconsidering-cloud.html).
+He did not go into great detail about OpenShift, and I first played around with [Jelastic](http://jelastic.com/)
 back when they were in beta. Unfortunately I would have to pay ~$30/month for running my JSP/Servlets/JDBC
-web app on Jelastic&#39;s PaaS at close to minimum traffic levels. If you want to control all your scaling via
+web app on Jelastic's PaaS at close to minimum traffic levels. If you want to control all your scaling via
 a sexy in-browser UI then look no further to Jelastic. But if I was going to pay $30/month, why not pay
-$40/month and get my own <a href="http://www.fdcservers.net/server_colocation.php">colocated 1U</a>.<br />
-<br />
+$40/month and get my own [colocated 1U](http://www.fdcservers.net/server_colocation.php)?
+
 To set up the OpenShift PaaS for running a standard MySQL powered Java web app:
-<ol>
-    <li>Sign up for an account. Duh. The automated system should email you in a few minutes.</li>
-    <li>Log in and head over to the <a href="https://openshift.redhat.com/app/console/application_types"><i>Create a New Application</i></a> tab.</li>
-    <li>I opted to go for the <i>JBoss Application Server 7.1</i> app type, did not want to spend the time on the <i>Do-It-Yourself</i> option.</li>
-    <li>Name the app and hit <i>Create Application</i>.</li>
-    <li>Add the <i>mysql-5.1</i> cartridge. I also added the <i>phpmyadmin-3.4</i> cartridge cause I am a sucker for that sort of thang.</li>
-    <li>Emails should be sent to you for the mysql instance and phpmyadmin auth.</li>
-    <li>Clone your app&#39;s git repo so you can add your app code in. I chose to delete everything except
-        the <i>.openshift</i> and <i>deployments</i> directories because I would much prefer building
-        and sticking a ROOT.war in the <i>deployments</i> directory than having a second source tree to
+
+1. Sign up for an account. Duh. The automated system should email you in a few minutes.
+2. Log in and head over to the [_Create a New Application_](https://openshift.redhat.com/app/console/application_types) tab.
+3. I opted to go for the _JBoss Application Server 7.1_ app type, did not want to spend the time on the _Do-It-Yourself_ option.
+4. Name the app and hit _Create Application_.
+5. Add the _mysql-5.1_ cartridge. I also added the _phpmyadmin-3.4_ cartridge cause I am a sucker for that sort of thang.
+6. Emails should be sent to you for the mysql instance and phpmyadmin auth.
+7. Clone your app's git repo so you can add your app code in. I chose to delete everything except
+        the _.openshift_ and _deployments_ directories because I would much prefer building
+        and sticking a ROOT.war in the _deployments_ directory than having a second source tree to
         keep up to date. There are ways to automate this, but I only use OpenShift to host production code.
-    </li>
-    <li>Push your new J2EE app live by pushing to the remote end.</li>
-</ol>
-It is a work-flow that I think is reasonably slick at this point.<br />
-<br />
+8. Push your new J2EE app live by pushing to the remote end.
+It is a work-flow that I think is reasonably slick at this point.
+
 The only thing that I could not accomplish from the web panel or Git was adding an alias;
-so I could use somehost.cooldomain.ext.<br />
+so I could use somehost.cooldomain.ext.
+
 The official command is
-<code>rhc app add-alias -l [email@alias.com] -a [app name] --alias mycool.alias.com</code>.
-But on the <a href="http://docs.redhat.com/docs/en-US/OpenShift/2.0/html/Getting_Started_Guide/sect-Getting_Started_Guide-Installing_on_Mac_OS_X-Installing_Client_Tools.html">
-    Mac OS X machine I was using, I ran the setup
-</a> of the gems locally. So it looked more like <code>cd ~/.gem/ruby/1.8/bin;
-    ./rhc-app add-alias -l [email@alias.com] -a [app name] --alias mycool.alias.com</code>.
-Don&#39;t forget to update your domain&#39;s authoritative DNS servers.<br />
-<br />
-<br />
+`rhc app add-alias -l [email@alias.com] -a [app name] --alias mycool.alias.com`.
+But on the
+[Mac OS X machine I was using, I ran the setup](http://docs.redhat.com/docs/en-US/OpenShift/2.0/html/Getting_Started_Guide/sect-Getting_Started_Guide-Installing_on_Mac_OS_X-Installing_Client_Tools.html)
+of the gems locally. So it looked more like
+`cd ~/.gem/ruby/1.8/bin; ./rhc-app add-alias -l [email@alias.com] -a [app name] --alias mycool.alias.com`.
+Don't forget to update your domain's authoritative DNS servers.
+
 According to a Red Hat representative I emailed:
-<blockquote>I know it&#39;s hard to believe but we plan to keep today&#39;s 3 free gears under the
-    free tier when we introduce a paid plan later this year. Right now it&#39;s a wip and I&#39;ve
-    attached our current plan to this email
-    [<a href="https://docs.google.com/folder/d/0B0yT30uCaFvvcldSOVdGR3QxNzQ/edit?pli=1#docId=0B0yT30uCaFvvbjJMMFlCTUJzbmM">PDF link</a>],
-    appreciate your feedback.<br />
-    Regarding scaling & costs, we have a feature in our roadmap that will allow users to
-    set thresholds for their applications both on min/max gears in the application and cost.
-    That should help you to scale without blowing your budget.
-</blockquote>
-<br />
-<strong>TL;DR check out OpenShift for great JBoss hosting</strong> (among other things)
+> I know it's hard to believe but we plan to keep today's 3 free gears under the
+> free tier when we introduce a paid plan later this year. Right now it's a wip and I've
+> attached our current plan to this email
+> [[PDF link](https://drive.google.com/uc?export=download&id=0B0yT30uCaFvvbjJMMFlCTUJzbmM)],
+> appreciate your feedback.
+> 
+> Regarding scaling & costs, we have a feature in our roadmap that will allow users to
+> set thresholds for their applications both on min/max gears in the application and cost.
+> That should help you to scale without blowing your budget.
+
+__TL;DR check out OpenShift for great JBoss hosting__ (among other things)

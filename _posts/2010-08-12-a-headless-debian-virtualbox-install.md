@@ -9,33 +9,35 @@ published: true
 After extreme disappointment with VMware Server 2, I thought I might try setting up a headless VirtualBox install
 with a hopefully faster web interface. I need to be able to run Windows Server 2008 instances on occasion to
 troubleshoot and test my scripts on IIS7. I also am looking for a more regularly updated virtualization software
-to take over my aging VMware server 1.10 installs.<br />
-<br />
+to take over my aging VMware server 1.10 installs.
+
 Much of the following is based off of
-"<a href="http://www.howtoforge.com/vboxheadless-running-virtual-machines-with-virtualbox-3.1.x-on-a-headless-debian-lenny-server">VBoxHeadless - Running Virtual Machines With VirtualBox 3.1.x On A Headless Debian Lenny Server</a>",
-"<a href="http://www.backports.org/dokuwiki/doku.php?id=instructions">instructions [Debian Backports]</a>",
-and the <a href="http://www.virtualbox.org/wiki/Linux_Downloads">VirtualBox.org website's information about Debian VBox setups</a>.
+[VBoxHeadless - Running Virtual Machines With VirtualBox 3.1.x On A Headless Debian Lenny Server](http://www.howtoforge.com/vboxheadless-running-virtual-machines-with-virtualbox-3.1.x-on-a-headless-debian-lenny-server),
+[instructions Debian Backports](http://www.backports.org/dokuwiki/doku.php?id=instructions),
+and the [VirtualBox.org website's information about Debian VBox setups](http://www.virtualbox.org/wiki/Linux_Downloads).
 FYI: this install was done on a fresh Lenny netinstall (logged in as root ... duh!), and the apt-get install command grabed
 about 200MB worth of compressed packages that unarchive into about 500MB worth of disk space used.
-<blockquote><code>wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | apt-key add -<br />
-        wget -q http://backports.org/debian/archive.key -O- | apt-key add -<br />
-        echo -e "ndeb http://download.virtualbox.org/virtualbox/debian lenny non-freendeb http://www.backports.org/debian lenny-backports main contrib non-free" &gt;&gt; /etc/apt/sources.list<br />
-        apt-get update<br />
-        apt-get install virtualbox-3.2 dkms<br />
-        groupadd vboxers<br />
-        useradd -d /home/vboxers -m -g vboxers -s /bin/bash vboxers<br />
-        passwd vboxers<br />
-        adduser vboxers vboxusers<br />
-        apt-get install libapache2-mod-php5<br />
-        a2dissite default<br />
-        mkdir -p /srv/vbox<br />
-        chmod -R 777 /srv<br />
-        echo -e "&lt;VirtualHost *:80&gt;nDocumentRoot /srv/vboxn&lt;/VirtualHost&gt;" &gt; /etc/apache2/sites-enabled/vbox<br />
-        /etc/init.d/apache2 restart<br />
-        apt-get install screen</code></blockquote>
-Open up the local start up file "<code>vi /etc/rc.local</code>" and insert
-"<code>su vboxers -c "screen -dmS vboxwebsrv vboxwebsrv"</code>" before the "exit 0".
-Download the phpvirtualbox code [<a href="http://phpvirtualbox.googlecode.com/files/phpvirtualbox-0.5.zip">http://phpvirtualbox.googlecode.com/files/phpvirtualbox-0.5.zip</a>],
+
+    wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | apt-key add -
+    wget -q http://backports.org/debian/archive.key -O- | apt-key add -
+    echo -e "ndeb http://download.virtualbox.org/virtualbox/debian lenny non-freendeb http://www.backports.org/debian lenny-backports main contrib non-free" &gt;&gt; /etc/apt/sources.list
+    apt-get update
+    apt-get install virtualbox-3.2 dkms
+    groupadd vboxers
+    useradd -d /home/vboxers -m -g vboxers -s /bin/bash vboxers
+    passwd vboxers
+    adduser vboxers vboxusers
+    apt-get install libapache2-mod-php5
+    a2dissite default
+    mkdir -p /srv/vbox
+    chmod -R 777 /srv
+    echo -e "<VirtualHost *:80>nDocumentRoot /srv/vboxn</VirtualHost>" > /etc/apache2/sites-enabled/vbox
+    /etc/init.d/apache2 restart
+    apt-get install screen
+
+Open up the local start up file `/etc/rc.local` and insert
+`su vboxers -c "screen -dmS vboxwebsrv vboxwebsrv` before the `exit 0`.
+Download the phpvirtualbox code <http://phpvirtualbox.googlecode.com/files/phpvirtualbox-0.5.zip>,
 unzip and modify the config.php file to match the vboxers user we set up earlier. Finally upload the contents
 of the archive to the vbox directory over SFTP or something. Reboot the machine (for good measure),
 and you should be able to go to http://host/ to access the web interface. Beware this a completely unprotected setup!

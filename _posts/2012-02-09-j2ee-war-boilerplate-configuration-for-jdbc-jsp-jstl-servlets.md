@@ -9,57 +9,54 @@ tags:
 published: true
 ---
 I found out the long way that building a properly working
-<a href="http://en.wikipedia.org/wiki/WAR_file_format_(Sun)">.war</a>
+[.war](http://en.wikipedia.org/wiki/WAR_file_format_(Sun))
 is all about the correct archive structure. For this particular situation I
-was deploying to a <a href="http://en.wikipedia.org/wiki/Apache_Tomcat">Tomcat</a>
+was deploying to a [Tomcat](http://en.wikipedia.org/wiki/Apache_Tomcat)
 6 instance. This walk-through assumes you already have
-a working web server/Servlet container with some way to deploy your .war.<br />
-<br />
+a working web server/Servlet container with some way to deploy your .war.
+
 To create a project that will deploy with support for
-<abbr title="JavaServer Pages">
-    <a href="http://en.wikipedia.org/wiki/JavaServer_Pages">JSP</a>
-</abbr>,
-<abbr title="JavaServer Pages Standard Tag Library">
-    <a href="http://en.wikipedia.org/wiki/JavaServer_Pages_Standard_Tag_Library">JSTL</a>
-</abbr>,
-<a href="http://en.wikipedia.org/wiki/Java_Servlet">Servlets</a>, and
-<a href="http://en.wikipedia.org/wiki/MySQL">MySQL</a> (via their custom
-<a href="http://dev.mysql.com/downloads/connector/j/">JDBC driver</a>),
-you will need something like the following structure in place:<br />
-<br />
-<code>- j2ee_war/<br />
-    | -&gt; build.xml<br />
-    | -&gt; META-INF/<br />
-    | | -&gt; context.xml<br />
-    | -&gt; src/<br />
-    | | -&gt; config/<br />
-    | | | -&gt; DbConn.java<br />
-    | | -&gt; database/<br />
-    | | | -&gt; UserManager.java<br />
-    | | -&gt; servlets/<br />
-    | | | -&gt; MyInfo.java<br />
-    | -&gt; war-no-include/<br />
-    | | -&gt; jsp-api.jar<br />
-    | | -&gt; servlet-api.jar<br />
-    | -&gt; web/<br />
-    | | -&gt; favicon.ico<br />
-    | | -&gt; index.html<br />
-    | | -&gt; login.jsp<br />
-    | -&gt; WEB-INF/<br />
-    | | -&gt; web.xml<br />
-    | | -&gt; lib/<br />
-    | | | -&gt; jstl-1.2.jar<br />
-    | | | -&gt; mysql-connector-java-5.1.18-bin.jar<br />
-</code><br />
-[<a href="https://docs.google.com/file/d/0B0yT30uCaFvvWnlHNEFFa3BTNHM/edit?pli=1">j2ee_war.zip</a>]<br />
-<br />
-<strong>NOTE</strong>:<br />
-1) The libraries in the &quot;war-no-include&quot; directory need to be in the build
+[JavaServer Pages](http://en.wikipedia.org/wiki/JavaServer_Pages),
+[JavaServer Pages Standard Tag Library](http://en.wikipedia.org/wiki/JavaServer_Pages_Standard_Tag_Library),
+[Servlets](http://en.wikipedia.org/wiki/Java_Servlet), and
+[MySQL](http://en.wikipedia.org/wiki/MySQL) (via their custom
+[JDBC driver](http://dev.mysql.com/downloads/connector/j/)),
+you will need something like the following structure in place:
+
+    j2ee_war/
+        | -> build.xml
+        | -> META-INF/
+        | | -> context.xml
+        | -> src/
+        | | -> config/
+        | | | -> DbConn.java
+        | | -> database/
+        | | | -> UserManager.java
+        | | -> servlets/
+        | | | -> MyInfo.java
+        | -> war-no-include/
+        | | -> jsp-api.jar
+        | | -> servlet-api.jar
+        | -> web/
+        | | -> favicon.ico
+        | | -> index.html
+        | | -> login.jsp
+        | -> WEB-INF/
+        | | -> web.xml
+        | | -> lib/
+        | | | -> jstl-1.2.jar
+        | | | -> mysql-connector-java-5.1.18-bin.jar
+
+[j2ee_war.zip](https://drive.google.com/uc?export=download&id=0B0yT30uCaFvvWnlHNEFFa3BTNHM)
+
+__NOTE__:
+
+1. The libraries in the _war-no-include_ directory need to be in the build
 class path when compiling beans and servlets, but should not be in the deployed war
 as the servlet container provides its own version of these libraries. This is
-taken care of in the included <a href="http://en.wikipedia.org/wiki/Apache_Ant">ant</a>
-build.xml file.<br />
-2) The &quot;jstl-1.2.jar&quot; library (for JSTL support) contains both the API
-and implementation. See <a href="http://stackoverflow.com/a/8045562">BalusC's
-    response to javax.servlet.ServletException: java.lang.NoClassDefFoundError:
-    javax/servlet/jsp/jstl/core/ConditionalTagSupport</a>.
+taken care of in the included [ant](http://en.wikipedia.org/wiki/Apache_Ant)
+`build.xml` file.
+
+2. The _jstl-1.2.jar_ library (for JSTL support) contains both the API
+and implementation. See
+[BalusC's response to javax.servlet.ServletException: java.lang.NoClassDefFoundError: javax/servlet/jsp/jstl/core/ConditionalTagSupport](http://stackoverflow.com/a/8045562).

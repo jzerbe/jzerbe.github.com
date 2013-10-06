@@ -9,62 +9,61 @@ tags:
 - Django
 published: true
 ---
-<strong>FormData</strong><br />
+###FormData
+
 As of Chrome 7, Firefox 4, IE 10, Opera 12, and Safari 5 - it is quite possible
 to programmatically upload file data.
-<sup><a href="https://developer.mozilla.org/en-US/docs/DOM/XMLHttpRequest/FormData#Browser_compatibility">[1]</a></sup>
+<https://developer.mozilla.org/en-US/docs/DOM/XMLHttpRequest/FormData#Browser_compatibility>
 
-From <a href="https://github.com/jzerbe/storagebin_js/blob/master/SBObj.js">SBObj.js</a>:
-<blockquote>
-    <code>
-this.PUT = function(theData, theDataContentType) {<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;theDataContentType = this.getDefault(theDataContentType, &quot;text/plain&quot;);<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;var aBlob = new Blob([ theData ], {<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: theDataContentType<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;});<br/>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;var aFormData = new FormData();<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;aFormData.append(&quot;file&quot;, aBlob);<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;var aDataObj = {<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;type&quot;: false,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;content&quot;: aFormData<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;};<br/>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;private_SendDataObj(private_METHOD_POST, aDataObj);<br/>
-};<br />
-    </code><br />
-    Where <code>private_SendDataObj</code> is essentially a wrapper for
-    <code>xhr.send(aDataObj.content);</code>. Be sure that there are <b>NO</b>
-    <code>setRequestHeader</code> method calls on the <code>xhr</code> object;
-    even though the
-    <a href="https://docs.djangoproject.com/en/dev/topics/http/file-uploads/"><i>django: File Uploads</i></a>
-    documentation tells you otherwise.
-</blockquote>
+From [SBObj.js](https://github.com/jzerbe/storagebin_js/blob/master/SBObj.js):
 
-<strong>django&#39;s request.FILES</strong><br />
+    this.PUT = function(theData, theDataContentType) {
+        theDataContentType = this.getDefault(theDataContentType, "text/plain");
+        
+        var aBlob = new Blob([ theData ], {
+            type: theDataContentType
+        });
+        
+        var aFormData = new FormData();
+        aFormData.append("file", aBlob);
+        
+        var aDataObj = {
+            "type": false,
+            "content": aFormData
+        };
+        
+        private_SendDataObj(private_METHOD_POST, aDataObj);
+    };
+
+Where `private_SendDataObj` is essentially a wrapper for `xhr.send(aDataObj.content);`. Be sure that there are __NO__
+`setRequestHeader` method calls on the `xhr` object; even though the
+[_Django: File Uploads_](https://docs.djangoproject.com/en/dev/topics/http/file-uploads/)
+documentation tells you otherwise.
+
+
+###Django's request.FILES
+
 On the server-side, well ...
-<a href="https://developers.google.com/appengine/docs/python/overview">Google App Engine</a> with
-<a href="http://django-nonrel.org/">django-nonrel</a> to be specific,
-we can pull in the file data.
+[Google App Engine](https://developers.google.com/appengine/docs/python/overview) with
+[django-nonrel](http://django-nonrel.org/) to be specific, we can pull in the file data.
+
 From
-<a href="https://github.com/jzerbe/storagebin/blob/master/storagebin/__init__.py">storagebin/__init__.py</a>
+[storagebin/__init__.py](https://github.com/jzerbe/storagebin/blob/master/storagebin/__init__.py)
 and
-<a href="https://github.com/jzerbe/storagebin/blob/master/storagebin/internal/blobstore.py">storagebin/internal/blobstore.py</a>:
-<blockquote>
-    <code>
-elif request.method == 'POST':<br />
-&nbsp;&nbsp;&nbsp;&nbsp;if request.FILES and len(request.FILES) == 1:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uploaded_file = request.FILES['file']<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# write new data<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;file_name = files.blobstore.create(uploaded_file.content_type)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with files.open(file_name, 'a') as f:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f.write(uploaded_file.read())<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;files.finalize(file_name)<br />
-    </code>
-</blockquote>
-refs: <a href="https://docs.djangoproject.com/en/dev/ref/request-response/#django.http.HttpRequest.FILES">HttpRequest.FILES</a>,
-<a href="https://docs.djangoproject.com/en/dev/ref/request-response/#django.http.UploadedFile"><i>class</i> UploadedFile</a>,
-<a href="https://developers.google.com/appengine/docs/python/blobstore/overview#Writing_Files_to_the_Blobstore">files.blobstore.create</a><br />
+[storagebin/internal/blobstore.py](https://github.com/jzerbe/storagebin/blob/master/storagebin/internal/blobstore.py):
+
+    elif request.method == 'POST':
+        if request.FILES and len(request.FILES) == 1:
+            uploaded_file = request.FILES['file']
+            
+            ...
+            
+            # write new data
+            file_name = files.blobstore.create(uploaded_file.content_type)
+            with files.open(file_name, 'a') as f:
+                f.write(uploaded_file.read())
+            files.finalize(file_name)
+
+refs: <https://docs.djangoproject.com/en/dev/ref/request-response/#django.http.HttpRequest.FILES>,
+<https://docs.djangoproject.com/en/dev/ref/request-response/#django.http.UploadedFile>,
+<https://developers.google.com/appengine/docs/python/blobstore/overview#Writing_Files_to_the_Blobstore>

@@ -8,15 +8,12 @@ status: publish
 type: post
 published: true
 ---
-I tested this process on <a href="http://www.adium.im/" target="_blank">Adium</a> 1.4.2 on my Mac Pro workstation running OSX 10.6 (at work).
-<ol>
-    <li>Have open the Google Group Chat (tab) you want to auto join in the future</li>
-    <li>In the menu bar: <strong>Contact -&gt; Add Group Chat Bookmark</strong></li>
-    <li>Open up Adium's contact list, right-click/control-click the new Group Chat "Contact", and click <strong>Get Info</strong> in the new menu</li>
-    <li>In the new Get Info window that is brought up, click the <strong>Advanced</strong> tab
-        (its the last tab with a chalkboard icon), and select the check box: <strong>Automatically join on connect</strong><br />
-        <br />
-        <img class="alignnone" title="auto join a google group chat from bookmark"
-             src="https://drive.google.com/uc?export=download&id=0B0yT30uCaFvvcFFITjhOcWRrLVU"
-             alt="" width="294" height="448" /></li>
-</ol>
+I tested this process on [Adium](http://www.adium.im/) 1.4.2 on my Mac Pro workstation running OSX 10.6 (at work).
+
+1. Have open the Google Group Chat (tab) you want to auto join in the future
+2. In the menu bar: __Contact -> Add Group Chat Bookmark__
+3. Open up Adium's contact list, right-click/control-click the new Group Chat "Contact", and click __Get Info__ in the new menu
+4. In the new Get Info window that is brought up, click the __Advanced__ tab
+(its the last tab with a chalkboard icon), and select the check box: __Automatically join on connect__
+
+![auto join a google group chat from bookmark](https://drive.google.com/uc?export=download&id=0B0yT30uCaFvvcFFITjhOcWRrLVU)

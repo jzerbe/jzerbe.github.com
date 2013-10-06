@@ -18,7 +18,7 @@ This assumes you already have an
 an application server cartridge, a
 [Jenkins cartridge](https://openshift.redhat.com/app/console/application_types?search=jenkins),
 and a new _diy_ project created in Jenkins. I would advise against using
-OpenShift&#39;s Jenkins-app-server-integration, and just spin them up separately.
+OpenShift's Jenkins-app-server-integration, and just spin them up separately.
 At time of writing the OpenShift maintained Jenkins cartridge still reads
 _Jenkins Server 1.4_, but it is actually _1.509.1_.
 
@@ -28,7 +28,7 @@ Create an SSH key on the fresh Jenkins cartridge in `~/app-root/data/.ssh/id_rsa
 with `ssh-keygen -C jenkins@openshift`, and add it to the
 [Account Settings](https://openshift.redhat.com/app/console/settings). This will
 ensure that authentications with the key are accepted on any of your
-account&#39;s cartridges.
+account's cartridges.
 
 
 ###deployment to other cartridge from Jenkins###
@@ -72,7 +72,7 @@ You can emulate what Bitbucket will do with the following command:
 you have in the _Endpoint_ field.
 
 
-Be sure to configure Jenkins&#39; __Global Security__ properly so that `[user]`
+Be sure to configure Jenkins' __Global Security__ properly so that `[user]`
 is able to start builds:
 
 1. Security Realm: Jenkins's own user database

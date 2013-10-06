@@ -7,104 +7,91 @@ tags:
 - Java
 published: true
 ---
-<strong>NOTICE</strong><br />
-I had to use
-<a href="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/">Jackson 2.2</a>
-to get this working.
-<a href="http://repository.codehaus.org/org/codehaus/jackson/">Jackson 1.9</a>
-did not cut it.<br />
-<br />
+__NOTICE__: I had to use [Jackson 2.2](http://repo1.maven.org/maven2/com/fasterxml/jackson/core/) to get this working.
+[Jackson 1.9](http://repository.codehaus.org/org/codehaus/jackson/) did not cut it.
 
-<strong>API needs</strong><br />
-The <code>VenueObj</code> has a single <code>LocationObj</code> field,
-called <code>location</code>.
-The <code>LocationObj</code> field needs to be set when deserializing a full
-<code>VenueObj</code> JSON POST payload, and the <code>location</code> field
-needs to be serialized when the <code>VenueObj</code> is serialized.<br />
-<br />
 
-<strong>VenueController.java POST mapping - Controller</strong><br />
-<blockquote>
-<code>
-@RequestMapping(value = RequestMappingConstants.kApiVenues, method = RequestMethod.POST)<br />
-protected @ResponseBody long putVenue(@RequestBody final VenueObj theVenueObj,
-final Principal thePrincipal, final HttpServletResponse response);
-</code>
-</blockquote>
+###API needs
+
+The `VenueObj` has a single `LocationObj` field, called `location`.
+The `LocationObj` field needs to be set when deserializing a full `VenueObj` JSON POST payload, and the `location` field
+needs to be serialized when the `VenueObj` is serialized.
+
+
+###VenueController.java POST mapping - Controller
+
+    @RequestMapping(value = RequestMappingConstants.kApiVenues, method = RequestMethod.POST)
+    protected @ResponseBody long putVenue(@RequestBody final VenueObj theVenueObj, final Principal thePrincipal, final HttpServletResponse response);
+
 Note the annotation driven mapping. May need to wire up your
-<code><a href="https://github.com/jzerbe/spring-security-gwt-template/blob/master/WEB-INF/spring-dispatcher-servlet.xml">spring-dispatcher-servlet.xml</a></code>.
-<br />
-<br />
+`[spring-dispatcher-servlet.xml](https://github.com/jzerbe/spring-security-gwt-template/blob/master/WEB-INF/spring-dispatcher-servlet.xml)`.
 
-<strong>VenueObj.java constructor - JSON de/serialization and ORM</strong><br />
-<blockquote>
-<code>
-@JsonCreator<br />
-public VenueObj(@JsonProperty(VenueObj.NAME) final String theName,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@JsonProperty(VenueObj.LOCATION) final LocationObj theLocation,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@JsonProperty(VenueObj.PHONE) final String thePhone,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@JsonProperty(VenueObj.WEB) final String theWeb) {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;this.name = theName;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;this.location = theLocation;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;this.phone = thePhone;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;this.web = theWeb;<br />
-}
-</code>
-</blockquote>
-All other <code>public</code> constructors should be annotated with
-<code>@JsonIgnore</code> to prevent the Jackson process from attempting to
-deserialize with the incorrect one and spitting up.<br />
-<br />
 
-<strong>LocationObj.java getters/setters - JSON de/serialization and ORM</strong><br />
-<blockquote>
-<code>
-@JsonProperty(LocationObj.LAT)<br />
-public float getLat() {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;return this.lat;<br />
-}<br />
-<br />
-@JsonProperty(LocationObj.LON)<br />
-public float getLon() {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;return this.lon;<br />
-}<br />
-<br />
-...<br />
-<br />
-@JsonProperty(LocationObj.LAT)<br />
-public void setLat(final float theLat) {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;this.lat = theLat;<br />
-}<br />
-<br />
-@JsonProperty(LocationObj.LON)<br />
-public void setLon(final float theLon) {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;this.lon = theLon;<br />
-}
-</code>
-</blockquote>
-The <code>LocationObj</code> class is a constructor-less cacophony of getters
-and setters, with a few <code>private</code> data manipulation methods.<br />
-<br />
+###VenueObj.java constructor - JSON de/serialization and ORM
 
-<strong>Conclusion</strong><br />
+    @JsonCreator
+    public VenueObj(@JsonProperty(VenueObj.NAME) final String theName,
+                    @JsonProperty(VenueObj.LOCATION) final LocationObj theLocation,
+                    @JsonProperty(VenueObj.PHONE) final String thePhone,
+                    @JsonProperty(VenueObj.WEB) final String theWeb) {
+        
+        this.name = theName;
+        this.location = theLocation;
+        this.phone = thePhone;
+        this.web = theWeb;
+        
+    }
+
+All other `public` constructors should be annotated with
+`@JsonIgnore` to prevent the Jackson process from attempting to
+deserialize with the incorrect one and spitting up.
+
+
+###LocationObj.java getters/setters - JSON de/serialization and ORM
+
+    @JsonProperty(LocationObj.LAT)
+    public float getLat() {
+        return this.lat;
+    }
+    
+    @JsonProperty(LocationObj.LON)
+    public float getLon() {
+        return this.lon;
+    }
+    
+    ...
+    
+    @JsonProperty(LocationObj.LAT)
+    public void setLat(final float theLat) {
+        this.lat = theLat;
+    }
+    
+    @JsonProperty(LocationObj.LON)
+    public void setLon(final float theLon) {
+        this.lon = theLon;
+    }
+
+The `LocationObj` class is a constructor-less cacophony of getters
+and setters, with a few `private` data manipulation methods.
+
+
+###Conclusion
+
 And now the service should be able to make sense of incoming JSON like:
-<blockquote>
-<code>
-{<br />
-&nbsp;&nbsp;&nbsp;&nbsp;"name":"Eldora Mountain Resort",<br />
-&nbsp;&nbsp;&nbsp;&nbsp;"location":{<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"lat":39.937678<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"lon":-105.580888<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-&nbsp;&nbsp;&nbsp;&nbsp;},<br />
-&nbsp;&nbsp;&nbsp;&nbsp;"phone":"(303) 440-8700",<br />
-&nbsp;&nbsp;&nbsp;&nbsp;"web":"http://www.eldora.com/"<br />
-}
-</code>
-</blockquote>
 
-<strong>Further Reading</strong><br />
-<ul>
-    <li><a href="http://www.cowtowncoder.com/blog/archives/2011/07/entry_457.html">Jackson Annotations: @JsonCreator demystified</a></li>
-</ul>
+    {
+        "name":"Eldora Mountain Resort",
+        "location":{
+            ...
+            "lat":39.937678,
+            "lon":-105.580888,
+            ...
+        },
+        "phone":"(303) 440-8700",
+        "web":"http://www.eldora.com/"
+    }
+
+
+###Further Reading
+
+- [Jackson Annotations: @JsonCreator demystified](http://www.cowtowncoder.com/blog/archives/2011/07/entry_457.html)

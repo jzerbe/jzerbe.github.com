@@ -10,98 +10,104 @@ published: true
 ---
 No matter what anybody tells you, it is possible to embed vanilla Jetty6 with
 Servlet support in an Android application and serve all the content from
-within the APK. It just requires a static content proxy Servlet.<br />
-<br />
-First off, be sure to add <code>jetty-6.1.26.jar</code>, <code>jetty-util-6.1.26.jar</code>,
-and <code>servlet-api-2.5-20081211.jar</code> into your Android <code>libs</code> directory
-and classpath so they make their way into the APK&#39;s classpath when built.
-You can get them in <a href="http://dist.codehaus.org/jetty/jetty-6.1.26/jetty-6.1.26.zip">jetty-6.1.26.zip</a>.<br />
-<br />
-I am rocking a singleton instance to control my embedded Jetty6 server:<br />
-<code>public class JettyWebServer {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;private static JettyWebServer jws_SingleInstance = null;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;protected Server jws_serverInstance = null;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;protected static int jws_serverPortInt = 2320;<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;protected JettyWebServer(int theServerPortInt) {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jws_serverInstance = new Server(theServerPortInt);<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jws_serverPortInt = theServerPortInt;<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ServletHandler aServletHandler = new ServletHandler();<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aServletHandler.addServletWithMapping(new ServletHolder(new CoolServlet1()), "/servlets/cool1");<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aServletHandler.addServletWithMapping(new ServletHolder(new CoolServlet2()), "/servlets/cool2");<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aServletHandler.addServletWithMapping(new ServletHolder(new StaticProxy()), "/*");<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jws_serverInstance.addHandler(aServletHandler);<br />
-&nbsp;&nbsp;&nbsp;&nbsp;}<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;public static JettyWebServer getInstance() {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (jws_SingleInstance == null) {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jws_SingleInstance = new JettyWebServer(jws_serverPortInt);<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return jws_SingleInstance;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;}<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-<br />
-}
-</code><br />
-<br />
-What is this <code>StaticProxy</code> you might ask? Well it takes any requests not handled by the &quot;Cool Servlets&quot;
-and tries to find matching resources in the <code>assets</code> directory of the APK.<br />
-<code>public class StaticProxy extends HttpServlet {<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;private static final long serialVersionUID = 1L;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;protected static HashMap&lt;String, String&gt; myExtensionMap;<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;@Override<br />
-&nbsp;&nbsp;&nbsp;&nbsp;public void init(ServletConfig config) throws ServletException {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super.init(config);<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myExtensionMap = new HashMap&lt;String, String&gt;();<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myExtensionMap.put("css", "text/css");<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myExtensionMap.put("html", "text/html");<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myExtensionMap.put("ico", "image/vnd.microsoft.icon");<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myExtensionMap.put("png", "image/png");<br />
-&nbsp;&nbsp;&nbsp;&nbsp;}<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;@Override<br />
-&nbsp;&nbsp;&nbsp;&nbsp;protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String aRequestedUri = req.getRequestURI();<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ((aRequestedUri == null) || (aRequestedUri.equals(""))) {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resp.sendError(400, "Missing resource string");<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (aRequestedUri.equals("/")) {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aRequestedUri = aRequestedUri + "index.html";<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String[] aRequestedUriArray = aRequestedUri.split("/");<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String aRequestedFileName = aRequestedUriArray[(aRequestedUriArray.length - 1)];<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String[] aRequestedFileNameArray = aRequestedFileName.split("\\.");<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String aRequestedFileExtension = aRequestedFileNameArray[(aRequestedFileNameArray.length - 1)];<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String aRequestAssetsPath = "webapp" + aRequestedUri;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InputStream aResourceInputStream = MainActivity.getAssets().open(aRequestAssetsPath);<sup>[<a name="getAssets" href="#ftn.getAssets">1</a>]</sup><br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resp.setContentType(myExtensionMap.get(aRequestedFileExtension));<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byte[] aBuffer = new byte[4096];<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int aBytesReadCount = 0;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while ((aBytesReadCount = aResourceInputStream.read(aBuffer)) != -1) {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resp.getOutputStream().write(aBuffer, 0, aBytesReadCount);<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aResourceInputStream.close();<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resp.getOutputStream().flush();<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resp.getOutputStream().close();<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
-&nbsp;&nbsp;&nbsp;&nbsp;}<br />
-<br />
-}
-</code><br />
-<br />
-<sup>[<a name="ftn.getAssets" href="#getAssets">1</a>]</sup> The <code>MainActivity.getAssets()</code> static method returns an
-<a href="http://developer.android.com/reference/android/content/res/AssetManager.html"><code>AssetManager</code></a> instance I previously
-initialized from my main <a href="http://developer.android.com/reference/android/app/Activity.html"><code>Activity</code></a> in its
-<code>onCreate</code> method with a call to <code>getAssets()</code>.
+within the APK. It just requires a static content proxy Servlet.
+
+First off, be sure to add `jetty-6.1.26.jar`, `jetty-util-6.1.26.jar`,
+and `servlet-api-2.5-20081211.jar` into your Android `libs` directory
+and classpath so they make their way into the APK's classpath when built.
+You can get them in [jetty-6.1.26.zip](http://dist.codehaus.org/jetty/jetty-6.1.26/jetty-6.1.26.zip).
+
+I am rocking a singleton instance to control my embedded Jetty6 server:
+
+    public class JettyWebServer {
+        
+        private static JettyWebServer jws_SingleInstance = null;
+        protected Server jws_serverInstance = null;
+        protected static int jws_serverPortInt = 2320;
+        
+        protected JettyWebServer(int theServerPortInt) {
+            jws_serverInstance = new Server(theServerPortInt);
+            jws_serverPortInt = theServerPortInt;
+            
+            ServletHandler aServletHandler = new ServletHandler();
+            aServletHandler.addServletWithMapping(new ServletHolder(new CoolServlet1()), "/servlets/cool1");
+            aServletHandler.addServletWithMapping(new ServletHolder(new CoolServlet2()), "/servlets/cool2");
+            
+            ...
+            
+            aServletHandler.addServletWithMapping(new ServletHolder(new StaticProxy()), "/*");
+            jws_serverInstance.addHandler(aServletHandler);
+        }
+        
+        public static JettyWebServer getInstance() {
+            if (jws_SingleInstance == null) {
+                jws_SingleInstance = new JettyWebServer(jws_serverPortInt);
+            }
+            
+            return jws_SingleInstance;
+        }
+        
+        ...
+        
+    }
+
+What is this `StaticProxy` you might ask? Well it takes any requests not handled by the _Cool Servlets_
+and tries to find matching resources in the `assets` directory of the APK.
+
+    public class StaticProxy extends HttpServlet {
+        
+        private static final long serialVersionUID = 1L;
+        protected static HashMap<String, String> myExtensionMap;
+        
+        @Override
+        public void init(ServletConfig config) throws ServletException {
+            super.init(config);
+            
+            myExtensionMap = new HashMap<String, String>();
+            myExtensionMap.put("css", "text/css");
+            myExtensionMap.put("html", "text/html");
+            myExtensionMap.put("ico", "image/vnd.microsoft.icon");
+            
+            ...
+            
+            myExtensionMap.put("png", "image/png");
+        }
+        
+        @Override
+        protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+            String aRequestedUri = req.getRequestURI();
+            
+            if ((aRequestedUri == null) || (aRequestedUri.equals(""))) {
+                resp.sendError(400, "Missing resource string");
+            } else {
+                if (aRequestedUri.equals("/")) {
+                    aRequestedUri = aRequestedUri + "index.html";
+                }
+                
+                String[] aRequestedUriArray = aRequestedUri.split("/");
+                String aRequestedFileName = aRequestedUriArray[(aRequestedUriArray.length - 1)];
+                String[] aRequestedFileNameArray = aRequestedFileName.split("\.");
+                String aRequestedFileExtension = aRequestedFileNameArray[(aRequestedFileNameArray.length - 1)];
+                String aRequestAssetsPath = "webapp" + aRequestedUri;
+                
+                InputStream aResourceInputStream = MainActivity.getAssets().open(aRequestAssetsPath);
+                resp.setContentType(myExtensionMap.get(aRequestedFileExtension));
+                
+                byte[] aBuffer = new byte[4096];
+                int aBytesReadCount = 0;
+                while ((aBytesReadCount = aResourceInputStream.read(aBuffer)) != -1) {
+                    resp.getOutputStream().write(aBuffer, 0, aBytesReadCount);
+                }
+                
+                aResourceInputStream.close();
+                
+                resp.getOutputStream().flush();
+                resp.getOutputStream().close();
+            }
+        }
+    }
+
+The `MainActivity.getAssets()` static method returns an
+[`AssetManager`](http://developer.android.com/reference/android/content/res/AssetManager.html) instance I previously
+initialized from my main [`Activity`](http://developer.android.com/reference/android/app/Activity.html) in its
+`onCreate` method with a call to `getAssets()`.

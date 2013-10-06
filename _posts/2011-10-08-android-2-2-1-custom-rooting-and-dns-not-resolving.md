@@ -2,56 +2,64 @@
 layout: post
 title: Android 2.2.1 (custom) rooting and DNS not resolving
 tags:
-- 2.2.1
-- Android
+- Android 2.2.1
+- root
 published: true
 ---
-I finally caved and bought an Android &quot;smartphone&quot; for $87 (including shipping) last week.
+I finally caved and bought an Android "smartphone" for $87 (including shipping) last week.
 Was it a good purchase? Perhaps. I suppose it was inevitable, as I work on webapps targeting both iOS
-and Android 2.X+ devices. I bought a &quot;Qualcomm Snapdragon Mobile Development Platform&quot;
-(<a title="Qualcomm Snapdragon Mobile Development Platform" href="http://www.cnx-software.com/2011/01/21/qualcomm-snapdragon-mobile-development-platform-available/">more info</a>)
-from a bloke off of eBay; probably cost him more than $87 (closer to $500+).<br />
-<br />
+and Android 2.X+ devices. I bought a
+[Qualcomm Snapdragon Mobile Development Platform](http://www.cnx-software.com/2011/01/21/qualcomm-snapdragon-mobile-development-platform-available/)
+from a bloke off of eBay; probably cost him more than $87 (closer to $500+).
+
 Unfortunately this device had not been rooted, nor were there any DNS servers set when I connected to my home 802.11g
 home network. ALSO: Android Marketplace is not installed, so had to grab all the .apks from non-standard channels.
-Not sure if the previous owner screwed this up or what?<br />
-<br />
-What needed to get done:<br />
-1) get root access to phone to set DNS servers<br />
-2) automate process of setting DNS servers when connecting to Wi-Fi networks<br />
-3) download some apps and updates<br />
-<br />
-<strong>rooting the phone</strong><br />
+Not sure if the previous owner screwed this up or what?
+
+What needed to get done:
+
+1. get root access to phone to set DNS servers
+2. automate process of setting DNS servers when connecting to Wi-Fi networks
+3. download some apps and updates
+
+###rooting the phone
+
 Since I was able to access direct IPv4 addresses, what I did was upload my various .apk files to my LAN
 webserver (http://192.168.x.x/...) and download them to my device. Bluetooth-to-Bluetooth connection would not let my
 transfer .apk's. Android 2.2.1 is allegedly just for patching up rooted devices, and allegedly one has to downgrade
-to 2.2 to root. But I had success by 1) installing <a href="http://blog.23corner.com/tag/universalandroot/">Universal Androot</a>
-1.6.2 beta 5 (<a href="https://docs.google.com/folder/d/0B0yT30uCaFvvcVhpaHFmcy1BMWs/edit?pli=1#docId=0B0yT30uCaFvvR2g4WHB6UEJUWVU">local mirror</a>)
-(<a title="Varun's ScratchPad: One-Click root for Nexus One" href="http://blog.varunkumar.me/2010/08/one-click-root-for-nexus-one.html">screen shots and more info</a>)
+to 2.2 to root. But I had success by 1) installing [Universal Androot](http://blog.23corner.com/tag/universalandroot/)
+1.6.2 beta 5 ([local mirror](https://docs.google.com/folder/d/0B0yT30uCaFvvcVhpaHFmcy1BMWs/edit?pli=1#docId=0B0yT30uCaFvvR2g4WHB6UEJUWVU))
+([screen shots and more info](http://blog.varunkumar.me/2010/08/one-click-root-for-nexus-one.html "Varun"))
 and attempting to root and it failing (I removed the Universal Androot after and kept the bundled SuperUser app which is handy)
-and then 2) installing z4root (<a href="https://docs.google.com/folder/d/0B0yT30uCaFvvcVhpaHFmcy1BMWs/edit?pli=1#docId=0B0yT30uCaFvvZDRyc3dwMlozVzQ">local mirror</a>)
-(<a title="z4root - xda-developers" href="http://forum.xda-developers.com/showthread.php?t=833953">screen shots and more info</a>)
-and successfully "rooting" in that order.<br />
-<br />
-<strong>automating DNS resolver (background)</strong><br />
+and then 2) installing z4root ([local mirror](https://docs.google.com/folder/d/0B0yT30uCaFvvcVhpaHFmcy1BMWs/edit?pli=1#docId=0B0yT30uCaFvvZDRyc3dwMlozVzQ))
+([screen shots and more info](http://forum.xda-developers.com/showthread.php?t=833953 "z4root - xda-developers"))
+and successfully "rooting" in that order.
+
+
+###automating DNS resolver (background)
+
 Admittedly this solution is rather hackish, but since I do not have access to the Android Marketplace I cannot
-get the slick DNS settings apps like <a href="https://market.android.com/details?id=uk.co.mytechie.setDNS&amp;hl=en">mytechie's SetDNS utility</a>.
+get the slick DNS settings apps like [mytechie's SetDNS utility](https://market.android.com/details?id=uk.co.mytechie.setDNS&hl=en).
 Also, if you do not have access to a terminal emulator of some kind, this solution might not be for you. If you want something more
-stable or want more information see the article on <a href="http://blog.varunkumar.me/2010/09/how-to-change-dns-server-of-3g.html">Varun's ScratchPad called <em>Change the DNS server of 3G connection on Android phones</em></a>.
+stable or want more information see the article on [Varun's ScratchPad called _Change the DNS server of 3G connection on Android phones_](http://blog.varunkumar.me/2010/09/how-to-change-dns-server-of-3g.html).
 My pay-as-you go T-Mobile service has no problem setting my device's DNS servers when I access their
-<a href="http://en.wikipedia.org/wiki/Enhanced_Data_Rates_for_GSM_Evolution">Edge network</a>.<br />
-<br />
-<strong>automating DNS resolver (setup)</strong><br />
+[Edge network](http://en.wikipedia.org/wiki/Enhanced_Data_Rates_for_GSM_Evolution).
+
+
+###automating DNS resolver (setup)
+
 Open up the Terminal Emulator's startup commands, you might already see something like "export $PATH ...". Put a semi-colon at the end
 of the line if there is not already one and append the following:
-<blockquote><code>su -c "setprop net.dns1 208.67.222.222"; su -c "setprop net.dns2 208.67.220.220";</code></blockquote>
+> `su -c "setprop net.dns1 208.67.222.222"; su -c "setprop net.dns2 208.67.220.220";`
 So whenever you open up your terminal emulator application, it should automatically set your DNS resolvers to
-<a href="http://www.opendns.com/">OpenDNS</a>'s servers. On my own device I put in the first resolver address as one of my
-university's DNS resolvers, as they have internal addresses for authenticating devices when you connect to their 802.11b/g/n mesh.<br />
-<br />
-<strong>some other apps</strong><br />
-1) Flash 10.1 - The .apk should work on any Android 2.2 phone [<a href="https://docs.google.com/file/d/0B0yT30uCaFvvZUhaQVdJNjJJUEU/edit?pli=1">local mirror</a>]
-[<a href="http://www.droid-life.com/2010/08/23/download-official-flash-10-1-v10-1-92-8-for-froyo-now/">source information</a>]<br />
-2) Attempting to get the Android Market 2.2.6 working - <a href="http://forum.xda-developers.com/showthread.php?t=872526">[NEW GAPPS.ZIP &amp; APK]
-    New Android Market [2.2.6] for G1(Android 2.1&amp;2.2)[16/12/2010]</a> - xda-developers.com - <em>Comments: I did not have much luck with this</em><br />
-3) rootexplorer_2.13.3.apk - [<a href="https://docs.google.com/file/d/0B0yT30uCaFvvMzhuYkxQV0FzNFU/edit?pli=1">local mirror</a>] - great root file browsing app
+[OpenDNS](http://www.opendns.com/)'s servers. On my own device I put in the first resolver address as one of my
+university's DNS resolvers, as they have internal addresses for authenticating devices when you connect to their 802.11b/g/n mesh.
+
+
+###some other apps
+
+1. Flash 10.1 - The .apk should work on any Android 2.2 phone [[local mirror](https://docs.google.com/file/d/0B0yT30uCaFvvZUhaQVdJNjJJUEU/edit?pli=1)]
+[[source information](http://www.droid-life.com/2010/08/23/download-official-flash-10-1-v10-1-92-8-for-froyo-now/)]
+2. Attempting to get the Android Market 2.2.6 working - [[NEW GAPPS.ZIP & APK]
+New Android Market [2.2.6] for G1(Android 2.1&2.2)[16/12/2010]](http://forum.xda-developers.com/showthread.php?t=872526) - xda-developers.com - _Comments: I did not have much luck with this_
+3. rootexplorer_2.13.3.apk - [[local mirror](https://docs.google.com/file/d/0B0yT30uCaFvvMzhuYkxQV0FzNFU/edit?pli=1)] - great root file browsing app

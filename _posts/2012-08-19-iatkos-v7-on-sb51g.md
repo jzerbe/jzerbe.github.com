@@ -9,75 +9,80 @@ tags:
 published: true
 ---
 Stable Mac OS X Leopard 10.5.7 install for XCode 3 development on my
-<a href="http://www.shuttle.eu/_archive/older/en/sb51g.htm">Shuttle SB51G</a>
+[Shuttle SB51G](http://www.shuttle.eu/_archive/older/en/sb51g.htm)
 using iATKOS v7:
-<ul>
-<li><a href="http://osx86.co/f36/iatkos-v7-t3199/">osx86.co &raquo; iATKOS v7</a></li>
-<li><a href="http://www.osx86install.com/support/38-iatkos-v7-readme.html">osx86install.com &raquo; README</a></li>
-<li><a href="http://kat.ph/iatkos-v7-dvd-10-5-7-for-intel-amd-t2718902.html">kat.ph &raquo; iATKOS v7 DVD 10.5.7 for Intel/AMD</a></li>
-</ul>
-Windows drivers and documentation download for good measure:
-<a href="http://download.shuttle.eu/Mirror/XPC/SB51G/">http://download.shuttle.eu/Mirror/XPC/SB51G/</a><br />
-<br />
-<strong>Wake On LAN</strong><br />
-As long as you have the "Wake On PCI Ring" enabled in the "Power Management" options
+
+- [osx86.co -> iATKOS v7](http://osx86.co/f36/iatkos-v7-t3199/)
+- [osx86install.com -> README](http://www.osx86install.com/support/38-iatkos-v7-readme.html)
+- [kat.ph -> iATKOS v7 DVD 10.5.7 for Intel/AMD](http://kat.ph/iatkos-v7-dvd-10-5-7-for-intel-amd-t2718902.html)
+
+Windows drivers and documentation download for good measure: <http://download.shuttle.eu/Mirror/XPC/SB51G/>
+
+
+###Wake On LAN
+
+As long as you have the _Wake On PCI Ring_ enabled in the _Power Management_ options
 in your BIOS settings, Wake ON Lan magic packets sent to the machine on UDP port 9
-should wake this Mac OS X install up.<br />
-<br />
-<strong>Hardware Info</strong>
-<ul>
-<li>Intel 845GE+ECH4 chipset</li>
-<li>Socket 478 with Pentium 4 2.66GHZ cpu installed</li>
-<li>Realtek RTL8139 fast Ethernet NIC</li>
-<li>Avance AC'97 Audio</li>
-<li>VIA 1394</li>
-<li>Intel 82801DB Ultra ATA Storage Controller-24CR</li>
-</ul>
-<br />
-<strong>Non Working</strong>
-<ul>
-<li>no audio - use for XCode development only, so does not matter</li>
-<li>any updates will break system - fine with XCode 3</li>
-<li>periodically VGA out will never display login -
-    <a href="http://lifehacker.com/319528/remote-control-leopard-with-tightvnc">connect via VNC</a>
-    which always works</li>
-</ul>
-<br />
-<strong>The Config</strong><br />
+should wake this Mac OS X install up.
+
+
+###Hardware Info
+
+- Intel 845GE+ECH4 chipset
+- Socket 478 with Pentium 4 2.66GHZ cpu installed
+- Realtek RTL8139 fast Ethernet NIC
+- Avance AC'97 Audio
+- VIA 1394
+- Intel 82801DB Ultra ATA Storage Controller-24CR
+
+
+###Non Working
+
+- no audio - use for XCode development only, so does not matter
+- any updates will break system - fine with XCode 3
+- periodically VGA out will never display login - [connect via VNC](http://lifehacker.com/319528/remote-control-leopard-with-tightvnc) which always works
+
+
+###The Config
+
 Listed options should be checked. Triple dots mean that one or a few
 checkboxes should be skipped over. Question marks mean the module is optional.
-<blockquote>
-<code>iATKOS v7 Main System<br />
-Bootloader<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Chameleon v2<br />
-X86 Patches<br />
-&nbsp;&nbsp;&nbsp;&nbsp;/Extra directory<br />
-&nbsp;&nbsp;&nbsp;&nbsp;DSDT<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Decryptors<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AppleDecrypt<br />
-&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Kernel<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.7.0 Kernel Voodoo<br />
-&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Disabler<br />
-&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Remove TyMCE<br />
-Drivers<br />
-&nbsp;&nbsp;&nbsp;&nbsp;System<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SATA/IDE<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intel SATA/IDE<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sound<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Voodoo HDA driver &lt;-- enabled by default, turn-off as ineffective<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PS/2 mouse/keyboard<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apple PS/2 driver<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ext2fs?<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NTFS-3G?<br />
-&nbsp;&nbsp;&nbsp;&nbsp;Network<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wired<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Realtek<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Realtek RTL8139<br />
-...<br />
-Post-Install Actions<br /></code>
-</blockquote>
+
+    iATKOS v7 Main System
+    
+    Bootloader
+        Chameleon v2
+    
+    X86 Patches
+        /Extra directory
+        DSDT
+        Decryptors
+            AppleDecrypt
+        ...
+        Kernel
+            9.7.0 Kernel Voodoo
+        ...
+        Disabler
+        ...
+        Remove TyMCE
+    
+    Drivers
+        System
+            SATA/IDE
+                Intel SATA/IDE
+            ...
+            Sound
+                Voodoo HDA driver <-- enabled by default, turn-off as ineffective
+            PS/2 mouse/keyboard
+                Apple PS/2 driver
+            ...
+            ext2fs?
+            NTFS-3G?
+        Network
+            Wired
+                Realtek
+                    Realtek RTL8139
+    
+    ...
+    
+    Post-Install Actions

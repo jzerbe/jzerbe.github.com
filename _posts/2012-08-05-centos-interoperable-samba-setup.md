@@ -8,73 +8,69 @@ tags:
 - WiiMC
 published: true
 ---
-Contrary to what I percieved in the
-<a href="http://wiki.centos.org/HowTos/SetUpSamba">HowTos/SetUpSamba - CentOS Wiki</a>
+Contrary to what I saw in the
+[HowTos/SetUpSamba - CentOS Wiki](http://wiki.centos.org/HowTos/SetUpSamba)
 article, one cannot just use Windows Active Directory XOR NetBios.
 Sure, if I were running a network with just Windows clients looking to
 connect to Samba shares, I could only open up the NetBios ports UDP 137,138 and TCP 139.
 I did this for awhile and this worked, but the response time was sluggish when
-trying to connect to a Samba share from my Windows XP and 7 machines.<br />
-<br />
+trying to connect to a Samba share from my Windows XP and 7 machines.
+
 Then I tried this setup with WiiMC, and it just did not work. I settled on the
-following firewall config that worked:<br />
-<blockquote>
-<code>
-# Firewall configuration written by system-config-securitylevel<br />
-# Manual customization of this file is not recommended.<br />
-*filter<br />
-:INPUT ACCEPT [0:0]<br />
-:FORWARD ACCEPT [0:0]<br />
-:OUTPUT ACCEPT [0:0]<br />
-:RH-Firewall-1-INPUT - [0:0]<br />
--A INPUT -j RH-Firewall-1-INPUT<br />
--A FORWARD -j RH-Firewall-1-INPUT<br />
--A RH-Firewall-1-INPUT -i lo -j ACCEPT<br />
--A RH-Firewall-1-INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT<br />
-#standard services<br />
--A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT<br />
--A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT<br />
-...<br />
-#samba<br />
--A RH-Firewall-1-INPUT -m state --state NEW -m udp -p udp --dport 137 -j ACCEPT<br />
--A RH-Firewall-1-INPUT -m state --state NEW -m udp -p udp --dport 138 -j ACCEPT<br />
--A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 139 -j ACCEPT<br />
--A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 445 -j ACCEPT<br />
--A RH-Firewall-1-INPUT -m state --state NEW -m udp -p udp --dport 445 -j ACCEPT<br />
-#if none match ...<br />
--A RH-Firewall-1-INPUT -j REJECT --reject-with icmp-host-prohibited<br />
-COMMIT<br />
-</code>
-</blockquote>
+following firewall config that worked:
+
+    # Firewall configuration written by system-config-securitylevel
+    # Manual customization of this file is not recommended.
+    *filter
+    :INPUT ACCEPT [0:0]
+    :FORWARD ACCEPT [0:0]
+    :OUTPUT ACCEPT [0:0]
+    :RH-Firewall-1-INPUT - [0:0]
+    -A INPUT -j RH-Firewall-1-INPUT
+    -A FORWARD -j RH-Firewall-1-INPUT
+    -A RH-Firewall-1-INPUT -i lo -j ACCEPT
+    -A RH-Firewall-1-INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+    
+    #standard services
+    -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT
+    -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
+    ...
+    #samba
+    -A RH-Firewall-1-INPUT -m state --state NEW -m udp -p udp --dport 137 -j ACCEPT
+    -A RH-Firewall-1-INPUT -m state --state NEW -m udp -p udp --dport 138 -j ACCEPT
+    -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 139 -j ACCEPT
+    -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 445 -j ACCEPT
+    -A RH-Firewall-1-INPUT -m state --state NEW -m udp -p udp --dport 445 -j ACCEPT
+    
+    #if none match ...
+    -A RH-Firewall-1-INPUT -j REJECT --reject-with icmp-host-prohibited
+    
+    COMMIT
+
+
 And the smb.conf:
-<blockquote>
-<code>
-[global]<br />
-interfaces = eth1<br />
-bind interfaces only = yes #bind only to above interfaces<br />
-<br />
-workgroup = G-UNIT<br />
-server string = Samba Server Version %v<br />
-netbios name = BIGBOY<br />
-<br />
-local master = yes<br />
-os level = 34 #be sure to become master browser<br />
-preferred master = yes<br />
-<br />
-security = share<br />
-<br />
-[public-rw]<br />
-path = /misc/wd500/public-rw #auto.misc<br />
-public = yes<br />
-browseable = yes<br />
-guest ok = yes<br />
-read only = no<br />
-<br />
-[public-r]<br />
-path = /misc/wd500/public-r #auto.misc<br />
-public = yes<br />
-browseable = yes<br />
-guest ok = yes<br />
-read only = yes<br />
-</code>
-</blockquote>
+
+    [global]
+    interfaces = eth1
+    bind interfaces only = yes #bind only to above interfaces
+    workgroup = G-UNIT
+    server string = Samba Server Version %v
+    netbios name = BIGBOY
+    local master = yes
+    os level = 34 #be sure to become master browser
+    preferred master = yes
+    security = share
+    
+    [public-rw]
+    path = /misc/wd500/public-rw #auto.misc
+    public = yes
+    browseable = yes
+    guest ok = yes
+    read only = no
+    
+    [public-r]
+    path = /misc/wd500/public-r #auto.misc
+    public = yes
+    browseable = yes
+    guest ok = yes
+    read only = yes

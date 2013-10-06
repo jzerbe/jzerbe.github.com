@@ -10,65 +10,75 @@ published: true
 ---
 I finally took the time to add IPv6 support to my LAN this weekend. Still have a long way to go: need to add
 AAAA records to my LAN DNS, static IPv6 host allocations, DHCPv6, etc. I ended with the desired initial rollout:
-all the dual-stacked machines on my LAN getting allocated globally routable IPv6 addresses.<br />
-<br />
-Much of this is taken from the great article on OpenWRT's wiki: <a href="http://wiki.openwrt.org/doc/howto/ipv6">IPv6 HowTo on Backfire and later</a>.
-I made some specific modifications for <a href="http://www.tunnelbroker.net/">Hurricane Electric's free IPv6 tunnel broker service</a>.
-This assumes you have an OpenWRT install with SSH access and that you already have an account with HE's tunnelbroker service. I did
-this on my Actiontec GT701-WG, which cannot handle OpenWRT Backfire, hence the hackish version for Kamikaze (8.09.2). On my specific
-install, I also had to stop the cron, http, and ddns services to have a comfortable amount of RAM to work with during the install.
-<blockquote>To use IPv6, we need the following modules:
-    <ul>
-        <li>IPv6 kernel module (always)</li>
-        <li>IPv6 routing software (always, to configure IPv6 routing)</li>
-        <li>ip6tables kernel modules (optional, if you need an IPv6 firewall)</li>
-        <li>ip6tables command-line tool (optional, to configure the IPv6 firewall)</li>
-    </ul>
-    <code>opkg install kmod-ipv6 radvd ip kmod-ip6tables ip6tables</code></blockquote>
-You are also going to want: <code>opkg install 6scripts 6tunnel</code>.<br />
-<br />
+all the dual-stacked machines on my LAN getting allocated globally routable IPv6 addresses.
+
+Much of this is taken from the great article on OpenWRT's wiki:
+[IPv6 HowTo on Backfire and later](http://wiki.openwrt.org/doc/howto/ipv6).
+I made some specific modifications for [Hurricane Electric's free IPv6 tunnel broker service](http://www.tunnelbroker.net/).
+This assumes you have an OpenWRT install with SSH access and that you already have an account with HE's tunnelbroker service.
+I did this on my Actiontec GT701-WG, which cannot handle OpenWRT Backfire, hence the hackish version for Kamikaze (8.09.2).
+On my specific install, I also had to stop the cron, http, and ddns services to have a comfortable amount of RAM to work
+with during the install.
+
+
+To use IPv6, we need the following modules:
+
+- IPv6 kernel module (always)
+- routing software (always, to configure IPv6 routing)
+- ip6tables kernel modules (optional, if you need an IPv6 firewall)
+- ip6tables command-line tool (optional, to configure the IPv6 firewall)
+
+`opkg install kmod-ipv6 radvd ip kmod-ip6tables ip6tables`
+You are also going to want: `opkg install 6scripts 6tunnel`.
+
+
 First configure your firewall to allow ICMP pings to the router. This is a security risk, but if you intend to
 dynamically update your IPv4 endpoint address with HE's automated method, you are going to need to allow pings to
-your OpenWRT device. Insert the following into <code>/etc/config/firewall</code>.
-<blockquote><code># needed for Hurricane Electric IPv6 ping probes<br />
-        config rule<br />
-        option _name    ping<br />
-        option src      wan<br />
-        option proto    ICMP<br />
-        option target   ACCEPT</code></blockquote>
-Next let's configure the <code>/etc/firewall.user</code> script to auto-configure ip6tables for wan/br-lan devices on
-start/restart/stop. [<a href="https://docs.google.com/file/d/0B0yT30uCaFvvUW0tTlQ0NDlnbEE/edit?pli=1">firewall.user script</a>]<br />
-<br />
-Now to tie your tunnel and LAN together (such that your LAN obtains globally routable IPv6 addresses), you are going to need to
-get at your <a href="http://wiki.openwrt.org/doc/uci/radvd">Router Advertisement (radvd) configuration</a> -
-<code>/etc/conf/radvd</code> - [<a href="https://docs.google.com/file/d/0B0yT30uCaFvvVVVleV8zaEpQZkk/edit?pli=1">radvd conf file</a>].
-Be sure to enable radvd to start on system startup: <code>/etc/init.d/radvd enable</code>.<br />
-<br />
-<strong>UPDATE February 10</strong>: You are going to need to restart radvd manually each time you bring your
+your OpenWRT device. Insert the following into `/etc/config/firewall`:
+
+    # needed for Hurricane Electric IPv6 ping probes
+    config rule
+    option _name    ping
+    option src      wan
+    option proto    ICMP
+    option target   ACCEPT
+
+Next let's configure the `/etc/firewall.user` script to auto-configure ip6tables for wan/br-lan devices on
+start/restart/stop. Example [firewall.user](https://drive.google.com/uc?export=download&id=0B0yT30uCaFvvUW0tTlQ0NDlnbEE)
+script.
+
+Now to tie your tunnel and LAN together (such that your LAN obtains globally routable IPv6 addresses), you are going to
+need to get at your [Router Advertisement (radvd) configuration](http://wiki.openwrt.org/doc/uci/radvd) -
+`/etc/conf/radvd` - [radvd conf](https://drive.google.com/uc?export=download&id=0B0yT30uCaFvvVVVleV8zaEpQZkk) file.
+Be sure to enable radvd to start on system startup: `/etc/init.d/radvd enable`.
+
+__UPDATE__ February 10: You are going to need to restart radvd manually each time you bring your
 IPv6 tunnel up or down, so that radvd knows to broadcast either a link-local subnet or the global routed IPv6
-tunnel allocated subnet.<br />
-<br />
-Finally let's configure the tunnel itself. Kind of Quentin Tarantino'd that didn't I? Anyways ...<br />
-Open up the 6tunnel config file - <code>vi /etc/config/6tunnel</code> - and take a look inside. In the end you are going to want it to look like this:
-<blockquote><code>config 6tunnel<br />
-        option tnlifname        'he-ipv6'<br />
-        option remoteip4        '209.51.181.2'<br />
-        #option localip4         ''<br />
-        option localip6         '2001:470:xxxx:xxx::2/64'<br />
-        option remoteip6        '2001:470:xxxx:xxx::1/64'<br />
-        option prefix           '2001:470:xxxx:xxx::/64'<br />
-        option passmd5          'md5 hash of your tunnelbroker password'<br />
-        option userid           'UserID found on the main.php page'<br />
-        option tunnelid         'tunnel id number'
-    </code></blockquote>
+tunnel allocated subnet.
+
+Finally let's configure the tunnel itself.
+Open up the 6tunnel config file - `vi /etc/config/6tunnel` - and take a look inside.
+In the end you are going to want it to look like this:
+
+    config 6tunnel
+    option tnlifname        'he-ipv6'
+    option remoteip4        '209.51.181.2'
+    #option localip4         ''
+    option localip6         '2001:470:xxxx:xxx::2/64'
+    option remoteip6        '2001:470:xxxx:xxx::1/64'
+    option prefix           '2001:470:xxxx:xxx::/64'
+    option passmd5          'md5 hash of your tunnelbroker password'
+    option userid           'UserID found on the main.php page'
+    option tunnelid         'tunnel id number'
+
 First pop open your browser to the tunnelbroker.net page "Tunnel Details": remoteip4 = "Server IPv4 address" on
 said page, localip6 = "Client IPv6 address", remoteip6 = "Server IPv6 address", prefix = "Routed /64" or
 "Routed /48" if you need something that big. localip4 will be auto-detected the customized 6tunnel init.d
-script, and thus can be commented out/left blank/doesn't matter.<br />
-<br />
-The init.d file for 6tunnel [<a href="https://docs.google.com/file/d/0B0yT30uCaFvvck54ZGFIRHN5TG8/edit?pli=1">6tunnel init script</a>]
+script, and thus can be commented out/left blank/doesn't matter.
+
+The init.d file for 6tunnel [6tunnel init script](https://drive.google.com/uc?export=download&id=0B0yT30uCaFvvck54ZGFIRHN5TG8)
 is an amalgamation of the original init script, linux-route-2 commands as suggested by HE, and inspirations from
-<a href="https://forum.openwrt.org/viewtopic.php?pid=111999#p111999">andyballon's post on the openwrt forums</a>.
-This doesn't seem to work quite properly on system startup for me, but if you want to give it a try - <code>/etc/init.d/6tunnel enable</code> -
+<https://forum.openwrt.org/viewtopic.php?pid=111999#p111999>.
+This doesn't seem to work quite properly on system startup for me, but if you want to give it a try - `/etc/init.d/6tunnel enable` -
 probably the worst that could happen is that 6tunnel times out connecting (because your ADSL/Cable link is not yet up). You might need to edit
-the init script's line #6 from <code>ppp0</code> to <code>eth0</code> or something, whatever interface your public IPv4 address is found on.
+the init script's line #6 from `ppp0` to `eth0` or something, whatever interface your public IPv4 address is found on.

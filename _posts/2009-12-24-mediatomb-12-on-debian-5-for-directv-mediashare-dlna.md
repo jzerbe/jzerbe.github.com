@@ -7,51 +7,45 @@ tags:
 - MediaTomb
 published: true
 ---
-I have been trying unsuccessfully for the past couple of months (on and off) to stream content from my
-home Linux servers to several DirecTV HR20-700's. This latest attempt, actually worked and I wanted to
-document my exact setup as no other literature has done.<br />
-<br />
-Stuff you need:
-<ol>
-    <li>Debian 5 installed on a computer with ~ 1GHZ CPU, 256MB RAM for max two audio
-        streams/1GB RAM for two simultaneous medium quality video streams, hard drive with media content on it</li>
-    <li>reliable Internet connection</li>
-    <li>a DirecTV HR2x</li>
-</ol>
-<br />
-Here are the exact commands you need to run, I'll explain them later.
-<blockquote><code>apt-get update<br />
-        apt-get upgrade<br />
-        apt-get -y install screen vlc vorbis-tools mpg123 ffmpeg unzip subversion build-essential
-        autoconf automake curl libexpat-ocaml-dev libsqlite3-dev libcurl-ocaml-dev libid3-3.8.3-dev
-        libtagc0-dev libavformat-dev libexif-dev<br />
-        svn co https://svn.mediatomb.cc/svnroot/mediatomb/trunk/mediatomb mediatomb<br />
-        cd mediatomb<br />
-        autoreconf -i<br />
-        ./configure<br />
-        make<br />
-        make install<br />
-        cd<br />
-        [ !-- download <a href="https://docs.google.com/folder/d/0B0yT30uCaFvvcldSOVdGR3QxNzQ/edit?pli=1#docId=0B0yT30uCaFvvaEhaU0JQd2tsa28">mediatomb.zip</a> --! ]<br />
-        mv mediatomb.zip /etc/<br />
-        cd /etc/<br />
-        unzip mediatomb.zip<br />
-        rm mediatomb.zip<br />
-        mkdir /var/lib/mediatomb<br />
-        chmod -R 777 /var/lib/mediatomb/<br />
-        cd<br />
-        mv /etc/mediatomb/mediatomb /etc/init.d/<br />
-        vi /etc/init.d/mediatomb</code> < -- change line so ethX reads eth0, eth1, or whatever your LAN network interface card is assigned to<br />
-    <code>chmod +x /etc/init.d/mediatomb<br />
-        update-rc.d mediatomb defaults</code></code></blockquote>
+###copy-paste###
+    apt-get update
+    apt-get upgrade
+    apt-get -y install screen vlc vorbis-tools mpg123 ffmpeg unzip subversion build-essential
+    autoconf automake curl libexpat-ocaml-dev libsqlite3-dev libcurl-ocaml-dev libid3-3.8.3-dev
+    libtagc0-dev libavformat-dev libexif-dev
+    svn co https://svn.mediatomb.cc/svnroot/mediatomb/trunk/mediatomb mediatomb
+    cd mediatomb
+    autoreconf -i
+    ./configure
+    make
+    make install
+    cd
+
+Download [mediatomb.zip](0B0yT30uCaFvvaEhaU0JQd2tsa28).
+
+    mv mediatomb.zip /etc/
+    cd /etc/
+    unzip mediatomb.zip
+    rm mediatomb.zip
+    mkdir /var/lib/mediatomb
+    chmod -R 777 /var/lib/mediatomb/
+    cd
+    mv /etc/mediatomb/mediatomb /etc/init.d/
+
+Change line in `/etc/init.d/mediatomb` so ethX reads eth0, eth1, or whatever your LAN network interface card is.
+
+    chmod +x /etc/init.d/mediatomb
+    update-rc.d mediatomb defaults
+
+###explanation###
 The idea is that the default MediaTomb install found in the repos (version 11) doesn't support transcoding
 quite right for the DirecTV HR2x. So we do an install from the repos for a bunch of dependencies for the
 latest code (version 12) that we then checkout from the project SVN repo. A new configuration script
 that I built is downloaded and installed. It has support for transcoding ogg, mp3, flac, flv, avi, mkv, mov,
-and a few other formats (pretty easy to add support for other formats check out --&gt;
-<a href="http://mediatomb.cc/dokuwiki/transcoding:transcoding#directv_hr2x_transcoding">http://mediatomb.cc/dokuwiki/transcoding:transcoding#directv_hr2x_transcoding</a>).<br />
-<br />
+and a few other formats (pretty easy to add support for other formats check out
+<http://mediatomb.cc/dokuwiki/transcoding:transcoding#directv_hr2x_transcoding>).
+
 MediaTomb will be automatically started on boot. It can also be stopped and started manually by:
-<code>/etc/init.d/mediatomb stop</code> or <code>/etc/init.d/mediatomb start</code>.<br />
-<br />
-You can then go to the webui of MediaTomb and update your media library. --&gt; http://hostname:49152/
+`/etc/init.d/mediatomb stop` or `/etc/init.d/mediatomb start`.
+
+You can then go to the webui of MediaTomb and update your media library: <http://hostname:49152/>
