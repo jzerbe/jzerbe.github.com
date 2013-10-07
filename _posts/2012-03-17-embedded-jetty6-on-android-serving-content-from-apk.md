@@ -14,7 +14,7 @@ within the APK. It just requires a static content proxy Servlet.
 
 First off, be sure to add `jetty-6.1.26.jar`, `jetty-util-6.1.26.jar`,
 and `servlet-api-2.5-20081211.jar` into your Android `libs` directory
-and classpath so they make their way into the APK's classpath when built.
+and classpath so they make their way into the APK\'s classpath when built.
 You can get them in [jetty-6.1.26.zip](http://dist.codehaus.org/jetty/jetty-6.1.26/jetty-6.1.26.zip).
 
 I am rocking a singleton instance to control my embedded Jetty6 server:

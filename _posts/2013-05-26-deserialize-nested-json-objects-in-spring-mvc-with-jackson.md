@@ -7,7 +7,7 @@ tags:
 - Java
 published: true
 ---
-__NOTICE__: I had to use [Jackson 2.2](http://repo1.maven.org/maven2/com/fasterxml/jackson/core/) to get this working.
+**NOTE**: I had to use [Jackson 2.2](http://repo1.maven.org/maven2/com/fasterxml/jackson/core/) to get this working.
 [Jackson 1.9](http://repository.codehaus.org/org/codehaus/jackson/) did not cut it.
 
 

@@ -72,7 +72,8 @@ Most of the following pasties are from the [InDefero docs about installatio](htt
 
 `vi bootstrap.ph` and stick the following in (if your path, etc. are the same):
 
-    <?php
+`<?php`
+
     require '/home/www/indefero/src/IDF/conf/path.php';
     require 'Pluf.php';
     Pluf::start('/home/www/indefero/src/IDF/conf/idf.php');
@@ -88,6 +89,7 @@ Most of the following pasties are from the [InDefero docs about installatio](htt
     $user->active = true;
     $user->create();
     print "Bootstrap ok";
+
     ?>
 
 Run that sucker - `php bootstrap.php` - make sure it completes, and then delete it (`rm bootstrap.php`).
@@ -104,13 +106,12 @@ Run that sucker - `php bootstrap.php` - make sure it completes, and then delete 
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*) /index.php/$1
 
-Don't forget to enable to rewrite module - `a2enmod rewrite` - and restart apache2 - `/etc/init.d/apache2 restart`.
+Don\'t forget to enable to rewrite module - `a2enmod rewrite` - and restart apache2 - `/etc/init.d/apache2 restart`.
 
 
 ####Adding automatic control over your repos
 
-Subversion - <http://projects.ceondo.com/p/indefero/page/InstallationScmSubversion/>
-Git - <http://projects.ceondo.com/p/indefero/page/InstallationScmGit/>
-Mercurial - <http://projects.ceondo.com/p/indefero/page/InstallationScmMercurial/>
-Automatic start of the Git daemon - <http://projects.ceondo.com/p/indefero/page/git-daemon-sysV-InitScript/>
-
+- Subversion - <http://projects.ceondo.com/p/indefero/page/InstallationScmSubversion/>
+- Git - <http://projects.ceondo.com/p/indefero/page/InstallationScmGit/>
+- Mercurial - <http://projects.ceondo.com/p/indefero/page/InstallationScmMercurial/>
+- Automatic start of the Git daemon - <http://projects.ceondo.com/p/indefero/page/git-daemon-sysV-InitScript/>

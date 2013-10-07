@@ -13,24 +13,26 @@ All you have to do is setup the Counter Strike dedicated server to
 [run on different port/IP addresses](http://forums.steampowered.com/forums/showthread.php?t=292495&amp;page=9#post_message_8842952).
 
 1. Create an install directory and dl the installer
-    - mkdir srcds (the directory for Counter Strike: Source dedicated server)</li>
+    - mkdir srcds (the directory for Counter Strike: Source dedicated server)
     - cd srcds
     - wget http://www.cstrike-planet.com/dls/hldsupdatetool.bin
 2. Make the installer executable and execute it
-    - chmod +x hldsupdatetool.bin</li>
-    - ./hldsupdatetool.bin</li>
-3. Agree to the terms and conditions by typing "yes" and "steam" will be created in the same directory</li>
+    - chmod +x hldsupdatetool.bin
+    - ./hldsupdatetool.bin
+3. Agree to the terms and conditions by typing _yes_ and _steam_ will be created in the same directory
 4. Now run the steam installer that will dowload a new version of HLDSUpdateTool
     - `chmod +x steam`
     - `./steam` - it took about 10 minutes for it to update. All depends upon the steam server loads.
 5. We are now ready to download and install Counter Strike Source. The install size is ~ 1.1GB uncompressed.
-    - `./steam -command update -game "Counter-Strike Source" -dir .`</li>
-6. The server is now ready for various customizations. I'll be writing more on that later ...
+    - `./steam -command update -game _Counter-Strike Source_ -dir .`
+6. The server is now ready for various customizations.
 
 
 ###Counter Strike 1.6 linux dedicated server###
 Based upon - <http://www.cstrike-planet.com/tutorial/1-Linux-Install-CS-16/6>
-1. Repeat steps 1-5 in previous installation but in different root directory. so instead of "srcds" let's put the installation in "hlds". Step 2 of the previous method should this time be:
+
+1. Repeat steps 1-5 in previous installation but in different root directory. so instead of _srcds_ let\'s put the
+installation in _hlds_. Step 2 of the previous method should this time be:
     - `mkdir hlds`
     - `cd hlds`
 2. Run the various steps outlined above, and now to install the (~360MB) cstrike1.6 linux dedicated server.
@@ -38,12 +40,10 @@ Based upon - <http://www.cstrike-planet.com/tutorial/1-Linux-Install-CS-16/6>
 
 
 ###Q and A time###
-Q: How can I keep hlds running while I am not logged into the server with SSH?<br />
-A: Start your dedicated server with screen: `screen -S hlds ./hlds_run`
-And then when you want to access the running server process once logged back in: `screen -r hlds`
 
-Q: How many CS virtual servers can I get on one machine?<br />
-A: <http://www.webhostingtalk.com/showthread.php?t=743585>
-
-Q: What does the "tickrate" have anything to do with anything? What is it?
-A: <http://www.counter-strike.com/tickrate.php>
+1. How can I keep hlds running while I am not logged into the server with SSH?
+    - Start your dedicated server with screen: `screen -S hlds ./hlds_run`. And then when you want to access the running server process once logged back in: `screen -r hlds`.
+2. How many CS virtual servers can I get on one machine?
+    - <http://www.webhostingtalk.com/showthread.php?t=743585>
+3. What does the _tickrate_ have anything to do with anything? What is it?
+    - <http://www.counter-strike.com/tickrate.php>

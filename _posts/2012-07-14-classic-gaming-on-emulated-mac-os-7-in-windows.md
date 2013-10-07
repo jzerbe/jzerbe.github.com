@@ -14,11 +14,11 @@ My grandparents had an Apple
 that they would bring along on trips, and a
 [Macintosh Performa 6400](http://en.wikipedia.org/wiki/Macintosh_Performa)
 that inhabited their basement. My grandpa was going through old stuff I guess and brought out
-the very same PowerBook this last weekend. Maybe I should have grabbed it as a collector's item,
-but I already have quite the computer graveyard; I decided to see if I couldn't
+the very same PowerBook this last weekend. Maybe I should have grabbed it as a collector\'s item,
+but I already have quite the computer graveyard; I decided to see if I couldn\'t
 play these games in an emulated manner instead.
 
-According to [Macintosh Garden's overview guide](http://macintoshgarden.org/guides),
+According to [Macintosh Garden\'s overview guide](http://macintoshgarden.org/guides),
 one needs Basilisk II.
 > Basilisk II emulates a 680x0 Macintosh that will run MacOS versions 7 to 8.1.
 > This represents a date range of about 1991 to 1996.
@@ -33,8 +33,8 @@ _[Setting up Basilisk II for Windows](http://www.emaculation.com/doku.php/basili
         [BasiliskII_15_01_2010.zip](http://www.open.ou.nl/hsp/downloads/BasiliskII_15_01_2010.zip)
 2. To configure Basalisk II via the GUI, download and install
         [gtk+-2.10.13-setup.exe](http://www.emaculation.com/basilisk/gtk+-2.10.13-setup.exe)
-3. Follow along with the aforementioned guide until you reach the JIT Compiler ...
-        be sure to uncheck "Translate through constant jumps", as it makes the
+3. Follow along with the aforementioned guide until you reach the _JIT Compiler_,
+        be sure to uncheck _Translate through constant jumps_, as it makes the
         emulated CPU calculate incorrect hashes for the System 7.5.3 installation.
 
 Feel free to download my Windows emulated Mac OS 7.5.5 setup

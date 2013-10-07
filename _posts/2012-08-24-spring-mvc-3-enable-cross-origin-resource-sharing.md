@@ -43,9 +43,9 @@ headers.
 
 In my case I want CORS to always work for any HTTP end-points, so I created a
 __CorsCommon__ class that I extend all my other controllers from.
-NOTE: In my experience, one cannot just use "*" for _Access-Control-Allow-Headers_,
+NOTE: In my experience, one cannot just use `"*"` for `Access-Control-Allow-Headers`,
 so if your CORS request is going to be using any additional headers, be sure to list them
-where "my-cool-header" is. jQuery likes to use the "x-requested-with" header.
+where `my-cool-header` is. jQuery likes to use the `x-requested-with` header.
 
     public class CorsCommon {
         

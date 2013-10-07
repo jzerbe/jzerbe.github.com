@@ -31,7 +31,7 @@ should wake this Mac OS X install up.
 - Intel 845GE+ECH4 chipset
 - Socket 478 with Pentium 4 2.66GHZ cpu installed
 - Realtek RTL8139 fast Ethernet NIC
-- Avance AC'97 Audio
+- Avance AC\'97 Audio
 - VIA 1394
 - Intel 82801DB Ultra ATA Storage Controller-24CR
 

@@ -12,7 +12,7 @@ Bare CentOS 5.8 install over the weekend.
 
 When I mean bare, I mean disabling all packages in the installer;
 just linux kernel, init scripts, bash, networking.
-I had no idea that this would mean no ACPId ... which meant nothing
+I had no idea that this would mean no ACPId, which meant nothing
 happened when I pushed the power button.
 
 

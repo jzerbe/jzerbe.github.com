@@ -38,7 +38,7 @@ Change line in `/etc/init.d/mediatomb` so ethX reads eth0, eth1, or whatever you
     update-rc.d mediatomb defaults
 
 ###explanation###
-The idea is that the default MediaTomb install found in the repos (version 11) doesn't support transcoding
+The idea is that the default MediaTomb install found in the repos (version 11) doesn\'t support transcoding
 quite right for the DirecTV HR2x. So we do an install from the repos for a bunch of dependencies for the
 latest code (version 12) that we then checkout from the project SVN repo. A new configuration script
 that I built is downloaded and installed. It has support for transcoding ogg, mp3, flac, flv, avi, mkv, mov,

@@ -11,7 +11,7 @@ today was rather frustrating. There was not one specific (modern) way given, in 
 
 The ubuntu alternate install discs do not have the [casper live system](http://www.linuxcertif.com/man/7/casper/)
 which allows for the disc files to be pulled over NFS or CIFS (Samba). Although, with the existing preseed framework
-(extended from Ubuntu's parent, Debian), one can pull from a local network package repository (the expanded disc image files).
+(extended from Ubuntu\'s parent, Debian), one can pull from a local network package repository (the expanded disc image files).
 
 I use [iPXE for various reasons](http://vraidsys.com/2011/06/network-boot-without-a-proper-dhcp-setup-for-pxe/),
 instead of the generic PXE setup involving TFTP and a complicit DHCP server, which is able to use HTTP and DHCP itself

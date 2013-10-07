@@ -18,7 +18,7 @@ This assumes you already have an
 an application server cartridge, a
 [Jenkins cartridge](https://openshift.redhat.com/app/console/application_types?search=jenkins),
 and a new _diy_ project created in Jenkins. I would advise against using
-OpenShift's Jenkins-app-server-integration, and just spin them up separately.
+OpenShift\'s Jenkins-app-server-integration, and just spin them up separately.
 At time of writing the OpenShift maintained Jenkins cartridge still reads
 _Jenkins Server 1.4_, but it is actually _1.509.1_.
 
@@ -28,7 +28,7 @@ Create an SSH key on the fresh Jenkins cartridge in `~/app-root/data/.ssh/id_rsa
 with `ssh-keygen -C jenkins@openshift`, and add it to the
 [Account Settings](https://openshift.redhat.com/app/console/settings). This will
 ensure that authentications with the key are accepted on any of your
-account's cartridges.
+account\'s cartridges.
 
 
 ###deployment to other cartridge from Jenkins###
@@ -50,7 +50,7 @@ cartridge.
 For the JBoss EWS instance to automatically pick up WAR changes and redeploy the context, we have to add in
 the [hot deploy marker file](https://www.openshift.com/kb/kb-e1057-how-can-i-deploy-my-application-without-having-to-restart-it).
 
-1. Git clone the application's git repo: `ssh://[DEPLOY_ENDPOINT]/~/git/[cart name].git`
+1. Git clone the application\'s git repo: `ssh://[DEPLOY_ENDPOINT]/~/git/[cart name].git`
 2. From [_6.2. Layout and Deployment Options_ in the _OpenShift Origin Cartridge Guide_](http://openshift.github.io/documentation/oo_cartridge_guide.html)
 one removes the source build files: `git rm -r src pom.xml`
 3. Add the hot deploy marker file: `touch .openshift/markers/hot_deploy; git add .openshift/markers/hot_deploy`
@@ -75,7 +75,7 @@ you have in the _Endpoint_ field.
 Be sure to configure Jenkins' __Global Security__ properly so that `[user]`
 is able to start builds:
 
-1. Security Realm: Jenkins's own user database
+1. Security Realm: Jenkins\'s own user database
 2. Authorization: Matrix-based security
     1. Overall: Read
     2. Job: Read, Discover, Build
@@ -83,6 +83,6 @@ is able to start builds:
 
 
 ###git polling###
-__20130929 EDIT:__ Seems as though the Bitbucket POST service doesn't want
+__20130929 EDIT:__ Seems as though the Bitbucket POST service doesn\'t want
 to play ball anymore with my hosted Jenkins instance. Updated the
 __Build Triggers__ section to _Poll SCM_ every three minutes: `*/3 * * * *`.

@@ -13,7 +13,7 @@ I have been able to build the kernel-space drivers for my HDHomeRun,
 _[dvbhdhomerun](http://dvbhdhomerun.cvs.sourceforge.net/)_, yet there seem to
 be some weird runtime errors having to do with cross compiling for an
 ARM v7 A9 Cortex processor. I bit the bullet and rolled Tvheaden on a seperate
-box. Can't watch Monday night football without a DVR.
+box. Can\'t watch Monday night football without a DVR.
 
 Installing on a headless box with X11 forwarding. Doing everything as root.
 Partially inspired from
@@ -135,4 +135,4 @@ A quickly cobbled together init script:
     esac
     :
 
-Doesn't seem to work quite right at start-up, needs some tweaking.
+Doesn\'t seem to work quite right at start-up, needs some tweaking.

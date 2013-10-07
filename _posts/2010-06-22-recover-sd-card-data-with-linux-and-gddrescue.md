@@ -7,7 +7,7 @@ tags:
 - recovery
 published: true
 ---
-Just to be clear about the setup, I'll be using Debian 5 Linux and an 8 GB SD card with a SD to USB adapter over a USB 2.0 link.
+Just to be clear about the setup, I\'ll be using Debian 5 Linux and an 8 GB SD card with a SD to USB adapter over a USB 2.0 link.
 
 gddrescue is included in the main [Debian](http://packages.debian.org/search?keywords=gddrescue) and
 [Ubuntu](http://packages.ubuntu.com/search?keywords=gddrescue) repos, so in my case the install was just
@@ -46,5 +46,5 @@ Now we will also need testdisk, so install that [Debian](http://packages.debian.
 [Testdisk](http://www.cgsecurity.org/wiki/TestDisk) can do some pretty cool stuff, but we are more
 interested in one of the subpackages it includes, [photorec](http://www.cgsecurity.org/wiki/PhotoRec).
 
-Now using photorec, let's recover some photos: `photorec /d [photo output dir] [recovery image output file from before]`
+Now using photorec, let\'s recover some photos: `photorec /d [photo output dir] [recovery image output file from before]`
 And navigate through the menus and get your photos back. Usually the sd card is formatted in NTFS.

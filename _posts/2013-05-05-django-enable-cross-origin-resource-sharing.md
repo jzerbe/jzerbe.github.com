@@ -20,11 +20,11 @@ Relevant reading:
 ###add items to HttpResponse dictionary
 
 From <https://docs.djangoproject.com/en/dev/ref/request-response/#setting-headers>:
-> To set or remove a header in your response, treat it like a dictionary:
+>To set or remove a header in your response, treat it like a dictionary:
 > 
->   response = HttpResponse()
->   response['Cache-Control'] = 'no-cache'
->   del response['Cache-Control']
+>       response = HttpResponse()
+>       response['Cache-Control'] = 'no-cache'
+>       del response['Cache-Control']
 > 
 
 

@@ -29,13 +29,13 @@ dependencies needed to create the various VMware Server binaries. 25MB via yum.
 
 ###the install pastie
 
-Download (102MB), extract, install ... configure. The install Perl script should
+Download (102MB), extract, install, configure. The install Perl script should
 automatically redirect you to the installed vmware-config.pl; defaults should be
 fine for the install and config scripts.
 
 Linux version 1.0.10 serial number: 98RD1-Y6HD9-2FH65-4KLUH
 
-    wget <http://download3.vmware.com/software/vmserver/VMware-server-1.0.10-203137.tar.gz>
+    wget http://download3.vmware.com/software/vmserver/VMware-server-1.0.10-203137.tar.gz
     tar xzvf VMware-server-1.0.10-203137.tar.gz
     cd vmware-server-distrib/
     ./vmware-install.pl

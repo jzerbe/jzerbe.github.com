@@ -8,7 +8,7 @@ published: true
 ---
 I was having a difficult time yesterday trying to get my new [OpenWRT](http://openwrt.org/) install
 working on my Qwest DSL line. Here is how I got things working. I have yet to get the wireless interface
-working with WPA, I've just been using a different wireless access point I had lying around.
+working with WPA, I\'ve just been using a different wireless access point I had lying around.
 
 Telnet into your gateway before flashing it and `cat /proc/[###]/cmdline` (where ### is the process number of pppd),
 this will get you the exact command used, along with the user/password that your gateway is using to
@@ -17,7 +17,7 @@ login to the DSLAM. Save this command string for later!
 I used the latest
 [Kamikaze release _as of 03/28/2010_](http://downloads.openwrt.org/kamikaze/8.09.2/ar7/openwrt-ar7-squashfs.bin)
 and my Windows XP laptop connected via an Ethernet switch to my Actiontec. I was having trouble with tnftp on Debian,
-but I've heard it isn't too hard to get that working. You have to be pretty fast, because as soon as you plug in
+but I\'ve heard it isn\'t too hard to get that working. You have to be pretty fast, because as soon as you plug in
 your gateway you have ~3 seconds to ftp in. The username/password is adam2/adam2. No matter what IPv4 you have your
 gateway normally set to, it defaults to 192.168.0.1 on boot.
 

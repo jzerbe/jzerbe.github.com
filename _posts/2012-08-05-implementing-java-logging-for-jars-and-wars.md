@@ -85,11 +85,11 @@ For debug builds, one could have another logging.properties file with the variou
 
 ###log4j.properties
 
-While I am definitely no expert at logging, I have noticed that Apache's
-log4j has several features that Sun's logger is missing. The big one is log
+While I am definitely no expert at logging, I have noticed that Apache\'s
+log4j has several features that Sun\'s logger is missing. The big one is log
 rotation based on filesize.I tested the following example against the old
 [1.2 series](http://logging.apache.org/log4j/1.2/) of log4j, but
-don't forget to check out the
+don\'t forget to check out the
 [2.x series](http://logging.apache.org/log4j/2.x/).
 The procedure is the same for getting the log4j.properties file into the classpath
 of your JAR or WAR as covered in the logging.properties section.

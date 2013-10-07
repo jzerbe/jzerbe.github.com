@@ -39,5 +39,5 @@ Follow the instructions; the defaults should be just fine.
 2. System link was created so that the old version of gcc is used that is compatible with the kernel headers
 3. VMare server software is downloaded and installed
 4. Reach a point in the installation where the process errors out installing the vmmon module
-5. Use the patcher to override some dependency stuffs that can't be fixed
+5. Use the patcher to override some dependency stuffs that can\'t be fixed
 6. Once the process is done, remove the installation files, and then restart the system to free up the memory used by the installation procedure

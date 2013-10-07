@@ -12,14 +12,14 @@ the lack of out-of-the-box Python support. Fortunately there is a quick fix for 
 
 From Wade Chandler, in response to [_Howto activate python in NB 7.0_](http://forums.netbeans.org/ptopic38275.html)
 on the netbeans forums:
-> You can use the dev auto update center. Python seems to still work though I'm a python newbie:
+> You can use the dev auto update center. Python seems to still work though I\'m a python newbie:
 > <http://deadlock.netbeans.org/hudson/job/nbms-and-javadoc/lastStableBuild/artifact/nbbuild/nbms/updates.xml.gz>
 
 So, from the main NetBeans IDE window menu bar:
 
 1.  Tools->Plugins (which opens the Plugins window)
-2.  Select the "Settings" tab
-3.  Hit the "Add" button (bottom right)
-4.  enter "Last Stable Build" and <http://deadlock.netbeans.org/hudson/job/nbms-and-javadoc/lastStableBuild/artifact/nbbuild/nbms/updates.xml.gz>
-5.  go back to the "Updates" tab and hit the "Reload Catalog" button
+2.  Select the _Settings_ tab
+3.  Hit the _Add_ button (bottom right)
+4.  enter _Last Stable Build_ and <http://deadlock.netbeans.org/hudson/job/nbms-and-javadoc/lastStableBuild/artifact/nbbuild/nbms/updates.xml.gz>
+5.  go back to the _Updates_ tab and hit the _Reload Catalog_ button
 6.  This should give you access to the latest stable build (development) plugins, which should allow you to install the Python plugins of your choosing

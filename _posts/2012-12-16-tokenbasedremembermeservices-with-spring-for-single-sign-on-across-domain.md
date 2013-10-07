@@ -27,7 +27,7 @@ may not be the best way to go about intra-domain auto-authentication,
 but sharing a single cookie for
 `example.com` across `app1.example.com` and
 `secure.example.com/app2/` is much easier to set-up and
-maintain .... for now.
+maintain for now.
 
 
 ###the code

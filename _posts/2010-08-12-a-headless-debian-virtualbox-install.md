@@ -14,8 +14,8 @@ to take over my aging VMware server 1.10 installs.
 Much of the following is based off of
 [VBoxHeadless - Running Virtual Machines With VirtualBox 3.1.x On A Headless Debian Lenny Server](http://www.howtoforge.com/vboxheadless-running-virtual-machines-with-virtualbox-3.1.x-on-a-headless-debian-lenny-server),
 [instructions Debian Backports](http://www.backports.org/dokuwiki/doku.php?id=instructions),
-and the [VirtualBox.org website's information about Debian VBox setups](http://www.virtualbox.org/wiki/Linux_Downloads).
-FYI: this install was done on a fresh Lenny netinstall (logged in as root ... duh!), and the apt-get install command grabed
+and the [VirtualBox.org website\'s information about Debian VBox setups](http://www.virtualbox.org/wiki/Linux_Downloads).
+FYI: this install was done on a fresh Lenny netinstall (logged in as root), and the apt-get install command grabed
 about 200MB worth of compressed packages that unarchive into about 500MB worth of disk space used.
 
     wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | apt-key add -

@@ -8,7 +8,7 @@ published: true
 ---
 For those of you looking for DHT support with the default rtorrent package that it is in the Debian
 5 apt repos you are out of luck. Currently the only way to get DHT support for rtorrent is to use the
-0.8.5-2 release for Debian "Squeeze" (testing).
+0.8.5-2 release for Debian Squeeze (testing).
 
 So to get rtorrent working with DHT, go about the installation like you would usually:
     apt-get update
@@ -33,7 +33,7 @@ For automatically starting rtorrent, you can download an init script from the li
     mv rtorrentInit.sh /etc/init.d/rtorrent
     chmod +x /etc/init.d/rtorrent
 
-You will need to change the user in the config file to one that has a `.rtorrent.rc` in it's home directory.
+You will need to change the user in the config file to one that has a `.rtorrent.rc` in it\'s home directory.
 Then stick in the line `/etc/init.d/rtorrent start` before the `exit 0` in `/etc/rc.local`.
 
 Make a .rtorrent.rc startup file, so that /etc/init.d/rtorrent works properly.

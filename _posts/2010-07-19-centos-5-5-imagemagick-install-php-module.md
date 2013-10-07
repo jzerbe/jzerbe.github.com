@@ -27,7 +27,7 @@ If not continue along. I got the `$PHP_AUTOCONF` error.
     - `/etc/init.d/httpd restart`
 7. check to see if it was installed: `php -m | grep imagick`
 
-Now let's check to see if imagemagick "works". Create a .php file on the server and access it with
+Now let\'s check to see if imagemagick works. Create a .php file on the server and access it with
 your web browser. Excerpted from <http://www.astahost.com/info.php/Find-Test-Imagemagick-Php_t18769.html>.
 
     <html> <head> <title>Test for ImageMagick</title> </head>

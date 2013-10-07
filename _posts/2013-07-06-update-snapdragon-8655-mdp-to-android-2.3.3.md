@@ -8,7 +8,7 @@ tags:
 - firmware update
 published: true
 ---
-__NOTE__: IDK what happened, but after running through this I am no longer able to get an
+**NOTE**: IDK what happened, but after running through this I am no longer able to get an
 [adb](http://developer.android.com/tools/help/adb.html) connection. Screw this!
 Bought a [SGH-T959](http://forum.xda-developers.com/wiki/Samsung_Galaxy_S/SGH-T959)
 and rolling CyanogenMod on the [Vibrant](http://wiki.cyanogenmod.org/w/Vibrantmtd_Info).
@@ -19,7 +19,7 @@ second-hand back in October 2011. I finally got access to the
 [firmware updates](https://store.bsquare.com/doc_download/) at the end of Feburary 2013.
 Now that I want to start using this device on a day-to-day basis,
 I figured I would give the now ancient Gingerbread (API level 10) a try;
-hell, it's better than the installed Froyo (API level 8).
+hell, it\'s better than the installed Froyo (API level 8).
 
 [8655MDP_Gingerbread_Update.201107131.zip](https://docs.google.com/file/d/0B0yT30uCaFvvWnh4ZFZ5YzRvN3c/edit?usp=sharing)
 
@@ -46,7 +46,7 @@ hell, it's better than the installed Froyo (API level 8).
     - system.img
     - userdata.img
 
-    3) What's new
+    3) What\'s new
     Jul 13 2011
     - Gingerbread release
     - Trepn Profiler v1.2 is now included in the image
@@ -116,4 +116,4 @@ entered the following `adb` and `fastboot` commands:
 
 Things got a bit funky, prior to initializing the `wlan_chip_id`,
 when I was running this on Windows 7. Switched over to a Debian 7 box and was
-still __unable__ to get an adb connection ... so no 802.11 networks.
+still __unable__ to get an adb connection, so no 802.11 networks.

@@ -6,13 +6,13 @@ tags:
 - T-Mobile
 published: true
 ---
-__NOTE__: [no more free T-Mobile web service with keyword hole](https://twitter.com/jasonzerbe/status/182675503294070784).
+**NOTE**: [no more free T-Mobile web service with keyword hole](https://twitter.com/jasonzerbe/status/182675503294070784).
 
 I have been playing around with my new Android 2.2.1 dev phone, trying to port over the free webaccess I am
 able to get on my old Motorola J2ME feature-phones (Razr V3r, V195s).
 
 Interesting that these two devices have slightly different APN settings. Able to mess around with these settings
-after using P2KCommander v6 to modify the seem to show the "Web Sessions" menu and allow setting the default session.
+after using P2KCommander v6 to modify the seem to show the _Web Sessions_ menu and allow setting the default session.
 
 On my V195s:
 

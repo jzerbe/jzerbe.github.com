@@ -39,7 +39,7 @@ I set up my tools in `/opt/ec2` based on the following commands from the
     rm -rf ec2-api-tools*
     rm -rf ec2-ami-tools*
 
-Export __EC2_HOME__ by adding `export EC2_HOME=/opt/ec2` to `/etc/profile`.
+Export `EC2_HOME` by adding `export EC2_HOME=/opt/ec2` to `/etc/profile`.
 Add `EC2_HOME/bin` to your `PATH` by updating `export PATH` to look like `export PATH=$PATH:$EC2_HOME/bin`.
 `chmod -R 755 /opt` for good measure.
 

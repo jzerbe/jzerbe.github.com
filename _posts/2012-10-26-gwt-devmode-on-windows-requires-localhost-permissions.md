@@ -8,8 +8,8 @@ tags:
 - permissions
 published: true
 ---
-While GWT's devmode plugin should work out of the box when one is connecting
-from localhost to localhost. This is not the case on Google's own Chrome.
+While GWT\'s devmode plugin should work out of the box when one is connecting
+from localhost to localhost. This is not the case on Google\'s own Chrome.
 
 I have noticed this sort of behavior on Windows
 before; it is very particular about specific address matching.
