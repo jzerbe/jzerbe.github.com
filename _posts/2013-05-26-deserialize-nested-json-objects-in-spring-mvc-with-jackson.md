@@ -24,7 +24,7 @@ needs to be serialized when the `VenueObj` is serialized.
     protected @ResponseBody long putVenue(@RequestBody final VenueObj theVenueObj, final Principal thePrincipal, final HttpServletResponse response);
 
 Note the annotation driven mapping. May need to wire up your
-`[spring-dispatcher-servlet.xml](https://github.com/jzerbe/spring-security-gwt-template/blob/master/WEB-INF/spring-dispatcher-servlet.xml)`.
+[spring-dispatcher-servlet.xml](https://github.com/jzerbe/spring-security-gwt-template/blob/master/WEB-INF/spring-dispatcher-servlet.xml).
 
 
 ###VenueObj.java constructor - JSON de/serialization and ORM
