@@ -60,13 +60,6 @@ where `my-cool-header` is. jQuery likes to use the `x-requested-with` header.
     }
 
 
-###add Access-Control-Allow-Origin to your existing RequestMapping
-
-For every single RequestMapping that you want CORS to work with, one will have to
-add something like `theHttpServletResponse.addHeader("Access-Control-Allow-Origin", "*");`
-to said RequestMapping.
-
-
 ###example files
 
 For more contextually complete examples, take a look at the following files from
