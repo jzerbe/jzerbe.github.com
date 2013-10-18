@@ -15,7 +15,10 @@ layout: default
         {{ page.content | number_of_words }} words.
         Post tags: {{ page.tags | array_to_sentence_string }}.<br />
         <br />
-        Content is written by Jason Zerbe and licensed
+        {% assign date = page.date | date:"%Y-%m-%d" %}
+        {% assign title = page.url | append:'ext' | replace:'/ext','.md' | split:'/' | last %}
+        <a href="https://github.com/jzerbe/jzerbe.github.com/blob/master/_posts/{{date}}-{{title}}">Post content</a>
+        is written by Jason Zerbe and licensed
         <a href="http://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC 3.0</a>.<br />
         Want to comment or have a question? Drop me a line on
         <a href="https://twitter.com/@jasonzerbe/">twitter: @jasonzerbe</a>.
