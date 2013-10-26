@@ -26,9 +26,9 @@ one needs Basilisk II.
 
 For the most part I followed the linked guide on emaculation.com for
 getting Basilisk II running on my Windows XP machines:
-_[Setting up Basilisk II for Windows](http://www.emaculation.com/doku.php/basilisk_ii_setup)_.
+[_Setting up Basilisk II for Windows_](http://www.emaculation.com/doku.php/basilisk_ii_setup).
 
-1. From the _[BasiliskII for Windows build 30-08-2010 available](http://www.emaculation.com/forum/viewtopic.php?t=5282)_
+1. From the [_BasiliskII for Windows build 30-08-2010 available_](http://www.emaculation.com/forum/viewtopic.php?t=5282)
         forum post one is directed to download and extract
         [BasiliskII_15_01_2010.zip](http://www.open.ou.nl/hsp/downloads/BasiliskII_15_01_2010.zip)
 2. To configure Basalisk II via the GUI, download and install
