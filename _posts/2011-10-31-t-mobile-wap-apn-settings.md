@@ -41,18 +41,18 @@ On my V195s:
     Line Type 2: ISDN
     GPRS APN: wap.voicestream.com
     User Name: motV190
-    Password: motV190`
+    Password: motV190
 
 On my Razr V3r everything else is the same except for the username and password:
 
     User Name: motV3
-    Password: motV3`
+    Password: motV3
 
 And from the
 [automatic MCC and MNC detection app](http://vraidsys.com/2011/11/automatic-mcc-and-mnc-detection-using-motorola-j2me-enabled-cellphone-gsm/)
 I made:
 
-    MCC = 310, MNC = 260`
+    MCC = 310, MNC = 260
 
 I am able to enter all these values into the APN settings on my smartphone, but last time I tried to connect the
 settings were erased. I suppose I will need to do some setprop shenanigans to re-enter the settings once the
