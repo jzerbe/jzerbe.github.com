@@ -3,6 +3,7 @@ layout: post
 title: setup Tvheadend with DirecTV electronic program guide
 tags:
 - Tvheadend
+- XMLTV
 - electronic program guide
 - EPG
 published: true
