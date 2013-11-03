@@ -5,11 +5,7 @@ tags:
 - Debian
 - J2EE
 - GlassFish
-status: publish
-type: post
 published: true
-meta:
-_edit_last: "1"
 ---
 After reading up on the basics of the [JSTL](http://www.ibm.com/developerworks/java/library/j-jstl0211.html)
 and various other JSP stuffs, I thought it was time I run my own glassfish development server. Do note that the paths

@@ -4,8 +4,6 @@ title: setup adium (1.4.2) to auto join google group chat
 tags:
 - Adium
 - OSX
-status: publish
-type: post
 published: true
 ---
 I tested this process on [Adium](http://www.adium.im/) 1.4.2 on my Mac Pro workstation running OSX 10.6 (at work).
