@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Jason Zerbe's trailbook | running up mountains
+title: Jason Zerbe's cookbook | delicious cooking adventures
 ---
 
 <div data-role="page">
@@ -9,7 +9,7 @@ title: Jason Zerbe's trailbook | running up mountains
     <div data-role="content">
         <ul data-role="listview" data-inset="true">
             {% for post in site.posts %}
-                {% if post.tags contains 'trails' %}
+                {% if post.tags contains 'eats' %}
                     <li>
                         <a href="{{ post.url }}" title="{{ post.title }} permalink">
                             <h2>{{ post.title }}</h2>
@@ -21,5 +21,5 @@ title: Jason Zerbe's trailbook | running up mountains
         </ul>
     </div>
 
-    {% include footer_trails.html %}
+    {% include footer_eats.html %}
 </div>
