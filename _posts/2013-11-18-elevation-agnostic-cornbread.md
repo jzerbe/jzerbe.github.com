@@ -13,7 +13,7 @@ Works well for a 9.5x13.5x2 inch glass baking dish.
 
 - `2.5 cups` flour
 - `1.5 cups` corn meal
-- `0.5 cup` sugar for more dessert-like __or__ 0.25 for general purpose use with beans, salsa, lettuce, cheese
+- `0.5 cup` sugar for more dessert-like __or__ `0.25` for general purpose use with beans, salsa, lettuce, cheese
 - `4 teaspoons` baking powder
 - `0.5 teaspoon` salt. Original says same amount for half of this recipe; sodium much?
 - `2 cups` skim milk
