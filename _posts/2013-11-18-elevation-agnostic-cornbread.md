@@ -13,7 +13,7 @@ Works well for a 9.5x13.5x2 inch glass baking dish.
 
 - 2.5 cups flour
 - 1.5 cups corn meal
-- 0.5 cup sugar for more dessert-like *or* 0.25 for general purpose use with beans, salsa, lettuce, cheese
+- 0.5 cup sugar for more dessert-like __or__ 0.25 for general purpose use with beans, salsa, lettuce, cheese
 - 4 teaspoons baking powder
 - 0.5 teaspoon salt
 - 2 cups skim milk
@@ -22,7 +22,7 @@ Works well for a 9.5x13.5x2 inch glass baking dish.
 
 ###Instructions###
 1. (Optional) grease cooking dish. The glass baking dish I use, never needs this.
-2. Original says to heat oven to 400F. I typically go 410F *or* 375F on convect bake in a new oven.
+2. Original says to heat oven to 400F. I typically go 410F __or__ 375F on convect bake in a new oven.
 3. Mixup dry ingredients. Form bowl in center of dry ingredients.
 4. Mixup eggs in center of bowl. Add remaining wet ingredients and mix all together until combined.
 5. Original says bake 20-25 minutes. For newer/more powerful ovens I go 22 minutes,
