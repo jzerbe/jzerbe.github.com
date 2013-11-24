@@ -40,6 +40,6 @@ I typically lay a bed of zucchini, followed by the onion(s) and diced jalapeno.
 3. Dump the beans, tomatoes, and can rinse water in. Leave the pan uncovered for the remainder of the cooking process.
 4. Turn down the heat to medium-high, and stir it all up.
 5. Dump everything else in once the mixture has come to a full boil again.
-6. Stirring, leave on full boil for `5 minutes`, or until consistency has thickened to your liking, and then turn off heat.
+6. Stirring occasionally, leave on full boil for `5 minutes`, or until consistency has thickened to your liking, and then turn off heat.
 7. Let sit on heat for another `5 minutes` or so.
 8. Serve with sour cream, cheese, and maybe some corn chips or corn bread.
