@@ -26,8 +26,8 @@ is correct.
     });
 
 According to the discussion on -
-[Desktop applications only support the oauth_callback value 'oob'/oauth/request_token](https://dev.twitter.com/discussions/392)
-- it seems as though the fix it to put in placeholder data in the __Callback URL__
+[Desktop applications only support the oauth_callback value 'oob'/oauth/request_token](https://dev.twitter.com/discussions/392) - it
+seems as though the fix it to put in placeholder data in the __Callback URL__
 field in the app settings. I also ticked the __Sign in with Twitter__ check box
 and things are working great.
 
