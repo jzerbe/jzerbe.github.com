@@ -7,7 +7,7 @@ tags:
 - eats
 published: true
 ---
-I picked up this recipe from my Dad, who I pretty sure got it from his mom.
+I picked up this recipe from my Dad, who I am pretty sure got it from his mom.
 In any case, it works for cooking into pancakes or waffles (using a waffle maker).
 Typically the following recipe gets doubled so I have leftovers to freeze.
 When doubled the recipe should produce enough to feed 4-6 comfortably.
