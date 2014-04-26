@@ -1,3 +1,4 @@
+markdown: kramdown
 lsi: false
 paginate: 3
 permalink: /:year/:month/:title/
