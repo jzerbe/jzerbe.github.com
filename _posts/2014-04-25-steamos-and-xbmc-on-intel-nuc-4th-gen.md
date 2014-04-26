@@ -15,7 +15,7 @@ I just needed to pick up a PS/2 to USB converter for an old PS/2 keyboard.
 ###The Hardware
 - [Intel NUC D54250WYK1 Intel 4th Gen Core i5-4250U Processor with Power Cord](http://www.amazon.com/gp/product/B00H3YT8CC)
 - [Crucial 16GB Kit DDR3/DDR3L 1600 MHz](http://www.amazon.com/gp/product/B008LTBJFW)
-_FYI_ Max RAM the NUC will take is 16GB (2x8GB).
+max RAM the NUC will take is 16GB (2x8GB)
 - [Crucial M500 240GB mSATA Internal SSD](http://www.amazon.com/gp/product/B00BQ8RKT4)
 
 Pretty hard to screw up the assembly portion; just glance at the instructions.
@@ -24,9 +24,9 @@ Pretty hard to screw up the assembly portion; just glance at the instructions.
 The NUC needs a newer BIOS to properly handle the UEFI Debian boot binary.
 I opted to follow the
 [F7 BIOS update instructions](http://www.intel.com/support/motherboards/desktop/sb/CS-034522.htm),
-which entails hitting _F7_ at BIOS load time and hitting a file on your
-USB drive. My unit was on _2013.1017_, and updating to _2014.0303_
-worked. Do note, that one _will have to disable the Wake-On-Lan_ feature, until
+which entails hitting __F7__ at BIOS load time and hitting a file on your
+USB drive. My unit was on __2013.1017__, and updating to __2014.0303__
+worked. Do note, that one will have to __disable the Wake-On-Lan__ feature, until
 Intel releases a fix for the [reboot after shutdown issue](https://communities.intel.com/thread/47751).
 
 ###SteamOS installation
@@ -41,20 +41,25 @@ This is based upon the Steam Universe posts:
 [Installing applications from the Debian repo in SteamOS](http://steamcommunity.com/groups/steamuniverse/discussions/1/648814396114274132/),
 and [Intergrating XBMC in SteamOS](http://steamcommunity.com/groups/steamuniverse/discussions/1/648816742742587380/).
 
-1. Get into a sudo shell: `sudo -s`
-2. Open up `/etc/apt/sources.list` and add:
+- Get into a sudo shell: `sudo -s`
+- Open up `/etc/apt/sources.list` and add:
+```bash
     deb http://ftp.us.debian.org/debian/ wheezy main contrib non-free
     deb-src http://ftp.us.debian.org/debian/ wheezy main contrib non-free
-3. Update apt: `apt-get update`
-4. Install XBMC: `apt-get install xbmc`
-5. Update the gnome session files to automatically switch between Steam and XBMC on either program exit:
+```
+- Update apt: `apt-get update`
+- Install XBMC: `apt-get install xbmc`
+- Update the gnome session files to automatically switch between
+Steam and XBMC on either program exit:
+```bash
     cd /usr/share/xsessions/
     mv gnome.desktop gnome-old.desktop
     cp XBMC.desktop gnome.desktop
-6. Restart
+```
+- Restart
 
 ###Install AeroFS for Music syncing
-While I filled up an external NTFS USB drive with Videos. I like to keep my
+While I filled up an external NTFS USB drive with Videos, I like to keep my
 music library synced across all my devices with AeroFS.
 
 1. Install the Java 7 runtime: `apt-get install openjdk-7-jre-headless`
