@@ -45,8 +45,9 @@ and [Intergrating XBMC in SteamOS](http://steamcommunity.com/groups/steamunivers
 2. Open up `/etc/apt/sources.list` and add:
     - `deb http://ftp.us.debian.org/debian/ wheezy main contrib non-free`
     - `deb-src http://ftp.us.debian.org/debian/ wheezy main contrib non-free`
+    - `deb http://ftp.us.debian.org/debian/ wheezy-backports main contrib non-free`
 3. Update apt: `apt-get update`
-4. Install XBMC: `apt-get install xbmc`
+4. Install XBMC: `apt-get -t wheezy-backports install xbmc`
 5. Update the gnome session files to automatically switch between Steam and XBMC on either program exit:
     - `mv /usr/share/xsessions/gnome.desktop /usr/share/xsessions/gnome-old.desktop`
     - `cp /usr/share/xsessions/XBMC.desktop /usr/share/xsessions/gnome.desktop`
