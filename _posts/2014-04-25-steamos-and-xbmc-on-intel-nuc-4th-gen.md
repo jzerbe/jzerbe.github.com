@@ -41,22 +41,16 @@ This is based upon the Steam Universe posts:
 [Installing applications from the Debian repo in SteamOS](http://steamcommunity.com/groups/steamuniverse/discussions/1/648814396114274132/),
 and [Intergrating XBMC in SteamOS](http://steamcommunity.com/groups/steamuniverse/discussions/1/648816742742587380/).
 
-- Get into a sudo shell: `sudo -s`
-- Open up `/etc/apt/sources.list` and add:
-```bash
-    deb http://ftp.us.debian.org/debian/ wheezy main contrib non-free
-    deb-src http://ftp.us.debian.org/debian/ wheezy main contrib non-free
-```
-- Update apt: `apt-get update`
-- Install XBMC: `apt-get install xbmc`
-- Update the gnome session files to automatically switch between
-Steam and XBMC on either program exit:
-```bash
-    cd /usr/share/xsessions/
-    mv gnome.desktop gnome-old.desktop
-    cp XBMC.desktop gnome.desktop
-```
-- Restart
+1. Get into a sudo shell: `sudo -s`
+2. Open up `/etc/apt/sources.list` and add:
+    - `deb http://ftp.us.debian.org/debian/ wheezy main contrib non-free`
+    - `deb-src http://ftp.us.debian.org/debian/ wheezy main contrib non-free`
+3. Update apt: `apt-get update`
+4. Install XBMC: `apt-get install xbmc`
+5. Update the gnome session files to automatically switch between Steam and XBMC on either program exit:
+    - `mv /usr/share/xsessions/gnome.desktop /usr/share/xsessions/gnome-old.desktop`
+    - `cp /usr/share/xsessions/XBMC.desktop /usr/share/xsessions/gnome.desktop`
+6. Restart
 
 ###Install AeroFS for Music syncing
 While I filled up an external NTFS USB drive with Videos, I like to keep my
