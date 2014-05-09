@@ -11,6 +11,8 @@ tags:
 - trails
 published: true
 ---
+Second in a three part series on Arches and Canyonlands trip over May 1-3.
+
 ###The Drive
 _Advertised_ to take ~[30 minutes](https://goo.gl/maps/EQCqb)
 from Moab to the Canyonlands entrance station. I will say this:

@@ -10,6 +10,8 @@ tags:
 - trails
 published: true
 ---
+First in a three part series on Arches and Canyonlands trip over May 1-3.
+
 ###The Drive
 It is about 5 hours to drive from the junction of
 [6th Ave and I-70W](https://goo.gl/maps/t1knS) at the edge of the Denver Metro
