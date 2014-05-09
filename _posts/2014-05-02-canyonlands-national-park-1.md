@@ -17,8 +17,9 @@ Second in a three part series on Arches and Canyonlands trip over May 1-3.
 _Advertised_ to take ~[30 minutes](https://goo.gl/maps/EQCqb)
 from Moab to the Canyonlands entrance station. I will say this:
 I drive faster when there are not any state patrol around and there did not
-seem to be any on UT-313; be careful on US-191! $10 entrance fee, same as
-Arches, they accept credit cards.
+seem to be any on UT-313; be careful on US-191!
+[$10 entrance fee](http://www.nps.gov/cany/planyourvisit/feesandreservations.htm),
+they accept credit cards; same as Arches.
 
 
 ###Gooseberry Trail

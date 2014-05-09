@@ -26,7 +26,7 @@ Plan to throw $20 total on your card if you are doing Canyonlands as well.
 Showed up around 1:30pm, sat at the picnic tables outside the visitor center
 and slammed some lunch, before driving up the entrance road. I am a firm
 believer in bypassing most visitor centers and catching it on the way out for 5
-or perusing the web later.
+minutes or perusing the web later.
 
 
 ###Delicate Arch

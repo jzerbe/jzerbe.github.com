@@ -15,7 +15,7 @@ Third in a three part series on Arches and Canyonlands trip over May 1-3.
 
 ###False Kiva
 I had seen this on [EveryTrail](http://www.everytrail.com/guide/false-kiva-hike),
-and heard about it from a coworker as a great off-the-beaten-path trail to do.
+and heard about it from a coworker as a great off-the-beaten-trail to do.
 Once you find the trail it is really hard to get lost. Follow the footprints
 on the wash and the cairns on the rocks. You end up under the mesa looking
 out toward the _Green River_ basin; respect the Native American artifacts.
@@ -42,7 +42,7 @@ From the [Short Hikes](http://www.nps.gov/cany/planyourvisit/iskyshorthikes.htm)
 listing. Just about done for the day, we were heading back out of the park, and
 we saw this easy guy on the
 [topo maps](https://www.dropbox.com/sc/k4rmnpwx6ki30tg/AAAxp1rx8XanxeOCiotZcPtXa).
-Pretty much flat until you do a scrabble up the butte to get a good 360 view
+Pretty much flat until you do a scramble up the butte to get a good 360 view
 of the Island in the Sky district. We skipped the Native American ruins,
 because food, and have seen plenty in the past.
 
