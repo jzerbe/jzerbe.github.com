@@ -14,9 +14,9 @@ published: true
 ###The Drive
 _Advertised_ to take ~[30 minutes](https://goo.gl/maps/EQCqb)
 from Moab to the Canyonlands entrance station. I will say this:
-I drive fast when there are not any state patrol around and there did not
-seem to be any on UT-313. Be careful on US-191! $10 entrance fee, same as
-Arches, accept credit cards.
+I drive faster when there are not any state patrol around and there did not
+seem to be any on UT-313; be careful on US-191! $10 entrance fee, same as
+Arches, they accept credit cards.
 
 
 ###Gooseberry Trail
@@ -44,14 +44,14 @@ Decent views (I am spoiled) of the _Green River_ basin and _White Rim Road_
 can be had from the overlook. Hit it from 1-2pm; which was only possible in
 full sun because the high must have been mid-70s. Seemed as though more
 people access the _White Rim Road_ from the _Murphy Loop_ than where we went
-down on _Gooseberry Trail_. Designated parkign limited to ~10 parking spots.
+down on _Gooseberry Trail_. Designated parking limited to ~10 parking spots.
 
 - ~3.2 miles RT; 1 hour total; ~50 ft elevation change
 - [Photos](https://www.dropbox.com/sc/dwbi333slprezmp/AABuZ7sbMMy8DLlxv2gmUS0wa)
 
 
 ###Misc
-Hit a few less _toursity_ drive-up overlooks on the way out of the park.
+Hit a few _less tourist flocked_ drive-up overlooks on the way out of the park.
 Made 5 minutes for the visitor center and 5 for the toilets and water fill-up.
 At this point ~3pm we were so done. The pool felt great ~4pm.
 
@@ -64,6 +64,6 @@ of plain _Brew Pub Nachos_ + drinks was enough to get us going; I have had
 some nacho plates in my day, and this could certainly satisfy one person.
 The [unfiltered wheat on tap](http://www.themoabbrewery.com/brewery.html) is solid.
 We each got the [Veggie Burrito](http://www.themoabbrewery.com/menu.html),
-which is certainly one of the most interesting burritos I have had.
+which is certainly one of the most interesting and filling burritos I have had.
 
 Check it out.
