@@ -9,7 +9,7 @@ tags:
 - Utah
 - desert
 - trails
-published: false
+published: true
 ---
 ###The Drive
 _Advertised_ to take ~[30 minutes](https://goo.gl/maps/EQCqb)
