@@ -62,7 +62,7 @@ At this point ~3pm we were so done. The pool felt great ~4pm.
 ###Moab Brewery
 [Moab Brewery](http://www.yelp.com/biz/moab-brewery-moab-2) was right across
 from our hotel, and already at ~5:45pm it was getting full. Fortunately my dad
-and I were able to snap a table on the less noisy screen? porch. Small order
+and I were able to snag a table on the less noisy screen? porch. Small order
 of plain _Brew Pub Nachos_ + drinks was enough to get us going; I have had
 some nacho plates in my day, and this could certainly satisfy one person.
 The [unfiltered wheat on tap](http://www.themoabbrewery.com/brewery.html) is solid.
