@@ -46,5 +46,5 @@ for 5 minutes and break apart with spatula into small tater-tot sizes.
 4 tortillas.
 7. Portion out the grated cheese, potato, egg, and onion mix into the tortillas.
 8. Cover the tops of the rolled tortillas with sour cream
-and chili/salsa product of choosing.
+and chile/salsa product of choosing.
 9. Serve with fresh cut bell peppers.
