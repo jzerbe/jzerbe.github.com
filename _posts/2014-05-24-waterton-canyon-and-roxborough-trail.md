@@ -22,8 +22,8 @@ Did this on a cloudy Saturday morning 8:40-11:20am. Grabbed
 [some pics](https://www.dropbox.com/sc/zcqb1hew4cu8u3n/AAAmp4EfRBSLIWBfSFTXiqE5a)
 on the return ride of a glassy pond section.
 
-6 (light uphill) + 4 (somewhat technical variable terrain)
-+ 6 (light downhill return) miles = 16 miles in ~ 2 hours 40 minutes
+6 (light uphill) + 4 (somewhat technical variable terrain) + 6 (light downhill return)
+miles = 16 miles in ~ 2 hours 40 minutes
 
 ###Maps
 - [Waterton Canyon & singletrack loop](https://mapsengine.google.com/map/edit?mid=zj2fwvSxaNFw.krJkmdoodtAA)
