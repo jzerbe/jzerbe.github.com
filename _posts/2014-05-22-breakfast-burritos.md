@@ -19,8 +19,9 @@ This recipe yields 4 large burritos.
 probably have the lowest sodium content around.
 - 2 [russet potatoes](http://www.produceoasis.com/ProductDetailPage/TabId/272/pid/408/Vegetables/Russet-Potato.aspx)
 - 4 eggs
-- `0.5 cup` of diced green onions
-- `0.25 cup` olive oil - pure (cheaper) or extra virgin makes no taste difference
+- `0.5 cups` of diced green onions
+- `0.25 cups` olive oil - pure (cheaper) or extra virgin makes no taste difference
+- `2 cups` grated cheese. I like a colby-jack mix.
 - green chile and/or red salsa. big fan of
 [505: Roasted Green Chiles](http://www.505chile.com/products.aspx) and
 [Private Selection: Firey Habanero & Chipotle Salsa Hot](http://www.privateselection.com/artisan-products/snacks/salsas/)
@@ -43,7 +44,7 @@ for 5 minutes and break apart with spatula into small tater-tot sizes.
 5. Dump the potato hash onto plate. Scramble the 4 eggs along with the green onions.
 6. Turn off stove-top and use the remaining heat and oil residue to prep your
 4 tortillas.
-7. Portion out potato, egg, and onion mix into the tortillas.
+7. Portion out the grated cheese, potato, egg, and onion mix into the tortillas.
 8. Cover the tops of the rolled tortillas with sour cream
 and chili/salsa product of choosing.
 9. Serve with fresh cut bell peppers.
