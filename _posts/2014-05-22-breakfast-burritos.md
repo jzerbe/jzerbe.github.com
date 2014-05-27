@@ -26,6 +26,7 @@ probably have the lowest sodium content around.
 [505: Roasted Green Chiles](http://www.505chile.com/products.aspx) and
 [Private Selection: Firey Habanero & Chipotle Salsa Hot](http://www.privateselection.com/artisan-products/snacks/salsas/)
 respectively.
+- `15 oz` can of refriend beans
 - sour cream
 - pepper, salt, garlic powder
 
@@ -45,6 +46,7 @@ for 5 minutes and break apart with spatula into small tater-tot sizes.
 6. Turn off stove-top and use the remaining heat and oil residue to prep your
 4 tortillas.
 7. Portion out the grated cheese, potato, egg, and onion mix into the tortillas.
-8. Cover the tops of the rolled tortillas with sour cream
+8. Throw in 3-4 spoonfuls of refried beens into each burrito.
+9. Cover the tops of the rolled tortillas with sour cream
 and chile/salsa product of choosing.
-9. Serve with fresh cut bell peppers.
+10. Serve with fresh cut bell peppers.
