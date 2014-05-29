@@ -26,7 +26,7 @@ probably have the lowest sodium content around.
 [505: Roasted Green Chiles](http://www.505chile.com/products.aspx) and
 [Private Selection: Firey Habanero & Chipotle Salsa Hot](http://www.privateselection.com/artisan-products/snacks/salsas/)
 respectively.
-- `15 oz` can of refriend beans
+- `15 oz` can of refried beans
 - sour cream
 - pepper, salt, garlic powder
 
