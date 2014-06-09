@@ -4,7 +4,7 @@ title: play Nintendo 64 ROMs from SteamOS
 tags:
 - SteamOS
 - Debian
-- Nintento 64
+- Nintendo 64
 published: true
 ---
 Best way to launch emulators from dual SteamOS/XBMC HTTPC is definately from
