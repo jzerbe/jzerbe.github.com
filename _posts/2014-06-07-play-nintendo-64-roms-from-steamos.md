@@ -18,7 +18,7 @@ standard Debian repositories. See
 if this is not the case.
 
 ###Get
-- `apt-get install git mupen64plus python
+- `apt-get install git mupen64plus python`
 - `git clone --depth=1 https://github.com/jzerbe/Ice.git`
 - `git checkout steamos`
 
