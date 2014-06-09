@@ -2,7 +2,7 @@
 layout: post
 title: White Ranch East access short course loop
 tags:
-- Hall Ranch
+- White Ranch
 - Jefferson County Park
 - Golden
 - Colorado
