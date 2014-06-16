@@ -5,7 +5,7 @@ tags:
 - North Table Mountain Park
 - Golden
 - Colorado
-- bike
+- mountain bike
 - trails
 published: true
 ---

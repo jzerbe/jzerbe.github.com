@@ -5,7 +5,7 @@ tags:
 - Green Mountain
 - Lakewood
 - Colorado
-- bike
+- mountain bike
 - trails
 published: true
 ---

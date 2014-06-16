@@ -8,7 +8,7 @@ tags:
 - Denver
 - Colorado
 - foothill
-- bike
+- mountain bike
 - trails
 published: true
 ---

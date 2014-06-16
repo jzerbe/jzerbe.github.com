@@ -6,7 +6,7 @@ tags:
 - Jefferson County Park
 - Golden
 - Colorado
-- bike
+- mountain bike
 - trails
 published: true
 ---
