@@ -28,6 +28,13 @@ to feel a bit packed, but this is coming from someone used to seeing
 one or two people, on reclusive 14ers, every hour or so.
 
 M/F pit toilets and room for 50 vehicles at the _Bitterbrush Trail_ parking lot.
+Room for 10 vehicles at the _Antelope Trail_ parking lot.
+
+Kudos to all the volunteers that have put in time cleaning this
+beautiful place after the
+[September 2013 flooding](http://www.bouldercounty.org/flood/pages/default.aspx).
+I was tubing in _North Saint Vrain Creek_ last July, and the creek course
+washout is very obvious from _Apple Valley Road_.
 
 ###Stats/Links
 - 12 miles RT ~ 2 hours
