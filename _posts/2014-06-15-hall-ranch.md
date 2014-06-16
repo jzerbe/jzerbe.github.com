@@ -18,11 +18,14 @@ and the Twitter account of the
 [Hall Ranch Ranger](https://twitter.com/RangerDMorris) for insights
 beforehand.
 
-My bike partner showed up and we hit the trail ~9am.
+My bike partner showed up and we hit the trail ~9am. Made it to the top of
+_Bitterbrush Trail_ (the top bench) ~9:50am, with a rather winded partner.
+I will say I was somewhat drippy myself, but not beat. This was my first
+serious rock garden, and while I had to get off 5-10 times, it kept me amused.
 Low levels of riders (and only riders) until ~10am.
-By the time I was coming down _Antelope Trail_ ~10:30am, things were starting
+By the time I was coming down _Antelope Trail_ ~10:45am, things were starting
 to feel a bit packed, but this is coming from someone used to seeing
-one or two people on reclusive 14ers every hour or so.
+one or two people, on reclusive 14ers, every hour or so.
 
 M/F pit toilets and room for 50 vehicles at the _Bitterbrush Trail_ parking lot.
 
