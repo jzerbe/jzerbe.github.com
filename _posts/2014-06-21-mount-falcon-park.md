@@ -20,7 +20,8 @@ parking lot for _Morrison Town Park_. This way, we could maximize our sweating
 by having ~1500ft of elevation change in 3 miles. On the _Castle Trail_, there are
 two larger rock fields where I had to get off and walk, and 5-10 times where
 I had to dismount for a tight switchback. Just keep in mind that the downhill
-will be worth it!
+will be worth it! __Note__ that there is no shade on _Castle Trail_, with
+large sections of shade in the pine forest surrounding _Parmalee Trail_.
 
 Continue on the _Castle Trail_ until right before the West parking lot. Take a
 hard left at the
