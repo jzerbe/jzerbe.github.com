@@ -17,16 +17,17 @@ parks: semi-arid vegetation, giving way to pine forest at higher elevation.
 
 I convinced my biking partner to start from the East parking lot, or rather the
 parking lot for _Morrison Town Park_. This way, we could maximize our sweating
-by having ~1500ft of elevation change in 3 miles. On the Castle Trail, there are
+by having ~1500ft of elevation change in 3 miles. On the _Castle Trail_, there are
 two larger rock fields where I had to get off and walk, and 5-10 times where
 I had to dismount for a tight switchback. Just keep in mind that the downhill
 will be worth it!
 
-Continue on the Castle Trail until right before the West parking lot. Take a
+Continue on the _Castle Trail_ until right before the West parking lot. Take a
 hard left at the
 [pit toilet and log fence remnant](https://www.google.com/maps/@39.6356725,-105.2374338,96m/data=!3m1!1e3).
-Once on the Parmalee Trail there is ~500ft of elevation change where the trail
+Once on the singletrack _Parmalee Trail_ there is ~500ft of elevation change where the trail
 descends and then ascends back to the _Meadow Trail_ that runs the ridge-line.
+_Meadow Trail_ connects back with _Castle Trail_ to form a "lollipop".
 
 I arrived at the East parking lot a bit before 8:30am, and snagged a spot
 that had just opened up. Otherwise there were openings a few cars down Vine St.
