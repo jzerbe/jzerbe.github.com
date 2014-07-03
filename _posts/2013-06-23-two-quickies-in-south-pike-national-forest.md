@@ -11,7 +11,7 @@ tags:
 published: false
 ---
 [Pike and San Isabel National Forests](http://www.fs.usda.gov/psicc/)
-runs Southeast from Frisco to Colorado Springs, hemmed in by CO-9, US-24, I-25, I-70;
+run Southeast from Frisco to Colorado Springs, hemmed in by CO-9, US-24, I-25, I-70;
 quite an area.
 
 The two __out and back__ trails in this post are located just South of
