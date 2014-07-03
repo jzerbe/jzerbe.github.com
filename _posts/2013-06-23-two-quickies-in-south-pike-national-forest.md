@@ -10,8 +10,9 @@ tags:
 - trails
 published: false
 ---
-[Pike and San Isabel National Forests Cimarron and Comanche National Grasslands](http://www.fs.usda.gov/psicc/)
-runs Southeast from Frisco to Colorado Springs, hemmed in by CO-9, US-24, I-25, I-70; quite an area.
+[Pike and San Isabel National Forests](http://www.fs.usda.gov/psicc/)
+runs Southeast from Frisco to Colorado Springs, hemmed in by CO-9, US-24, I-25, I-70;
+quite an area.
 
 The two __out and back__ trails in this post are located just South of
 [Divide, CO](http://en.wikipedia.org/wiki/Divide,_Colorado)
@@ -20,7 +21,7 @@ Based on the [pictures and activity levels at Mueller](https://twitter.com/searc
 I would guess that by late May, most years these two trails are always snow-free.
 
 I started ~9:15am from the trailhead parking on _Teller County Road 62_ up the
-_Rasberry Mountain_ trail. Take a few switchbacks up to the ridgeline and you have
+_Raspberry Mountain_ trail. Take a few switchbacks up to the ridgeline and you have
 already cleared most of the elevation gain. Just be sure to stay on the old road,
 as once you are along the ridge, there are various places where you can go down
 onto private property and other public trails. The last mile is great singletrack
@@ -38,6 +39,9 @@ most part it stays quite level next to _Fourmile Creek_. The boulders at the
 end are fun to mess around on. I am not one for lunching on trails, but I would
 say this might be a good place for it. Shade in the last mile through a pine
 forest; exposed for the rest of the time. Pit toilets at trailhead.
+
+I ended by lunching with the windows down and the air blowing, driving back
+into town.
 
 ###Stats/Links
 - [NOAA Point Forecast](http://forecast.weather.gov/MapClick.php?lat=38.8937269&lon=-105.1056901)
