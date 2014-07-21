@@ -50,7 +50,7 @@ in the wet sections next to Ute Creek, and at the peak.
 If you are walking at a good pace, they will not bother you.
 Stopping or using a friendly tree can become painful.
 Fortunately there were strong enough gusts at the summit.
-- It started to precipitate [graupel](http://en.wikipedia.org/wiki/Graupel) halway across
+- It started to precipitate [graupel](http://en.wikipedia.org/wiki/Graupel) halfway across
 the park at 11:15am on the return. Turned to rain below 11,500 feet. A little below
 11,000 feet and it became perfectly sunny again.
 
