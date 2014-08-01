@@ -10,9 +10,10 @@ tags:
 - trails
 published: false
 ---
-HOLDER
+I previously wrote about White Ranch in,
+[White Ranch East access short course loop]({% post_url 2014-06-07-white-ranch-east-access-short-course-loop %})
 
 ###Stats/Links
-- __TODO__ miles RT ~ 2.75 hours
-- __TODO__ Google Custom Map
+- 8 miles RT ~ 2.75 hours. 8:15am to 11am.
+- [Google Custom Map](https://mapsengine.google.com/map/edit?mid=zj2fwvSxaNFw.k-KoLN7NuyIM)
 - [NOAA Point Forecast](http://forecast.weather.gov/MapClick.php?lat=39.8056547&lon=-105.2711533)
