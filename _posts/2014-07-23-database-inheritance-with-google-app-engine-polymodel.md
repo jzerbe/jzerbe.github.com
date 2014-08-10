@@ -14,6 +14,7 @@ arbitrary levels of specificity. Both handle the problem of
 [Quotas and limits](https://developers.google.com/appengine/docs/python/datastore/#Python_Quotas_and_limits),
 but only one is easy to read through. Obviously, I chose the one with
 lower developer maintenance costs.
+View [GitHub Gist](https://gist.github.com/jzerbe/466ddec827cd766313ed).
 
 {% gist 466ddec827cd766313ed %}
 
