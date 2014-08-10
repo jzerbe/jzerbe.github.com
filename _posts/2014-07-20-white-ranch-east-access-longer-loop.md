@@ -13,7 +13,7 @@ published: true
 I previously wrote about White Ranch in:
 [White Ranch East access short course loop](http://vraidsys.com/2014/06/white-ranch-east-access-short-course-loop/).
 
-Highly suggest the linked longer loop. Nothing but downhill on the return.
+Nothing but downhill on the return from the linked longer run.
 
 __Update__ August 10: Highly suggest starting by 8am to
 beat most of the other foot/bike/equestrian traffic.
