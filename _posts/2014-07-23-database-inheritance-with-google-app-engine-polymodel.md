@@ -9,13 +9,13 @@ tags:
 - python
 published: true
 ---
-{% gist 466ddec827cd766313ed %}
-
-The above were two approaches to the problem of handling data at
+The following are two approaches to the problem of handling data at
 arbitrary levels of specificity. Both handle the problem of
 [Quotas and limits](https://developers.google.com/appengine/docs/python/datastore/#Python_Quotas_and_limits),
 but only one is easy to read through. Obviously, I chose the one with
 lower developer maintenance costs.
+
+{% gist 466ddec827cd766313ed %}
 
 In [_Effective PolyModel_](https://developers.google.com/appengine/articles/polymodel),
 Rafe Kaplan uses the tried and true ecommerce catalog example
