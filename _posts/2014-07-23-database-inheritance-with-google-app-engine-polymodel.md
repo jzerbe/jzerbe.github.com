@@ -18,6 +18,12 @@ View [GitHub Gist](https://gist.github.com/jzerbe/466ddec827cd766313ed).
 
 {% gist 466ddec827cd766313ed %}
 
+> instead of dropping all None columns from existence on database put
+> via a hack, one can be smart about instantiating entities at the
+> appropriate specificity and reap the rewards of inheritance
+
+[source](https://gist.github.com/jzerbe/466ddec827cd766313ed#comment-1279155)
+
 In [_Effective PolyModel_](https://developers.google.com/appengine/articles/polymodel),
 Rafe Kaplan uses the tried and true ecommerce catalog example
 for illustrating the benefits of using
