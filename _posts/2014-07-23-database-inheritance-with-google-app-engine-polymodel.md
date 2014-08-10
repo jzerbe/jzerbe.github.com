@@ -1,12 +1,33 @@
 ---
 layout: post
-title: database inheritance with Google App Engine PolyModel
+title: database modeling with Google App Engine PolyModel
 tags:
-- database abstraction
+- database
+- model
 - Google App Engine
 - PolyModel
 - python
-published: false
+published: true
 ---
-TODO
+{% gist 466ddec827cd766313ed %}
 
+The above were two approaches to the problem of handling data at
+arbitrary levels of specificity. Both handle the problem of
+[Quotas and limits](https://developers.google.com/appengine/docs/python/datastore/#Python_Quotas_and_limits),
+but only one is easy to read through. Obviously, I chose the one with
+lower developer maintenance costs.
+
+In [_Effective PolyModel_](https://developers.google.com/appengine/articles/polymodel),
+Rafe Kaplan uses the tried and true ecommerce catalog example
+for illustrating the benefits of using
+[PolyModel](https://developers.google.com/appengine/docs/python/ndb/polymodelclass).
+
+> Instead of placing all products in to a single class, it is possible to define
+> each category as its own class that fits naturally in to a product category hierarchy.
+
+Do your team a favor and check out `google.appengine.ext.ndb.polymodel.PolyModel`:
+
+1. Querying at arbitrary inheritence levels.
+2. Built in caching.
+3. One of the closest things you get to an SQL `JOIN` in App Engine.
+4. Easy to read data modeling.
