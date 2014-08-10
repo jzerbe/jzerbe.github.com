@@ -8,12 +8,17 @@ tags:
 - Colorado
 - mountain bike
 - trails
-published: false
+published: true
 ---
-I previously wrote about White Ranch in,
-[White Ranch East access short course loop]({% post_url 2014-06-07-white-ranch-east-access-short-course-loop %})
+I previously wrote about White Ranch in:
+[White Ranch East access short course loop](http://vraidsys.com/2014/06/white-ranch-east-access-short-course-loop/).
+
+Highly suggest the linked longer loop. Nothing but downhill on the return.
+
+__Update__ August 10: Highly suggest starting by 8am to
+beat most of the other foot/bike/equestrian traffic.
 
 ###Stats/Links
-- 8 miles RT ~ 2.75 hours. 8:15am to 11am.
+- 8 miles RT ~ 2.25 hours
 - [Google Custom Map](https://mapsengine.google.com/map/edit?mid=zj2fwvSxaNFw.k-KoLN7NuyIM)
 - [NOAA Point Forecast](http://forecast.weather.gov/MapClick.php?lat=39.8056547&lon=-105.2711533)
