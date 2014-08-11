@@ -64,21 +64,14 @@ __Updated__ August 10 2014.
 4. Install screen: `apt-get install screen`
 5. Create the file `~/launch_aerofs.sh` with the contents:
 
-    ```
-    #!/bin/bash
-    
-    export LANG=en_US.UTF-8
-    
-    screen -dmS AeroFS aerofs-cli1
-    ```
+        #!/bin/bash
+        export LANG=en_US.UTF-8
+        screen -dmS AeroFS aerofs-cli1
 
 6. Create the file `~/.xbmc/userdata/autoexec.py` with the contents:
 
-    ```
-    import os
-
-    os.system("/home/desktop/launch_aerofs.sh")
-    ```
+        import os
+        os.system("/home/desktop/launch_aerofs.sh")
 
 7. AeroFS will always be running in the background after 1st open of XBMC.
 More on [XBMC wiki: Autoexec.py](http://wiki.xbmc.org/index.php?title=Autoexec.py).
