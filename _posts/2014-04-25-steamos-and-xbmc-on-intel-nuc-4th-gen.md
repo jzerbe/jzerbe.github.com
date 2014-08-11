@@ -56,14 +56,28 @@ and [Intergrating XBMC in SteamOS](http://steamcommunity.com/groups/steamunivers
 ###Install AeroFS for Music syncing
 While I filled up an external NTFS USB drive with Videos, I like to keep my
 music library synced across all my devices with AeroFS.
+__Updated__ August 10 2014.
 
 1. Install the Java 7 runtime: `apt-get install openjdk-7-jre-headless`
 2. Grab the `.deb` from [https://www.aerofs.com/downloading?os=linux](https://www.aerofs.com/downloading?os=linux)
 3. Install it: `dpkg -i aerofs-installer-*.deb`
 4. Install screen: `apt-get install screen`
-5. Add the line - `screen -dmS AeroFS /usr/bin/aerofs-cli` - to `/etc/rc.local`
-5. Restart, sudo, and `screen -r AeroFS` to connect to the screen to complete the configuration.
-6. AeroFS will always be running in the background.
+5. Create the file `~/launch_aerofs.sh` with the contents:
+    ```
+    #!/bin/bash
+    
+    export LANG=en_US.UTF-8
+    
+    screen -dmS AeroFS aerofs-cli1
+    ```
+6. Create the file `~/.xbmc/userdata/autoexec.py` with the contents:
+    ```
+    import os
+
+    os.system("/home/desktop/launch_aerofs.sh")
+    ```
+7. AeroFS will always be running in the background after 1st open of XBMC.
+More on [XBMC wiki: Autoexec.py](http://wiki.xbmc.org/index.php?title=Autoexec.py).
 
 ###Additional customizations
 - Install the NTFS-3g drivers for read-write NTFS drive support: `apt-get install ntfs-3g`
