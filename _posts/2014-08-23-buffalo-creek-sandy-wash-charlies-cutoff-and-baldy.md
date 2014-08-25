@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Buffalo Creek: Sandy Wash, Charlies Cutoff, and Baldy
+title: Buffalo Creek - Sandy Wash, Charlies Cutoff, and Baldy
 tags:
 - Buffalo Creek
 - Pine
