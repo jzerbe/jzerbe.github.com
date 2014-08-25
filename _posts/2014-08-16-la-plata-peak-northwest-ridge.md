@@ -24,7 +24,10 @@ a parking spot in the _designated parking area_ from someone as they
 drove away. One could park farther down the access road that was packed
 from people camping. Did not want to risk losing a mirror.
 
-Mentally prepare yourself for __3 false summits__.
+Mentally prepare yourself for __3 false summits__. Do be sure to
+pack a change of shirts and windbreaker (as I always do);
+probably 20-30F degree difference on peak versus at the trailhead.
+Cold sweat is not fun.
 
 
 ###Timetable###
@@ -40,7 +43,7 @@ route like I did.
 
 Once back below treeline, in the valley, the pine forest to the East of the
 trail offers cover for finding a friendly tree, but beware of mosquitoes
-whiling bearing yourself.
+while bearing yourself.
 
 ###Links###
 - [14ers.com : La Plata Peak : Northwest Ridge](http://www.14ers.com/routemain.php?route=lapl1&peak=La+Plata+Peak)
