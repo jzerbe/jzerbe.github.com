@@ -11,8 +11,9 @@ published: true
 ---
 Buffalo Creek is a massive openspace area. At only an hour from my place,
 I am shocked I had not been here sooner. Will have to thank my latest
-trail partner for the suggestion again. We started ~8:15am from
-the 1/5 full trailhead parking and returned ~10:30am.
+trail partner for the suggestion ... again. We started ~8:15am from
+the 1/5 full trailhead parking and returned ~10:30am to full parking. Only started
+running into other bikers (or anyone at all) on the Baldy downslope.
 
 As one of the reviews on
 [singletracks](http://www.singletracks.com/bike-trails/buffalo-creek.html)
