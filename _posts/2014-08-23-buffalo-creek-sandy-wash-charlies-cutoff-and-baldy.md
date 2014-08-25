@@ -7,12 +7,18 @@ tags:
 - Colorado
 - mountain bike
 - trails
-published: false
+published: true
 ---
-Buffalo Creek is a massive openspace area. As one of the reviews on
+Buffalo Creek is a massive openspace area. At only an hour from my place,
+I am shocked I had not been here sooner. Will have to thank my latest
+trail partner for the suggestion again. We started ~8:15am from
+the 1/5 full trailhead parking and returned ~10:30am.
+
+As one of the reviews on
 [singletracks](http://www.singletracks.com/bike-trails/buffalo-creek.html)
-says, "The biggest and best system I've ridden so far". Be sure to bring
-a map. I put the super-size map from
+says, "The biggest and best system I've ridden so far".
+
+Be sure to bring a map. I put the super-size map from
 [Front Range Mountain Bike Patrol](http://www.frmbp.org/maps.html)
 on my local
 [GDrive](https://drive.google.com/file/d/0B0yT30uCaFvvdzlWemFkc2ZjSVk/edit?usp=sharing)
@@ -26,7 +32,7 @@ Going counter-clockwise, it is all down hill once you are on 727 - Baldy.
 
 ![Sandy Wash, Charlies Cutoff, and Baldy route](https://drive.google.com/uc?export=download&id=0B0yT30uCaFvvX0FRR3hodGozTmM)
 
-I know I will be back for several more rounds.
+I had no problems on my stock hard-tail 29er. I expect to be back for several more rounds.
 
 
 ###Links###
