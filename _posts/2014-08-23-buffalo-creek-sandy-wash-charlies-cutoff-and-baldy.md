@@ -39,4 +39,5 @@ I had no problems on my stock hard-tail 29er. I expect to be back for several mo
 ###Links###
 - [NOAA point forecast](http://forecast.weather.gov/MapClick.php?lat=39.0301442&lon=-106.4751993)
 - [trailhead parking on Google Maps](https://goo.gl/maps/Qv9GW)
-- [Buffalo Crek - Baldy trail downslope photos](https://www.dropbox.com/sc/s8hgdc74isnt38b/AACDVojcfR6bQJ0VV5amk3FJa)
+- [Buffalo Creek - Sandy Wash photos](https://www.dropbox.com/sc/xga2pqhqp86uq03/AABaHeusT_iazC2IgZMgq-maa)
+- [Buffalo Creek - Baldy trail downslope photos](https://www.dropbox.com/sc/s8hgdc74isnt38b/AACDVojcfR6bQJ0VV5amk3FJa)
