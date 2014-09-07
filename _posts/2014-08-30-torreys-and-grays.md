@@ -6,9 +6,18 @@ tags:
 - Colorado
 - mountain
 - trails
-published: false
+published: true
 ---
-TODO intro
+Hipster hiker here, finally decided to hit the _touristy_ Grays and Torreys at the
+tail end of the season. Maybe just as bad during other parts of the season,
+as it was Labor Day weekend. Pro-tip: continue South on Stevens Gulch road, past the
+trailhead footbridge for
+[more parking in the trees](https://www.google.com/maps/@39.6594655,-105.7835736,337m/data=!3m1!1e3).
+
+If I do this again, definately doing the
+[Southwest Ridge route](http://www.14ers.com/routemain.php?route=gray8&peak=Grays+Peak+and+Torreys+Peak)
+up from Ruby Gulch. The trailhead looks much more secluded from
+[satellite imagery](https://www.google.com/maps/@39.6009464,-105.8380849,226m/data=!3m1!1e3).
 
 
 ###Timetable###
@@ -18,7 +27,10 @@ TODO intro
 - 9:55am summit Grays
 - 11:20am return to car
 
-TODO route notes
+Missed the hot left to go up Grays first. I think it worked out better doing
+Torreys first; the North slope of Grays was icy in places where the sun seems
+to miss. I was able to jog down the easy East slope switch-backs of Grays
+protected from the wind. That wind on the saddle is brutal ~9am.
 
 
 ###Links###
