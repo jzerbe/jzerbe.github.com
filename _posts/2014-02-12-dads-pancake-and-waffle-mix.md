@@ -28,5 +28,6 @@ When doubled the recipe should produce enough to feed 4-6 comfortably.
 1. Mix up dry ingredients.
 2. Create bowl in center of dry ingredients and mix together wet ingredients.
 3. Mix dry and wet ingredients until there are no nodules of dry greater than a dime.
-4. Dollop appropriately sized amounts of batter into iron or pan.
+4. Let sit for 5-10 minutes while pan warms for fluffier pancakes.
+5. Dollop appropriately sized amounts of batter into iron or pan.
 I typically set pan heat to medium-high and flip when half the bubbles have popped.
