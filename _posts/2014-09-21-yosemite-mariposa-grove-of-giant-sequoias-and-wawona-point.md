@@ -6,9 +6,17 @@ tags:
 - California
 - mountain
 - trails
-published: false
+published: true
 ---
-TODO intro prose. warn about parking levels and http://www.nps.gov/yose/planyourvisit/mariposagrove.htm
+This is day 2 of 2 (Sunday) in South Yosemite, or rather just the morning,
+as we had planned.
+
+Do note that parking right next to the grove was packed out by the time we
+finished up around 11am, and people were being diverted to the shuttles;
+wide open parking at 8am.
+The easy _Outer Loop Trail_ route we took will not be available during the
+[_Restoration of the Mariposa Grove of Giant Sequoias Project_](http://www.nps.gov/yose/planyourvisit/mariposagrove.htm);
+you will probably have to hoof it 12 miles RT from Wawona.
 
 
 ###Timetable###
@@ -18,7 +26,12 @@ TODO intro prose. warn about parking levels and http://www.nps.gov/yose/planyour
 - 10:00am leave Wawona Point
 - 10:50am return to car via _Clothespin Tree_
 
-TODO trail notes about Outer Loop trail and confusing looping. 1200 ft change.
+The _Outer Loop Trail_ takes you up and NE along the North ridge,
+away from much of the lower, touristy grove. Near the top, back track NNW on
+an abandoned? asphalt access road to the top of Wawona point (1200 ft up).
+At least the microwave radio substation does not block the view.
+
+On the return we hit the tram asphalt and cut into the lower grove as a shortcut.
 
 
 ###Links###
