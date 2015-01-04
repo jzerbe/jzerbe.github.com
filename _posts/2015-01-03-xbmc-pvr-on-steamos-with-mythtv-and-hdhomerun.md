@@ -39,28 +39,17 @@ standard Debian repositories. See
 if this is not the case. Then install a database backend:
 `apt-get install mysql-server`
 
-I made the mysql instance run link-local only with root/toor for ease of config.
+I made the mysql instance run link-local only, with root/toor for ease of config.
 
 
 ### Install mythtv-backend
 Add the [deb-multimedia](http://www.deb-multimedia.org/) repo by adding the line
 `deb http://www.deb-multimedia.org wheezy main` to `/etc/apt/sources.list`.
-Be sure to add the repo key:
-```bash
-gpg --keyserver pgp.mit.edu --recv-keys 07DC563D1F41B907
-gpg --armor --export 07DC563D1F41B907 | apt-key add -
-```
+Be sure to add the repo key: `gpg --keyserver pgp.mit.edu --recv-keys 07DC563D1F41B907; gpg --armor --export 07DC563D1F41B907 | apt-key add -`
 
-Actually install the package:
-```bash
-apt-get update
-apt-get install mythtv-backend
-```
+Actually install the package: `apt-get update; apt-get install mythtv-backend`
 
-Run at startup:
-```bash
-update-rc.d mythtv-backend defaults
-```
+Run at startup: `update-rc.d mythtv-backend defaults`
 
 ### Configure mythtv-backend
 Create a directory where you want recordings to go. I was lazy and created a
