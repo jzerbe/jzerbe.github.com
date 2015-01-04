@@ -37,8 +37,7 @@ This assumes that you have already setup SteamOS (wrapped Debian) to pull from
 standard Debian repositories. See
 [SteamOS and XBMC on Intel NUC 4th gen](http://vraidsys.com/2014/04/steamos-and-xbmc-on-intel-nuc-4th-gen/)
 if this is not the case. Then install a database backend:
-
-`apt-get install [mysql-server](https://packages.debian.org/wheezy/mysql-server)`
+`apt-get install mysql-server`
 
 I made the mysql instance run link-local only with root/toor for ease of config.
 
@@ -55,7 +54,7 @@ gpg --armor --export 07DC563D1F41B907 | apt-key add -
 Actually install the package:
 ```bash
 apt-get update
-apt-get install [mythtv-backend](http://www.deb-multimedia.org/dists/wheezy/main/binary-amd64/package/mythtv-backend)
+apt-get install mythtv-backend
 ```
 
 Run at startup:
@@ -68,9 +67,11 @@ Create a directory where you want recordings to go. I was lazy and created a
 `777` directory - `/home/recordings` - on the larger `home` partition.
 
 Then, while running a terminal session with X11 forwarding, run: `mythtv-setup`.
-Be sure to run through the setup cards sequentially. Pay special attention to
-[Host Address Backend Setup](http://www.mythtv.org/wiki/User_Manual:Detailed_configuration_Backend#Host_Address_Backend_Setup)
+Be sure to run through the setup cards sequentially. Some things to be aware of:
+
+- [Host Address Backend Setup](http://www.mythtv.org/wiki/User_Manual:Detailed_configuration_Backend#Host_Address_Backend_Setup)
 in _1. General_ and disable _Listen on Link-Local addresses_. If left on this
-caused [start-up issues](https://code.mythtv.org/trac/ticket/11030). Another
-sticking point: be sure to select _EIT only_ in _3. Video Sources_ for pulling
-EPG data from broadcast signals.
+caused [start-up issues](https://code.mythtv.org/trac/ticket/11030).
+- Change the defaulted manual IP entry in _2. Capture Cards_ to use the specialized
+HDHomeRun GUIDs for the correct capture interface.
+- Select _EIT only_ in _3. Video Sources_ for pulling EPG data from broadcast signals.
