@@ -29,7 +29,7 @@ to not using up my balance, I never actually make calls with my T-Mobile balance
 but instead use [Google Voice](https://support.google.com/voice/).
 I swapped to a smartphone for the camera, GPS, and
 [TODO lists](https://play.google.com/store/apps/details?id=com.google.android.keep).
-When I go in the mountains, a cell data plan would not do me any good, being
+Where I go in the mountains, a cell data plan would not do me any good, being
 unable to access it.
 
 Like most people, I really do not receive any calls during the day.
@@ -47,6 +47,6 @@ none of my contacts know my actual cell phone number to inadvertently use up
 my cell phone balance. To them, it appears that an incoming call is made
 from my Google Voice number. Do note that to
 [make outgoing calls](https://support.google.com/voice/answer/168520?hl=en&ref_topic=1708123)
-without any data access, you will need to have called or texted the contact
-while connected to Wi-Fi, or else call your Google Voice number and follow
+without any data access, you will need to have called or texted the contact once
+before while connected to Wi-Fi, or else call your Google Voice number and follow
 the prompts to manually enter the number.
