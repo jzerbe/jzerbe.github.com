@@ -14,7 +14,6 @@ average under $10/month on my cell phone bill. Most months I average around
 $5/month. What do I mean by average? I fill up my
 [T-Mobile SIM card](http://prepaid-phones.t-mobile.com/sim-card)
 4 times a year or so.
-
 The pricing structure is $0.10/minute, $0.10/outgoing SMS, $0.05/incoming SMS
 on [T-Mobile Pay As You Go](http://prepaid-phones.t-mobile.com/pay-as-you-go).
 The balance lasts for the whole year, once you have spent $100:
@@ -28,6 +27,10 @@ making/receiving free calls and free texts that much easier; see
 and email over Wi-Fi. This is my secret
 to not using up my balance, I never actually make calls with my T-Mobile balance,
 but instead use [Google Voice](https://support.google.com/voice/).
+I swapped to a smartphone for the camera, GPS, and
+[TODO lists](https://play.google.com/store/apps/details?id=com.google.android.keep).
+When I go in the mountains, a cell data plan would not do me any good, being
+unable to access it.
 
 Like most people, I really do not receive any calls during the day.
 When I am home, I have my computer on, logged into
@@ -46,4 +49,4 @@ from my Google Voice number. Do note that to
 [make outgoing calls](https://support.google.com/voice/answer/168520?hl=en&ref_topic=1708123)
 without any data access, you will need to have called or texted the contact
 while connected to Wi-Fi, or else call your Google Voice number and follow
-the prompts to manully enter the number.
+the prompts to manually enter the number.
