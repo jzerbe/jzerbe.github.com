@@ -101,3 +101,5 @@ The Dennys as you head NE on Main St/Hwy 95 inside the smokey _StageCoach Hotel 
 decent enough for a Christmas Eve; our server was way overwhelmed with tables.
 Picked up milk and cereal at the Rebel 74 (gas/kwiky mart) but, did not play the slots.
 I like guaranteed winning.
+
+Point forecast: [6 MILES SSW BEATTY NV](http://forecast.weather.gov/MapClick.php?lat=36.9085558&lon=-116.7592299)
