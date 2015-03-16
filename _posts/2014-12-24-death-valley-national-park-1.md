@@ -20,7 +20,7 @@ published: true
 This is the first of three days spent around Las Vegas doing non-Vegas things.
 
 ### Tuesday night accommodations
-Had two _Tower Queen Room_s at Excalibur, Christmas eve-eve, for
+Had two _Tower Queen_ rooms at Excalibur, Christmas eve-eve, for
 ~$130 including the always funny _resort fee_. The rooms were quite nice.
 Great [view of concrete](https://drive.google.com/file/d/0B611viYGQAn5NjU2NlFobUFzZTQ/view?usp=sharing).
 Note that if you are close enough to the smokey gaming floor you can mooch the
@@ -56,6 +56,7 @@ toilet about a mile before the parking area. Plenty of friendly rocks near the
 USGS marker.
 
 Point forecast: [18 MILES SSE FURNACE CREEK CA](http://forecast.weather.gov/MapClick.php?lat=36.2226749&lon=-116.7257793)
+
 Inspiration: [SummitPost : Dante BM](http://www.summitpost.org/dante-bm/391640)
 
 ### Golden Canyon (tourists), Red Cathedral, Gower Gulch (sound of silence)
@@ -73,7 +74,7 @@ Total time ~2.5 hours: 30-45 minutes up Golden Canyon to the Red Cathedral, 30 m
 in the badlands, 45 minutes down Gower Gulch, and 15 minutes crossing back to the parking
 area from the Southern outflow.
 There is a good map
-at the bottom of the _Hikespeak.com_ write-up.
+at the bottom of the linked _Hikespeak.com_ write-up.
 
 If you want to hear total silence, stop and stand at
 [36.4149847,-116.8360711,224m](https://www.google.com/maps/@36.4149847,-116.8360711,224m/data=!3m1!1e3),
@@ -86,6 +87,7 @@ parking and access from the Hwy 190 side is
 Can still get close by hiking through the badlands from the Golden Canyon side.
 
 Point forecast: [4 MILES SE FURNACE CREEK CA](http://forecast.weather.gov/MapClick.php?lat=36.4169778&lon=-116.8208077)
+
 Inspiration:
 [Hikespeak.com : Golden Canyon - Gower Gulch Loop](http://www.hikespeak.com/trails/golden-canyon-gower-gulch-loop-in-death-valley/)
 
@@ -95,7 +97,7 @@ About an [hour drive](https://goo.gl/maps/0ShSp) from Golden Canyon to
 Accommodations met expectations. WiFi was good. Communal pool area hot-tub had some windblown
 grit; it was very windy after all!
 
-The Dennys NE on Main St/Hwy 95 inside the _StageCoach Hotel & Casino_ was
+The Dennys as you head NE on Main St/Hwy 95 inside the smokey _StageCoach Hotel & Casino_ was
 decent enough for a Christmas Eve; our server was way overwhelmed with tables.
 Picked up milk and cereal at the Rebel 74 (gas/kwiky mart) but, did not play the slots.
 I like guaranteed winning.
