@@ -66,13 +66,13 @@ had I seen a selfie-stick in person; almost thought I saw some heels on one woma
 
 The gist is to hike up
 [Golden Canyon](https://www.dropbox.com/sc/56kf88b6h7c0or0/AAAoKxXDeih6hfUKKfvbKAr7a),
-go past the Gower Gulch/badlands turn-off
+go past the [Gower Gulch/badlands turn-off](https://drive.google.com/open?id=0B611viYGQAn5MHhNb3pneElfMWs)
 up to the [Red Cathedral](https://www.dropbox.com/sc/pvyvf5kxf4zxcn3/AAAlPI2DIzabVr28Lvtcdc0pa),
 turn around and head back down
 [Gower Gulch](https://www.dropbox.com/sc/yvk0ztvaxbs3pe2/AADc6mb7VgkBKjUFOjq-6Wvja).
 Total time ~2.5 hours: 30-45 minutes up Golden Canyon to the Red Cathedral, 30 minutes
 in the badlands, 45 minutes down Gower Gulch, and 15 minutes crossing back to the parking
-area from the Southern outflow.
+area from the [Southern outflow](https://drive.google.com/open?id=0B611viYGQAn5OWtXeVZOMk03RE0).
 There is a good map
 at the bottom of the linked _Hikespeak.com_ write-up.
 
