@@ -32,10 +32,10 @@ Shielded from the North wind much of the trail.
 Point forecast: [19 MILES NNW FURNACE CREEK CA](http://forecast.weather.gov/MapClick.php?lat=36.7112492&lon=-117.0044536)
 
 ### Eats and Sleeps
-Chowed down some sandwiches at the junction of Scotty\'s Castle Road and
+Chowed down some sandwiches at the junction of Scotty's Castle Road and
 Daylight Pass Road; has a pit toilet and picnic table. This was after getting
 [chased off some dunes](https://drive.google.com/open?id=0B611viYGQAn5YlBlckgxUXd3a0E)
-farther North along Scotty\'s Castle Road by an incoming sandstorm.
+farther North along Scotty's Castle Road by an incoming sandstorm.
 
 Drove back to Las Vegas.
 
