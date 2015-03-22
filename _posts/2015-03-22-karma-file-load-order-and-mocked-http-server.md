@@ -22,6 +22,7 @@ transpilation from our typescript business logic that is then used in testing.
 
 [GitHub Gist](https://gist.github.com/jzerbe/083994efc0bcdb043660).
 
+---
 
 In this particular repo, everything is written in typescript, including Jasmine
 spec files:
@@ -30,6 +31,7 @@ spec files:
 
 [GitHub Gist](https://gist.github.com/jzerbe/1a14bec710e21fb6956a).
 
+---
 
 The whole build process is managed using - https://github.com/Workiva/wGulp -
 see the following:
