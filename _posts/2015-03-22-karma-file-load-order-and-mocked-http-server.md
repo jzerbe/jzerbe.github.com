@@ -20,29 +20,20 @@ transpilation from our typescript business logic that is then used in testing.
 
 {% gist 083994efc0bcdb043660 %}
 
-View [GitHub Gist](https://gist.github.com/jzerbe/083994efc0bcdb043660).
+[GitHub Gist](https://gist.github.com/jzerbe/083994efc0bcdb043660).
+
 
 In this particular repo, everything is written in typescript, including Jasmine
 spec files:
 
-```typescript
-/// <reference path="../../api/jasmine/jasmine.d.ts" />
-/// <reference path="../../src/Task/CoolThing.ts" />
+{% gist 1a14bec710e21fb6956a %}
 
-describe("CoolThingTest", function () {
-    beforeEach(function () {
-    });
+[GitHub Gist](https://gist.github.com/jzerbe/1a14bec710e21fb6956a).
 
-    it('should return an empty array when unitialized', function () {
-        this.testTask = new Task.CoolThing();
-        expect(this.testTask.doThing().length).toBe(0);
-    });
-});
-```
 
 The whole build process is managed using - https://github.com/Workiva/wGulp -
 see the following:
 
 {% gist ea15cb869fe6abd40bd6 %}
 
-View [GitHub Gist](https://gist.github.com/jzerbe/ea15cb869fe6abd40bd6).
+[GitHub Gist](https://gist.github.com/jzerbe/ea15cb869fe6abd40bd6).
