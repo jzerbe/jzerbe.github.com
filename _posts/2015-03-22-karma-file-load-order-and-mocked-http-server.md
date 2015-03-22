@@ -8,7 +8,7 @@ tags:
 - JavaScript
 published: true
 ---
-It took me far to long to figure out
+It took me far too long to figure out
 [Ordering with Karma](http://karma-runner.github.io/0.12/config/files.html).
 
 > - The order of patterns determines the order in which files are included in the browser.
