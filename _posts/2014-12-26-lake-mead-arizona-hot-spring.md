@@ -3,7 +3,7 @@ layout: post
 title: Lake Mead - Arizona Hot Spring
 tags:
 - Lake Mead
-- National Park
+- National Recreation Area
 - Arizona Hot Spring
 - Las Vegas
 - Boulder City
@@ -39,8 +39,8 @@ sense. Sources: [NPS.gov](http://www.nps.gov/lake/planyourvisit/upload/Arizona-H
 [Google Drive mirror](https://drive.google.com/file/d/0B0yT30uCaFvvSE9lcnItbGwwd3M/view?usp=sharing).
 
 1. After crossing under the US-93 over pass, head to the left, following the
-fence until you are on top of the [flat access road](https://www.dropbox.com/sc/y4y4i7fsqqrqgfe/AAAZp-JsexDIBGdXPZT88MoYa).
-2. Continue on top of the burm, if see [trail signs](https://www.dropbox.com/sc/l7wb7utydm80dkw/AADt9jwKN8e5Cl00DhJ0Izuoa),
+fence until you are on top of the [flat access road](https://www.dropbox.com/sc/uxi1bj5exy6lbth/AAA1TfPENSHLQITelcmVzuD3a).
+2. Continue on top of the burm, if you see [trail signs](https://www.dropbox.com/sc/l7wb7utydm80dkw/AADt9jwKN8e5Cl00DhJ0Izuoa),
 you are on the right track.
 3. In a short while you will see [a hiking sign](https://www.dropbox.com/sc/u2ttoumwwqfq9p5/AAAX9_U39sC6v51h-h0dg1i8a),
 pretty soon, the tracked down area will proceed down to the left into a wash, then back up onto another hill.
@@ -60,7 +60,7 @@ Bring water shoes or sandals if you have a low pain tolerance and want to keep
 your nostrils as far away from the amoeba as possible.
 
 The best pools are on this side of
-[_the ladder_](https://drive.google.com/open?id=0B611viYGQAn5WFF0WjhoZ2tZZmc&authuser=1),
+[_the ladder_](https://drive.google.com/open?id=0B611viYGQAn5WFF0WjhoZ2tZZmc),
 with a
 [ruggedly romantic](https://drive.google.com/open?id=0B611viYGQAn5TjVualdxaXVIRlk)
 ambiance. If you are feeling adventurous like
