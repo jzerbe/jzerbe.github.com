@@ -21,7 +21,7 @@ literature and good restrooms.
 
 One thing worth noting on the drive is the change in topography from the flats
 of Nevada to the Utah highlands. Once through Littlefield (AZ), you are greeted
-with a wall of foothills the seem to have no entrance, until inside the
+with a wall of foothills that seem to have no entrance, until inside the
 [Virgin Gorge](https://www.dropbox.com/sc/8zxn6u2qa2ueza4/AAAJF8ErFwQ1f3jAm7dPmxuaa).
 
 We took the [scenic route](https://goo.gl/maps/P37UJ)
@@ -42,7 +42,7 @@ See over much of the surrounding area.
 2. Shortcourse _Whiterocks Amph_ 1 mile RT; 2nd parking area South.
 [Photos](https://www.dropbox.com/sc/dmhdzi89tb1yzry/AACS3n8XTVHYL8S1Z41cvIIqa).
 3. _Butterfly_ 2 miles RT over rolling sedimentary and igneous rock.
-Scramble to the top of the Overlook has cool views. Be sure to check out the
+Scramble to the top of the Overlook for cool views. Be sure to check out the
 lava tube to the North of the Overlook.
 [Photos](https://www.dropbox.com/sc/t5f586bfql621io/AAAgckb9ZgNDqu8_DhTPYC8Ua).
 
@@ -65,7 +65,7 @@ Just more McMansion crap; I expect better if I am going to spend over half-milli
 [Drove to](https://goo.gl/maps/8U9eF) the Travelodge in Hurricane and checked in.
 
 By that time it was ~5pm and we were really hungry. Had already seen great reviews
-on [Yelp about Albertos Mexican Food](http://www.yelp.com/biz/albertos-mexican-food-hurricane);
+on Yelp about [Albertos Mexican Food](http://www.yelp.com/biz/albertos-mexican-food-hurricane);
 just down the street? why not!? It was delicious. Go there.
 Horchata and shrimp burrito left me satisfied and wanting more.
 
