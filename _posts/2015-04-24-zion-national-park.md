@@ -12,6 +12,7 @@ tags:
 published: true
 ---
 This is the second of three days spent in Southwest Utah.
+The level of riff-raff in Zion is higher than I expected for this time of year.
 
 ### Morning commute
 The drive [from Hurricane to the Zion visitor center](https://goo.gl/maps/ACQKm) was uneventful.
