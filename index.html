@@ -1,27 +1,57 @@
 ---
 layout: default
-title: Jason Zerbe's draftbook | building digital products and services
+title: Jason Zerbe's draftbook
 ---
 
 <div data-role="page">
     {% include header.html %}
 
     <div data-role="content">
+        <div class="ui-corner-all custom-corners">
+            <div class="ui-bar ui-bar-a">
+                <h3>About that Jason character</h3>
+            </div>
+            <div class="ui-body ui-body-a">
+                <p>
+                    Builder; most of the time that means software,
+                    but every now and again that may mean kitchen hacks,
+                    finishing basements, erecting dubious sheds,
+                    or convincing hardware obtained from dumpster diving to work.
+                    Forestry enthusiast. Tennis and frisbee goon.
+                    I love working with other driven and knowledgeable developers to create amazing-ness.
+                </p>
+            </div>
+        </div>
+
+        <!-- framework scales thumbs to 80px by 80px -->
         <ul data-role="listview" data-inset="true">
-            {% for post in site.posts %}
-                {% if post.tags contains 'trails' or post.tags contains 'eats' %}
-                    {% comment %} liquid is missing negation {% endcomment %}
-                {% else %}
-                    <li>
-                        <a href="{{ post.url }}" title="{{ post.title }} permalink">
-                            <h2>{{ post.title }}</h2>
-                            <p>{{ post.date | date_to_string }}</p>
-                        </a>
-                    </li>
-                {% endif %}
-            {% endfor %}
+            <li><a rel="external" href="https://twitter.com/jasonzerbe">
+                <img src="https://secure.gravatar.com/avatar/0335fa53acfac54b6762ca998c22cd6a?size=80&rating=g&d=mm">
+                <h2>@jasonzerbe</h2>
+                <p>short-form tech and sexy dirt/snow shots</p></a>
+            </li>
+            <li><a rel="external" href="http://github.com/jzerbe">
+                <img src="/ui/github.64.png">
+                <h2>github: Jason Zerbe</h2>
+                <p>personal github account</p></a>
+            </li>
+            <li><a rel="external" href="http://bitbucket.org/jzerbe">
+                <img src="/ui/bitbucket.64.png">
+                <h2>bitbucket: Jason Zerbe</h2>
+                <p>personal bitbucket account</p></a>
+            </li>
+            <li><a rel="external" href="http://careers.stackoverflow.com/jzerbe">
+                <img src="https://secure.gravatar.com/avatar/cde59b02650d86621ea5bae66d12fe91?size=80&rating=g&d=mm">
+                <h2>Stack Overflow Careers: Jason Zerbe</h2>
+                <p>information-rich hiring from Stack Exchange</p></a>
+            </li>
+            <li><a rel="external" href="http://www.linkedin.com/in/jzerbe">
+                <img src="https://secure.gravatar.com/avatar/cde59b02650d86621ea5bae66d12fe91?size=80&rating=g&d=mm">
+                <h2>LinkedIn: Jason Zerbe</h2>
+                <p>the MySpace of job sites</p></a>
+            </li>
         </ul>
     </div>
 
-    {% include footer_tech.html %}
+    {% include footer_external.html %}
 </div>
