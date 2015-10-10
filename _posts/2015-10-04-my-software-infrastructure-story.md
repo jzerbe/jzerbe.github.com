@@ -46,7 +46,7 @@ handy-dandy search: <http://www.free-webhosts.com/>.
 Mind you this was before [WordPress.com](https://wordpress.com/) or [weebly](http://www.weebly.com/) hit the scene;
 bargain basement no-frills (or if there were, massive upsells).
 
-One of the best shared providers I have ever used is <https://www.nearlyfreespeech.net/>. Highly recommended
+One of the best (paid) shared providers I have ever used is <https://www.nearlyfreespeech.net/>. Highly recommended
 for a developer starting out.
 
 ### dedicated hosting
@@ -66,11 +66,12 @@ where the physical server is located. If you ask, they will probably also tell y
 service to the climate controlled, secure-access building where all these servers are housed.
 
 ### virtual private server (VPS)
-I did not get into the dedicate server market, but I did for a time lease a few VPSs. Remember when I mentioned
+I did not get into the dedicated server market, but I did for a time lease a few VPSs. Remember when I mentioned
 adhering to laws of the jurisdiction? Certain countries are more _laissez faire_ than others in terms of their
-computer laws. For a time I leased from <http://shinjiru.com/>. Notice on their Acceptable Use Policy -
+computer laws. For a time I leased from <http://shinjiru.com/> (Malaysia based). Notice on their Acceptable Use Policy -
 <http://shinjiru.com/legal/acceptable-user-policy.php> - there is no explicit mention of copyrighted content
-violations, while on a Panamanian provider there is - <http://www.ccihosting.com/aup.php>.
+violations, while on a Panamanian provider there is - <http://www.ccihosting.com/aup.php>. Although, running
+porn from Malaysia might be risky.
 
 I will link out to the
 wikipedia entry on this one - <https://en.wikipedia.org/wiki/Virtual_private_server> - the _Virtualization_ section
@@ -100,7 +101,7 @@ servers on top of [VMware Server](https://en.wikipedia.org/wiki/VMware_Server)
 and a shared hosting environment for contract clients. That lasted until late 2011 when I was able to offload
 most of my contract clients.
 
-Hosting providers will sometimes flaunt the list of carriers,
+Hosting providers will sometimes flaunt their list of carriers,
 or advertise as carrier-neutral (meaning they have multiple options).
 Premo data centers usually have at least two [Tier 1 providers](https://en.wikipedia.org/wiki/Tier_1_network).
 
@@ -119,9 +120,11 @@ In my head this is confluence of technologies and business practices as apposed 
 > on-demand access to a shared pool of configurable computing resources.
 
 Like colocation, I can choose the region where my services are running. Like VPSs, I can template the complete
-installation process to make it fast to add more resources in a repeatable fashion.
+installation process to make it fast to add more resources in a repeatable fashion. Unlike previous iterations,
+I have one account that I can use to access any number of resources right NOW.
 
 My databases professor, who gave me my first W-2 job out of college at his startup, spins a yarn something like this:
+
 1. Amazon grows like gangbusters
 2. Amazon needs more capacity to handle more customer requests (and support software - fraud, line of business)
 3. Amazon has excess capacity that they realize they can recoup costs on
