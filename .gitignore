@@ -1,1 +1,6 @@
 _site/
+
+# dev environment
+*.iml
+.idea
+.project
