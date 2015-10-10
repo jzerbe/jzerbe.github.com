@@ -7,10 +7,9 @@ tags:
 - infrastructure
 published: true
 ---
-I get paid to make software systems work together. Sometimes this means I get paid to make judgement calls about
+I get paid to build software systems. Sometimes this means I get paid to make judgement calls about
 how and where these systems should run. Some developers I know do not appreciate this part of the job, but I
-love it. Probably stems from my tight history with operations (ops). This is intended to be my personal history
-to enrich the person with minor software development exposure.
+love it; infrastructure choices are a large portion of any successful software delivery. Hopefully this presentation of my personal history will enrich the person with minor software development exposure.
 
 ### before my time
 Mainframes. Time sharing terminals. Whoa! I have heard stories from my dad about punch-card stacks,
@@ -113,7 +112,7 @@ This gets especially crazy when milliseconds can make millions of dollars of dif
 [colocate my servers next to the NASDAQ exchange servers](http://www.nasdaqtrader.com/Trader.aspx?id=colo), I win.
 
 ### the cloud
-In my head this is confluence of technologies and business practices as apposed to a defining moment.
+In my head, this is a confluence of technologies and business practices as apposed to a defining moment.
 
 <https://en.wikipedia.org/wiki/Cloud_computing>:
 > Cloud computing is a model for enabling ubiquitous, convenient,
@@ -132,7 +131,8 @@ My databases professor, who gave me my first W-2 job out of college at his start
 5. Amazon Web Services division makes fat stack of cash in its own right: <http://techcrunch.com/2015/07/23/amazons-aws-unit-reports-q2-revenue-of-1-8b-391m-profit/>
 
 ### something for the road
-In having this small personal historical perspective, it makes making judgement calls that much easier.
+In having this small personal historical perspective, it makes decisions that much easier.
 Hopefully some of this history will provide better context for making your own decisions. If you want more:
 
 - [The evolution of cloud: the intergalactic infrastructure of the future](http://www.information-age.com/technology/cloud-and-virtualisation/123458755/evolution-cloud-%E2%80%98intergalactic-infrastructure-future)
+- [The Story of AWS and Andy Jassy’s Trillion Dollar Baby](https://medium.com/@furrier/original-content-the-story-of-aws-and-andy-jassys-trillion-dollar-baby-4e8a35fd7ed)
