@@ -44,4 +44,4 @@ and we were able to be seated right away ~7pm. Absolutely delicious. Much better
 than some casino buffet.
 
 Sleeps at [Alexis Park All Suite Resort](http://www.alexispark.com/), which has
-a weird [WiFi policy](https://twitter.com/jasonzerbe/status/548648332160417792).
+a weird WiFi policy: free, if you sign in for the first time, in the main building.

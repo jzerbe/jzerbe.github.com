@@ -8,7 +8,7 @@ published: true
 ---
 ###Background
 
-[A month ago](https://twitter.com/#!/jasonzerbe/status/59849509177524224) I was able to successfully install
+A month ago I was able to successfully install
 a working OSX 10.5.8 install on my Dell Inspiron 1501 for a more enjoyable development experience. Having a
 bunch of scripting languages, sdks, gnu tools, all wrapped in a sexy UI makes for a lovely time. I finally
 took the time to document said process. Be forewarned however that dual-booting with a Linux distribution

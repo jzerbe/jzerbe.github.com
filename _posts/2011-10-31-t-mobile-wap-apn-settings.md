@@ -6,7 +6,7 @@ tags:
 - T-Mobile
 published: true
 ---
-**NOTE**: [no more free T-Mobile web service with keyword hole](https://twitter.com/jasonzerbe/status/182675503294070784).
+**NOTE**: no more free T-Mobile web service with keyword hole.
 
 I have been playing around with my new Android 2.2.1 dev phone, trying to port over the free webaccess I am
 able to get on my old Motorola J2ME feature-phones (Razr V3r, V195s).
