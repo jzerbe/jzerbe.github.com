@@ -38,6 +38,21 @@ Got in 2-3 hours by myself Dec 25 afternoon. Reasonably warm with some fresh in 
 Took the folks and sister out Dec 26 9am-1:30pm on buddy passes. High of 15F that day?
 Kept the slopes reasonably clear. 8 inches of fresh Dec 26 morning.
 
+### WP free parking
+Previous to this, I had only ever parked (all free) and boarded at Mary Jane.
+What follows is more information on parking around the Winter Park side.
+
+[WP Resort Parking Areas.pdf](https://www.colorado.gov/pacific/sites/default/files/atoms/files/WP%20Resort%20Parking%20Areas.pdf)
+[mirror](https://drive.google.com/file/d/0B0yT30uCaFvvSDR3SkhMaGEzX2s/view?usp=sharing)
+
+Dec 25 showed up ~1pm, spots only out at the _Bus Barn_ lot. Dec 26 showed up ~8:30am, few spots
+left in _Lone Tree_ lot. Depending on how full the buses get the driver may just skip
+the rest of the _Old Town_ stops and take your group in to the base area.
+
+From the base area, the first stop is _Blue Spruce_, then _Lone Tree_. The _Bus Barn_ is last.
+
+One can walk, although the longest wait I had for a bus was 4 minutes.
+
 ### Pepe Osaka's Fishtaco
 Early dinner Dec 26 at [Pepe Osaka's Fishtaco](http://www.yelp.com/biz/pepe-osakas-fishtaco-winter-park).
 Small place with a 15 minute wait when we showed up at 5pm (for 4 person table). Spots for 2 opened up faster.
