@@ -12,7 +12,7 @@ tags:
 published: true
 ---
 This is the third of three days spent in Southwest Utah.
-The weather was cool and damp enough for a fast pace and kept most eveyone else in bed.
+The weather was cool and damp enough for a fast pace and kept most everyone else in bed.
 There was ice on our rental car when we got up in the morning!
 
 ### Morning commute
