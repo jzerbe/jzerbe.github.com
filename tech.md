@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /tech.html
 title: from the lab
 ---
 

@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /trails.html
 title: dirt and snow
 ---
 

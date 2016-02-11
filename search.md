@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /search.html
 title: Jason Zerbe's draftbook | Search
 ---
 

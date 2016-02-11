@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /eats.html
 title: mouth adventures
 ---
 
