@@ -1,6 +1,6 @@
 ---
 layout: post
-title: fast Mediterranean eggplant prep
+title: fast Mediterranean eggplant wraps
 tags:
 - Mediterranean
 - vegetarian
@@ -11,7 +11,7 @@ published: true
 In summary, convert a whole eggplant to tortilla wrap stuffer with Mediterranean flavors and textures.
 Serves 4 people.
 
-###Raw Ingredients
+### Raw Ingredients
 - whole large eggplant (size of 2.5 fists) for 4 people or half-eggplant for 2 people - sliced into
 1/2 inch think slices, about half the depth of your pinky
 - 2 bell peppers - sliced lengthwise
@@ -22,12 +22,12 @@ Serves 4 people.
 - Italian seasoning (oregano, marjoram, thyme, rosemary, sage) - I have a pre-blended tin from the store
 - _OPTIONAL_ two diced avocados - not Mediterranean, but I think it enhances the flavor
 
-###Process
+### Process
 1. Lay a single-depth bed of sliced eggplant in a large frypan. Some recipes suggest baking,
 but I always end up with chewy eggplant in that case.
 2. Drizzle a thumb-width line of olive oil over each eggplant
 round (which is very absorbent at this stage - be careful).
 3. Sprinkle Italian seasoning on each round.
-4. Cook on medium-high heat for 10-15 minutes until a fork can penetrate with relative ease.
-5. Put about 3-4 rounds and cheese slices in each wrap and let wraps sit in pan until cheese is soft.
+4. Cook on medium-high heat for 10-15 minutes, until a fork can penetrate with relative ease.
+5. Put about 3-4 rounds and cheese slices in each wrap, and let wraps sit in pan until cheese is soft.
 6. Add remaining stuffer ingredients. Serve immediately.
