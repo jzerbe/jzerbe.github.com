@@ -8,7 +8,7 @@ published: true
 ---
 This cornbread recipe works very well ~1000ft or ~6000ft. As an added bonus, it is resilient against old ovens.
 
-###Ingredients###
+### Ingredients ###
 Works well for a 9.5x13.5x2 inch glass baking dish.
 
 - `2.5 cups` flour
@@ -20,7 +20,7 @@ Works well for a 9.5x13.5x2 inch glass baking dish.
 - `0.5 cup` vegetable oil
 - `2` eggs
 
-###Instructions###
+### Instructions ###
 1. (Optional) grease cooking dish. The glass baking dish I use, never needs this.
 2. Original says to heat oven to 400F. I typically go 410F __or__ 375F on convect bake in a new oven.
 3. Mixup dry ingredients. Form bowl in center of dry ingredients.

@@ -6,7 +6,7 @@ tags:
 - Debian
 published: true
 ---
-###Counter Strike server setup procedure###
+### Counter Strike server setup procedure ###
 Based upon - <http://www.cstrike-planet.com/tutorial/1/5> - Props to whoever wrote it!
 
 All you have to do is setup the Counter Strike dedicated server to
@@ -28,7 +28,7 @@ All you have to do is setup the Counter Strike dedicated server to
 6. The server is now ready for various customizations.
 
 
-###Counter Strike 1.6 linux dedicated server###
+### Counter Strike 1.6 linux dedicated server ###
 Based upon - <http://www.cstrike-planet.com/tutorial/1-Linux-Install-CS-16/6>
 
 1. Repeat steps 1-5 in previous installation but in different root directory. so instead of _srcds_ let\'s put the
@@ -39,7 +39,7 @@ installation in _hlds_. Step 2 of the previous method should this time be:
     - `./steam -command update -game cstrike -dir`
 
 
-###Q and A time###
+### Q and A time ###
 
 1. How can I keep hlds running while I am not logged into the server with SSH?
     - Start your dedicated server with screen: `screen -S hlds ./hlds_run`. And then when you want to access the running server process once logged back in: `screen -r hlds`.

@@ -18,7 +18,7 @@ out that from Long Valley it would be hardpack on trail and post-holing off trai
 In any case, we encountered some drifts at the _Saddle Junction_
 (with the Pacific Crest Trail) and above, but still very passable with hiking boots.
 
-###Timetable
+### Timetable
 - 11:35am start from the trailhead parking lot.
 - 12:25pm hit _Saddle Junction_.
 - 1:27pm hit Tahquitz Peak ridge. Went through Tahquitz Valley by mistake.
@@ -30,7 +30,7 @@ Otherwise is would have been 15-20 minutes. Probably totaled 9 miles instead of 
 1700ft of the 2500ft elevation change is done in the 2.5 miles heading from
 the trailhead to the _Saddle Junction_.
 
-###Links
+### Links
 - [NOAA peak point forecast](http://forecast.weather.gov/MapClick.php?lat=33.7618901&lon=-116.6696379)
 - [USFS: Devils Slide Trail 3E05](http://www.fs.usda.gov/recarea/sbnf/recreation/hiking/recarea/?recid=74217&actid=51)
 - [Devils Slide to Saddle Junction](http://www.localhikes.com/HikeData.asp?DispType=0&ActiveHike=6&GetHikesStateID=2&ID=4030)

@@ -19,14 +19,14 @@ using iATKOS v7:
 Windows drivers and documentation download for good measure: <http://download.shuttle.eu/Mirror/XPC/SB51G/>
 
 
-###Wake On LAN
+### Wake On LAN
 
 As long as you have the _Wake On PCI Ring_ enabled in the _Power Management_ options
 in your BIOS settings, Wake ON Lan magic packets sent to the machine on UDP port 9
 should wake this Mac OS X install up.
 
 
-###Hardware Info
+### Hardware Info
 
 - Intel 845GE+ECH4 chipset
 - Socket 478 with Pentium 4 2.66GHZ cpu installed
@@ -36,14 +36,14 @@ should wake this Mac OS X install up.
 - Intel 82801DB Ultra ATA Storage Controller-24CR
 
 
-###Non Working
+### Non Working
 
 - no audio - use for XCode development only, so does not matter
 - any updates will break system - fine with XCode 3
 - periodically VGA out will never display login - [connect via VNC](http://lifehacker.com/319528/remote-control-leopard-with-tightvnc) which always works
 
 
-###The Config
+### The Config
 
 Listed options should be checked. Triple dots mean that one or a few
 checkboxes should be skipped over. Question marks mean the module is optional.

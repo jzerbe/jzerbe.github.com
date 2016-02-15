@@ -14,7 +14,7 @@ diverse vitamin content, but you can still go from nothing to something in short
 I have a `12 inch` diameter by `3 inch` deep Calphalon nonstick covered pan
 that I am able to do everything for this two part recipe in.
 
-###Saute Ingredients
+### Saute Ingredients
 - `6x1.5 inch` zucchini which comes loosely to `2-3 cups` in quarter inch slices
 - `3x1.5 inch` jalapeno (double thumb girth and a bit longer - excluding stem) which is about `0.5 cups`
 diced (to release capsaicin). For those of you serving this to _midwestern_ relatives, they will think it is
@@ -24,7 +24,7 @@ plenty spicy enough without any jalapeno.
 garnish serving bowls with a spritzing if they are in good condition.
 - `0.25 cup` olive oil - pure (cheaper) or extra virgin makes no remarkable taste difference
 
-###Boiling Ingredients
+### Boiling Ingredients
 - `15 oz` can of [Kuner Black Beans with Cumin & Chili Spices](http://www.faribaultfoods.com/brands/kuners_sw/)
 - `15 oz` can of diced tomatoes
 - `1-2 cups` water from rinsing out spices/extras from cans. Useful to have this wiggle room if augmenting.
@@ -33,7 +33,7 @@ garnish serving bowls with a spritzing if they are in good condition.
 I usually throw in some kind of leftover root starch or rice to thicken things up,
 instead of boiling excess water off, and to turn the dish into a complete source of protein.
 
-###Process
+### Process
 1. Throw all the saute ingredients together in the pan, cover, and saute in the olive oil on high.
 I typically lay a bed of zucchini, followed by the onion(s) and diced jalapeno.
 2. Flip the stack occasionally and cook until around `50%` of the zucchini mass is browned, and the white onions are browned.

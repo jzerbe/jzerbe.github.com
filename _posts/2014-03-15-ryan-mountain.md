@@ -15,7 +15,7 @@ but due to mine tailings being churned up, the trails that start from the
 [Cottonwood area are closed](http://www.nps.gov/jotr/loader.cfm?csModule=security/getfile&pageID=674712)
 in the South-end of the park.
 
-###Timetable
+### Timetable
 - 12:50pm start from the trailhead parking lot.
 - 1:25pm summit.
 - 1:30pm leave summit.
@@ -29,7 +29,7 @@ to jog portions of this.
 
 About 1000ft elevation gain over 1.5 miles. 
 
-###Links
+### Links
 - [NOAA peak point forecast](http://forecast.weather.gov/MapClick.php?lat=33.9861993&lon=-116.1345429)
 - [NPS Trail Map](http://www.nps.gov/jotr/planyourvisit/upload/RyanMountain.pdf)
 - [Photos](https://www.dropbox.com/sc/b7kbemplludhhdx/SFHBbRaZPw)

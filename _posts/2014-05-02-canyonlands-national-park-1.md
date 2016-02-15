@@ -13,7 +13,7 @@ published: true
 ---
 Second in a three part series on Arches and Canyonlands trip over May 1-3.
 
-###The Drive
+### The Drive
 _Advertised_ to take ~[30 minutes](https://goo.gl/maps/EQCqb)
 from Moab to the Canyonlands entrance station. I will say this:
 I drive faster when there are not any state patrol around and there did not
@@ -22,7 +22,7 @@ seem to be any on UT-313; be careful on US-191!
 they accept credit cards; same as Arches.
 
 
-###Gooseberry Trail
+### Gooseberry Trail
 Bypassed the visitor center. Past _The Neck_, there did not seem to be anyone
 in the park ~9am. WUT? [15-30 minutes](https://goo.gl/maps/oRYdt) past the
 entrance station, you will reach the unmarked picnic area/toilet/parking turn-out.
@@ -42,7 +42,7 @@ Mostly taken on the trek back up.
 Popped the windows/doors and lunched in the shade of my car.
 
 
-###Murphy Point Overlook
+### Murphy Point Overlook
 Decent views (I am spoiled) of the _Green River_ basin and _White Rim Road_
 can be had from the overlook. Hit it from 1-2pm; which was only possible in
 full sun because the high must have been mid-70s. Seemed as though more
@@ -53,13 +53,13 @@ down on _Gooseberry Trail_. Designated parking limited to ~10 parking spots.
 - [Photos](https://www.dropbox.com/sc/dwbi333slprezmp/AABuZ7sbMMy8DLlxv2gmUS0wa)
 
 
-###Misc
+### Misc
 Hit a few _less tourist flocked_ drive-up overlooks on the way out of the park.
 Made 5 minutes for the visitor center and 5 for the toilets and water fill-up.
 At this point ~3pm we were so done. The pool felt great ~4pm.
 
 
-###Moab Brewery
+### Moab Brewery
 [Moab Brewery](http://www.yelp.com/biz/moab-brewery-moab-2) was right across
 from our hotel, and already at ~5:45pm it was getting full. Fortunately my dad
 and I were able to snag a table on the less noisy screen? porch. Small order

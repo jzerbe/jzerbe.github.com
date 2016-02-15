@@ -6,7 +6,7 @@ tags:
 - OSX
 published: true
 ---
-###Background
+### Background
 
 A month ago I was able to successfully install
 a working OSX 10.5.8 install on my Dell Inspiron 1501 for a more enjoyable development experience. Having a
@@ -21,7 +21,7 @@ above tutorial I made local copies which you can also obtain here:
 [osx-inspiron-1501_drivers.zip](https://drive.google.com/uc?export=download&id=0B0yT30uCaFvvbnRFeTJRcFkzWDg).
 
 
-###Dual Booting
+### Dual Booting
 
 I found the easiest way to get dual booting working properly with OSX and Windows XP was to 1) format the HDD
 with gparted (can be found as an [independent bootable system](http://gparted.sourceforge.net/livecd.php)
@@ -29,7 +29,7 @@ or a componenet of many Linux distros) - create a HFS+ and NTFS partition, 2) in
 OSX from your iDeneb disc (so that the Chameleon bootloader is installed properly).
 
 
-###Installing the Audio Driver with the Kext Helper
+### Installing the Audio Driver with the Kext Helper
 
 What the tutorial fails to state is that: you should _not start_ the Kext Helper application by _double clicking_,
 but should instead _drag the codec text dump_ (Sigmatel9200.text) _onto the application icon_, which will then
@@ -39,7 +39,7 @@ on the insanelymac.com forum for more information on creating your own codec dum
 (probably not necessary as I found out the hard way).
 
 
-###Quartz missing
+### Quartz missing
 
 The Mac OSX [Quartz (graphics layer)](http://en.wikipedia.org/wiki/Quartz_(graphics_layer)) does not
 work with the Inspiron 1501 hardware. Thus, several noteable visual applications do not work properly, namely VLC.

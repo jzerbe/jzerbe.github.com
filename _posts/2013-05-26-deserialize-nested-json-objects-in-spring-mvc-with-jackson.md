@@ -11,14 +11,14 @@ published: true
 [Jackson 1.9](http://repository.codehaus.org/org/codehaus/jackson/) did not cut it.
 
 
-###API needs
+### API needs
 
 The `VenueObj` has a single `LocationObj` field, called `location`.
 The `LocationObj` field needs to be set when deserializing a full `VenueObj` JSON POST payload, and the `location` field
 needs to be serialized when the `VenueObj` is serialized.
 
 
-###VenueController.java POST mapping - Controller
+### VenueController.java POST mapping - Controller
 
     @RequestMapping(value = RequestMappingConstants.kApiVenues, method = RequestMethod.POST)
     protected @ResponseBody long putVenue(@RequestBody final VenueObj theVenueObj, final Principal thePrincipal, final HttpServletResponse response);
@@ -27,7 +27,7 @@ Note the annotation driven mapping. May need to wire up your
 [spring-dispatcher-servlet.xml](https://github.com/jzerbe/spring-security-gwt-template/blob/master/WEB-INF/spring-dispatcher-servlet.xml).
 
 
-###VenueObj.java constructor - JSON de/serialization and ORM
+### VenueObj.java constructor - JSON de/serialization and ORM
 
     @JsonCreator
     public VenueObj(@JsonProperty(VenueObj.NAME) final String theName,
@@ -47,7 +47,7 @@ All other `public` constructors should be annotated with
 deserialize with the incorrect one and spitting up.
 
 
-###LocationObj.java getters/setters - JSON de/serialization and ORM
+### LocationObj.java getters/setters - JSON de/serialization and ORM
 
     @JsonProperty(LocationObj.LAT)
     public float getLat() {
@@ -75,7 +75,7 @@ The `LocationObj` class is a constructor-less cacophony of getters
 and setters, with a few `private` data manipulation methods.
 
 
-###Conclusion
+### Conclusion
 
 And now the service should be able to make sense of incoming JSON like:
 
@@ -92,6 +92,6 @@ And now the service should be able to make sense of incoming JSON like:
     }
 
 
-###Further Reading
+### Further Reading
 
 - [Jackson Annotations: @JsonCreator demystified](http://www.cowtowncoder.com/blog/archives/2011/07/entry_457.html)

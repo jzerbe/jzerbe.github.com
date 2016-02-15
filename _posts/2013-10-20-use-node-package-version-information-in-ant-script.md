@@ -12,7 +12,7 @@ which comes embedded in J2SE 6. Combined with [Ant-Contrib](http://ant-contrib.s
 pull in version information from [NPM](https://npmjs.org/) and from package manifests.
 
 
-###Ant Script setup
+### Ant Script setup
 
 1. Link in the Ant-Contrib tasks: `<taskdef resource="net/sf/antcontrib/antlib.xml" classpath="no-include-war/ant-contrib.jar" />`
 2. Map the NPM and Shell executables to Ant properties for easier reuse:
@@ -22,7 +22,7 @@ pull in version information from [NPM](https://npmjs.org/) and from package mani
     everything but the second returned line, and then filter out everything but numeric values and the `.` character.
 
 
-###Get package manifest version information
+### Get package manifest version information
 
 Do note that the defined JavaScript methods can only be used within the same enclosing `script` element.
 
@@ -75,7 +75,7 @@ for use as an Ant property by the name of `package.dependencies.depItem.version`
 `getPackageVersion` function to suit your exact needs, whether this be internal URLs or mainline Node modules.
 
 
-###Get installed package versions and compare
+### Get installed package versions and compare
 
 Now that the dependency information has been pulled in from the `package.json` manifest, loop over
 all the defined dependencies with `propertyselector` (Ant-Contrib) and check the locally installed version.

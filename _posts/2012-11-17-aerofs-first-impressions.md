@@ -15,7 +15,7 @@ the LAN:
 [KB - What are the firewall requirements?](http://support.aerofs.com/knowledgebase/articles/47288-what-are-the-firewall-requirements-)
 
 
-###environment
+### environment
 
 When I am home, I plug my various machines in to my 1Gbps Ethernet switch.
 Up until a few weeks ago, I had an elaborate system of mouse-clicks and scripts
@@ -25,7 +25,7 @@ auto-magically synching with Dropbox. I really do not want to be synching 50GB
 (and growing) of content across the crappy DSL line I am on.
 
 
-###AeroFS NAS/headless set-up
+### AeroFS NAS/headless set-up
 
 I am running this on CentOS release 5.8 (Final). Pick up the tarball from
 [https://www.aerofs.com/download?os=linux](https://www.aerofs.com/download?os=linux).
@@ -42,7 +42,7 @@ to pop open the `screen` instance - `screen -r AeroFS`
 - on first run to go through the CLI wizard.
 
 
-###annoyances
+### annoyances
 
 - fight with Windows install to periodically re-remove AeroFS from start-up
 - slow sync: 2-4MB/sec compared to the sustained 10MB/sec I can easily get with SFTP

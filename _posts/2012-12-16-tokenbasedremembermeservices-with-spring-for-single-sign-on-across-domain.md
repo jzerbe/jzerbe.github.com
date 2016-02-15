@@ -7,7 +7,7 @@ tags:
 - Token
 published: true
 ---
-###motivation
+### motivation
 
 The business requirements I have been working with dictate that users should be
 able to work across various deployed webapp contexts in our ecosystem with
@@ -30,7 +30,7 @@ but sharing a single cookie for
 maintain for now.
 
 
-###the code
+### the code
 
 I created a complete example project at
 [jzerbe / spring-security-gwt-template](https://github.com/jzerbe/spring-security-gwt-template).

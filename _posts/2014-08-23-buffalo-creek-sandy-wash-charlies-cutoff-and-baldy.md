@@ -36,7 +36,7 @@ Going counter-clockwise, it is all down hill once you are on 727 - Baldy.
 I had no problems on my stock hard-tail 29er. I expect to be back for several more rounds.
 
 
-###Links###
+### Links ###
 - [NOAA point forecast](http://forecast.weather.gov/MapClick.php?lat=39.3862985&lon=-105.2746993)
 - [trailhead parking on Google Maps](https://goo.gl/maps/Qv9GW)
 - [Buffalo Creek - Sandy Wash photos](https://www.dropbox.com/sc/xga2pqhqp86uq03/AABaHeusT_iazC2IgZMgq-maa)

@@ -18,7 +18,7 @@ or the [Apache log4j logger](http://logging.apache.org/log4j/) -
 `Logger.getLogger(MyCoolClass.class).error("error message")`.
 
 
-###logging.properties
+### logging.properties
 
 I have found that I much prefer the standard Java logger because of its many log
 levels, tight integration with Tomcat, and out-of-the-box support. Maybe if log4j
@@ -83,7 +83,7 @@ For debug builds, one could have another logging.properties file with the variou
 ".level" lines set to FINEST or something.
 
 
-###log4j.properties
+### log4j.properties
 
 While I am definitely no expert at logging, I have noticed that Apache\'s
 log4j has several features that Sun\'s logger is missing. The big one is log

@@ -31,7 +31,7 @@ Be sure to head East (right) at the trail junction at 11,000 feet. Finally, upon
 reaching the park at 12,000 feet, the trees disappear and it is rocks and high-alpine grasses.
 
 
-###Navigating the Park
+### Navigating the Park
 The entire trail is almost too straightforward and well maintained (not even rocks on the trail),
 until reaching the alpine park.
 Once you break tree line onto the park, there are a variety of ways to head to the peak.
@@ -44,7 +44,7 @@ if you do not want to play in the rocks.
 to the [left following the gravel](https://www.dropbox.com/s/7u52inffpbei3m9/2014-07-13%2011.18.17.jpg)
 
 
-###Notes
+### Notes
 - Mosquitoes exist at the trailhead (not out at 8am, but bad at 1pm),
 in the wet sections next to Ute Creek, and at the peak.
 If you are walking at a good pace, they will not bother you.
@@ -55,7 +55,7 @@ the park at 11:15am on the return. Turned to rain below 11,500 feet. A little be
 11,000 feet and it became perfectly sunny again.
 
 
-###Stats/Links
+### Stats/Links
 - 12 miles RT ~ 5 hours (includes 4 * 5 minute breaks, and 30 minutes at peak)
 - USGS topographical maps from
 [USGS Map Locator](http://store.usgs.gov/b2c_usgs/usgs/maplocator/(xcm=r3standardpitrex_prd&layout=6_1_61_90&uiarea=2&ctype=areaDetails&carea=0000000009)/.do):

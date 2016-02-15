@@ -7,7 +7,7 @@ tags:
 - MediaTomb
 published: true
 ---
-###copy-paste###
+### copy-paste ###
     apt-get update
     apt-get upgrade
     apt-get -y install screen vlc vorbis-tools mpg123 ffmpeg unzip subversion build-essential
@@ -37,7 +37,7 @@ Change line in `/etc/init.d/mediatomb` so ethX reads eth0, eth1, or whatever you
     chmod +x /etc/init.d/mediatomb
     update-rc.d mediatomb defaults
 
-###explanation###
+### explanation ###
 The idea is that the default MediaTomb install found in the repos (version 11) doesn\'t support transcoding
 quite right for the DirecTV HR2x. So we do an install from the repos for a bunch of dependencies for the
 latest code (version 12) that we then checkout from the project SVN repo. A new configuration script

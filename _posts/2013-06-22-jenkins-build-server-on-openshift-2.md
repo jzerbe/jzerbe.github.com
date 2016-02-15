@@ -23,7 +23,7 @@ At time of writing the OpenShift maintained Jenkins cartridge still reads
 _Jenkins Server 1.4_, but it is actually _1.509.1_.
 
 
-###create SSH key-pair###
+### create SSH key-pair ###
 Create an SSH key on the fresh Jenkins cartridge in `~/app-root/data/.ssh/id_rsa`
 with `ssh-keygen -C jenkins@openshift`, and add it to the
 [Account Settings](https://openshift.redhat.com/app/console/settings). This will
@@ -31,7 +31,7 @@ ensure that authentications with the key are accepted on any of your
 account\'s cartridges.
 
 
-###deployment to other cartridge from Jenkins###
+### deployment to other cartridge from Jenkins ###
     # set deploy user and endpoint
     DEPLOY_ENDPOINT=[alpha-num username]@[cart name]-[namespace].rhcloud.com
 
@@ -46,7 +46,7 @@ As one can see, I am deploying to a
 cartridge.
 
 
-###hot deploy###
+### hot deploy ###
 For the JBoss EWS instance to automatically pick up WAR changes and redeploy the context, we have to add in
 the [hot deploy marker file](https://www.openshift.com/kb/kb-e1057-how-can-i-deploy-my-application-without-having-to-restart-it).
 
@@ -62,7 +62,7 @@ in the previous section - `~/jbossews/bin/control restart` - as there is no more
 server restart.
 
 
-###service linking###
+### service linking ###
 ![Bitbucket Jenkins service](https://drive.google.com/uc?export=download&id=0B0yT30uCaFvvUTdmRnY4VU5KbEE)
 
 You can emulate what Bitbucket will do with the following command:
@@ -82,7 +82,7 @@ is able to start builds:
     3. View: Read
 
 
-###git polling###
+### git polling ###
 __20130929 EDIT:__ Seems as though the Bitbucket POST service doesn\'t want
 to play ball anymore with my hosted Jenkins instance. Updated the
 __Build Triggers__ section to _Poll SCM_ every three minutes: `*/3 * * * *`.

@@ -25,12 +25,12 @@ on the return ride of a glassy pond section.
 6 (light uphill) + 4 (somewhat technical variable terrain) + 6 (light downhill return)
 miles = 16 miles in ~ 2 hours 40 minutes
 
-###Maps
+### Maps
 - [Waterton Canyon & singletrack loop](https://mapsengine.google.com/map/edit?mid=zj2fwvSxaNFw.krJkmdoodtAA)
 - [Colorado Trail Seg. 1 singletrack route](https://drive.google.com/file/d/0B0yT30uCaFvvZEhINTRRWHRmeGc/edit?usp=sharing)
 sourced from [Waterton Canyon & CT Segment 1 Alternative](http://www.coloradotrail.org/waterton.html)
 
-###Additional Information
+### Additional Information
 - [NOAA Point Forecast](http://forecast.weather.gov/MapClick.php?lat=39.4272523&lon=-105.1228103)
 of upper loop
 - [Singletracks: Waterton Canyon](http://www.singletracks.com/bike-trails/waterton-canyon.html)

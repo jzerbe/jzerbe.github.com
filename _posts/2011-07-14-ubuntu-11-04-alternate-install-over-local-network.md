@@ -18,14 +18,14 @@ instead of the generic PXE setup involving TFTP and a complicit DHCP server, whi
 without the niceties of a LAN where you have access to the DHCP boot options.
 
 
-####iPXE boot options for ubuntu studio 11.04
+#### iPXE boot options for ubuntu studio 11.04
 
     kernel ubuntustudio-11.04-alternate-i386/install/netboot/ubuntu-installer/i386/linux
     initrd ubuntustudio-11.04-alternate-i386/install/netboot/ubuntu-installer/i386/initrd.gz
     imgargs linux append auto url=http://<?php echo $server_ip; ?>/tftp/boot/preseed_ubuntustudio.cfg language=en country=US console-keymaps-at/keymap=us keyboard-configuration/xkb-keymap=us keyboard-configuration/layoutcode=us console-setup/ask_detect=false --
 
 
-####contents of my custom preseed_ubuntustudio.cfg
+#### contents of my custom preseed_ubuntustudio.cfg
 
     #Debian 6 options
     d-i debian-installer/locale string en_US

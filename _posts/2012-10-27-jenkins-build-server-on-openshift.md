@@ -23,7 +23,7 @@ password for use with connecting over HTTPS, as I do not want to divulge
 my actual account password in the Jenkins config.
 
 
-###auto-install Jenkins
+### auto-install Jenkins
 
 The OpenShift application maintenance panel provides an option to create a
 Jenkins build server _gear_ when digging around in your existing
@@ -31,7 +31,7 @@ application settings. The __Enable Jenkins builds__ button is your
 friend.
 
 
-###with the OpenShift app\'s internal GIT repo
+### with the OpenShift app\'s internal GIT repo
 
 When you log in for the first time to your new Jenkins gear, you should see a
 `_somethingsomething_-build` job already created. If you are using the
@@ -40,7 +40,7 @@ files, then everything should work out of the box. However, I wanted to be
 be able to build any type of project.
 
 
-###break the sandbox - build tools
+### break the sandbox - build tools
 
 1. Manage Jenkins -> Configuration
     - \# of executors = 1
@@ -61,7 +61,7 @@ be able to build any type of project.
         `/var/lib/stickshift/[...]/app-root/data/apache-ant-1.8.4`.
 
 
-###break the sandbox - config with 3rd party repo
+### break the sandbox - config with 3rd party repo
 
 1. Create a __New Job__ copied from the existing
         `_somethingsomething_-build` job. I called mine
@@ -80,7 +80,7 @@ be able to build any type of project.
         requires additional configuration.
 
 
-###split up the Build steps
+### split up the Build steps
 
 Summary: all WARs built by Ant get put into `deployments` directory
 and pushed onto OpenShift gear for production use. You will need to add the
