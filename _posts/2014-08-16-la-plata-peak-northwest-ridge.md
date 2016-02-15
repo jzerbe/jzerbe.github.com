@@ -30,7 +30,7 @@ probably 20-30F degree difference on peak versus at the trailhead.
 Cold sweat is not fun.
 
 
-###Timetable###
+### Timetable ###
 - 8:15am start from the [La Plata Gulch Trailhead](https://goo.gl/maps/WAvnh)
 - 9:05am clear treeline
 - 10:40am summit La Plata
@@ -45,7 +45,7 @@ Once back below treeline, in the valley, the pine forest to the East of the
 trail offers cover for finding a friendly tree, but beware of mosquitoes
 while bearing yourself.
 
-###Links###
+### Links ###
 - [NOAA point forecast](http://forecast.weather.gov/MapClick.php?lat=39.0301442&lon=-106.4751993)
 - [14ers.com : La Plata Peak : Northwest Ridge](http://www.14ers.com/routemain.php?route=lapl1&peak=La+Plata+Peak)
 - [trail and summit photos](https://www.dropbox.com/sc/7d863k722dhksap/AADo3vlgxqDFv3pe6xSMTUxca)

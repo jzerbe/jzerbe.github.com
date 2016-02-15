@@ -27,7 +27,7 @@ scraper configuration for the North America DTV XMLTV scraper. It needed to be d
 4. Start Tvheadend.
 
 
-###Tvheadend part
+### Tvheadend part
 
 ![Tvheadend DirecTV EPG grabber config](https://drive.google.com/uc?export=download&id=0B0yT30uCaFvvVUt5ZmF2S3VZVXc)
 

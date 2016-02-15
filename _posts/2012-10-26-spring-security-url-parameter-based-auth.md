@@ -17,7 +17,7 @@ I have been using in production.
 Just the good parts!
 
 
-###extend OncePerRequestFilter
+### extend OncePerRequestFilter
 
 This guy comes from org.springframework.web.filter.OncePerRequestFilter, which
 is in the
@@ -37,7 +37,7 @@ is in the
     }
 
 
-###update web.xml
+### update web.xml
 
     <filter>
         <filter-name>signatureFilter</filter-name>

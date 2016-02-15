@@ -20,7 +20,7 @@ up from Ruby Gulch. The trailhead looks much more secluded from
 [satellite imagery](https://www.google.com/maps/@39.6009464,-105.8380849,226m/data=!3m1!1e3).
 
 
-###Timetable###
+### Timetable ###
 - 7:15am start from the
 [Stevens Gulch trailhead](https://www.google.com/maps/@39.6609008,-105.7845121,127m/data=!3m1!1e3)
 - 9:15am summit Torreys
@@ -33,6 +33,6 @@ to miss. I was able to jog down the easy East slope switch-backs of Grays
 protected from the wind. That wind on the saddle is brutal ~9am.
 
 
-###Links###
+### Links ###
 - [14ers.com : Grays and Torreys](http://www.14ers.com/routemain.php?route=torr5&peak=Grays+Peak+and+Torreys+Peak)
 - [summit photos](https://www.dropbox.com/sc/dtofxcuprfh7xrf/AABzMPawTZhM9XxvPeqfDW_1a)

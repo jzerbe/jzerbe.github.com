@@ -9,7 +9,7 @@ tags:
 - Django
 published: true
 ---
-###FormData
+### FormData
 
 As of Chrome 7, Firefox 4, IE 10, Opera 12, and Safari 5 - it is quite possible
 to programmatically upload file data.
@@ -41,7 +41,7 @@ Where `private_SendDataObj` is essentially a wrapper for `xhr.send(aDataObj.cont
 documentation tells you otherwise.
 
 
-###Django\'s request.FILES
+### Django\'s request.FILES
 
 [Google App Engine](https://developers.google.com/appengine/docs/python/overview) with
 [django-nonrel](http://django-nonrel.org/) to be specific, we can pull in the file data.

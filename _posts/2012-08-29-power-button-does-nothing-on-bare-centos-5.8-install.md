@@ -16,12 +16,12 @@ I had no idea that this would mean no ACPId, which meant nothing
 happened when I pushed the power button.
 
 
-###the package fix
+### the package fix
 
     yum install acpid
 
 
-###the config file
+### the config file
 
 `/etc/acpi/events/power.conf`
 

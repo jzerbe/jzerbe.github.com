@@ -14,7 +14,7 @@ What makes a breakfast burrito a _breakfast_ burrito? Being a big fan of
 burritos, I do not have time for philosophical discussions.
 This recipe yields 4 large burritos.
 
-###Ingredients
+### Ingredients
 - large tortillas. Colorado has _La Favorita_ branded foods; their tortillas
 probably have the lowest sodium content around.
 - 2 [russet potatoes](http://www.produceoasis.com/ProductDetailPage/TabId/272/pid/408/Vegetables/Russet-Potato.aspx)
@@ -30,7 +30,7 @@ respectively.
 - sour cream
 - pepper, salt, garlic powder
 
-###Process
+### Process
 1. Peel and [rice](http://culinaryarts.about.com/od/glossary/g/Potato-Ricer.htm)
 your potatoes. Ricing can be imitated by finely grating and then pressing out
 the preponderance of the moisture content.

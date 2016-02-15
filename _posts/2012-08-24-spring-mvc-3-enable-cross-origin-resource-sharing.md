@@ -16,7 +16,7 @@ Cross-Origin Resource Sharing. Relevant reading:
 - build [AJAX in vanilla JavaScript](http://www.xul.fr/en-xml-ajax.html)
 
 
-###update web.xml
+### update web.xml
 
 Update the DispatcherServlet section of your web.xml file (typically in WEB-INF)
 so that it dispatches HTTP OPTIONS requests to controllers instead of pushing back the
@@ -39,7 +39,7 @@ headers.
     </servlet-mapping>
 
 
-###create an OPTIONS RequestMapping
+### create an OPTIONS RequestMapping
 
 In my case I want CORS to always work for any HTTP end-points, so I created a
 __CorsCommon__ class that I extend all my other controllers from.
@@ -60,7 +60,7 @@ where `my-cool-header` is. jQuery likes to use the `x-requested-with` header.
     }
 
 
-###example files
+### example files
 
 For more contextually complete examples, take a look at the following files from
 the

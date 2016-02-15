@@ -28,7 +28,7 @@ on the Whippletree trail.
 
 Returned to a rather full parking lot around 10:30am. 
 
-###Stats/Links
+### Stats/Links
 - 6 miles RT ~ 1.5 hours
 - [Google Custom Map](https://mapsengine.google.com/map/edit?mid=zj2fwvSxaNFw.k_A-ui3Xxy2Q)
 - [NOAA Point Forecast](http://forecast.weather.gov/MapClick.php?lat=39.8056547&lon=-105.2711533)

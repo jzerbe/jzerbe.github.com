@@ -8,7 +8,7 @@ tags:
 - x86
 published: true
 ---
-###motivation###
+### motivation ###
 I have been able to build the kernel-space drivers for my HDHomeRun,
 _[dvbhdhomerun](http://dvbhdhomerun.cvs.sourceforge.net/)_, yet there seem to
 be some weird runtime errors having to do with cross compiling for an
@@ -24,13 +24,13 @@ can only handle the bandwidth requirements for up to 1080i broadcasts.
 
 
 
-###install dev dependencies###
+### install dev dependencies ###
 
     apt-get install cvs build-essential cmake
 
 
 
-###install Tvheadend##
+### install Tvheadend ##
 Paraphrasing the important parts from
 [AptRepository - Tvheadend](https://tvheadend.org/projects/tvheadend/wiki/AptRepository).
 
@@ -40,7 +40,7 @@ Paraphrasing the important parts from
 
 
 
-###install SiliconDust drivers###
+### install SiliconDust drivers ###
 Get the latest version from
 <http://www.silicondust.com/support/hdhomerun/downloads/linux/>
 
@@ -59,7 +59,7 @@ OR the easier version (might be slightly out of date)
 
 
 
-###setup linux kernel source###
+### setup linux kernel source ###
 According to [KernelFAQ](https://wiki.debian.org/KernelFAQ), Debian does
 not have the standard `/proc/config.gz`, instead a plaintext file can be found
 at `/boot/config-$(uname -r)`.
@@ -80,7 +80,7 @@ the output for me is `3.2.0-4-i386`, so I have `VERSION = 3`,
 
 
 
-###install dvbhdhomerun###
+### install dvbhdhomerun ###
 
     wget http://sourceforge.net/projects/dvbhdhomerun/files/dvbhdhomerun_0.0.15.tar.gz
     tar xzf dvbhdhomerun_0.0.15.tar.gz
@@ -101,7 +101,7 @@ just `dvb_hdhomerun` on it.
 
 
 
-###install userhdhomerun###
+### install userhdhomerun ###
 
     cd ../userhdhomerun/
 

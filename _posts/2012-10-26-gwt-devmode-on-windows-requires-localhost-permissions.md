@@ -18,6 +18,6 @@ before; it is very particular about specific address matching.
 But then why does this not happen on Firefox or IE?
 
 
-###the fix
+### the fix
 
 ![GWT devmode Chrome plugin](https://drive.google.com/uc?export=download&id=0B0yT30uCaFvvZm41VzhwNFJBRGc)

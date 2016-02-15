@@ -12,7 +12,7 @@ published: true
 ---
 First in a three part series on Arches and Canyonlands trip over May 1-3.
 
-###The Drive
+### The Drive
 It is about 5 hours to drive from the junction of
 [6th Ave and I-70W](https://goo.gl/maps/t1knS) at the edge of the Denver Metro
 to the entrance of [Arches National Park](http://www.nps.gov/arch/). Stopped
@@ -29,7 +29,7 @@ believer in bypassing most visitor centers and catching it on the way out for 5
 minutes or perusing the web later.
 
 
-###Delicate Arch
+### Delicate Arch
 If you check out the
 [park map](http://www.nps.gov/arch/planyourvisit/upload/ARCHmap.pdf),
 it may seem as though this arch is a bit of drive.
@@ -44,7 +44,7 @@ the whole way. Lucked out on the relatively low temperature of ~70F.
 - [Photos](https://www.dropbox.com/sc/rk8olj07yxevqhi/AABf0Pf6k8n35kkorYgJ11M-a)
 
 
-###The Windows
+### The Windows
 Heading back out of the park, hit _The Windows_. There was reasonable parking
 and pit toilets. Definitely suggest to hit the back-side via the
 _Primitive Loop_: less people, better pictures (including the La Sal Mountains).
@@ -53,7 +53,7 @@ _Primitive Loop_: less people, better pictures (including the La Sal Mountains).
 - [Photos](https://www.dropbox.com/sc/1xo0a5tmp1czzdl/AAAk-rkRKyND2kmwSyYKrErda)
 
 
-###Balanced Rock
+### Balanced Rock
 Almost immediately after, heading out, there is a turn-out for the phallic
 _Balanced Rock_. Snapped some pics. The official member is the last one in the
 photo series. Rather bored by this point; good thing we only allocated
@@ -62,7 +62,7 @@ the afternoon to Arches.
 - [Photos](https://www.dropbox.com/sc/m824x821ykw8m0c/AACWaFl03eSfuel4duq6DrLla)
 
 
-###Eats and Sleeps
+### Eats and Sleeps
 - [Moab Valley Inn](http://www.yelp.com/biz/moab-valley-inn-moab) was a place to
 stay. Booked it for the price, free breakfast, pool/jacuzzi, and free Wi-Fi.
 Some interesting noises to be heard from the campground out back.

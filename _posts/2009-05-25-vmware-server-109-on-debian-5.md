@@ -6,7 +6,7 @@ tags:
 - VMware
 published: true
 ---
-###copy-paste###
+### copy-paste ###
 
     apt-get install linux-headers-`uname -r` libx11-6 libx11-dev x-window-system-core x-window-system xspecs libxtst6 psmisc build-essential xinetd gcc-4.1 g++-4.1
     ln -sf /usr/bin/gcc-4.1 /usr/bin/gcc
@@ -34,7 +34,7 @@ Follow the instructions; the defaults should be just fine.
     shutdown -r now
 
 
-###explanation###
+### explanation ###
 1. All the dependencies were installed first
 2. System link was created so that the old version of gcc is used that is compatible with the kernel headers
 3. VMare server software is downloaded and installed

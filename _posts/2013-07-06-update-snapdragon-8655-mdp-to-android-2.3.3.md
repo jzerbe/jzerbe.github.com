@@ -23,7 +23,7 @@ hell, it\'s better than the installed Froyo (API level 8).
 
 [8655MDP_Gingerbread_Update.201107131.zip](https://docs.google.com/file/d/0B0yT30uCaFvvWnh4ZFZ5YzRvN3c/edit?usp=sharing)
 
-###relnotes.txt###
+### relnotes.txt ###
     Release Notes for Build
     msm7630_surf-eng 2.3.3 GINGERBREAD M7630AABBQMLZA41XX_AU230 test-keys
 
@@ -64,7 +64,7 @@ through
 [updating the DNS via the console](http://vraidsys.com/2011/10/android-2-2-1-custom-rooting-and-dns-not-resolving/)
 every time I switched 802.11 wireless networks.
 
-###environment setup###
+### environment setup ###
 0. Dependencies: [JDK](https://github.com/jzerbe/java-tool-chain-quick) 
 1. Download and install the [Android SDK](http://developer.android.com/sdk/index.html).
 You really only need the _SDK Tools Only_ for this procedure. Be sure to run the
@@ -83,7 +83,7 @@ to the system __PATH__ or __Path__
     and update drivers of unknown devices by pointing at the root of this extracted directory
 5. Make sure your device is connected; `adb devices` should return a device id.
 
-###the actual work###
+### the actual work ###
 Get into the extracted `8655MDP_Gingerbread_Update.201107131` directory.
 Make sure the output of `fastboot getvar product` matches
 `MSM7630_1x`, `MSM7630_1X`, or `MSM7630_SURF`.

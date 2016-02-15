@@ -43,7 +43,7 @@ forest; exposed for the rest of the time. Pit toilets at trailhead.
 I ended by lunching with the windows down and the air blowing, driving back
 into town.
 
-###Stats/Links
+### Stats/Links
 - [NOAA Point Forecast](http://forecast.weather.gov/MapClick.php?lat=38.8937269&lon=-105.1056901)
 - [Raspberry Mountain route](https://mapsengine.google.com/map/edit?mid=zj2fwvSxaNFw.kDLTkkbXG7iI)
 RT 5.5 miles ~ 2 hours. a very doable ~1200 ft elevation change one way.

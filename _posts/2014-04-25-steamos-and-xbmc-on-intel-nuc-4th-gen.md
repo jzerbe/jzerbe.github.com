@@ -12,7 +12,7 @@ Putting SteamOS and XBMC on an Intel NUC last weekend was surprisingly
 straightforward for what is billed as __very much__ a DIY project.
 I just needed to pick up a PS/2 to USB converter for an old PS/2 keyboard.
 
-###The Hardware
+### The Hardware
 - [Intel NUC D54250WYK1 Intel 4th Gen Core i5-4250U Processor with Power Cord](http://www.amazon.com/gp/product/B00H3YT8CC)
 - [Crucial 16GB Kit DDR3/DDR3L 1600 MHz](http://www.amazon.com/gp/product/B008LTBJFW)
 max RAM the NUC will take is 16GB (2x8GB)
@@ -20,7 +20,7 @@ max RAM the NUC will take is 16GB (2x8GB)
 
 Pretty hard to screw up the assembly portion; just glance at the instructions.
 
-###BIOS Update
+### BIOS Update
 The NUC needs a newer BIOS to properly handle the UEFI Debian boot binary.
 I opted to follow the
 [F7 BIOS update instructions](http://www.intel.com/support/motherboards/desktop/sb/CS-034522.htm),
@@ -29,14 +29,14 @@ USB drive. My unit was on __2013.1017__, and updating to __2014.0303__
 worked. Do note, that one will have to __disable the Wake-On-Lan__ feature, until
 Intel releases a fix for the [reboot after shutdown issue](https://communities.intel.com/thread/47751).
 
-###SteamOS installation
+### SteamOS installation
 1. Download [SteamOSInstaller.zip](http://repo.steampowered.com/download/SteamOSInstaller.zip).
 As noted on [Build your own Steam Machine](http://store.steampowered.com/steamos/buildyourown).
 2. Unzip the contents to the root of your FAT32-formatted USB drive.
 3. Boot from the UEFI entry on the USB drive into the installer.
 4. Run the _Automated Install_ to overwrite the contents of the SSD.
 
-###Add Debian Wheezy repos and XBMC
+### Add Debian Wheezy repos and XBMC
 This is based upon the Steam Universe posts:
 [Installing applications from the Debian repo in SteamOS](http://steamcommunity.com/groups/steamuniverse/discussions/1/648814396114274132/),
 and [Intergrating XBMC in SteamOS](http://steamcommunity.com/groups/steamuniverse/discussions/1/648816742742587380/).
@@ -53,7 +53,7 @@ and [Intergrating XBMC in SteamOS](http://steamcommunity.com/groups/steamunivers
     - `cp /usr/share/xsessions/XBMC.desktop /usr/share/xsessions/gnome.desktop`
 6. Restart
 
-###Install AeroFS for Music syncing
+### Install AeroFS for Music syncing
 While I filled up an external NTFS USB drive with Videos, I like to keep my
 music library synced across all my devices with AeroFS.
 __Updated__ August 10 2014.
@@ -76,7 +76,7 @@ __Updated__ August 10 2014.
 7. AeroFS will always be running in the background after 1st open of XBMC.
 More on [XBMC wiki: Autoexec.py](http://wiki.xbmc.org/index.php?title=Autoexec.py).
 
-###Additional customizations
+### Additional customizations
 - Install the NTFS-3g drivers for read-write NTFS drive support: `apt-get install ntfs-3g`
 - Add [Xbox 360 Controller keymapping](http://forum.xbmc.org/showthread.php?tid=135871) to XBMC.
 Keymap XML mirrored on my GDrive:

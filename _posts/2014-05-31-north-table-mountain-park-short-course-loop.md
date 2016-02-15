@@ -20,7 +20,7 @@ The East access to
 [White Ranch Park](http://jeffco.us/parks/parks-and-trails/white-ranch-park/)
 from _CO-93_ seemed to have heavy traffic right around when I was starting.
 
-###Stats/Links
+### Stats/Links
 - 5 miles RT ~ 45 minutes
 - [Google Custom Map](https://mapsengine.google.com/map/edit?mid=zj2fwvSxaNFw.knqzafXgC7SE)
 - [NOAA Point Forecast](http://forecast.weather.gov/MapClick.php?lat=39.783153&lon=-105.2113494)

@@ -22,7 +22,7 @@ What needed to get done:
 2. automate process of setting DNS servers when connecting to Wi-Fi networks
 3. download some apps and updates
 
-###rooting the phone
+### rooting the phone
 
 Since I was able to access direct IPv4 addresses, what I did was upload my various .apk files to my LAN
 webserver (http://192.168.x.x/path) and download them to my device. Bluetooth-to-Bluetooth connection would not let my
@@ -36,7 +36,7 @@ and then 2) installing z4root ([local mirror](https://docs.google.com/folder/d/0
 and successfully rooting in that order.
 
 
-###automating DNS resolver (background)
+### automating DNS resolver (background)
 
 Admittedly this solution is rather hackish, but since I do not have access to the Android Marketplace I cannot
 get the slick DNS settings apps like [mytechie\'s SetDNS utility](https://market.android.com/details?id=uk.co.mytechie.setDNS&hl=en).
@@ -46,7 +46,7 @@ My pay-as-you go T-Mobile service has no problem setting my device\'s DNS server
 [Edge network](http://en.wikipedia.org/wiki/Enhanced_Data_Rates_for_GSM_Evolution).
 
 
-###automating DNS resolver (setup)
+### automating DNS resolver (setup)
 
 Open up the Terminal Emulator\'s startup commands, you might already see something like `export $PATH ...`. Put a semi-colon at the end
 of the line if there is not already one and append the following:
@@ -56,7 +56,7 @@ So whenever you open up your terminal emulator application, it should automatica
 university\'s DNS resolvers, as they have internal addresses for authenticating devices when you connect to their 802.11b/g/n mesh.
 
 
-###some other apps
+### some other apps
 
 1. Flash 10.1 - The .apk should work on any Android 2.2
 phone - [local mirror](https://docs.google.com/file/d/0B0yT30uCaFvvZUhaQVdJNjJJUEU/edit?pli=1),

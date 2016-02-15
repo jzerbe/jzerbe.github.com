@@ -37,7 +37,7 @@ lot and down the street. Had lunch at
 [TNT Country Kitchen](http://www.yelp.com/biz/tnt-country-kitchen-morrison).
 Huevos racheros never tasted so good; probably because I was quite hungry.
 
-###Stats/Links
+### Stats/Links
 - 10 miles RT ~ 2.5 hours with company and 5-10 stops
 - [NOAA Point Forecast](http://forecast.weather.gov/MapClick.php?lat=39.6332253&lon=-105.2334564)
 - [Mount Falcon Park map mirror](https://drive.google.com/file/d/0B0yT30uCaFvvbzhXYnBla1FNYzQ/edit?usp=sharing)

@@ -17,7 +17,7 @@ Relevant reading:
 - build [AJAX in vanilla JavaScript](http://www.xul.fr/en-xml-ajax.html)
 
 
-###add items to HttpResponse dictionary
+### add items to HttpResponse dictionary
 
 From <https://docs.djangoproject.com/en/dev/ref/request-response/#setting-headers>:
 >To set or remove a header in your response, treat it like a dictionary:
@@ -28,7 +28,7 @@ From <https://docs.djangoproject.com/en/dev/ref/request-response/#setting-header
 > 
 
 
-###function pastie
+### function pastie
 
     def addCORSHeaders(theHttpResponse):
         if theHttpResponse and isinstance(theHttpResponse, HttpResponse):

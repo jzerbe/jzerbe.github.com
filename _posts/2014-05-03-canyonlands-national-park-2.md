@@ -13,7 +13,7 @@ published: true
 ---
 Third in a three part series on Arches and Canyonlands trip over May 1-3.
 
-###False Kiva
+### False Kiva
 I had seen this on [EveryTrail](http://www.everytrail.com/guide/false-kiva-hike),
 and heard about it from a coworker as a great off-the-beaten-trail to do.
 Once you find the trail it is really hard to get lost. Follow the footprints
@@ -37,7 +37,7 @@ Again, what is with people starting at high-noon?!? Saw no one until then.
 Mostly taken on the trek back up. The first pic is taken on the top of the mesa.
 
 
-###Aztec Butte
+### Aztec Butte
 From the [Short Hikes](http://www.nps.gov/cany/planyourvisit/iskyshorthikes.htm)
 listing. Just about done for the day, we were heading back out of the park, and
 we saw this easy guy on the

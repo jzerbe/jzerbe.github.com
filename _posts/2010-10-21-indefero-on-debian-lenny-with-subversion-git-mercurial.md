@@ -27,7 +27,7 @@ Change sshd to disallow root logins: `vi /etc/ssh/sshd_config` and change to _Pe
 Most of the following pasties are from the [InDefero docs about installatio](http://projects.ceondo.com/p/indefero/page/Installation/).
 
 
-####Install InDefero and Pluf framework files
+#### Install InDefero and Pluf framework files
 
     mkdir -p /home/www
     cd /home/www
@@ -45,14 +45,14 @@ Most of the following pasties are from the [InDefero docs about installatio](htt
     ln -s /home/www/indefero/www/media
 
 
-####Install/Update PHP Pear shiz
+#### Install/Update PHP Pear shiz
 
     pear upgrade-all
     pear install --alldeps Mail
     pear install --alldeps Mail_mime
 
 
-####Update Config file
+#### Update Config file
 
     cd /home/www/indefero/src/IDF/conf/
     cp idf.php-dist idf.php
@@ -61,14 +61,14 @@ Most of the following pasties are from the [InDefero docs about installatio](htt
     vi path.php
 
 
-####Install the Database stuff
+#### Install the Database stuff
 
     cd /home/www/indefero/src
     php /home/www/pluf/src/migrate.php --conf=IDF/conf/idf.php -a -i -d -u
     php /home/www/pluf/src/migrate.php --conf=IDF/conf/idf.php -a -i -d
 
 
-####Bootstrap
+#### Bootstrap
 
 `vi bootstrap.ph` and stick the following in (if your path, etc. are the same):
 
@@ -95,7 +95,7 @@ Most of the following pasties are from the [InDefero docs about installatio](htt
 Run that sucker - `php bootstrap.php` - make sure it completes, and then delete it (`rm bootstrap.php`).
 
 
-####Finishing Touches
+#### Finishing Touches
 
 `cd /var/www`
 `vi .htaccess` - and put the following in if you want urls without index.php in them:
@@ -109,7 +109,7 @@ Run that sucker - `php bootstrap.php` - make sure it completes, and then delete 
 Don\'t forget to enable to rewrite module - `a2enmod rewrite` - and restart apache2 - `/etc/init.d/apache2 restart`.
 
 
-####Adding automatic control over your repos
+#### Adding automatic control over your repos
 
 - Subversion - <http://projects.ceondo.com/p/indefero/page/InstallationScmSubversion/>
 - Git - <http://projects.ceondo.com/p/indefero/page/InstallationScmGit/>

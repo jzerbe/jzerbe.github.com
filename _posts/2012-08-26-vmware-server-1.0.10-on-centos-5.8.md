@@ -18,7 +18,7 @@ their search results or site nav, but fortunately I have kept it bookmarked:
 [Download VMware Server (for Windows and Linux systems)](http://register.vmware.com/content/download-1010.html).
 
 
-###setup on a minimal CentOS 5.8 install
+### setup on a minimal CentOS 5.8 install
 
 The following should install the necessary build tools and development file
 dependencies needed to create the various VMware Server binaries. 25MB via yum.
@@ -27,7 +27,7 @@ dependencies needed to create the various VMware Server binaries. 25MB via yum.
     yum groupinstall 'X Software Development'
 
 
-###the install pastie
+### the install pastie
 
 Download (102MB), extract, install, configure. The install Perl script should
 automatically redirect you to the installed vmware-config.pl; defaults should be

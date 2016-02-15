@@ -20,7 +20,7 @@ I also had the pleasure of getting keyring errors because all of the
 Debian apt-get keyring files get dumped by the AMI bundle rules.
 
 
-###my original API/AMI setup
+### my original API/AMI setup
 
 I set up my tools in `/opt/ec2` based on the following commands from the
 [_CreateEC2Image_ article on the Debian project wiki](http://wiki.debian.org/Cloud/CreateEC2Image).
@@ -44,7 +44,7 @@ Add `EC2_HOME/bin` to your `PATH` by updating `export PATH` to look like `export
 `chmod -R 755 /opt` for good measure.
 
 
-###the hackish fix
+### the hackish fix
 
 If you are only using these images for intra-company use, then you might be able
 to take advantage of the slightly hackish solution I used. I removed

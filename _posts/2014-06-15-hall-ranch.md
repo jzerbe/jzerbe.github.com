@@ -36,7 +36,7 @@ beautiful place after the
 I was tubing in _North Saint Vrain Creek_ last July, and the creek course
 washout is very obvious from _Apple Valley Road_.
 
-###Stats/Links
+### Stats/Links
 - 12 miles RT ~ 2 hours
 - [Google Custom Map](https://mapsengine.google.com/map/edit?mid=zj2fwvSxaNFw.kcsmeMVtvDoQ)
 - [NOAA Point Forecast](http://forecast.weather.gov/MapClick.php?lat=40.2188091&lon=-105.3200937)

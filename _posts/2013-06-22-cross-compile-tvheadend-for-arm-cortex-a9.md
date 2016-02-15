@@ -14,7 +14,7 @@ This will be the first in a series of posts as I get
 [XIOS DS Media Play](http://www.pivosgroup.com/xios.html).
 I am doing all of the building on a Debian 7 VM.
 
-###setup CROSS_COMPILE env###
+### setup CROSS_COMPILE env ###
 I attempted to roll a cross-compile environment in Cygwin for several hours
 and gave up. Everything was so much easier on a Debian 7 VM.
 
@@ -24,7 +24,7 @@ and gave up. Everything was so much easier on a Debian 7 VM.
 `PATH="/opt/Sourcery_CodeBench_Lite_for_ARM_GNU_Linux/bin:$PATH"`
 ... or wherever you pointed the installer to.
 
-###zlib + OpenSSL to match ARM buildroot###
+### zlib + OpenSSL to match ARM buildroot ###
 I based my approach on:
 <http://stackoverflow.com/questions/11841919/cross-compile-openssh-for-arm/14541123#14541123>
 
@@ -47,7 +47,7 @@ I based my approach on:
     make
     make install
 
-###build/package Tvheadend###
+### build/package Tvheadend ###
 Standard instructions: <https://github.com/tvheadend/tvheadend/blob/master/README.md>
 
     cd /opt

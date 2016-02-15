@@ -7,13 +7,13 @@ tags:
 - unit test
 published: true
 ---
-###motivation###
+### motivation ###
 I like having unit tests grouped into separate files as any self-respecting
 unit test framework typically allows. Kind of a shock that django didn\'t get
 things right out of the box. The start of my research landed me on
 [split django app tests in several files](http://stackoverflow.com/a/6163375).
 
-###create/update files###
+### create/update files ###
 - I
 [forgot to add](https://github.com/jzerbe/taskifier/commit/e60af1652fd3e762752f52370c273a5579d04f9f)
 my application to django\'s __INSTALLED_APPS__ constants in `settings.py`;
@@ -30,7 +30,7 @@ or
 [polls/tests/forms.py](https://github.com/toastdriven/guide-to-testing-in-django/blob/master/polls/tests/forms.py)
 respectively.
 
-###usage###
+### usage ###
 In the taskifier example, I can call all the tests by `python manage.py test taskifier`, a specific
 test case `python manage.py test taskifier.WorkerHelperTestCase`, or even a specific test method
 `python manage.py test taskifier.WorkerHelperTestCase.test_email_simple_validate`.

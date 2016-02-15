@@ -19,7 +19,7 @@ and to keep developers from committing a security faux pas, the MySQL instance
 (or db of choosing) runs in a virtual network of sorts, inaccessible to the
 at-large Internet.
 
-###The Goods
+### The Goods
 1. SSH into your application with the private key you added to your account.
 See [Remote Access to Your Application](https://www.openshift.com/developers/remote-access)
 for more.
