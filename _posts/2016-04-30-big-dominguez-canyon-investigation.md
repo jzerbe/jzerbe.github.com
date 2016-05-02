@@ -9,10 +9,10 @@ tags:
 - canyon
 - desert
 - trails
-published: false
+published: true
 ---
 Shout-outs to [Scott Bacon](http://www.scottbacon.net/) on telling me about this area;
-if there is an area with cultural/natural beauty in Colorado, he probably has pictures of it.
+if there is an area with cultural/natural beauty in Colorado, he probably has photography of it.
 
 Old area map below (used to be wilderness study area), but some better details than the BLM
 [PDF](http://www.blm.gov/style/medialib/blm/co/field_offices/denca/pictures_new/d-e_nca_general.Par.76303.File.dat/DENCA%20Brochure.pdf)
@@ -41,4 +41,4 @@ The closest thing to anyone posting about this I could find:
 Based on the horse trail I found, the locals probably know a route. I did not get onto _Star Mesa_ due to time
 constraints, but it looks very plausible without rock climbing gear from the _Big Dominguez_ side.
 
-TODO images and GPS track
+{% include google_maps_embed.html mid="1N_J0LnVsNCPLrK2kfCpRRXq2E-0" %}
