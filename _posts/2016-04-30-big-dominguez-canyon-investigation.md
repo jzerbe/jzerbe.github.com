@@ -11,6 +11,9 @@ tags:
 - trails
 published: true
 ---
+Third of three-ish days around Grand Junction.
+
+### overview
 Shout-outs to [Scott Bacon](http://www.scottbacon.net/) on telling me about this area;
 if there is an area with cultural/natural beauty in Colorado, he probably has photography of it.
 

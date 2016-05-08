@@ -13,8 +13,10 @@ tags:
 - trails
 published: true
 ---
+Second of three-ish days around Grand Junction.
+
 ### overview
-- <http://www.blm.gov/co/st/en/nca/mcnca.html>
+- [BLM.gov McInnis Canyons](http://www.blm.gov/co/st/en/nca/mcnca.html)
 - brochure PDF:
 [BLM.gov](http://www.blm.gov/style/medialib/blm/co/field_offices/MCNCA/pdf.Par.98046.File.dat/MCNCA_FINAL_R03.pdf)
 [GDrive mirror](https://drive.google.com/open?id=0B0yT30uCaFvvOURUeW5NX1RrTU0)
@@ -40,3 +42,8 @@ Add 45-60 minutes for most groups.
 Map based on map found on gjhikes.com:
 [_Devil's Canyon D3 Trail_](http://www.gjhikes.com/2009/10/devils-canyon-d3-cabin-route.html).
 KMZ from the minified map should serve you fine.
+
+### eats
+Friday night seemed much more lively than Thursday night on Grand Junction Main Street. Go to
+[Rockslide Brewery and Restaurant](http://www.yelp.com/biz/rockslide-brewery-and-restaurant-grand-junction-2)
+and get the _Poblano Pork Tacos_ and _Big Bear Oatmeal Stout_.
