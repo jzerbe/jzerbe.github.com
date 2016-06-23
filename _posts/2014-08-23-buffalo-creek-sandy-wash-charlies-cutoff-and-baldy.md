@@ -22,7 +22,7 @@ says, "The biggest and best system I've ridden so far".
 Be sure to bring a map. I put the super-size map from
 [Front Range Mountain Bike Patrol](http://www.frmbp.org/maps.html)
 on my local
-[GDrive](https://drive.google.com/file/d/0B0yT30uCaFvvdzlWemFkc2ZjSVk/edit?usp=sharing)
+[GDrive](https://drive.google.com/open?id=0B0yT30uCaFvvckxyNHhpSXRFS0k)
 prior. The 2013 USGS Southern section of the 
 [Pine](https://drive.google.com/file/d/0B0yT30uCaFvvaGdrbjRlMlNlZnc/edit?usp=sharing),
 and the Northern section of the
@@ -36,8 +36,13 @@ Going counter-clockwise, it is all down hill once you are on 727 - Baldy.
 I had no problems on my stock hard-tail 29er. I expect to be back for several more rounds.
 
 
+__20150623 EDIT:__ added 2014 updated trail map
+
+
 ### Links ###
 - [NOAA point forecast](http://forecast.weather.gov/MapClick.php?lat=39.3862985&lon=-105.2746993)
 - [trailhead parking on Google Maps](https://goo.gl/maps/Qv9GW)
+- [2013_BC_Trail_Map_4266x3366_75.jpg](https://drive.google.com/open?id=0B0yT30uCaFvvckxyNHhpSXRFS0k)
+- [2014_BC_Trail_Map_4208x3366_75.jpg](https://drive.google.com/open?id=0B0yT30uCaFvvemg1M253MHdTZ3M)
 - [Buffalo Creek - Sandy Wash photos](https://www.dropbox.com/sc/xga2pqhqp86uq03/AABaHeusT_iazC2IgZMgq-maa)
 - [Buffalo Creek - Baldy trail downslope photos](https://www.dropbox.com/sc/s8hgdc74isnt38b/AACDVojcfR6bQJ0VV5amk3FJa)
