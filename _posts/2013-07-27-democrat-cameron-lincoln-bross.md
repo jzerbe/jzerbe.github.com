@@ -18,7 +18,9 @@ published: true
 Stopped on Democrat and Lincoln ~15 minutes each. Some people thought the West
 descent of Bross was supposed to be a Class 1; it is not.
 
+### Route Map ###
+{% include google_maps_embed.html mid="1CWP2YsIYbmYQwAqU40q6P0tTk-I" %}
+
 ### Links ###
 - [14ers.com : Combo) Democrat, Cameron, Lincoln, Bross](http://www.14ers.com/routemain.php?route=bros6&peak=Mt.+Bross)
-- [Custom Map](http://maps.google.com/maps/ms?ie=UTF&msa=0&msid=201743294288417288391.0004e43babe8b1b1a4795)
 - [Photos](https://www.dropbox.com/sc/ck2euokgfsf6m7g/Y4dpsADO2K)
