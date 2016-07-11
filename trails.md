@@ -10,7 +10,9 @@ title: dirt and snow
     <div data-role="content">
         <ul data-role="listview" data-inset="true">
             {% for post in site.posts %}
-                {% if post.tags contains 'trails' %}
+                {% if post.tags contains 'trails' and post.tags contains 'preview' %}
+                    {% comment %} liquid is missing negation {% endcomment %}
+                {% elsif post.tags contains 'trails' %}
                     <li>
                         <a href="{{ post.url }}" title="{{ post.title }} permalink">
                             <h2>{{ post.title }}</h2>
