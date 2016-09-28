@@ -9,8 +9,8 @@ tags:
 published: true
 ---
 ### Timetable ###
-- 8:15am start via _Shanahan Ridge_ Trailhead. Note: you are at the edge of a housing development.
-Need to urinate? Hold it in for 1-2 miles.
+- 8:15am start via _Shanahan Ridge_ Trailhead. Note: you are at the edge of a housing development
+and there are no facilities along the trail so plan accordingly.
 - 9:42am summit. Bring gloves for wind, snow, and bouldering. ~2800ft elevation gain.
 - 9:50am leave summit
 - 11:02am return to car
