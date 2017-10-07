@@ -6,7 +6,7 @@ title: search
 
 <div data-role="page">
     <div data-role="header" data-tap-toggle="false">
-        <a rel="external" href="/index.html" data-icon="home">home</a>
+        <a rel="external" href="/index.html" data-icon="user">about</a>
         <h1>{{ page.title }}</h1>
         <a rel="external" href="/search.html" data-icon="search">search</a>
     </div>
