@@ -1,7 +1,7 @@
 ---
 layout: default
-permalink: /tech.html
-title: from the lab
+permalink: /travels.html
+title: extended adventures
 ---
 
 <div data-role="page">
@@ -10,9 +10,9 @@ title: from the lab
     <div data-role="content">
         <ul data-role="listview" data-inset="true">
             {% for post in site.posts %}
-                {% if post.tags contains 'trails' or post.tags contains 'eats' %}
+                {% if post.tags contains 'travels' and post.tags contains 'preview' %}
                     {% comment %} liquid is missing negation {% endcomment %}
-                {% else %}
+                {% elsif post.tags contains 'travels' %}
                     <li>
                         <a href="{{ post.url }}" title="{{ post.title }} permalink">
                             <h2>{{ post.title }}</h2>
@@ -24,5 +24,5 @@ title: from the lab
         </ul>
     </div>
 
-    {% include footer_tech.html %}
+    {% include footer_travels.html %}
 </div>

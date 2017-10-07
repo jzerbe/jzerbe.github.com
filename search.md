@@ -1,12 +1,12 @@
 ---
 layout: default
 permalink: /search.html
-title: Jason Zerbe's draftbook | Search
+title: search
 ---
 
 <div data-role="page">
     <div data-role="header" data-tap-toggle="false">
-        <a rel="external" href="/index.html" data-icon="user">about</a>
+        <a rel="external" href="/index.html" data-icon="home">home</a>
         <h1>{{ page.title }}</h1>
         <a rel="external" href="/search.html" data-icon="search">search</a>
     </div>
@@ -29,9 +29,9 @@ title: Jason Zerbe's draftbook | Search
     <div data-role="footer" data-tap-toggle="false">
         <div data-role="navbar" data-iconpos="left">
             <ul>
-                <li><a rel="external" href="/tech.html" data-icon="gear">tech</a></li>
                 <li><a rel="external" href="/trails.html" data-icon="location">trails</a></li>
-                <li><a rel="external" href="/eats.html" data-icon="heart">eats</a></li>
+                <li><a rel="external" href="/travels.html" data-icon="camera">travels</a></li>
+                <li><a rel="external" href="/workshop.html" data-icon="gear">workshop</a></li>
             </ul>
         </div>
     </div>

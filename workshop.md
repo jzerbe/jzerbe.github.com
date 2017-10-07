@@ -1,7 +1,7 @@
 ---
 layout: default
-permalink: /eats.html
-title: mouth adventures
+permalink: /workshop.html
+title: from the lab
 ---
 
 <div data-role="page">
@@ -10,7 +10,9 @@ title: mouth adventures
     <div data-role="content">
         <ul data-role="listview" data-inset="true">
             {% for post in site.posts %}
-                {% if post.tags contains 'eats' %}
+                {% if post.tags contains 'workshop' and post.tags contains 'preview' %}
+                    {% comment %} liquid is missing negation {% endcomment %}
+                {% elsif post.tags contains 'workshop' %}
                     <li>
                         <a href="{{ post.url }}" title="{{ post.title }} permalink">
                             <h2>{{ post.title }}</h2>
@@ -22,5 +24,5 @@ title: mouth adventures
         </ul>
     </div>
 
-    {% include footer_eats.html %}
+    {% include footer_workshop.html %}
 </div>
