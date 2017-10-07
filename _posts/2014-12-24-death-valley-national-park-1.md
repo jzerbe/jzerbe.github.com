@@ -14,7 +14,7 @@ tags:
 - Nevada
 - California
 - desert
-- trails
+- travels
 published: true
 ---
 This is the first of three days spent around Las Vegas doing non-Vegas things.

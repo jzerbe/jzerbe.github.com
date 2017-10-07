@@ -11,7 +11,7 @@ tags:
 - Arizona
 - desert
 - canyon
-- trails
+- travels
 published: true
 ---
 This is the third of three days spent around Las Vegas doing non-Vegas things.

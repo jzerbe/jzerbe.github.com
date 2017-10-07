@@ -10,9 +10,9 @@ title: from the lab
     <div data-role="content">
         <ul data-role="listview" data-inset="true">
             {% for post in site.posts %}
-                {% if post.tags contains 'workshop' and post.tags contains 'preview' %}
+                {% if post.tags contains 'trails' or post.tags contains 'travels' %}
                     {% comment %} liquid is missing negation {% endcomment %}
-                {% elsif post.tags contains 'workshop' %}
+                {% else %}
                     <li>
                         <a href="{{ post.url }}" title="{{ post.title }} permalink">
                             <h2>{{ post.title }}</h2>

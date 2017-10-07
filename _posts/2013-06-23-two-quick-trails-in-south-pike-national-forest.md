@@ -1,6 +1,6 @@
 ---
 layout: post
-title: two quickies in South Pike National Forest
+title: two quick trails in South Pike National Forest
 tags:
 - Pike
 - National Forest

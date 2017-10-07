@@ -10,7 +10,7 @@ tags:
 - canyon
 - mesa
 - desert
-- trails
+- travels
 published: true
 ---
 First afternoon of three-ish days around Grand Junction.

@@ -10,7 +10,7 @@ tags:
 - Colorado
 - canyon
 - desert
-- trails
+- travels
 published: true
 ---
 Second of three-ish days around Grand Junction.

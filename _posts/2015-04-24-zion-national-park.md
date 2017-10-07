@@ -8,7 +8,7 @@ tags:
 - Utah
 - mesa
 - desert
-- trails
+- travels
 published: true
 ---
 This is the second of three days spent in Southwest Utah.

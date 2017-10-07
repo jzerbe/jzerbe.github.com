@@ -34,5 +34,5 @@ RT ~10 miles + 1 mile along spine. ~3K ft elevation change.
 - [NOAA Point Forecast](http://forecast.weather.gov/MapClick.php?lat=39.60721&lon=-106.17201)
 - [Dillon Ranger District - Meadow Creek PDF](https://drive.google.com/file/d/0B0yT30uCaFvvYVBaNV9HbjRyaE0/view)
 - USGS 2013 quadrature: [CO_Vail_Pass_20130813_TM_geo.pdf](https://drive.google.com/file/d/0B0yT30uCaFvvbWUtM0hJWXpoXzQ/view)
-- [Eccles Pass](https://www.dropbox.com/sc/w299g0vytf7i764/AAA0lnh_KzNCMVws5LMmQADra) Dropbox album.
+- [Eccles Pass](https://drive.google.com/drive/folders/0B0yT30uCaFvvSllTa0drWTU4akU?usp=sharing) album.
 Unfortunately the timestamps on the photos got mucked, and they are out of order. 

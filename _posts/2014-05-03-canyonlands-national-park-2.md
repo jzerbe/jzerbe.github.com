@@ -8,7 +8,7 @@ tags:
 - Moab
 - Utah
 - desert
-- trails
+- travels
 published: true
 ---
 Third in a three part series on Arches and Canyonlands trip over May 1-3.

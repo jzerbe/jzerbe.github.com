@@ -7,7 +7,7 @@ tags:
 - ski resorts
 - holiday
 - mountain
-- trails
+- travels
 published: true
 ---
 Notes on logistics for Christmas 2015 stay around Winter Park.

@@ -8,7 +8,7 @@ tags:
 - St George
 - Utah
 - desert
-- trails
+- travels
 published: true
 ---
 This is the first of three days spent in Southwest Utah.

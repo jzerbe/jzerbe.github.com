@@ -8,7 +8,7 @@ tags:
 - high elevation
 - pine forest
 - canyon
-- trails
+- travels
 published: true
 ---
 This is the third of three days spent in Southwest Utah.

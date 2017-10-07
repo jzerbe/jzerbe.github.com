@@ -8,7 +8,7 @@ tags:
 - Everglades
 - tropical
 - ocean
-- trails
+- travels
 published: true
 ---
 Highlights of early January (7-11) 2016 trip around South Florida.
