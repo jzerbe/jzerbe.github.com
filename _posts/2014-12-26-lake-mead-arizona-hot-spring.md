@@ -39,18 +39,18 @@ sense. Sources: [NPS.gov](http://www.nps.gov/lake/planyourvisit/upload/Arizona-H
 [Google Drive mirror](https://drive.google.com/file/d/0B0yT30uCaFvvSE9lcnItbGwwd3M/view?usp=sharing).
 
 1. After crossing under the US-93 over pass, head to the left, following the
-fence until you are on top of the [flat access road](https://www.dropbox.com/sc/uxi1bj5exy6lbth/AAA1TfPENSHLQITelcmVzuD3a).
-2. Continue on top of the burm, if you see [trail signs](https://www.dropbox.com/sc/l7wb7utydm80dkw/AADt9jwKN8e5Cl00DhJ0Izuoa),
+fence until you are on top of the [flat access road](https://drive.google.com/file/d/0B0yT30uCaFvvTjkxVlA2azJ3WDQ/view?usp=sharing).
+2. Continue on top of the burm, if you see [trail signs](https://drive.google.com/file/d/0B0yT30uCaFvvZ0VVN0FuTkJkMHM/view?usp=sharing),
 you are on the right track.
-3. In a short while you will see [a hiking sign](https://www.dropbox.com/sc/u2ttoumwwqfq9p5/AAAX9_U39sC6v51h-h0dg1i8a),
+3. In a short while you will see [a hiking sign](https://drive.google.com/file/d/0B0yT30uCaFvvU05zMXZHTkVXRFE/view?usp=sharing),
 pretty soon, the tracked down area will proceed down to the left into a wash, then back up onto another hill.
 4. If you have followed the path correctly, 15-20 minutes in you should spot where the
-[upper and lower routes diverge](https://www.dropbox.com/sc/91pdaqoywtnqtwp/AADqahzU9ZNhPVppSc4554J-a).
+[upper and lower routes diverge](https://drive.google.com/file/d/0B0yT30uCaFvvWkItMmRvNVNpU0k/view?usp=sharing).
 Proceed straight for the upper route.
-5. Once over the ridge, follow the [immediate canyon](https://www.dropbox.com/sc/4lje0tz1mxc4xr4/AADZ4XPBrx-oy8lH0GkCyfAWa)
+5. Once over the ridge, follow the [immediate canyon](https://drive.google.com/file/d/0B0yT30uCaFvvcWJKcHBvcUQyNmM/view?usp=sharing)
 down through a few more. The hard-pack trail is really easy to follow.
-6. You end up in the [gravel wash](https://www.dropbox.com/sc/8skf2nl6t3b4y5u/AAC7i5yG7coUIaa7x_ZIUzXfa)
-where the lower route connects in. Make note of [the cairn](https://www.dropbox.com/sc/34l3qj0djyxwkip/AAB5i2R_O2-TvzgWgRHYjAoTa)
+6. You end up in the [gravel wash](https://drive.google.com/file/d/0B0yT30uCaFvvWUhyVlVvdS1RRjg/view?usp=sharing)
+where the lower route connects in. Make note of [the cairn](https://drive.google.com/file/d/0B0yT30uCaFvvUDZHaHhtSFhVUzQ/view?usp=sharing)
 for the return trip.
 7. Follow the wash until you hear water and/or see half-naked people.
 

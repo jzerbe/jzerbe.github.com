@@ -29,12 +29,15 @@ you will probably have to hoof it 12 miles RT from Wawona.
 The _Outer Loop Trail_ takes you up and NE along the North ridge,
 away from much of the lower, touristy grove. Near the top, back track NNW on
 an abandoned? asphalt access road to the top of Wawona point (1200 ft up).
-At least the microwave radio substation does not block the view.
+At least the microwave radio substation does not block the view.\
+
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvbkc0UGo4c1BoYjQ" %}
 
 On the return we hit the tram asphalt and cut into the lower grove as a shortcut.
+
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvcndDSnBjV0NLRjA" %}
 
 
 ### Links ###
 - [Mariposa Grove USGS 2012 quadrature](https://drive.google.com/file/d/0B0yT30uCaFvvUW9JUzdTRll6UFk/view?usp=sharing)
 - [NPS Mariposa Grove of Giant Sequoias pamphlet](https://drive.google.com/file/d/0B0yT30uCaFvvVkduM0oyYVpoSGc/view?usp=sharing)
-- [trail photos](https://www.dropbox.com/sc/e9mfqihsh38wctd/AAAnUEPHqEflDvxjwz4pd6tNa)

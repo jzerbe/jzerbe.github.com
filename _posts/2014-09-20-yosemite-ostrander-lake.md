@@ -20,6 +20,8 @@ will be in the afternoon.
 
 At the end of 6.2 miles one-way is a beautiful mountain lake.
 
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvYmM5dXp0aFduY0U" %}
+
 
 ### Timetable ###
 - 9:40am start from the
@@ -42,4 +44,3 @@ finished with sandles.
 - [Half Dome USGS 2012 quadrature](https://drive.google.com/file/d/0B0yT30uCaFvvZFVOUkhmWGZxSUk/view?usp=sharing)
 - [NPS Glacier Point Area Hiking Map](https://drive.google.com/file/d/0B0yT30uCaFvvNnd3Y1Voem9tcFE/view?usp=sharing)
 - [Yosemite Hikes : Glacier Point Road : Ostrander Lake](http://www.yosemitehikes.com/glacier-point-road/ostrander-lake/ostrander-lake.htm)
-- [trail photos](https://www.dropbox.com/sc/hhgiv9vwo2ghwul/AADH5BajF3fmB1jpy_4ImNDVa)

@@ -18,9 +18,9 @@ lies [Waterton Canyon](http://www.denverwater.org/recreation/watertoncanyon/).
 The canyon ride along the river gets more interesting as you head farther up;
 it could be a painful ride in direct sun on a warm day. Once you make it up to
 the Colorado Trail junction, the pines and deciduous tree provide ample shade.
-Did this on a cloudy Saturday morning 8:40-11:20am. Grabbed
-[some pics](https://www.dropbox.com/sc/zcqb1hew4cu8u3n/AAAmp4EfRBSLIWBfSFTXiqE5a)
-on the return ride of a glassy pond section.
+Did this on a cloudy Saturday morning 8:40-11:20am.
+
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvMmpURENEQmlkRjg" %}
 
 6 (light uphill) + 4 (somewhat technical variable terrain) + 6 (light downhill return)
 miles = 16 miles in ~ 2 hours 40 minutes

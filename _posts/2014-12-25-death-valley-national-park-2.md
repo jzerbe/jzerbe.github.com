@@ -24,9 +24,9 @@ and [Mesquite Flat Dunes](http://www.nps.gov/deva/learn/nature/sand-dunes.htm).
 
 Got going on this ~10:30am after a
 [30 minute drive from Beatty to a dirt turn-out](https://goo.gl/maps/p0PCu).
-The noticeable [start of the trail](https://www.dropbox.com/sc/rj2fpc9eoaor6vl/AAB-pkNQWH5Q0MM9dFUhxrHFa)
+The noticeable [start of the trail](https://drive.google.com/file/d/0B0yT30uCaFvvLWpWMDhtT3Q5Nkk/view?usp=sharing)
 on the Eastern most Butte is around the second outcrop as
-[seen from the turn-out](https://www.dropbox.com/sc/1aob5mih8vpbczh/AADFmN_etY5PpDLoOdalk3zVa).
+[seen from the turn-out](https://drive.google.com/file/d/0B0yT30uCaFvvWVI5QmRONUlESHc/view?usp=sharing).
 Shielded from the North wind much of the trail.
 
 Point forecast: [19 MILES NNW FURNACE CREEK CA](http://forecast.weather.gov/MapClick.php?lat=36.7112492&lon=-117.0044536)

@@ -23,9 +23,7 @@ Only snafu was getting keys from the night manager ~12:30am. Next day, one of th
 had things wrapped up in 10 minutes. The parking is valet-only, but we never tipped ... and
 there was no damage to our rental car with Georgia plates.
 
-Ground level pool, [rooftop clubhouse/pool](https://www.dropbox.com/sc/0r80ul513n1ivcw/AACTBELR5po8bjtAOVT_G1cGa),
-fitness center, largely (foo-foo) Brazilian clientele.
-Good [views East and South](https://www.dropbox.com/sc/2futh9gba432ovm/AACJsZFJeUvFCtWZ39wrb26ha) on the unit patio.
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvMUY1T3NrdnFVRW8" %}
 
 ### Eats
 Within walking distance:
@@ -47,10 +45,10 @@ Not to worry, the [Long Pine Key Trails](https://www.nps.gov/ever/planyourvisit/
 sit higher than surrounding areas. A quick out and back from
 [_Gate 4_ to the first hardwood hammock](https://drive.google.com/file/d/0B0yT30uCaFvvZ18wd0VHUXRoMlU/view) (going West)
 was a decent compromise; it is double track the whole way.
-Look for [Gate 4](https://www.dropbox.com/sc/w6xs3rllc1d2op0/AADUHV9sijnwOfshH8phsQlta) a bit North and on the West
+Look for [Gate 4](https://drive.google.com/file/d/0B0yT30uCaFvvUU1FbHlMaTFJX3M/view?usp=sharing) a bit North and on the West
 side of the road from the main campground area and the
-[Jurrasic Park looking structure](https://www.dropbox.com/sc/4bl99daepatqjtt/AACsk2mkd_HVcT3YaVQFsMUya).
-At the only fork, follow the [trail to the left](https://www.dropbox.com/sc/ylktxjsnaz42cmb/AADKtq_ndt2WYul5-2slSp1Wa)
+[Jurrasic Park looking structure](https://drive.google.com/file/d/0B0yT30uCaFvvNHFtNFV1RnFCTkk/view?usp=sharing).
+At the only fork, follow the [trail to the left](https://drive.google.com/file/d/0B0yT30uCaFvvd1ZIRTd3UzZtS00/view?usp=sharing)
 instead of back to the main road North (right); a fifth of a mile at this point.
 
 Derped around on <https://www.nps.gov/ever/planyourvisit/anhinga-trail.htm>
@@ -66,9 +64,10 @@ to head to our car during a rainstorm.
 and
 [Jonathan Dickinson State Park](https://www.floridastateparks.org/park/Jonathan-Dickinson).
 
-Take a look at the  [Blowing Rocks images](https://www.dropbox.com/sc/w06mvs78u3xzvlf/AACHWIvJhaGWG6qK9wtl8mm1a)
-and you will understand the name. According to one of the interns that ran a quick tour, the diving
-is fantastic during the spring and summer.
+According to one of the interns that ran a quick tour, the diving is fantastic during the spring and summer
+around Blowing Rocks.
+
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvUldITHktN2ZXUkE" %}
 
 Rented a kayak at the river side concession in Jonathan Dickinson for an hour or so to get some upper body exercise.
 

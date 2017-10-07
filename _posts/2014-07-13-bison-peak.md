@@ -38,10 +38,9 @@ Once you break tree line onto the park, there are a variety of ways to head to t
 The general idea is to head NNE. A few images are provided to keep you going fast,
 if you do not want to play in the rocks.
 
-1. [make NE from the cairns](https://www.dropbox.com/s/0wd5tkmua7bdmfw/2014-07-13%2011.25.46.jpg)
-2. [shoot right of the tower for the gate](https://www.dropbox.com/s/nfc96l5hfkwshbk/2014-07-13%2011.23.36.jpg)
-3. [bypass the large rock area orignally seen](https://www.dropbox.com/s/p5u57btdi3e2s8e/2014-07-13%2011.18.13.jpg)
-to the [left following the gravel](https://www.dropbox.com/s/7u52inffpbei3m9/2014-07-13%2011.18.17.jpg)
+1. {% include google_drive_image_embed.html id="0B0yT30uCaFvvZnZuVE1SVTRXWEE" %}
+2. {% include google_drive_image_embed.html id="0B0yT30uCaFvvUHNJZm5kZFlQQTQ" %}
+3. {% include google_drive_image_embed.html id="0B0yT30uCaFvvelBWbmliNk1hazg" %}
 
 
 ### Notes
@@ -67,7 +66,6 @@ the park at 11:15am on the return. Turned to rain below 11,500 feet. A little be
     [GDrive mirror](https://drive.google.com/file/d/0B0yT30uCaFvvbXFIM0JpLWdtSjg/edit?usp=sharing),
     or [USGS 32.23MB zip](http://ims.er.usgs.gov/gda_services/download?item_id=5958940)
 - [NOAA Point Forecast](http://forecast.weather.gov/MapClick.php?lat=39.2384473&lon=-105.4978593)
-- [Bison Peak image set](https://www.dropbox.com/sc/7i4f5pbiwbngzh4/AAAsCIazhkhVRtLsgbq9t9EWa)
 - Further posts on the subject:
     - [SummitPost: Bison Peak](http://www.summitpost.org/bison-peak/151572)
     - [Bison Peak: Colorado’s Best Early Season Summit](http://www.elevationoutdoors.com/blogs/colorado-mountain-air/bison-peak-colorados-best-early-season-summit/)

@@ -26,15 +26,13 @@ which I would highly suggest.
 - 10:35am summit
 - 11:50am return to car
 
-The first three trail photos are at the first South overlook on
-_Meadow View trail_ after switchbacking up through pine and aspen. The last
-four photos are looking North off Bergen Peak. Do not be dissuaded from heading
+Do not be dissuaded from heading
 up _Bergen Peak trail_, it looks rocky at the trail junction with
 _Meadow View trail_, which it is, but those are pretty much the only noticeable
 rocks you will encounter on the trip to the peak.
 
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvV3lfQl9KQTluYjA" %}
+
 
 ### Links ###
 - [MTBPROJECT : Elk Meadow/Bergen Peak Loop](http://www.mtbproject.com/trail/3648013)
-- [trail photos](https://www.dropbox.com/sc/i2av81srjdwt55c/AAAxxVlQlu0aISu7O-WPTEcba)
-- [post wreck 29er frame denting](https://www.dropbox.com/sc/ronmgydaamaer4g/AABUlAj3ag_Mj-ReYDcTl_cga)

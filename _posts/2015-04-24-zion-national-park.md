@@ -55,11 +55,9 @@ The Germans I will give a pass, but the Colorado folk should know better.
 7. 12:05pm: leave Hidden Canyon
 8. 12:20pm: start into lunch at _Weeping Rock_ TH benches
 
-8+1.5 miles/2100+600ft RT in ~4 hours
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvUk8wQk1jTUJBY0E" %}
 
-Photo albums:
-[Zion NP: Observation Point via East Rim Trail](https://www.dropbox.com/sc/1kp9l3xjqt83mch/AABzh4yvjVwkIz8PgEzLhl1Na),
-[Zion NP: Hidden Canyon Trail](https://www.dropbox.com/sc/63iw1cuu7va99af/AABmMch3CLr0PrHuwo9j5oDwa)
+8+1.5 miles/2100+600ft RT in ~4 hours
 
 ### Riverside Walk
 After lunch we figured we should spend some more time in the park.
@@ -78,8 +76,9 @@ None were particularly __emerald__ in color. The upper was actually __brown__.
 
 Spent 1.5 hours on that. Meh. Spoiled after the grand _Observation Point_ experience.
 
-[North view up the canyon](https://www.dropbox.com/sc/mn1f9y5rzmg4xql/AABTfy4aMjNPMOvwV9roOb6ba)
-before crossing over to _Zion Lodge_ shuttle stop.
+North view up the canyon before crossing over to _Zion Lodge_ shuttle stop.
+
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvZi1WVGVMN2d6OXc" %}
 
 ### Eats and sleeps
 The drive [from the visitor center to Bryce View Lodge](https://goo.gl/maps/8SxRI)

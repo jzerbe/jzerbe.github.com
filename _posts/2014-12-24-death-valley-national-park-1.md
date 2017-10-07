@@ -64,12 +64,11 @@ Pulled into the Golden Canyon parking lot ~1:30pm for eats; probably did
 [the drive](https://goo.gl/maps/4ogDW) faster than we should have. Never before
 had I seen a selfie-stick in person; almost thought I saw some heels on one woman. WUT?
 
-The gist is to hike up
-[Golden Canyon](https://www.dropbox.com/sc/56kf88b6h7c0or0/AAAoKxXDeih6hfUKKfvbKAr7a),
+The gist is to hike up Golden Canyon,
 go past the [Gower Gulch/badlands turn-off](https://drive.google.com/open?id=0B611viYGQAn5MHhNb3pneElfMWs)
-up to the [Red Cathedral](https://www.dropbox.com/sc/pvyvf5kxf4zxcn3/AAAlPI2DIzabVr28Lvtcdc0pa),
+up to the Red Cathedral,
 turn around and head back down
-[Gower Gulch](https://www.dropbox.com/sc/yvk0ztvaxbs3pe2/AADc6mb7VgkBKjUFOjq-6Wvja).
+Gower Gulch.
 Total time ~2.5 hours: 30-45 minutes up Golden Canyon to the Red Cathedral, 30 minutes
 in the badlands, 45 minutes down Gower Gulch, and 15 minutes crossing back to the parking
 area from the [Southern outflow](https://drive.google.com/open?id=0B611viYGQAn5OWtXeVZOMk03RE0).
@@ -79,7 +78,9 @@ at the bottom of the linked _Hikespeak.com_ write-up.
 If you want to hear total silence, stop and stand at
 [36.4149847,-116.8360711,224m](https://www.google.com/maps/@36.4149847,-116.8360711,224m/data=!3m1!1e3),
 or in an image:
-[https://www.dropbox.com/sc/3aqdeqyyvl5851y/AAAcloH4skKqiYEcx9GBkm-Ka](https://www.dropbox.com/sc/3aqdeqyyvl5851y/AAAcloH4skKqiYEcx9GBkm-Ka).
+
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvV1JDUU5QZjN4Tm8" %}
+
 
 __NOTE__: [Zabriskie Point](http://www.hikespeak.com/attractions/zabriskie-point-in-death-valley/)
 parking and access from the Hwy 190 side is

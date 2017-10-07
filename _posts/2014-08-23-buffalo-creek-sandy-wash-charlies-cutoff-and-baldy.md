@@ -44,5 +44,3 @@ __20150623 EDIT:__ added 2014 updated trail map
 - [trailhead parking on Google Maps](https://goo.gl/maps/Qv9GW)
 - [2013_BC_Trail_Map_4266x3366_75.jpg](https://drive.google.com/open?id=0B0yT30uCaFvvckxyNHhpSXRFS0k)
 - [2014_BC_Trail_Map_4208x3366_75.jpg](https://drive.google.com/open?id=0B0yT30uCaFvvemg1M253MHdTZ3M)
-- [Buffalo Creek - Sandy Wash photos](https://www.dropbox.com/sc/xga2pqhqp86uq03/AABaHeusT_iazC2IgZMgq-maa)
-- [Buffalo Creek - Baldy trail downslope photos](https://www.dropbox.com/sc/s8hgdc74isnt38b/AACDVojcfR6bQJ0VV5amk3FJa)

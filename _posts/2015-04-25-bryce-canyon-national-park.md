@@ -39,18 +39,12 @@ USGS 2014 quadrature: [UT_Bryce_Canyon_20140227_TM_geo.pdf](https://drive.google
 8 miles/2000ft RT in 2.5 hours. We came across two other people during the
 entirety of our time on this trail.
 
-Photo albums:
-[Bryce Canyon NP: Fairyland Loop Trail](https://www.dropbox.com/sc/57eiu8hgd1p9wpv/AAADK-MS4gtnIqozlSYoXLl5a),
-[Bryce Canyon NP: Rim Trail](https://www.dropbox.com/sc/0kqtgub1dxubkwg/AABAkeQbEbg6mOKX10gp97Nia)
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvQnRzT3dYZllBNGM" %}
 
 ### Eats and sleeps
 On the drive
 [from the visitor center to the La Quinta in South Vegas](https://goo.gl/maps/eQ909)
 we must have went through at least three biomes: alpine, forest, and high/low desert.
-I had to get some pics of the spring pow dumps that
-[OpenSnow](http://opensnow.com/state/UT) correctly predicted:
-[UT 12: Bryce Canyon exit](https://www.dropbox.com/sc/etuui4r7rmst6vp/AAB1jzkX1KvrcXPF7VRNbxgGa),
-[US 89: Bryce Canyon exit](https://www.dropbox.com/sc/y4qdz9mfs49dd6s/AADVjPBOthMwW0e5MKeZ70dXa)
 
 Good stuff from Yelp: [The Great Greek](http://www.yelp.com/biz/the-great-greek-henderson).
 [15 minute drive from our hotel](https://goo.gl/maps/sS6Dj);

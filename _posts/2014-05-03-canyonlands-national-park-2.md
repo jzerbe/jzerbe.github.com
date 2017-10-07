@@ -41,7 +41,7 @@ Again, what is with people starting at high-noon?!? Saw no one until then.
 From the [Short Hikes](http://www.nps.gov/cany/planyourvisit/iskyshorthikes.htm)
 listing. Just about done for the day, we were heading back out of the park, and
 we saw this easy guy on the
-[topo maps](https://www.dropbox.com/sc/k4rmnpwx6ki30tg/AAAxp1rx8XanxeOCiotZcPtXa).
+[topo maps](https://drive.google.com/drive/folders/0B0yT30uCaFvvV3lVWDhsT0tuSWc?usp=sharing).
 Pretty much flat until you do a scramble up the butte to get a good 360 view
 of the Island in the Sky district. We skipped the Native American ruins,
 because food, and have seen plenty in the past.

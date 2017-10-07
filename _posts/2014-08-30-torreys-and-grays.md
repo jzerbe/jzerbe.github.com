@@ -8,8 +8,9 @@ tags:
 - trails
 published: true
 ---
-Hipster hiker here, finally decided to hit the _touristy_ Grays and Torreys at the
-tail end of the season. Maybe just as bad during other parts of the season,
+Hipster hiker here, finally decided to hit the _touristy_
+[Grays and Torreys](http://www.14ers.com/routemain.php?route=torr5&peak=Grays+Peak+and+Torreys+Peak)
+at the tail end of the season. Maybe just as bad during other parts of the season,
 as it was Labor Day weekend. Pro-tip: continue South on Stevens Gulch road, past the
 trailhead footbridge for
 [more parking in the trees](https://www.google.com/maps/@39.6594655,-105.7835736,337m/data=!3m1!1e3).
@@ -33,6 +34,5 @@ to miss. I was able to jog down the easy East slope switch-backs of Grays
 protected from the wind. That wind on the saddle is brutal ~9am.
 
 
-### Links ###
-- [14ers.com : Grays and Torreys](http://www.14ers.com/routemain.php?route=torr5&peak=Grays+Peak+and+Torreys+Peak)
-- [summit photos](https://www.dropbox.com/sc/dtofxcuprfh7xrf/AABzMPawTZhM9XxvPeqfDW_1a)
+### East and West of the continental divide ###
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvMFdKcUVKQ21BOWM" %}

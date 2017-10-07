@@ -21,8 +21,7 @@ literature and good restrooms.
 
 One thing worth noting on the drive is the change in topography from the flats
 of Nevada to the Utah highlands. Once through Littlefield (AZ), you are greeted
-with a wall of foothills that seem to have no entrance, until inside the
-[Virgin Gorge](https://www.dropbox.com/sc/8zxn6u2qa2ueza4/AAAJF8ErFwQ1f3jAm7dPmxuaa).
+with a wall of foothills that seem to have no entrance, until inside the Virgin Gorge.
 
 We took the [scenic route](https://goo.gl/maps/P37UJ)
 through residential St. George and Ivins, past the
@@ -38,13 +37,10 @@ Point forecast: [6 Miles NNE Ivins UT](http://forecast.weather.gov/MapClick.php?
 1. _Cinder Cone_ in the very North of the park and outside of the _fee area_?
 1.5 miles RT with a little scrambling near the top of this extinct volcano.
 See over much of the surrounding area.
-[Photos](https://www.dropbox.com/sc/1k9m3jqac1atn67/AADXyHpQgCZjI8FGKcrL89mOa).
 2. Shortcourse _Whiterocks Amph_ 1 mile RT; 2nd parking area South.
-[Photos](https://www.dropbox.com/sc/dmhdzi89tb1yzry/AACS3n8XTVHYL8S1Z41cvIIqa).
 3. _Butterfly_ 2 miles RT over rolling sedimentary and igneous rock.
 Scramble to the top of the Overlook for cool views. Be sure to check out the
 lava tube to the North of the Overlook.
-[Photos](https://www.dropbox.com/sc/t5f586bfql621io/AAAgckb9ZgNDqu8_DhTPYC8Ua).
 
 This better-maintained/pay section of the larger
 [Red Cliffs Desert Reserve](https://drive.google.com/open?id=0B0yT30uCaFvvcllNS1lFM0dnb2s)
