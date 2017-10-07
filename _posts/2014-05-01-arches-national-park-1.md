@@ -38,10 +38,11 @@ it over to the Wolfe Ranch trailhead/parking/toilets in 15 minutes. Can get
 very busy; so we hit it on a Thursday afternoon. The trail upslope faces West
 the whole way. Lucked out on the relatively low temperature of ~70F.
 
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvU1NUNkhtYjNfZ2M" %}
+
 - 3 miles RT; ~1.25 hours total; 300 ft? elevation change;
 [Long Trails listing](http://www.nps.gov/arch/planyourvisit/longtrails.htm)
 - [NOAA Point Forecast](http://forecast.weather.gov/MapClick.php?lat=38.7442617&lon=-109.5806743)
-- [Photos](https://www.dropbox.com/sc/rk8olj07yxevqhi/AABf0Pf6k8n35kkorYgJ11M-a)
 
 
 ### The Windows
@@ -49,8 +50,9 @@ Heading back out of the park, hit _The Windows_. There was reasonable parking
 and pit toilets. Definitely suggest to hit the back-side via the
 _Primitive Loop_: less people, better pictures (including the La Sal Mountains).
 
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvQzMtSzI2Qmdvdms" %}
+
 - 1 mile or so; 20-30 minute quickie; [Easy Trails listing](http://www.nps.gov/arch/planyourvisit/easytrails.htm)
-- [Photos](https://www.dropbox.com/sc/1xo0a5tmp1czzdl/AAAk-rkRKyND2kmwSyYKrErda)
 
 
 ### Balanced Rock
@@ -59,7 +61,7 @@ _Balanced Rock_. Snapped some pics. The official member is the last one in the
 photo series. Rather bored by this point; good thing we only allocated
 the afternoon to Arches.
 
-- [Photos](https://www.dropbox.com/sc/m824x821ykw8m0c/AACWaFl03eSfuel4duq6DrLla)
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvdFdIalhMX0lXLWM" %}
 
 
 ### Eats and Sleeps

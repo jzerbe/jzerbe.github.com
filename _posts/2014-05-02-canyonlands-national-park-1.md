@@ -36,8 +36,8 @@ we returned ~11:45am. Really people?!? Heat of the day?
 - 5.5 miles RT; ~2.5 hours total; 1400 ft elevation change;
 [Long Trails listing](http://www.nps.gov/cany/planyourvisit/iskylonghikes.htm)
 - [NOAA Point Forecast](http://forecast.weather.gov/MapClick.php?lat=38.3349652&lon=-109.8291351)
-- [Photos](https://www.dropbox.com/sc/5a0rampqpa9mt1m/AACYOMEA86EZm02r9iJoh8nPa).
-Mostly taken on the trek back up.
+
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvOVRDRFZfOVFnRVU" %}
 
 Popped the windows/doors and lunched in the shade of my car.
 
@@ -50,7 +50,8 @@ people access the _White Rim Road_ from the _Murphy Loop_ than where we went
 down on _Gooseberry Trail_. Designated parking limited to ~10 parking spots.
 
 - ~3.2 miles RT; 1 hour total; ~50 ft elevation change
-- [Photos](https://www.dropbox.com/sc/dwbi333slprezmp/AABuZ7sbMMy8DLlxv2gmUS0wa)
+
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvaGxDZDhhQ0xwTms" %}
 
 
 ### Misc

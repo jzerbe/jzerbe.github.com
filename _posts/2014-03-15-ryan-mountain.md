@@ -32,4 +32,4 @@ About 1000ft elevation gain over 1.5 miles.
 ### Links
 - [NOAA peak point forecast](http://forecast.weather.gov/MapClick.php?lat=33.9861993&lon=-116.1345429)
 - [NPS Trail Map](http://www.nps.gov/jotr/planyourvisit/upload/RyanMountain.pdf)
-- [Photos](https://www.dropbox.com/sc/b7kbemplludhhdx/SFHBbRaZPw)
+- [Photos](https://drive.google.com/drive/folders/0B0yT30uCaFvvV1ZFUWZSSmJvOWs?usp=sharing)

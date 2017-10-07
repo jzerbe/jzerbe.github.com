@@ -58,5 +58,5 @@ should spit out `1234567890ABCDEF device`.
 
 8) For a working fastboot binary for flashing, one can grab a fresh copy from the android-roms project
 [[info](http://code.google.com/p/android-roms/downloads/detail?name=fastboot-win32.zip)] or the one I used for
-this tutorial from my dropbox [[link](https://drive.google.com/uc?export=download&id=0B0yT30uCaFvvQWJma05NUFJfVHc)].
+this tutorial from my files [[link](https://drive.google.com/uc?export=download&id=0B0yT30uCaFvvQWJma05NUFJfVHc)].
 Once you download: unzip and move the .exe to `[Android SDK Root]platform-tools`.

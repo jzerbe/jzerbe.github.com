@@ -24,4 +24,4 @@ A little bit of slush here and there.
 ### Links ###
 - [NOAA peak point forecast](http://forecast.weather.gov/MapClick.php?lat=39.9538&lon=-105.2979)
 - [OSMP: Listing and Maps of Re-Opened Trails](https://bouldercolorado.gov/pages/osmp-trails9-21) after September 2013 flooding
-- [Photos](https://www.dropbox.com/sc/736yik9gkap6tpg/fWjTsvlCry)
+- [Photos](https://drive.google.com/drive/folders/0B0yT30uCaFvveGhOTUtWUEtDM0U?usp=sharing)

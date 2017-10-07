@@ -34,4 +34,4 @@ Embedded below and linked
 ### Links ###
 - [LocalHikes : Hallet Peak](http://www.localhikesbeta.com/Hikes/Hallet-Peak-592)
 - [McHenrys Peak USGS 2013 quadrature](https://drive.google.com/file/d/0B0yT30uCaFvvX1ExSm1hdnJFMk0/edit?usp=sharing)
-- [summit photos](https://www.dropbox.com/sc/ke2bxtrny56tgn9/ql977RCTM6)
+- [summit photos](https://drive.google.com/drive/folders/0B0yT30uCaFvvbmF0VjhkdUlKdGM?usp=sharing)

@@ -33,8 +33,8 @@ Again, what is with people starting at high-noon?!? Saw no one until then.
 
 - 1.5 miles RT; ~2.5 hours total (went down the wrong wash at first); 500 ft elevation change
 - [NOAA Point Forecast](http://forecast.weather.gov/MapClick.php?lat=38.4234073&lon=-109.9081597)
-- [Photos](https://www.dropbox.com/sc/0amubnam8pbiq3i/AACm5UAb8otKYgA3aIsTOUvDa).
-Mostly taken on the trek back up. The first pic is taken on the top of the mesa.
+
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvTWFsSk5UcXo4OTg" %}
 
 
 ### Aztec Butte
@@ -47,4 +47,5 @@ of the Island in the Sky district. We skipped the Native American ruins,
 because food, and have seen plenty in the past.
 
 - 1.8 miles RT sans graneries; ~30 minutes total; 500 ft elevation change
-- [Photos](https://www.dropbox.com/sc/bxw694fgi1gc2qi/AAC0bzBWqE4C3ZtuHdMxZvCga)
+
+{% include google_drive_image_embed.html id="0B0yT30uCaFvvYjZJZ0d0MFRWeDA" %}

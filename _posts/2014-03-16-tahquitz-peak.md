@@ -35,4 +35,4 @@ the trailhead to the _Saddle Junction_.
 - [USFS: Devils Slide Trail 3E05](http://www.fs.usda.gov/recarea/sbnf/recreation/hiking/recarea/?recid=74217&actid=51)
 - [Devils Slide to Saddle Junction](http://www.localhikes.com/HikeData.asp?DispType=0&ActiveHike=6&GetHikesStateID=2&ID=4030)
 - [The Devils Slide Trail to the Tahquitz Peak Lookout](http://calitrails.com/2013/12/03/the-devils-slide-trail-to-the-tahquitz-peak-lookout/)
-- [Photos](https://www.dropbox.com/sc/ncarv76wxrbkvm6/AADvlCqgmRocgRp_S0Fl8ry4a)
+- [Photos](https://drive.google.com/drive/folders/0B0yT30uCaFvvYTZjemZiYWFwYUE?usp=sharing)

@@ -23,4 +23,4 @@ descent of Bross was supposed to be a Class 1; it is not.
 
 ### Links ###
 - [14ers.com : Combo) Democrat, Cameron, Lincoln, Bross](http://www.14ers.com/routemain.php?route=bros6&peak=Mt.+Bross)
-- [Photos](https://www.dropbox.com/sc/ck2euokgfsf6m7g/Y4dpsADO2K)
+- [Photos](https://drive.google.com/drive/folders/0B0yT30uCaFvvOEE3SGRFUzlNZ0U?usp=sharing)
