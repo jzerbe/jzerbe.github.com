@@ -31,7 +31,7 @@ On the way South through town to our AirBnb, we stopped in
 to <https://www.yelp.com/biz/moonflower-community-cooperative-moab-2>
 for cookables and snacks.
 
-Checked in to our AirBnb after that - <https://www.airbnb.ca/rooms/17965507> - and met our hosts.
+Checked in to our AirBnb after that - <https://www.airbnb.com/rooms/17965507> - and met our hosts.
 Cooked asparagus, spaghetti squash, and cod out on the patio grill under the stars.
 
 ## Saturday
