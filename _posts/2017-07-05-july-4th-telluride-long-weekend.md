@@ -20,15 +20,15 @@ Check in was not until after 4pm anyways.
 It is a 6.5 hour drive with no stops.
 
 ## Saturday July 1
-Picked up mountain bike rentals at the base of the Telluride gondola: https://rentals.bootdoctors.com/rent/mountain-bike
+Picked up mountain bike rentals at the base of the Telluride gondola: <https://rentals.bootdoctors.com/rent/mountain-bike>
 
-Took the gondola up and spent the morning and early afternoon on: https://www.mtbproject.com/trail/3267247/prospect
+Took the gondola up and spent the morning and early afternoon on: <https://www.mtbproject.com/trail/3267247/prospect>
 
-Made it back to the Mountain Village side of the gondola bound for the Telluride side of the gondola via the cruisy: https://www.mtbproject.com/trail/3267041/village-trail
+Made it back to the Mountain Village side of the gondola bound for the Telluride side of the gondola via the cruisy: <https://www.mtbproject.com/trail/3267041/village-trail>
 
-Grabbed groceries just around the corner at: http://clarksmarket.com/telluridegrocery
+Grabbed groceries just around the corner at: <http://clarksmarket.com/telluridegrocery>
 
-Had a dinner reservation at: https://www.yelp.com/biz/floradora-saloon-telluride
+Had a dinner reservation at: <https://www.yelp.com/biz/floradora-saloon-telluride>
 
 ## Sunday July 2
 Spent all of the morning and early afternoon at the [Ridgway Area Trails](http://ridgwaytrails.com/trails/):
@@ -39,7 +39,7 @@ Had a very late lunch ~3pm? at [Maggies Kitchen](https://goo.gl/maps/fcTWquZUwEH
 They have a great back patio (which is upstairs).
 
 ## Monday July 3
-Dinner at https://www.yelp.com/biz/smugglers-brewpub-telluride was glorious!!!
+Dinner at <https://www.yelp.com/biz/smugglers-brewpub-telluride> was glorious!!!
 
 ## Tuesday July 4
 Booked a [_Family Rock Climbing - Half Day_ for $350 with Mountain Trip](https://mountaintrip.com/local-telluride-mountain-guides/telluride-rock-climbing/) to take us up the _Pipe Line Wall_ at the head of the canyon.

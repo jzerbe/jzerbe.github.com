@@ -13,7 +13,7 @@ published: true
 Went with a good crew to Durango over Memorial Day weekend. This is a trip summary for repeatability purposes.
 Such a good trip!
 
-The AirBnb North of town was gorgeous, but a little too far out of town for my tastes: https://www.airbnb.com/rooms/5836235
+The AirBnb North of town was gorgeous, but a little too far out of town for my tastes: <https://www.airbnb.com/rooms/5836235>
 
 ## Friday May 26
 Leave Boulder ~4pm, for an arrival ~10:30/11pm at the AirBnb.
@@ -37,7 +37,7 @@ Dinner at [Carver Brewing Co](https://goo.gl/maps/zR2Kr2boVh62).
 
 ## Sunday May 28
 Great morning ride right from in town at [Horse Gulch](http://www.durangogov.org/Facilities/Facility/Details/13); the [E 3rd St parking lot](https://goo.gl/maps/c2SxWzYxT752) has limited spaces.
-Great documentation by locals to plan your day: https://www.trails2000.org/trails/horse-gulch/
+Great documentation by locals to plan your day: <https://www.trails2000.org/trails/horse-gulch/>
 
 Dinner at [Seasons of Durango](https://goo.gl/maps/azNW4DDtoTy) for date night was spectacular.
 

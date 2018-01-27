@@ -41,7 +41,7 @@ Took a couple of laps on [Moab Brand Trails - Lazy/EZ Loop](https://www.mtbproje
 
 Packed lunch and snacks and ate in the back of my car.
 
-Went up Aztec Butte in the early afternoon: https://www.hikingproject.com/trail/7014618/aztec-butte-trail
+Went up Aztec Butte in the early afternoon: <https://www.hikingproject.com/trail/7014618/aztec-butte-trail>
 
 Dinner at [Jeffrey's Steakhouse](https://www.yelp.com/biz/jeffreys-steakhouse-moab) was one for the books! Called in a 7:30pm reservation the week before.
 
