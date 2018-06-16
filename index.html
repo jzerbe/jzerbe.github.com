@@ -49,7 +49,20 @@ title: Jason Zerbe
                 <p>git@github.com:jzerbe/</p></a>
             </li>
         </ul>
-    </div>
 
-    {% include footer_external.html %}
+        <ul data-role="listview" data-inset="true">
+            {% for post in site.posts %}
+                {% if post.tags contains 'preview' %}
+                    {% comment %} liquid is missing negation {% endcomment %}
+                {% else %}
+                    <li>
+                        <a href="{{ post.url }}" title="{{ post.title }} permalink">
+                            <h2>{{ post.title }}</h2>
+                            <p>{{ post.date | date_to_string }}</p>
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
 </div>

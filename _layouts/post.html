@@ -3,11 +3,7 @@ layout: default
 ---
 
 <div data-role="page">
-    <div data-role="header" data-tap-toggle="false">
-        <a rel="external" href="/index.html" data-icon="user">about</a>
-        <h1>{{ page.title }} - {{ page.date | date_to_string }}</h1>
-        <a rel="external" href="/search.html" data-icon="search">search</a>
-    </div>
+    {% include header.html %}
 
     <div data-role="content">
         {{ content }}
@@ -21,6 +17,4 @@ layout: default
         is written by Jason Zerbe and licensed
         <a href="http://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC 3.0</a>.
     </div>
-
-    {% include footer_external.html %}
 </div>

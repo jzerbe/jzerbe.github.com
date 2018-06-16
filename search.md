@@ -5,11 +5,7 @@ title: search
 ---
 
 <div data-role="page">
-    <div data-role="header" data-tap-toggle="false">
-        <a rel="external" href="/index.html" data-icon="user">about</a>
-        <h1>{{ page.title }}</h1>
-        <a rel="external" href="/search.html" data-icon="search">search</a>
-    </div>
+    {% include header.html %}
 
     <div data-role="content">
         <div id="cse" style="width: 100%;">Loading</div>
@@ -24,15 +20,5 @@ title: search
                 customSearchControl.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
             }, true);
         </script>
-    </div>
-
-    <div data-role="footer" data-tap-toggle="false">
-        <div data-role="navbar" data-iconpos="left">
-            <ul>
-                <li><a rel="external" href="/trails.html" data-icon="location">trails</a></li>
-                <li><a rel="external" href="/travels.html" data-icon="camera">travels</a></li>
-                <li><a rel="external" href="/workshop.html" data-icon="gear">workshop</a></li>
-            </ul>
-        </div>
     </div>
 </div>
