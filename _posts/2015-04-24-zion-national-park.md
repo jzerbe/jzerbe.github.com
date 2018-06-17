@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Zion National Park
+lat: 37.2742912
+lon: -112.9281068
 tags:
 - Zion
 - National Park
