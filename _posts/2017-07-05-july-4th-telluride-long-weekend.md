@@ -1,6 +1,8 @@
 ---
 layout: post
 title: July 4th Telluride long weekend
+lat: 37.9313307
+lon: -107.8330015
 tags:
 - Telluride
 - Ouray

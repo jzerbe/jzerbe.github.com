@@ -50,6 +50,32 @@ title: Jason Zerbe
             </li>
         </ul>
 
+        <!-- slippy map - do not show below certain width -->
+        <div class="ui-corner-all custom-corners">
+            <div class="ui-bar ui-bar-a">
+                <h3>Travels</h3>
+            </div>
+            <div class="ui-body ui-body-a map_box_container">
+                <div id="mapcanvas"></div>
+            </div>
+        </div>
+        <script>
+            var map = L.map('mapcanvas');
+            map.setView([10,-108], 2);
+
+            setTimeout(function() {
+                map.invalidateSize();
+            }, 500);
+
+            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+                accessToken: 'pk.eyJ1IjoianplcmJlIiwiYSI6ImNqaWk3Nm91ZjFwcmIzcHBlY3RmeGs5MWwifQ.cOxWEoV44m6xtutjIj8HSg',
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>',
+                id: 'mapbox.terrain-rgb',
+                maxZoom: 18,
+            }).addTo(map);
+        </script>
+
+        <!-- index of posts and add to slippy map -->
         <ul data-role="listview" data-inset="true">
             {% for post in site.posts %}
                 {% if post.tags contains 'preview' %}
@@ -60,6 +86,21 @@ title: Jason Zerbe
                             <h2>{{ post.title }}</h2>
                             <p>{{ post.date | date_to_string }}</p>
                         </a>
+                        {% if post.lat and post.lon %}
+                            <script>
+                                var post_marker = L.marker(
+                                    [{{ post.lat }}, {{ post.lon }}],
+                                    {
+                                        'title': "{{ post.title }}",
+                                    }
+                                );
+                                post_marker.url = "{{ post.url }}";
+                                post_marker.on('click', function(){
+                                    window.location = (this.url);
+                                });
+                                post_marker.addTo(map);
+                            </script>
+                        {% endif %}
                     </li>
                 {% endif %}
             {% endfor %}

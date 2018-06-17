@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Memorial Day weekend in Durango
+lat: 37.3341798
+lon: -107.7981475
 tags:
 - Durango
 - Colorado
