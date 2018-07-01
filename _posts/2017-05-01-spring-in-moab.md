@@ -33,6 +33,9 @@ On the way South through town to our AirBnb, we stopped in
 to <https://www.yelp.com/biz/moonflower-community-cooperative-moab-2>
 for cookables and snacks.
 
+May 2018 update: The fine folks at [Gearheads](https://goo.gl/maps/t7PA1TjREdK2) will let you fill up potable
+water in their store for free!
+
 Checked in to our AirBnb after that - <https://www.airbnb.com/rooms/17965507> - and met our hosts.
 Cooked asparagus, spaghetti squash, and cod out on the patio grill under the stars.
 
