@@ -19,7 +19,7 @@ Record setting conditions according to the locals; 4/5 days were a 1-2 ft powder
 Excellent food. Wonderful hospitality.
 If you feel at home in a ski town and speak a little Spanish, you'll fit in great here.
 
-## The snowboarding destination
+### The snowboarding destination
 I first heard about Bariloche from a coworker as was retelling stories from his 2nd or 3rd retirement.
 I just had to get some more snow action when the 14ers of Colorado are snow free!
 
@@ -52,7 +52,7 @@ for 4 days.
 We thought about making it to [Cerro Bayo](https://www.cerrobayo.com.ar) one day, but trying to coordinate
 getting there and with so much terrain at Cerro Catedral, it just was not worth it.
 
-## Getting there
+### Getting there
 On one ticket for 3200USD, United took me from Denver, to Chicago, to Sao Paulo, to Bariloche, in 20 hours.
 On the return from Bariloche, to Buenos Aires, to DFW, to Denver, in 18 hours. You can do it for closer to
 2000USD if you spend a night in Mexico City and Buenos Aires like my friend did.
@@ -77,20 +77,20 @@ seemed to work best for us. Be sure your debit card has a chip and you know the 
 Everywhere else was good for my Mastercard and Visa. However, there was an outage one day at
 one of the resort lodges and they only took Amex for a few hours.
 
-## Lodging
+### Lodging
 Karina and her husband have a [modern, gorgeous townhome 5 blocks SW of the civic center](https://www.airbnb.com/rooms/19267720).
 She was so kind to pick us up at the airport, give us a quick driving tour of town, and orient us with maps and a bus pass.
 
 Karina also suggested we check out [Manush](https://www.yelp.com/biz/manush-san-carlos-de-bariloche), just down
 the street. They have a great late-night vibe with fun local drinks and solid pub-grub.
 
-## Groceries and snacks
+### Groceries and snacks
 The biggest US-style grocery store close to our place was [La Anonima](https://goo.gl/maps/bTGB11fL4Mx).
 The smaller neighborhood grocery store is [Todo](https://goo.gl/maps/yCXyAAUPGUN2).
 The local bakery [La Casita de Mani](https://goo.gl/maps/uzCQ6YhjDGw) has such wonderful cakes and sweetbreads.
 We made a meal one night from a local malbec and empanadas from [La 10 Empanadas](https://goo.gl/maps/hMhEJaLnbBo).
 
-## Eating out
+### Eating out
 On mountain food is SOOOOO much better than American ski resort food. For 10USD you can get a big pile of hot
 lasagna, 3-5 home-made wood-fired empanadas, or a big grilled ham and cheese burger-ish thing with salad.
 Each lodge has a different vibe and food style depending on which family runs it. There was no need to pack lunch.

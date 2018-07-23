@@ -16,7 +16,7 @@ published: true
 ---
 This was a great long weekend trip to Moab Utah and back to Denver Colorado over April 28 to 30th.
 
-## Friday
+### Friday
 Leave Denver ~7am.
 
 Stopped in 10:30am-12:30pm for the iconic [Hanging Lake trail](https://www.alltrails.com/trail/us/colorado/hanging-lake).
@@ -39,7 +39,7 @@ water in their store for free!
 Checked in to our AirBnb after that - <https://www.airbnb.com/rooms/17965507> - and met our hosts.
 Cooked asparagus, spaghetti squash, and cod out on the patio grill under the stars.
 
-## Saturday
+### Saturday
 Picked up [Specialized Camber Comp 650B](http://moabcyclery.com/specialized-camber-comp-29/) after 8am.
 
 Took a couple of laps on [Moab Brand Trails - Lazy/EZ Loop](https://www.mtbproject.com/trail/366223/moab-brand-trails-lazyez-loop) as an intro ride for my riding partner.
@@ -50,7 +50,7 @@ Went up Aztec Butte in the early afternoon: <https://www.hikingproject.com/trail
 
 Dinner at [Jeffrey's Steakhouse](https://www.yelp.com/biz/jeffreys-steakhouse-moab) was one for the books! Called in a 7:30pm reservation the week before.
 
-## Sunday
+### Sunday
 Checked out of AirBnb right in the nick of time at 11am.
 
 Went biking at a sweet intro to slick-rock trail - <https://www.mtbproject.com/trail/592585/monitor-merrimac> -

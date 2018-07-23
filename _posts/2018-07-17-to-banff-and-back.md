@@ -21,16 +21,16 @@ published: true
 ---
 Trip summary from spending a week mountain biking the Rocky Mountains!
 
-## The driving trip
+### The driving trip
 {% include google_maps_embed.html mid="1-5qzAOsQ5sNFnfEme6rqtnGAcZAhggQW" %}
 
-## Highlights
+### Highlights
 
-### Munger Mountain - Wally's World
+#### Munger Mountain - Wally's World
 {% include google_drive_image_embed.html id="1NZLasjShEXB7G01lZieBFykyojKKfjTKgg" %}
 
-### Banff - Top Notch
+#### Banff - Top Notch
 {% include google_drive_image_embed.html id="1yNcqrMNbCEaytweB10mQD96_WqpZpMntng" %}
 
-### Bozeman - Chesnut Mountain
+#### Bozeman - Chesnut Mountain
 {% include google_drive_image_embed.html id="17D3JLU6eCOjCCy3xCZG_M8Tfg6yM0JS5tQ" %}
