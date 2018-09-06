@@ -22,7 +22,7 @@ and just about everyone will accept USD instead of BZD; pack small bills.
 Our trip was a few days in the mountainous [Cayo District](https://en.wikipedia.org/wiki/Cayo_District)
 and a few days in the lowland and beachy [Stann Creek](https://en.wikipedia.org/wiki/Stann_Creek_District) area.
 
-# Getting There
+### Getting There
 Most airlines will require you to get to Belize City (Philip S. W. Goldson International Airport)
 through Dallas or Houston. At time of writing American Airlines and United Airlines offer round trip
 from Denver to Belize City for $800 during the first week of January.
@@ -30,7 +30,7 @@ from Denver to Belize City for $800 during the first week of January.
 There are a variety of [rental car options](http://www.pgiabelize.com/passenger-info/travel-and-ground-transportation/)
 and we ended up renting something close to a Land Cruiser, making it easier to traverse the country at our pace.
 
-# Mountains
+### Mountains
 You can [stay at the Belize Zoo](http://www.belizezoo.org/accommodation/accommodations.html) and get a night tour!
 
 Right before the rounabout to Belmopan, there is [Guanacaste National Park](https://goo.gl/maps/QQDwGgNMzpS2) on
@@ -54,7 +54,7 @@ that was open during the wet season.
 
 [Xunantunich](https://goo.gl/maps/H8PHdWQjscv) has to be some of the most imposing Mayan pyramids I have seen in person.
 
-# Beach
+### Beach
 We stayed in the _Lower Family Suite_ at the [Maya Beach Hotel and Bistro](http://www.mayabeachhotel.com/?page_id=245).
 The hotel has a collection of activity gear that we used every day. I love kayaking and heading North to the next
 marina on the coast was quite the adventure.
