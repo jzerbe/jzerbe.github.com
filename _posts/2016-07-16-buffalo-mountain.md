@@ -7,7 +7,7 @@ tags:
 - Colorado
 - mountain
 - trails
-published: true
+published: false
 ---
 ### Route Map
 {% include google_maps_embed.html mid="1b753J3cQ5l_Ky2X70xJ8kypPkys" %}
