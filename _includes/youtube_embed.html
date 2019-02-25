@@ -1,13 +1,11 @@
-<iframe
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        class="youtube_embed"
-        frameborder="0"
-        id="youtube_{{ include.id }}"
-        src="https://www.youtube.com/embed/{{ include.id }}">
-</iframe>
-<br />
-<a class="youtube_link" href="https://www.youtube.com/watch?v={{ include.id }}/view">
-    View on Youtube
-</a>
-<br />
+<div class="youtube_embed">
+    <iframe
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            frameborder="0"
+            height="315"
+            id="youtube_{{ include.id }}"
+            src="https://www.youtube.com/embed/{{ include.id }}"
+            width="560">
+    </iframe>
+</div>
