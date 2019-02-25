@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Spring in Moab
-lat: 38.5674376
-lon: -109.5505754
 tags:
 - Glenwood Springs
 - Colorado

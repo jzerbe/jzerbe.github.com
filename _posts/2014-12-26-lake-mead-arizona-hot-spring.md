@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Lake Mead - Arizona Hot Spring
-lat: 35.9605178
-lon: -114.7253792
 tags:
 - Lake Mead
 - National Recreation Area

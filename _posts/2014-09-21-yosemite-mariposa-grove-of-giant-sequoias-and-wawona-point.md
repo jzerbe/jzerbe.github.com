@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Yosemite - Mariposa Grove of Giant Sequoias and Wawona Point
-lat: 37.518589
-lon: -119.6004684
 tags:
 - Yosemite
 - California
