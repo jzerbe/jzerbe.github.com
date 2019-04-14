@@ -2,18 +2,21 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
         <title>{{ page.title }}</title>
         <meta name="author" content="Jason Zerbe" />
         <link href="//vraidsys.com/atom.xml" rel="alternate" title="Jason Zerbe" type="application/atom+xml" />
 
         <!-- custom classes, overrides of jquery/mobile, mapping tweaks -->
         <style type="text/css">
-            .disabled {
-                display: none !important;
-            }
             .gaiagps_embed {
                 height: 400px;
                 width: 100%;
+            }
+            .google_drive_image_embed {
+                max-width: 100%;
             }
             .google_maps_embed {
                 height: 400px;
@@ -30,13 +33,6 @@
                 margin: 0 auto;
                 width: 100%;
             }
-            .ui-btn img {
-                height: 90%;
-                padding: 5px;
-            }
-            .ui-content img {
-                max-width: 100%;
-            }
             .youtube_embed {
                 height: 0;
                 padding-bottom: 51%;
@@ -52,23 +48,8 @@
             }
         </style>
 
-        <!-- base jquery mobile -->
-        <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script>
-            $(document).bind("mobileinit", function(){
-                $.mobile.ajaxEnabled = false;
-                $.mobile.pushStateEnabled = false;
-            });
-        </script>
-        <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
-        <!-- inject additional jQuery Mobile styling -->
-        <script>
-        $(document).bind('pagecreate', function(event){
-            $('h3').addClass('ui-bar').addClass('ui-bar-a').addClass('ui-corner-all');
-        });
-        </script>
+        <link rel="stylesheet" href="/ui/css/ratchet.min.css" />
+        <script src="/ui/js/ratchet.min.js"></script>
 
         <!-- the great google-ly-moogle-ly -->
         <script>
@@ -92,6 +73,10 @@
                 crossorigin=""></script>
     </head>
     <body>
-        {{ content }}
+        {% include header.html %}
+
+        <div class="content">
+            {{ content }}
+        </div>
     </body>
 </html>

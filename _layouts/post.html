@@ -2,19 +2,23 @@
 layout: default
 ---
 
-<div data-role="page">
-    {% include header.html %}
+<div class="content-padded">
 
-    <div data-role="content">
-        {{ content }}
-        <hr />
+    {{ content }}
+
+    <hr />
+
+    <p>
         {{ page.content | number_of_words }} words.
-        Post tags: {{ page.tags | array_to_sentence_string }}.<br />
-        <br />
+        Post tags: {{ page.tags | array_to_sentence_string }}.
+    </p>
+
+    <p>
         {% assign date = page.date | date:"%Y-%m-%d" %}
         {% assign title = page.url | append:'ext' | replace:'/ext','.md' | split:'/' | last %}
         <a href="https://github.com/jzerbe/jzerbe.github.com/blob/master/_posts/{{date}}-{{title}}">Post content</a>
         is written by Jason Zerbe and licensed
         <a href="http://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC 3.0</a>.
-    </div>
+    </p>
+
 </div>
