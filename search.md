@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /search.html
-title: search
+title: Search
 ---
 
 <div class="card">

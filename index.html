@@ -76,7 +76,7 @@ title: Jason Zerbe
                 {% comment %} liquid is missing negation {% endcomment %}
             {% else %}
                 <li class="table-view-cell">
-                    <a class="navigate-right" href="{{ post.url }}" title="{{ post.title }} permalink">
+                    <a class="navigate-right" data-ignore="push" href="{{ post.url }}" title="{{ post.title }} permalink">
                         {{ post.title }}
                     </a>
                     {% if post.lat and post.lon %}
