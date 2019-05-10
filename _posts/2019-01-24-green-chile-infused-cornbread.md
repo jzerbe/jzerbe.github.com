@@ -30,14 +30,13 @@ Works well for a 9.5x13.5x2 inch glass baking dish.
 - `1 teaspoon` nutmeg
 - `2 teaspoons` _hot_ salsa
 - `4-5 teaspoons` [roasted green chiles](https://www.505southwestern.com/roasted-chiles)
-- `1 cup` frozen corn. Leave out for 10-15 minutes prior to defrost a little bit.
+- `0.5 cup` frozen corn. Leave out for 10-15 minutes prior to defrost a little bit.
 - `2 cups` skim milk
 - `0.5 cup` vegetable oil
 - `3` eggs
 
 ### Instructions
 1. Mixup dry ingredients. Form bowl in center of dry ingredients.
-1. Mixup eggs in center of bowl. Add remaining wet ingredients, _except_ green chile, and mix all together until combined.
+1. Mixup eggs in center of bowl. Add remaining wet ingredients and mix all together until combined.
 1. Pour the cornbread batter in baking dish.
-1. Dollop the the green chile equally across the top of the cornbread mixture in the baking dish and use a fork to fully submerge each dollop below the surface of the batter.
 1. Bake at 405F for 26 minutes.
