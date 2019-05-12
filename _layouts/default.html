@@ -76,10 +76,29 @@
                 crossorigin=""></script>
     </head>
     <body>
-        {% include header.html %}
+        <header class="bar bar-nav">
+            <h1 class="title">{{ page.title }}</h1>
+        </header>
 
         <div class="content">
             {{ content }}
+
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
         </div>
+
+        <nav class="bar bar-tab">
+            {% if page.name contains 'index' %}
+                <a class="tab-item active" data-ignore="push" href="/index.html">Profile</a>
+            {% else %}
+                <a class="tab-item" data-ignore="push" href="/index.html">Profile</a>
+            {% endif %}
+
+            {% if page.name contains 'posts' %}
+                <a class="tab-item active" data-ignore="push" href="/posts.html">Posts</a>
+            {% else %}
+                <a class="tab-item" data-ignore="push" href="/posts.html">Posts</a>
+            {% endif %}
+        </nav>
     </body>
 </html>

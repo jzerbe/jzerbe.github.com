@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Analysis from Jason Zerbe
+title: Jason Zerbe
 ---
 
 <div class="card">
@@ -10,8 +10,8 @@ title: Analysis from Jason Zerbe
 
             <p>
                 Professionally, I am most interested in systems.
-                Early in my career this manifested as deep diving into fitting together technical components.
-                More recently, I had the privilege of stewarding a high performing team.
+                Early in my career this manifested as fitting together technical components.
+                More recently, I had the privilege of stewarding a high performing team; how do people work best together?
                 Now, I am exploring what makes a great software solution for a line of business.
             </p>
             <br />
@@ -45,57 +45,5 @@ title: Analysis from Jason Zerbe
                 LinkedIn: Jason Zerbe
             </a>
         </li>
-    </ul>
-</div>
-
-<div class="card">
-    <div class="map_box_container">
-        <div id="mapcanvas"></div>
-    </div>
-    <script>
-        var map = L.map('mapcanvas');
-        map.setView([10,-108], 2);
-
-        setTimeout(function() {
-            map.invalidateSize();
-        }, 500);
-
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-            accessToken: 'pk.eyJ1IjoianplcmJlIiwiYSI6ImNqaWk3Nm91ZjFwcmIzcHBlY3RmeGs5MWwifQ.cOxWEoV44m6xtutjIj8HSg',
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>',
-            id: 'mapbox.terrain-rgb',
-            maxZoom: 18,
-        }).addTo(map);
-    </script>
-</div>
-
-<div class="card">
-    <ul class="table-view">
-        {% for post in site.posts %}
-            {% if post.tags contains 'preview' %}
-                {% comment %} liquid is missing negation {% endcomment %}
-            {% else %}
-                <li class="table-view-cell">
-                    <a class="navigate-right" data-ignore="push" href="{{ post.url }}" title="{{ post.title }} permalink">
-                        {{ post.title }}
-                    </a>
-                    {% if post.lat and post.lon %}
-                        <script>
-                            var post_marker = L.marker(
-                                [{{ post.lat }}, {{ post.lon }}],
-                                {
-                                    'title': "{{ post.title }}",
-                                }
-                            );
-                            post_marker.url = "{{ post.url }}";
-                            post_marker.on('click', function(){
-                                window.location = (this.url);
-                            });
-                            post_marker.addTo(map);
-                        </script>
-                    {% endif %}
-                </li>
-            {% endif %}
-        {% endfor %}
     </ul>
 </div>
