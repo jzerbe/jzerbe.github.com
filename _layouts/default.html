@@ -94,6 +94,12 @@
                 <a class="tab-item" data-ignore="push" href="/index.html">Profile</a>
             {% endif %}
 
+            {% if page.name contains 'projects' %}
+                <a class="tab-item active" data-ignore="push" href="/projects.html">Projects</a>
+            {% else %}
+                <a class="tab-item" data-ignore="push" href="/projects.html">Projects</a>
+            {% endif %}
+
             {% if page.name contains 'posts' %}
                 <a class="tab-item active" data-ignore="push" href="/posts.html">Posts</a>
             {% else %}
