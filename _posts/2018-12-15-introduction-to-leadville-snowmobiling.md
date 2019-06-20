@@ -34,6 +34,7 @@ Gorgeous meadow South of _Uncle Bud's Hut_ before we tracked it out.
 {% include gaiagps_embed.html mid="hlbw0zxRiXcwa4ZVdIhyQ6WG" %}
 
 No real slide exposure, just watch out for the old mines.
+[Groomed trail map](https://drive.google.com/file/d/1jgvP13hkZPsNonYRH1mDkLHhPwXd8o4P/view?usp=sharing).
 
 {% include google_drive_image_embed.html id="1Hho2ftT5Tfw9eVq8LKZzTHrEQa1d2LZ2kQ" %}
 
