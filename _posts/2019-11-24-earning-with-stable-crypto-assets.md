@@ -56,7 +56,7 @@ In addition to crypto backed loans, they bundle up assets under management and l
 You can earn slightly higher rates if you hold their coin (_staking_) and get paid in their coin, but I would rather take the assured payout
 on stablecoins and not deal with price volatility that could evaporate my interest earnings.
 
-Another strong player is Crypto.com and they offer [higher APY for longer deposits](https://crypto.com/en/earn.html).
+Another strong player is [Crypto.com](https://platinum.crypto.com/r/j9cd8tadum) and they offer [higher APY for longer deposits](https://crypto.com/en/earn.html).
 Unfortunately, they get you on withdrawal fees and no auto-compounding. Not sure exactly what rebundling of their
 assets under management they do to make money. I don't stake the Crypto coins either.
 
@@ -66,12 +66,12 @@ I spread my risk by splitting invested wealth between stablecoins and interest b
 ### Earn on USDC with Nexo
 1. Deposit USD into [Coinbase Pro](https://pro.coinbase.com) through an ACH transfer from a brokerage (Fidelity, Schwab) style bank account since they generally do not place restrictions like Chase does.
 1. Convert USD into USDC: <https://support.pro.coinbase.com/customer/en/portal/articles/2958774-usd-coin-usdc-faq>
-1. Open an account with Nexo: <https://nexo.io/>
+1. Open an account with [Nexo](https://nexo.io/?u=5cfd55180794714d172230f4).
 1. Triple check the deposit address provided by Nexo and deposit: <https://support.nexo.io/hc/en-us/articles/360008118554-Where-do-I-see-the-address-where-I-need-to-deposit-the-collateral-for-my-Nexo-loan->
 
 ### Earn on PAX with Celsius
-1. Create a Paxos Wallet account: <https://account.paxos.com/wallet>
-1. Create a Celsius account through their app: <https://celsius.network/get-the-app/>
+1. Create a [Paxos Wallet account](https://account.paxos.com/wallet).
+1. Create a [Celsius account](https://celsiusnetwork.app.link/139363bfc0) through their app.
 1. Wire USD from a Fidelity Cash Management Account to Paxos Trust Company.
 Once you set up the wire transfer online, you will have to actually execute this order over the phone to include the memo provided by Paxos to identify your deposit account.
 I say Fidelity, because they charge no domestic wire fees: <https://www.fidelity.com/cash-management/bank-wires>
