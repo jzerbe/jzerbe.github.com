@@ -46,7 +46,9 @@ Many early crypto adopters have large amounts of their wealth locked up in crypt
 I and the IRS view _traditional_ crypto assets, such as BTC or ETH, more like stocks that one has to [pay capital gains or losses on](https://www.irs.gov/pub/irs-drop/n-14-21.pdf).
 
 The original business model of earning interest on crypto assets was to get around the capital gains tax.
-Instead of selling your crypto assets, just borrow on them and use the cash to make a purchase.
+Instead of selling your crypto assets (and incurring a taxable event - capital gains or losses),
+just borrow on them and use the cash to make a purchase;
+you use your crypto assets as collateral for a loan (similar to how one uses a house as collateral for a refinance).
 Enter one of the original players, Nexo, who pays [8% APY compounding daily on stablecoins](https://nexo.io/earn-interest).
 The credibility of the company comes into question every now and again - <https://www.reddit.com/r/Nexo/comments/cvjg0q/red_flag_fake_statements_licensed_regulated/>, <https://www.reddit.com/r/Nexo/comments/cjp6sx/due_diligence_on_nexo_red_flags/> - but from personal experience,
 they paid me a few thousand in interest and let me extract the principal and interest without issue.
