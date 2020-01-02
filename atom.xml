@@ -3,23 +3,23 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>Jason Zerbe's experience log</title>
-    <link href="http://vraidsys.com/atom.xml" rel="self" />
-    <link href="http://vraidsys.com/" />
+    <title>Jason Zerbe</title>
+    <link href="http://jzerbe.com/atom.xml" rel="self" />
+    <link href="http://jzerbe.com/" />
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>http://vraidsys.com/</id>
+    <id>http://jzerbe.com/</id>
     <author>
         <name>Jason Zerbe</name>
-        <email>jzerbe@vraidsys.com</email>
-        <uri>http://vraidsys.com/</uri>
+        <email>jzerbe@jzerbe.com</email>
+        <uri>http://jzerbe.com/</uri>
     </author>
 
     {% for post in site.posts %}
     <entry>
         <title>{{ post.title }}</title>
-        <link href="http://vraidsys.com{{ post.url }}" />
+        <link href="http://jzerbe.com{{ post.url }}" />
         <updated>{{ post.date | date_to_xmlschema }}</updated>
-        <id>http://vraidsys.com{{ post.id }}/</id>
+        <id>http://jzerbe.com{{ post.id }}/</id>
         <content type="html">{{ post.content | xml_escape }}</content>
     </entry>
     {% endfor %}

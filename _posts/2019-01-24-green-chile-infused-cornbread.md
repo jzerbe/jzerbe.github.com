@@ -7,7 +7,7 @@ tags:
 - eats
 published: true
 ---
-This is an extension of my previously published [elevation-agnostic-cornbread](http://vraidsys.com/2013/11/elevation-agnostic-cornbread/).
+This is an extension of my previously published [elevation-agnostic-cornbread](http://jzerbe.com/2013/11/elevation-agnostic-cornbread/).
 The spicing is different and the prep is a little longer, but the reward is well worth it!
 
 I was out earlier in the week for [dinner at Brazen Neighborhood Eatery](http://brazendenver.com/menu/dinner/).

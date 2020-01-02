@@ -35,7 +35,7 @@ upgrades and available channel searching.
 ### Software dependencies
 This assumes that you have already setup SteamOS (wrapped Debian) to pull from
 standard Debian repositories. See
-[SteamOS and XBMC on Intel NUC 4th gen](http://vraidsys.com/2014/04/steamos-and-xbmc-on-intel-nuc-4th-gen/)
+[SteamOS and XBMC on Intel NUC 4th gen](http://jzerbe.com/2014/04/steamos-and-xbmc-on-intel-nuc-4th-gen/)
 if this is not the case. Then install a database backend:
 `apt-get install mysql-server`
 

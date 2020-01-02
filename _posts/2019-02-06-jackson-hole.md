@@ -11,7 +11,7 @@ tags:
 - travels
 published: true
 ---
-Jackson Hole has the kind of in your face big terrain that I came to expect from my time at [Whistler Blackcomb](http://vraidsys.com/2018/01/whistler-blackcomb/).
+Jackson Hole has the kind of in your face big terrain that I came to expect from my time at [Whistler Blackcomb](http://jzerbe.com/2018/01/whistler-blackcomb/).
 Maybe even more in your face. Cliffs and serious steeps will just pop up if you do not know the mountain;
 my first two days of riding were very cautious, getting to know the mountain.
 
