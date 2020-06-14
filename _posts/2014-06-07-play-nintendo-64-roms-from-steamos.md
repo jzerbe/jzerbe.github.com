@@ -23,7 +23,7 @@ if this is not the case.
 - `git checkout steamos`
 
 ### Configure
-- Update [`Ice/config.txt`](https://github.com/jzerbe/Ice/pull/1/files# diff-0)
+- Update [`Ice/config.txt`](https://github.com/jzerbe/Ice/pull/1/files#diff-0)
 to match the root directory of where your ROMs are stored.
 - Ensure
 [directory structure](http://scottrice.github.io/Ice/getting-started/#adding-roms)

@@ -9,8 +9,8 @@ published: true
 ---
 This will be the first in a series of posts as I get
 [Tvheadend](https://tvheadend.org/projects/tvheadend),
-[libhdhomerun](https://github.com/jzerbe/libhdhomerun), and
-[dvbhdhomerun](https://github.com/jzerbe/dvbhdhomerun) running on my
+[libhdhomerun](https://github.com/Vraid-Systems/libhdhomerun), and
+[dvbhdhomerun](https://github.com/Vraid-Systems/dvbhdhomerun) running on my
 [XIOS DS Media Play](http://www.pivosgroup.com/xios.html).
 I am doing all of the building on a Debian 7 VM.
 

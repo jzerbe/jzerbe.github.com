@@ -64,9 +64,9 @@ where `my-cool-header` is. jQuery likes to use the `x-requested-with` header.
 
 For more contextually complete examples, take a look at the following files from
 the
-[_spring-security-gwt-template_](https://github.com/jzerbe/spring-security-gwt-template)
+[_spring-security-gwt-template_](https://github.com/Vraid-Systems/spring-security-gwt-template)
 example repo I put up on GitHub:
 
-- [web.xml](https://github.com/jzerbe/spring-security-gwt-template/blob/master/WEB-INF/web.xml)
-- [CorsController.java](https://github.com/jzerbe/spring-security-gwt-template/blob/master/src/com/vraidsys/server/CorsController.java)
-- [FooController.java](https://github.com/jzerbe/spring-security-gwt-template/blob/master/src/com/vraidsys/server/FooController.java)
+- [web.xml](https://github.com/Vraid-Systems/spring-security-gwt-template/blob/master/WEB-INF/web.xml)
+- [CorsController.java](https://github.com/Vraid-Systems/spring-security-gwt-template/blob/master/src/com/vraidsys/server/CorsController.java)
+- [FooController.java](https://github.com/Vraid-Systems/spring-security-gwt-template/blob/master/src/com/vraidsys/server/FooController.java)

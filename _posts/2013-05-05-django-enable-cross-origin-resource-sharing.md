@@ -39,4 +39,4 @@ From <https://docs.djangoproject.com/en/dev/ref/request-response/#setting-header
             theHttpResponse['Access-Control-Allow-Headers'] = 'origin, content-type, accept, x-requested-with'
         return theHttpResponse
 
-From <https://github.com/jzerbe/storagebin/blob/master/storagebin/__init__.py> 
+From <https://github.com/Vraid-Systems/storagebin/blob/master/storagebin/__init__.py> 

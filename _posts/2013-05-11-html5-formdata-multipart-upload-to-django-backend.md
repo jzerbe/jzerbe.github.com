@@ -15,7 +15,7 @@ As of Chrome 7, Firefox 4, IE 10, Opera 12, and Safari 5 - it is quite possible
 to programmatically upload file data.
 [https://developer.mozilla.org/en-US/docs/DOM/XMLHttpRequest/FormData#Browser_compatibility](https://developer.mozilla.org/en-US/docs/DOM/XMLHttpRequest/FormData#Browser_compatibility)
 
-From [SBObj.js](https://github.com/jzerbe/storagebin_js/blob/master/SBObj.js):
+From [SBObj.js](https://github.com/Vraid-Systems/storagebin_js/blob/master/SBObj.js):
 
     this.PUT = function(theData, theDataContentType) {
         theDataContentType = this.getDefault(theDataContentType, "text/plain");
@@ -47,9 +47,9 @@ documentation tells you otherwise.
 [django-nonrel](http://django-nonrel.org/) to be specific, we can pull in the file data.
 
 From
-[storagebin/__init__.py](https://github.com/jzerbe/storagebin/blob/master/storagebin/__init__.py)
+[storagebin/__init__.py](https://github.com/Vraid-Systems/storagebin/blob/master/storagebin/__init__.py)
 and
-[storagebin/internal/blobstore.py](https://github.com/jzerbe/storagebin/blob/master/storagebin/internal/blobstore.py):
+[storagebin/internal/blobstore.py](https://github.com/Vraid-Systems/storagebin/blob/master/storagebin/internal/blobstore.py):
 
     elif request.method == 'POST':
         if request.FILES and len(request.FILES) == 1:

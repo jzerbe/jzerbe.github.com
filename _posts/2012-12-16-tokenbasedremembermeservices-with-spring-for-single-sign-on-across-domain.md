@@ -33,9 +33,9 @@ maintain for now.
 ### the code
 
 I created a complete example project at
-[jzerbe / spring-security-gwt-template](https://github.com/jzerbe/spring-security-gwt-template).
+[jzerbe / spring-security-gwt-template](https://github.com/Vraid-Systems/spring-security-gwt-template).
 For this blog post, the important files to take a look at are the
-[spring-security.xml](https://github.com/jzerbe/spring-security-gwt-template/blob/master/WEB-INF/spring-security.xml)
+[spring-security.xml](https://github.com/Vraid-Systems/spring-security-gwt-template/blob/master/WEB-INF/spring-security.xml)
 and
-[RememberMeProvider.java](https://github.com/jzerbe/spring-security-gwt-template/blob/master/src/com/vraidsys/server/data/RememberMeProvider.java)
+[RememberMeProvider.java](https://github.com/Vraid-Systems/spring-security-gwt-template/blob/master/src/com/vraidsys/server/data/RememberMeProvider.java)
 files.
