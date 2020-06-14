@@ -1,6 +1,7 @@
-_site/
-
-# dev environment
+# IDE
 *.iml
 .idea
 .project
+
+# runtime artifacts
+_site/
