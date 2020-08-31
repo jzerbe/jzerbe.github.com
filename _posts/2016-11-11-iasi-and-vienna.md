@@ -23,7 +23,7 @@ consequently the meal service was particularly good with unlimited beverages of
 their motherland.
 
 ### Lodging
-[Hotel International Iasi​](https://www.hotelinternationaliasi.ro/) is right across the street
+[Hotel International Iasi](https://www.hotelinternationaliasi.ro/) is right across the street
 from where I worked with folks at [Endava](https://goo.gl/maps/PDuAHGVBfGB2).
 
 {% include google_drive_image_embed.html id="0B0yT30uCaFvvbEtlZzlTaG5JcEk" %}

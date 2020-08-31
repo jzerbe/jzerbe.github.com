@@ -37,6 +37,5 @@ do, so I went to enable Security (using the admin domain interface). glassfish c
 page "j_security_check" and the log files said that a user was trying to log in with blank credentials. It turns out
 that you are supposed to use the shell script `glassfish/bin/asadmin` in your glassfish3 install directory
 to connect to your glassfish3 domain server instance -
-`bin/asadmin --user [admin|your admin username] --passwordfiledomains/[your main domain]/config/admin-keyfile --secure=true`
-- and execute the command `enable-secure-admin`. See the glassfish project JIRA ticket
+`bin/asadmin --user [admin|your admin username] --passwordfiledomains/[your main domain]/config/admin-keyfile --secure=true` - and execute the command `enable-secure-admin`. See the glassfish project JIRA ticket
 [changing admin-listener security-enabled attribute breaks REST, GUI and cannot stop domain](http://java.net/jira/browse/GLASSFISH-16142?page=com.atlassian.jira.plugin.system.issuetabpanels%3Achangehistory-tabpanel).
