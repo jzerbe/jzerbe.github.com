@@ -30,7 +30,7 @@ which is the easiest to do the paperwork for and [usually the best option for ta
 1. Creation is easy:
     1. [$50 in Colorado to create](https://www.sos.state.co.us/pubs/info_center/fees/business.html)
     1. $150-300 for an hour or two of a lawyer's time to review an [example Colorado single member Operating Agreement](https://docs.google.com/document/d/1-tHY7_rG3Cn-Pf3ELQUKLJ_j2uoGqucMHUU4YwDDaUE/edit)
-    1. [$25 to get your operating agreement notarized](https://www.notarycam.com/pricing/)
+    1. [$25 to get your operating agreement notarized](https://www.notarize.com/pricing)
 1. You can do all the taxes with your standard income taxes:
     > If a single-member LLC does not elect to be treated as a corporation, the LLC is a "disregarded entity," and the LLC's activities should be reflected on its owner's federal tax return.
     
