@@ -3,7 +3,7 @@ layout: post
 title: Limited Liability Companies as a wealth management tool (Colorado)
 tags:
 - Colorado
-- Limited Liability Companies
+- Limited Liability Company
 - LLC
 - estate planning
 - wealth management
@@ -31,6 +31,7 @@ which is the easiest to do the paperwork for and [usually the best option for ta
     1. [$50 in Colorado to create](https://www.sos.state.co.us/pubs/info_center/fees/business.html)
     1. $150-300 for an hour or two of a lawyer's time to review an [example Colorado single member Operating Agreement](https://docs.google.com/document/d/1-tHY7_rG3Cn-Pf3ELQUKLJ_j2uoGqucMHUU4YwDDaUE/edit)
     1. [$25 to get your operating agreement notarized](https://www.notarize.com/pricing)
+    1. (Optional) [$10-12 per month for a mailbox](https://www.anytimemailbox.com/l/usa/colorado) to shield your home address
 1. You can do all the taxes with your standard income taxes:
     > If a single-member LLC does not elect to be treated as a corporation, the LLC is a "disregarded entity," and the LLC's activities should be reflected on its owner's federal tax return.
     
@@ -51,10 +52,11 @@ sense to use an address which means low or no income taxes; occupation, sales, a
 While everyone talks about creating Delaware (zero sales tax) business entities, Nevada (zero income tax)
 makes much more sense in this instance; additionally, [Nevada does not charge taxes on services](https://webcache.googleusercontent.com/search?q=cache:y4jBz1TcnR8J:https://tax.nv.gov/uploadedFiles/taxnvgov/Content/OnLineServices/Basic%2520Training-revised.ppt+&cd=13&hl=en&ct=clnk&gl=us).
 
-While it's true Nevada charges no income taxes, I like what Colorado is about, and want to pay taxes to continue to
-support what I like about Colorado. 4.6% really is not that bad for the services I use as a human resident of Colorado.
-While my primary business address is my Henderson (Nevada) address, I maintain my Colorado LLC with a mailbox in
-Lakewood (Colorado) to satisfy the requirement for an in-state registered agent's address.
+While it is true Nevada charges no income taxes,
+[Nevada does charge significantly more for business filing fees](https://www.nvsos.gov/sos/businesses/commercial-recordings/forms-fees) than [Colorado does for business filing fees](https://www.sos.state.co.us/pubs/info_center/fees/business.html),
+which at lower income levels cost as much as the 4.6% Colorado income tax rate.
+
+Additionally, the [cryptocurrency regulatory regime in Colorado is much more progressive](https://www.gtlaw.com/en/insights/2019/3/colorado-digital-token-act-exempts-certain-cryptocurrency-transactions-from-colorado-securities-laws), which is necessary for my LLC investments.
 
 ## Saving on taxes now and in the future
 To save on taxes, you will need to transfer ownership of accounts and assets to the LLC, known as a [capital contribution](https://www.legalzoom.com/articles/how-to-add-capital-contributions-to-an-llc). Fiduciaries generally want to see:
