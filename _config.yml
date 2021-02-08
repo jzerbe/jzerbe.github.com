@@ -1,3 +1,16 @@
+author:
+  email: 'jzerbe@vraidsys.com'
+  name: 'Jason Zerbe'
+baseurl: /
+description: 'Artificial intelligence team lead with a passion for pre-sales, responsible business models, and running product discovery workshops.'
 future: true
 permalink: /:year/:month/:title/
 plugins: [jekyll-gist]
+sidebar:
+  cv: http://stackoverflow.com/cv/jzerbe
+  github: https://github.com/jzerbe
+  linkedin: https://www.linkedin.com/in/jzerbe
+  resume: https://docs.google.com/document/d/1FZQhR2reU2a4EsmZ8vaPiwIkgqnTLapMDbx1OvJKISw/edit?usp=sharing
+tagline: 'Thinking in systems'
+title: Jason Zerbe
+url: https://jzerbe.com

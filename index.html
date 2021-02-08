@@ -1,63 +1,22 @@
 ---
 layout: default
-title: Jason Zerbe
+title: Home
 ---
 
-<div class="card">
-    <ul class="table-view">
-        <li class="table-view-cell">
-            <img class="media-object pull-left" src="https://www.gravatar.com/avatar/cde59b02650d86621ea5bae66d12fe91?s=200" />
+<div class="posts">
+  {% for post in site.posts %}
+  {% if post.tags contains 'preview' %}
+  {% comment %} liquid is missing negation {% endcomment %}
+  {% else %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-            <h3>Jason Zerbe</h3>
-
-            <h5>Artificial intelligence team lead with a passion for pre-sales, responsible business models, and running product discovery workshops.</h5>
-
-            <br />
-
-            <p>
-                I bring value through creative thinking, listening, and executing risk-hedged technical plans.
-                I think in systems. I probably would have been an economist or forester if I had been raised by different parents.
-            </p>
-
-            <br />
-
-            <p>
-                I got my start in high school on the <a href="https://minneapolis.craigslist.org/d/computer-gigs/search/cpg">Minneapolis craigslist computer gigs</a>.
-                I have had the privilege of stewarding high performing teams.
-                I have had the pleasure of running pre-sales and product discovery workshops.
-            </p>
-
-            <br />
-
-            <p>
-                I love asking follow up questions, organizing social events, and riding bike and board in unique places.
-            </p>
-        </li>
-
-        <li class="table-view-cell table-view-divider"></li>
-
-        <li class="table-view-cell">
-            <a class="navigate-right" href="http://stackoverflow.com/cv/jzerbe">
-                CV: Jason Zerbe
-            </a>
-        </li>
-
-        <li class="table-view-cell">
-            <a class="navigate-right" href="https://github.com/jzerbe">
-                GitHub: jzerbe
-            </a>
-        </li>
-
-        <li class="table-view-cell">
-            <a class="navigate-right" href="http://www.linkedin.com/in/jzerbe">
-                LinkedIn: Jason Zerbe
-            </a>
-        </li>
-
-        <li class="table-view-cell">
-            <a class="navigate-right" href="https://docs.google.com/document/d/1FZQhR2reU2a4EsmZ8vaPiwIkgqnTLapMDbx1OvJKISw/edit?usp=sharing">
-                Resume
-            </a>
-        </li>
-    </ul>
+    <span class="post-date">{{ post.tags | array_to_sentence_string }}</span>
+  </div>
+  {% endif %}
+  {% endfor %}
 </div>

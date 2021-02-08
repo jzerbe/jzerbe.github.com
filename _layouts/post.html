@@ -2,23 +2,8 @@
 layout: default
 ---
 
-<div class="content-padded post-content">
-
-    {{ content }}
-
-    <hr />
-
-    <p>
-        {{ page.content | number_of_words }} words.
-        Post tags: {{ page.tags | array_to_sentence_string }}.
-    </p>
-
-    <p>
-        {% assign date = page.date | date:"%Y-%m-%d" %}
-        {% assign title = page.url | append:'ext' | replace:'/ext','.md' | split:'/' | last %}
-        <a href="https://github.com/jzerbe/jzerbe.github.com/blob/master/_posts/{{date}}-{{title}}">Post content</a>
-        is written by Jason Zerbe and licensed
-        <a href="http://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC 3.0</a>.
-    </p>
-
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.tags | array_to_sentence_string }}</span>
+  {{ content }}
 </div>
