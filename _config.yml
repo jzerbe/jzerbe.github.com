@@ -1,7 +1,7 @@
 author:
   email: 'jzerbe@vraidsys.com'
   name: 'Jason Zerbe'
-description: 'Artificial intelligence team lead with a passion for pre-sales, responsible business models, and running product discovery workshops.'
+description: 'Artificial intelligence team lead with a passion for pre-sales, responsible business models, and running product discovery workshops. Owner of <a href="https://vraidsys.com">Vraid Systems</a>.'
 future: true
 permalink: /:year/:month/:title/
 plugins: [jekyll-gist]
