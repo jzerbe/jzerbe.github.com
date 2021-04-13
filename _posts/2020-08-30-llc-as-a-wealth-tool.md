@@ -29,7 +29,7 @@ which is the easiest to do the paperwork for and [usually the best option for ta
 
 1. Creation is easy:
     1. [$50 in Colorado to create](https://www.sos.state.co.us/pubs/info_center/fees/business.html)
-    1. $150-300 for an hour or two of a lawyer's time to review an [example Colorado single member Operating Agreement](https://docs.google.com/document/d/1-tHY7_rG3Cn-Pf3ELQUKLJ_j2uoGqucMHUU4YwDDaUE/edit)
+    1. $150-300 for an hour or two of a lawyer's time to review an [example Colorado single member Operating Agreement](https://learn.vraidsys.com/?memberpressproduct=household-tax-optimization)
     1. [$25 to get your operating agreement notarized](https://www.notarize.com/pricing)
     1. (Optional) [$10-12 per month for a mailbox](https://www.anytimemailbox.com/l/usa/colorado) to shield your home address
 1. You can do all the taxes with your standard income taxes:
@@ -69,3 +69,6 @@ To save on taxes, you will need to transfer ownership of accounts and assets to 
 Given my tax jurisdiction and wealth, all of my startup fees were covered by the tax savings in the first month.
 
 Now given that there is no public market for these LLC assets, [gifting membership interests to your heirs while you still are the LLC manager means hefty asset write-downs](https://www.investopedia.com/articles/personal-finance/071514/using-llc-estate-planning.asp#how-a-family-llc-works).
+
+## Going deeper
+Want to learn more? Check out my [Household tax optimization](https://learn.vraidsys.com/?memberpressproduct=household-tax-optimization) online course!
