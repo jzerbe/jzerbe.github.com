@@ -14,14 +14,6 @@ In an economic environment where [real wages have stagnated](https://www.pewrese
 and regular employees are paying a [larger proportion of federal taxes](https://www.cbpp.org/research/federal-tax/policy-basics-where-do-federal-tax-revenues-come-from)
 than [shell companies for the rich](https://www.icij.org/investigations/panama-papers/), why not play the same games?
 
-The life breathed into business entities, through the constitutional protections afforded with
-[Citizens United](https://www.fec.gov/updates/citizens-united-v-fecsupreme-court/),
-show that this trend will not change anytime soon.
-[Most voters have a hard enough time determining fact from opinion](https://www.journalism.org/2018/06/18/distinguishing-between-factual-and-opinion-statements-in-the-news/)
-to understand the implications of any of these policies or the consequences of who they vote for; don't expect a law to get passed to fix this anytime soon.
-
-Enough motivation, let us create a new pseudo-citizen.
-
 ## Creating a new legal entity
 This article focuses on the Limited Liability Company,
 specifically the [Single Member LLC](https://www.irs.gov/businesses/small-businesses-self-employed/single-member-limited-liability-companies),
@@ -31,7 +23,7 @@ which is the easiest to do the paperwork for and [usually the best option for ta
     1. [$50 in Colorado to create](https://www.sos.state.co.us/pubs/info_center/fees/business.html)
     1. $150-300 for an hour or two of a lawyer's time to review an [example Colorado single member Operating Agreement](https://learn.vraidsys.com/?memberpressproduct=household-tax-optimization)
     1. [$25 to get your operating agreement notarized](https://www.notarize.com/pricing)
-    1. (Optional) [$10-12 per month for a mailbox](https://www.anytimemailbox.com/l/usa/colorado) to shield your home address
+    1. (Optional) $10-12 per month for a mailbox with [Anytime Mailbox](https://www.anytimemailbox.com/?affkey=u724f61p) or [iPostal1](https://ipostal1.com/?ref=2841) to shield your home address
 1. You can do all the taxes with your standard income taxes:
     > If a single-member LLC does not elect to be treated as a corporation, the LLC is a "disregarded entity," and the LLC's activities should be reflected on its owner's federal tax return.
     
@@ -54,7 +46,7 @@ makes much more sense in this instance; additionally, [Nevada does not charge ta
 
 While it is true Nevada charges no income taxes,
 [Nevada does charge significantly more for business filing fees](https://www.nvsos.gov/sos/businesses/commercial-recordings/forms-fees) than [Colorado does for business filing fees](https://www.sos.state.co.us/pubs/info_center/fees/business.html),
-which at lower income levels cost as much as the 4.6% Colorado income tax rate.
+which at lower income levels cost as much as the 4.5% Colorado income tax rate.
 
 Additionally, the [cryptocurrency regulatory regime in Colorado is much more progressive](https://www.gtlaw.com/en/insights/2019/3/colorado-digital-token-act-exempts-certain-cryptocurrency-transactions-from-colorado-securities-laws), which is necessary for my LLC investments.
 
@@ -71,4 +63,4 @@ Given my tax jurisdiction and wealth, all of my startup fees were covered by the
 Now given that there is no public market for these LLC assets, [gifting membership interests to your heirs while you still are the LLC manager means hefty asset write-downs](https://www.investopedia.com/articles/personal-finance/071514/using-llc-estate-planning.asp#how-a-family-llc-works).
 
 ## Going deeper
-Want to learn more? Check out my [Household tax optimization](https://learn.vraidsys.com/?memberpressproduct=household-tax-optimization) online course!
+Want to learn more? Want no business license fees and no income taxes? Check out my online [household tax optimization](https://learn.vraidsys.com/?memberpressproduct=household-tax-optimization) course for the inside scoop on Wyoming!
