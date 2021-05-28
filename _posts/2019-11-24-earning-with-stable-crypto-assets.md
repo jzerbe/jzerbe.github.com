@@ -15,6 +15,11 @@ and banks are not passing on the profits from printing an [order of magnitude of
 I tried finding an asset class that functions like a dividend paying stock, but without the high price.
 For my risk tolerance profile, interest bearing crypto stable coin accounts are the solution.
 
+## Beginner crash course
+Want to get up to speed fast on what cryptocurrency is and is not? How to legally and safely buy, move, and sell cryptocurrency?
+Check out my online [Pragmatic Cryptocurrency](https://learn.vraidsys.com/?memberpressproduct=pragmatic-cryptocurrency)
+course to get the step by step details to start earning 24 times more than stashing your money with most banks. 
+
 ## What is a stable coin?
 In the United States of America we used to [back our currency with gold](https://www.investopedia.com/ask/answers/09/gold-standard.asp).
 The thought was that the currency is back-stopped by something that has intrinsic value, or rather people trusted that gold would continue to be
