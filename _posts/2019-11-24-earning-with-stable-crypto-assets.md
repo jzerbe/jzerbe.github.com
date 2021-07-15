@@ -73,7 +73,7 @@ I spread my risk by splitting invested wealth between stablecoins and interest b
 ### Earn on USDC with Nexo
 1. Deposit USD into [Coinbase Pro](https://pro.coinbase.com) through an ACH transfer from a brokerage (Fidelity, Schwab) style bank account since they generally do not place restrictions like Chase does.
 1. Convert USD into USDC: <https://support.pro.coinbase.com/customer/en/portal/articles/2958774-usd-coin-usdc-faq>
-1. Open an account with [Nexo](https://nexo.io/?u=5cfd55180794714d172230f4).
+1. Open an account with [Nexo](https://nexo.io/ref/wnu0bedagl?src=web-links).
 1. Triple check the deposit address provided by Nexo and deposit: <https://support.nexo.io/hc/en-us/articles/360008118554-Where-do-I-see-the-address-where-I-need-to-deposit-the-collateral-for-my-Nexo-loan->
 
 ### Earn on PAX with Celsius
