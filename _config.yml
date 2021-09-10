@@ -6,7 +6,6 @@ future: true
 permalink: /:year/:month/:title/
 plugins: [jekyll-gist]
 sidebar:
-  cv: http://stackoverflow.com/cv/jzerbe
   github: https://github.com/jzerbe
   linkedin: https://www.linkedin.com/in/jzerbe
   resume: https://docs.google.com/document/d/1FZQhR2reU2a4EsmZ8vaPiwIkgqnTLapMDbx1OvJKISw/edit?usp=sharing
