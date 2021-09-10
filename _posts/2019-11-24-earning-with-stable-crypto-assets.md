@@ -31,14 +31,16 @@ The value of this stablecoin is that is represents one unit of something else an
 matches that of the underlying asset. A chain of trust.
 
 [_Paxos Trust Company LLC_](https://www.paxos.com/) issues a crypto instrument
-called [Paxos Standard (PAX)](https://www.paxos.com/pax/), running on the
+called [Pax Dollar (USDP)](https://paxos.com/usdp/), running on the
 [ERC-20](https://www.investopedia.com/news/what-erc20-and-what-does-it-mean-ethereum/) protocol, that
 is backed by 1USD in Paxos' reserves. I trust the USD to not be significantly eroded by inflation in the medium term and
 I trust that New York State's Department of Financial Services to [appropriately review Paxos Trust Company](https://www.dfs.ny.gov/about/press/pr1809101.htm).
 Many other people seem to hold similar views: <https://coinmarketcap.com/currencies/paxos-standard/ratings/>
 
 [Coinbase](https://www.coinbase.com/about) issues a crypto instrument called [USD Coin](https://www.centre.io/usdc),
-also running on ERC-20 and backed 1:1 with USD. I place my trust in the large number of exchanges that accept USDC
+also running on ERC-20 and backed 1:1 with
+[USD cash treasuries](https://www.bloomberg.com/news/articles/2021-08-23/coinbase-circle-to-move-all-usdc-reserves-into-cash-treasuries).
+I place my trust in the large number of exchanges that accept USDC
 and Coinbase's list of investors. People seem to trust this asset: <https://coinmarketcap.com/currencies/usd-coin/ratings/>
 
 The big risk on my mind to assets running on ERC-20 comes down to network traffic: <https://hackernoon.com/explainer-why-is-my-ethereum-transaction-taking-so-long-qg1t632cz>
@@ -76,10 +78,10 @@ I spread my risk by splitting invested wealth between stablecoins and interest b
 1. Open an account with [Nexo](https://nexo.io/ref/wnu0bedagl?src=web-links).
 1. Triple check the deposit address provided by Nexo and deposit: <https://support.nexo.io/hc/en-us/articles/360008118554-Where-do-I-see-the-address-where-I-need-to-deposit-the-collateral-for-my-Nexo-loan->
 
-### Earn on PAX with Celsius
+### Earn on USDP with Celsius
 1. Create a [Paxos Wallet account](https://account.paxos.com/wallet).
 1. Create a [Celsius account](https://celsiusnetwork.app.link/139363bfc0) through their app.
 1. Wire USD from a Fidelity Cash Management Account to Paxos Trust Company.
 Once you set up the wire transfer online, you will have to actually execute this order over the phone to include the memo provided by Paxos to identify your deposit account.
 I say Fidelity, because they charge no domestic wire fees: <https://www.fidelity.com/cash-management/bank-wires>
-1. Convert your USD to PAX at 1:1 and send to your Celsius deposit address.
+1. Convert your USD to USDP at 1:1 and send to your Celsius deposit address.
