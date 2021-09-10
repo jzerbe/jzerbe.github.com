@@ -23,7 +23,7 @@ which is the easiest to do the paperwork for and [usually the best option for ta
     1. [$50 in Colorado to create](https://www.sos.state.co.us/pubs/info_center/fees/business.html)
     1. $150-300 for an hour or two of a lawyer's time to review an [example Colorado single member Operating Agreement](https://learn.vraidsys.com/?memberpressproduct=household-tax-optimization)
     1. [$25 to get your operating agreement notarized](https://www.notarize.com/pricing)
-    1. (Optional) $10-12 per month for a mailbox with [Anytime Mailbox](https://www.anytimemailbox.com/?affkey=u724f61p) or [iPostal1](https://ipostal1.com/?ref=2841) to shield your home address
+    1. (Optional) $10-12 per month for a mailbox with [Anytime Mailbox](https://www.anytimemailbox.com/?affkey=u724f61p) to shield your home address
 1. You can do all the taxes with your standard income taxes:
     > If a single-member LLC does not elect to be treated as a corporation, the LLC is a "disregarded entity," and the LLC's activities should be reflected on its owner's federal tax return.
     
@@ -63,4 +63,4 @@ Given my tax jurisdiction and wealth, all of my startup fees were covered by the
 Now given that there is no public market for these LLC assets, [gifting membership interests to your heirs while you still are the LLC manager means hefty asset write-downs](https://www.investopedia.com/articles/personal-finance/071514/using-llc-estate-planning.asp#how-a-family-llc-works).
 
 ## Going deeper
-Want to learn more? Want no business license fees and no income taxes? Check out my online [household tax optimization](https://learn.vraidsys.com/?memberpressproduct=household-tax-optimization) course for the inside scoop on Wyoming!
+Want to learn more? Want no business license fees and no income taxes? Check out my online [family wealth office](https://learn.vraidsys.com/?memberpressproduct=family-wealth-office) course for the inside scoop on Wyoming!
