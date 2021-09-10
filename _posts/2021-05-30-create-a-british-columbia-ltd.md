@@ -15,11 +15,12 @@ Canada, and more specifically the province of British Columbia is an excellent p
 - [Website subscriptions with articles that include text only, or text and still photos](https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/publications/pst-107-telecommunication-services.pdf) are not taxable sales to the province.
 - You pay no sales tax to the national government if you [make less than $30,000 a year in sales](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html).
 - There is a [15% corporate income tax levied by Canada](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html) and [12% corporate income tax levied by British Columbia](https://www2.gov.bc.ca/gov/content/taxes/income-taxes/corporate/tax-rates) for a combined rate of 27%; less than half that [if all of your controlling parties are natural-person Canadian residents](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/type-corporation.html#ccpc).
-- British Columbia is one of the few provinces which allow incorporators AND directors to be non-residents of Canada; BC also allows you to complete the whole process online, unlike Alberta.
+- British Columbia is one of the few provinces which allow incorporators AND directors to be non-residents of Canada; 
+Alberta and Nova Scotia will too, but there is no online self-serve portal with Alberta and Nova Scotia has [high annual renewal fees](https://beta.novascotia.ca/incorporate-limited-company).
 - If you are not a resident of Canada, by starting a business, investing in it, and permanently employing a Canadian resident you can be eligible for [express entrepreneur immigration](https://www.welcomebc.ca/Immigrate-to-B-C/BC-PNP-Entrepreneur-Immigration/Program-Requirements).
 
 ## Get a British Columbia address
-For ~15CAD/month you can get an address in British Columbia with [Anytime Mailbox](https://www.anytimemailbox.com/?affkey=u724f61p) or [iPostal1](https://ipostal1.com/?ref=2841), which you can remotely manage.
+For ~15CAD/month you can get an address in British Columbia with [Anytime Mailbox](https://www.anytimemailbox.com/?affkey=u724f61p), which you can remotely manage.
 This will allow you to satisfy the requirement to have an office and mailing address within British Columbia.
 I chose [Save On Cartridge Plus in Kelowna](https://www.anytimemailbox.com/s/kelowna-7-2070-harvey-ave).
 
@@ -60,5 +61,5 @@ Or with a unanimous resolution of all the voting shareholders (you), can waive t
 <sup>[1](https://www.barbeau.co/uncategorized/annual-requirements-british-columbia-companies/)</sup>
 - An auditor must be appointed, unless by unanimous resolution this requirement is waived.
 <sup>[1](https://www.barbeau.co/uncategorized/annual-requirements-british-columbia-companies/)</sup>
-- File an [_Annual Report_ with BC Registries](https://www.corporateonline.gov.bc.ca/WebHelp/overview_annbc.htm) within 2 months of your incorporation date.
+- File an [_Annual Report_ with BC Registries](https://www.corporateonline.gov.bc.ca/WebHelp/overview_annbc.htm) within 2 months of your incorporation date anniversary.
 - File your [T2 and tax calculation paperwork](https://www2.gov.bc.ca/gov/content/taxes/income-taxes/corporate) with the Canada Revenue Agency.
