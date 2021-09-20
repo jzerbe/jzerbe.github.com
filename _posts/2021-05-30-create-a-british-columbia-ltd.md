@@ -46,8 +46,8 @@ use the [Name Request tool](https://www.bcregistry.ca/namerequest) to reserve a 
 This will take a few days to process before you can proceed to the next step.
 1. Go through the [BC Registry Services wizard to incorporate](https://www.bcregistry.ca/corporateonline/colin/accesstransaction/menu.do?action=overview&filingTypeCode=ICORP&from=main) for [$350](https://www.corporateonline.gov.bc.ca/WebHelp/fee_schedule.htm).
 1. Add your name and the business name to the
-[example incorporation agreement](https://docs.google.com/document/d/1l74oMfGV_72tJrNJYLSiob1qBytFMSGi8iskC4LtfzI/edit)
-and the [example incorporation articles](https://docs.google.com/document/d/1rdB9L063myA1VCV0PUwGPBvknw-raHccaBmZ2Ru_oFE/edit)
+[example incorporation agreement](https://docs.google.com/document/d/13jNkoPxQMEiZ3nB6cJXhBW5TZ5WOgDQL/edit?usp=sharing&ouid=110394001672691300151&rtpof=true&sd=true)
+and the [example incorporation articles](https://docs.google.com/document/d/1kyM2Te5LL4Kpj8ZJiqcXJdxXGxxcdXBD/edit?usp=sharing&ouid=110394001672691300151&rtpof=true&sd=true)
 ... don't forget page 18's proxy designation.
 Convert these to PDF and have them [notarized online with Notary Pro](https://www.notarypro.ca/notarize-online/book-now/).
 

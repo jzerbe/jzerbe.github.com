@@ -64,8 +64,6 @@ and you will get quizzical looks sometimes when telling waitstaff that no they w
 [The forecast](https://www.snow-forecast.com/resorts/Valle-Nevado/6day/mid) called for what I would consider spring conditions the whole time.
 If you are up to the task of doing a bit of navigating between sharks of igneous rock, the off trail areas are pretty glorious since no one seems to even go for a thirty second walk.
 
-![](https://lh3.googleusercontent.com/M8VBQHjO7d_WbvNVHEAZRQtOzqHkCGNic_q3_iSfeBpyPe5CW8AImKjws54OLjGKPkiKtn9s6H6aWuDX8qwkcq0Svk2JC0O5jFrmbqYCQRfqJ1XiQYmCaVqRkmYnCxa055rY_TcDNA=w3360-h870-no)
-
 Blowing some money at [Restaurant Sur](https://vallenevado.com/en/activities/dining/restaurant-sur/) and [Monte Bianco Ristorante](https://vallenevado.com/en/activities/dining/monte-bianco-ristorante/) was definitely worth it. 
 
 ### Concón
@@ -73,8 +71,6 @@ Small bills for faster toll ways from Santiago to Valparaíso come in handy.
 
 Cheap off-season resort town digs at the [Costa Horizonte 2](https://goo.gl/maps/upXC7c2NQN5WXzqm9).
 Very Miami style. Many new buildings going up. Many stray dogs.
-
-![](https://lh3.googleusercontent.com/GMLepkkUQBWyT5LxtnDyypMD7AG_6MuD7_EErqCK4d26F4LTL77Q4hHx0pWuE4OTeX1H5bSEMe2m6Mnbmq1zOqLQaapFhnDSOM7dCged4rcPb9zQb4LBCjx3t5DynFVoP9Gsq7K2WA=w2528-h1896-no)
 
 Good seafood dinner at [La Picá de Martín](https://goo.gl/maps/817zHCJyFuv1pPzA7). YAASSSS paella.
 Best wine I have had in a long time we picked up at [Minimarket Gabycam](https://goo.gl/maps/DNoK8sbyjjGVeiaF6) walking back.
@@ -86,8 +82,6 @@ The airport has officially licensed airport taxis and then a bunch of other guys
 
 Walked from [our place to the city park](https://goo.gl/maps/eXGHtavq3xE1qWQaA) and up the West side to the top, which has a Catholic shrine and old casino.
 It's all free and great views.
-
-![](https://lh3.googleusercontent.com/MAgzWKzaLoclPPLBOC8knaLpklKLjqcs_rfoZ6i0U7p5hSqpth_3yLS-EZZSYemQEWHa2VkyQ6-vZtYiU-U19ggsVl2YSgRxfHdPSRFyMvSAti6IOTmevzmkW5IwjR0_w_MM_uPn9w=w1011-h758-no)
 
 Barrio Bellavista on the South end of the park has some fun looking clubs and cool street art.
 Officially Uber is not allowed in Chile? but they still operate under the radar; don't ask/don't tell/don't get caught kind of thing.
@@ -108,8 +102,6 @@ I want to say entry was a few hundred Colones per person. Nice full-suspension r
 Good steady climb up and fast descent down the North section of <https://www.mtbproject.com/trail/7022527/hacienda-guachipelin>,
 while the South section is rough rolling; we cut out a chunk of the South section. Sweet waterfall at the park boundary at the North end of the ride ... bring your trunks!
 Authentic Costa Rican lunch at [Restaurante Los Comales](https://goo.gl/maps/rFo3aBewvw4QRUGV8) and riding out an afternoon rainstorm at [Cafeto del Monte](https://goo.gl/maps/EWgRoiRsn2bTnd2o8) were the best decisions.
-
-![](https://lh3.googleusercontent.com/hWM2frzMCXQ_qLIhO7h5MnhT2rMZ1C78IosQZaSU6XM7eq79RtVI2klGBdmW0gRBo3rt0uPNV8zmc7MCOj5MK4hdoNJTsoM8ZzrRH8lmeqSH80Ou2TJULkrLUvxhxNoxKgShaPXFmg=w1422-h1896-no)
 
 Highly recommend renting sea kayaks from [Costa Rica Sailing Center](https://goo.gl/maps/sERh8NLfa1zWJ42v9) and <https://www.pacificcoastdivecenter.com/snorkel-tour/>.
 

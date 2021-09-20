@@ -37,10 +37,6 @@ bombing snow? We got tremendously lucky and each day there was 1-2 feet of fresh
 
 Usually it is best to look at the mid-mountain report and just stay high: <https://www.snow-forecast.com/resorts/Whistler-Blackcomb/6day/mid>
 
-The top of the resort, 7th Heaven:
-
-{% include google_drive_image_embed.html id="1GOZxORqw8kO2zUlnt-vIS5DLT3urDO8lKg" %}
-
 ### Getting there
 United flies direct Denver to Vancouver and they have a great
 [Sports equipment](https://www.united.com/web/en-us/content/travel/baggage/sports.aspx?POS=US) policy for
@@ -61,9 +57,6 @@ Ended up refueling my rental at the [closest Chevron](https://goo.gl/maps/4mgEtM
 ### Lodging
 Booked a spot 4 months in advance on the Blackcomb side and it was absolutely worth it.
 [Powderhorn- Luxury 4 bedroom close to ski runs](https://www.airbnb.com/rooms/9393723).
-Love that view from the rooftop hot tub!
-
-{% include google_drive_image_embed.html id="1X1nVtpSgTW7CQAPW3fjtVEUNQPsRR3WymA" %}
 
 Walking distance to food and lifts.
 
