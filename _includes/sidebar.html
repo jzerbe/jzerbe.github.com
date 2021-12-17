@@ -1,23 +1,16 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <img src="https://drive.google.com/uc?export=download&id=1xKh8Cf9LqrhxWiPoOd6GPafz2Zx-MWiU" />
-      <h1>
+      <img src="https://drive.google.com/uc?export=download&id=1HkKflEpcS3YbMEpYyx_7ZvkejXxlMS0D" />
+      <h3>
         <a href="{{ site.url }}">
           {{ site.title }}
         </a>
-      </h1>
+      </h3>
       <p class="lead">{{ site.description }}</p>
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.url %} active{% endif %}" href="{{ site.url }}">Home</a>
-
-      {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
-
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
         {% if node.title != null %}
