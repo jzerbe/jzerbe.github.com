@@ -13,7 +13,7 @@ This was another _substitute trail_ over the weekend. This trail was still
 pretty good, but not quite as much oomph as what we had planned to do:
 [San Jacinto Peak via Palm Springs Tram](http://www.localhikes.com/Hikes/SanJacintoPeak_4472.asp).
 Did not do my due dillegence on this front: called up the night before to find
-out that from Long Valley it would be hardpack on trail and post-holing off trail.
+out that from Long Valley it would be hardpack snow on trail and post-holing off trail.
 
 In any case, we encountered some drifts at the _Saddle Junction_
 (with the Pacific Crest Trail) and above, but still very passable with hiking boots.

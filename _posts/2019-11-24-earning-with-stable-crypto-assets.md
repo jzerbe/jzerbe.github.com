@@ -17,7 +17,7 @@ For my risk tolerance profile, interest bearing crypto stable coin accounts are 
 
 ## Beginner crash course
 Want to get up to speed fast on what cryptocurrency is and is not? How to legally and safely buy, move, and sell cryptocurrency?
-Check out my online [Pragmatic Cryptocurrency](https://learn.vraidsys.com/?memberpressproduct=pragmatic-cryptocurrency)
+Check out my online [Pragmatic Cryptocurrency](https://learn.vraidsys.com/?course=pragmatic-cryptocurrency)
 course to get the step by step details to start earning 24 times more than stashing your money with most banks. 
 
 ## What is a stable coin?

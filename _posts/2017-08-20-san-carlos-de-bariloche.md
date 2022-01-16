@@ -20,9 +20,6 @@ Excellent food. Wonderful hospitality.
 If you feel at home in a ski town and speak a little Spanish, you'll fit in great here.
 
 ### The snowboarding destination
-I first heard about Bariloche from a coworker as was retelling stories from his 2nd or 3rd retirement.
-I just had to get some more snow action when the 14ers of Colorado are snow free!
-
 The [Catedral Alta Patagonia](https://www.catedralaltapatagonia.com/) resort is a 20-30 minute drive from the town
 of [San Carlos de Bariloche](https://goo.gl/maps/d1yG2A4cdGk); 40 with morning rush-hour traffic.
 This is probably my favorite mix of big-mountain snowboarding, as the
@@ -38,7 +35,7 @@ we hiked to our lines. Ski patrol is surprisingly cool with you hiking to just a
 on the mountain and even some questionable terrain. On the opposite extreme,
 the lifts will stop and you will get cursed at for having the lift bar up.
 
-On a powder day, the Brazilians (gapers of South America) stick to the groomed runs,
+On a powder day, most everyone will stick to the groomed runs,
 and you can ski the same line 10 feet from the groomer every 30 minutes and make fresh tracks for most of the day.
 If you want to do a bit more work for absolutely breathtaking chutes, find them
 [skiers left of the Nubes lift](https://www.catedralaltapatagonia.com/mapa_pistas.php).

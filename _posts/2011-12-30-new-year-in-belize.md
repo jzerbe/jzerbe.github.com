@@ -33,7 +33,7 @@ and we ended up renting something close to a Land Cruiser, making it easier to t
 ### Mountains
 You can [stay at the Belize Zoo](http://www.belizezoo.org/accommodation/accommodations.html) and get a night tour!
 
-Right before the rounabout to Belmopan, there is [Guanacaste National Park](https://goo.gl/maps/QQDwGgNMzpS2) on
+Right before the roundabout to Belmopan, there is [Guanacaste National Park](https://goo.gl/maps/QQDwGgNMzpS2) on
 the North side of the _Western Highway_; for a few hours of rainforest hiking.
 
 Grab groceries in Belmopan, at a place like [The Mall](https://goo.gl/maps/ffNdQDC3Bvx),
@@ -46,7 +46,7 @@ Rolling through [Spanish Lookout](http://www.spanishlookout.bz/) you would think
 palm trees. Ice cream at [Western Dairies](https://goo.gl/maps/kZ9aEonmNGJ2). 
 
 Pay a few dollars to check out the [Cahal Pech Archaeological Reserve](https://goo.gl/maps/8mN1t78biD32).
-It sits on one of the hills in San Ignacio has a great interpretive museum and outdoor Mayan excavations.
+It sits on one of the hills in San Ignacio and has a great interpretive museum and outdoor Mayan excavations.
 
 We wondered around the ridiculous [Blancaneaux Lodge](https://goo.gl/maps/XbwnVjgkr3x) property one morning, down to the creek gorge,
 and ate at the only [on-site restaurant](https://www.thefamilycoppolahideaways.com/en/blancaneaux-lodge/dining/montagna-ristorante)

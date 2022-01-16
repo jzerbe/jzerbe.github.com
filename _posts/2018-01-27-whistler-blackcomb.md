@@ -47,7 +47,7 @@ _Ski and snowboard equipment_:
 > If the combined weight of the ski bag and boot bag is over 50 pounds (23 kg), applicable overweight charges apply.
 
 In reality as long as you have a snowboard bag that is not over 50 pounds, they don't really care.
-On top of that, I run the [United MileagePlus Explorer Business Card](https://creditcards.chase.com/small-business-credit-cards/united-mileageplus-explorer-business),
+On top of that, I run the [United MileagePlus Explorer card](https://www.referyourchasecard.com/215n/MXIDKJM0TW),
 so I have not had to pay checked bag fees ... ever.
 
 If you have a large enough crew, get a van rental, like <https://whistlervan.com/collections/private-shuttle-for-group-booking>.
