@@ -10,7 +10,7 @@ tags:
 - Databricks
 - Snowflake
 - use cases
-published: false
+published: true
 ---
 In most enterprise organizations, I see a need to have Databricks and Snowflake coexist for different
 users and workloads. With Immuta, we can build on top of the existing governance control primitives
