@@ -11,8 +11,11 @@ tags:
 published: true
 ---
 In an economic environment where [real wages have stagnated](https://www.pewresearch.org/fact-tank/2018/08/07/for-most-us-workers-real-wages-have-barely-budged-for-decades/)
-and regular employees are paying a [larger proportion of federal taxes](https://www.cbpp.org/research/federal-tax/policy-basics-where-do-federal-tax-revenues-come-from)
-than [shell companies for the rich](https://www.icij.org/investigations/panama-papers/), why not play the same games?
+and regular employees are paying a [larger proportion of national taxes](https://www.cbpp.org/research/federal-tax/policy-basics-where-do-federal-tax-revenues-come-from)
+than [shell companies for the rich](https://www.icij.org/investigations/panama-papers/),
+why not play the same games until the legislation catches up?
+By no means do I support an unfair tax system, just trying to let the common people take advantage of the loopholes,
+while we try to reverse the [Citizen United](https://www.brennancenter.org/our-work/research-reports/citizens-united-explained) evils of our past.
 
 ## Creating a new legal entity
 This article focuses on the Limited Liability Company,
