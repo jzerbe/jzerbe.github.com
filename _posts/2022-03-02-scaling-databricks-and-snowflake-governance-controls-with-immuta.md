@@ -56,7 +56,7 @@ solutions with Snowflake as part of the
 [Data Governance Accelerated Program](https://www.businesswire.com/news/home/20211116006058/en/Immuta-Joins-Snowflake%E2%80%99s-Data-Governance-Accelerated-Program).
 
 ### Beyond GRANTs and SQL
-If you are in one ecosystem of the other,
+If you are in one ecosystem or the other,
 doing these sorts of things might be possible for a small data organization.
 The trouble comes when you get into data mesh architectures with geographically dispersed domain/experts.
 Every domain should be able to onboard their own data. Every domain knows what policies _should_ be
