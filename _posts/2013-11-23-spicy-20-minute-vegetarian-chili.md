@@ -1,12 +1,12 @@
 ---
+custom_order: 4
 layout: post
-title: spicy 20 minute vegetarian chili
+published: true
 tags:
 - spicy
 - vegetarian
 - chili
-- food
-published: true
+title: spicy 20 minute vegetarian chili
 ---
 The original back of the can base recipe was all frozen or canned ingredients.
 I added in some quick chopping and dicing for a more interesting flavor and

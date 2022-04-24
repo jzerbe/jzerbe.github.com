@@ -1,6 +1,7 @@
 ---
+custom_order: 3
 layout: post
-title: chill Colorado summer splitboarding
+published: true
 tags:
 - Berthoud Pass
 - Guanella Pass
@@ -9,8 +10,7 @@ tags:
 - mountain
 - snowboarding
 - splitboarding
-- travel
-published: true
+title: chill Colorado summer splitboarding
 ---
 ### West Berthoud Pass
 {% include gaiagps_embed.html mid="tK2CEu42j1zW7YwLgfMaMXkm" %}

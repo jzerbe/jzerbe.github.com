@@ -1,8 +1,9 @@
 ---
+custom_order: 3
 layout: post
-title: New Year in Belize
 lat: 17.2565865
 lon: -88.7732426
+published: true
 tags:
 - Belize
 - Belmopan
@@ -12,7 +13,7 @@ tags:
 - mountain
 - beach
 - travel
-published: true
+title: New Year in Belize
 ---
 Full disclosure, I am writing this mostly from memory (on Sept 3 2018) as I explore returning to Belize.
 Belize is easy in that the official language is English and if you know some Spanish too, you are golden.

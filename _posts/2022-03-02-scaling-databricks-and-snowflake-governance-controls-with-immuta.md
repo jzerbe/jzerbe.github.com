@@ -1,6 +1,7 @@
 ---
+custom_order: 1
 layout: post
-title: scaling Databricks and Snowflake governance controls with Immuta
+published: true
 tags:
 - data governance
 - data access control
@@ -11,8 +12,7 @@ tags:
 - Databricks
 - Snowflake
 - use cases
-- tech
-published: true
+title: scaling Databricks and Snowflake governance controls with Immuta
 ---
 In most enterprise organizations, I see a need to have Databricks and Snowflake coexist for different
 users and workloads. With Immuta, we can build on top of the existing governance control primitives

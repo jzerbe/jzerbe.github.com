@@ -1,13 +1,13 @@
 ---
+custom_order: 1
 layout: post
-title: efficient Apache Spark fuzzy matching with inner JOIN
+published: true
 tags:
 - Apache Spark
 - fuzzy matching
 - string distance
 - inner JOIN
-- tech
-published: true
+title: efficient Apache Spark fuzzy matching with inner JOIN
 ---
 I have a dataset in a Spark 1.6.3 environment, represented as a
 [`JavaRDD<Row>`](https://spark.apache.org/docs/1.6.3/api/java/org/apache/spark/api/java/JavaRDD.html),

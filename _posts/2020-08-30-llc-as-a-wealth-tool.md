@@ -1,15 +1,15 @@
 ---
+custom_order: 2
 layout: post
-title: Limited Liability Companies as a wealth management tool (Colorado)
+published: true
 tags:
-- Colorado
 - Limited Liability Company
 - LLC
 - estate planning
 - wealth management
 - US tax policy manipulation
-- finance
-published: true
+- Colorado
+title: Limited Liability Companies as a wealth management tool
 ---
 In an economic environment where [real wages have stagnated](https://www.pewresearch.org/fact-tank/2018/08/07/for-most-us-workers-real-wages-have-barely-budged-for-decades/)
 and regular employees are paying a [larger proportion of national taxes](https://www.cbpp.org/research/federal-tax/policy-basics-where-do-federal-tax-revenues-come-from)
@@ -28,11 +28,15 @@ which is the easiest to do the paperwork for and [usually the best option for ta
     1. $150-300 for an hour or two of a lawyer's time to review an [example Colorado single member Operating Agreement](https://learn.vraidsys.com/?memberpressproduct=household-tax-optimization)
     1. [$25 to get your operating agreement notarized](https://www.notarize.com/pricing)
     1. (Optional) $10-12 per month for a mailbox with [Anytime Mailbox](https://www.anytimemailbox.com/?affkey=u724f61p) to shield your home address
-1. You can do all the taxes with your standard income taxes:
+2. You can do all the taxes with your standard income taxes:
     > If a single-member LLC does not elect to be treated as a corporation, the LLC is a "disregarded entity," and the LLC's activities should be reflected on its owner's federal tax return.
     
     <https://www.irs.gov/businesses/small-businesses-self-employed/single-member-limited-liability-companies>
-1. Upkeep isn't terrible:
+
+   If you maintain residence in a high tax jurisdiction, you will need to get more creative here,
+   as the taxable income from your LLC will be taxed at the rate of your home residence; 
+   more on that in my online [family wealth office](https://learn.vraidsys.com/?memberpressproduct=family-wealth-office) course.
+4. Upkeep isn't terrible:
     1. File a [$10 annual report](https://www.sos.state.co.us/pubs/business/FAQs/reports.html)
     1. [Apply for an EIN](https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online) and maintain a bank account separate from your personal finances. I really like the [Fidelity Account for Businesses](https://www.fidelity.com/open-account/fidelity-account-for-businesses), unfortunately they (and American Express) crack down on [physical addresses provided by a Commercial Mail Receiving Agent](https://help.virtualpostmail.com/article/224-2019-02-21-proof-of-address-for-business-bank-accounts) ... while other banks will let you use a virtual mail provider for your physical address ... more on why that is important later. Be sure to [check if your address will be flagged as a Commercial Mail Receiving Agent](https://tools.usps.com/zip-code-lookup.htm?byaddress) if using a bank that cares.
     1. Setup quarterly electronic estimated tax payments for the [US National Goverment](https://www.forbes.com/sites/ashleaebeling/2014/04/08/the-easy-way-to-make-estimated-tax-payments/) and [your formation state](https://www.colorado.gov/pacific/tax/business-income-estimated-payments) if you have no other way to do income tax withholding (like through a W-2 employer).

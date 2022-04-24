@@ -1,8 +1,9 @@
 ---
+custom_order: 3
 layout: post
-title: San Carlos de Bariloche - snowboarding in Argentina
 lat: -41.1384527
 lon: -71.318327
+published: true
 tags:
 - San Carlos de Bariloche
 - Rio Negro
@@ -10,8 +11,7 @@ tags:
 - mountain
 - lake
 - snowboarding
-- travel
-published: true
+title: San Carlos de Bariloche - snowboarding in Argentina
 ---
 Trip notes from spending a week snowboarding in South America!
 I went with two other folks and ended up meeting some fun-loving Americans along the way.

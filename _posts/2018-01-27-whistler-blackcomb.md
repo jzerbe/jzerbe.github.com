@@ -1,8 +1,9 @@
 ---
+custom_order: 3
 layout: post
-title: Whistler Blackcomb - powder week in British Columbia
 lat: 50.1166495
 lon: -122.9421748
+published: true
 tags:
 - Whistler
 - Blackcomb
@@ -10,8 +11,7 @@ tags:
 - Canada
 - mountain
 - snowboarding
-- travel
-published: true
+title: Whistler Blackcomb - powder week in British Columbia
 ---
 Whistler Blackcomb is a whole lot of mountain,
 as [Powderhounds](http://www.powderhounds.com/Canada/Whistler-Blackcomb/Ski-Resort.aspx) rightly points out:

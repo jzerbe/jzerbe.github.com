@@ -1,11 +1,12 @@
 ---
+custom_order: 4
 layout: post
-title: potato pancakes
+published: true
 tags:
 - potato
 - pancakes
 - food
-published: true
+title: potato pancakes
 ---
 Fried potato and onion? Hard to go wrong with that. I like to serve with
 cheese, hot salsa, and applesauce. Makes 6-8 pancakes.

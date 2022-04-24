@@ -1,12 +1,13 @@
 ---
+custom_order: 5
 layout: post
-title: Spring MVC 3 enable Cross Origin Resource Sharing
+published: true
 tags:
 - Spring
 - MVC
 - CORS
 - tech
-published: true
+title: Spring MVC 3 enable Cross Origin Resource Sharing
 ---
 I am using a Spring MVC 3 annontation driven setup, and I needed to enable
 Cross-Origin Resource Sharing. Relevant reading:

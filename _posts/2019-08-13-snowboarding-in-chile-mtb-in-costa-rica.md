@@ -1,8 +1,9 @@
 ---
-layout: post
-title: snowboarding in Chile and mountain biking in Costa Rica
+custom_order: 3
 lat: -33.358971
+layout: post
 lon: -70.250228
+published: true
 tags:
 - Santiago
 - Valle Nevado
@@ -15,8 +16,7 @@ tags:
 - mountain
 - snowboarding
 - biking
-- travel
-published: true
+title: snowboarding in Chile and mountain biking in Costa Rica
 ---
 This crazy idea started out when I noticed that [Valle Nevado joined the Ikon Pass](https://vallenevado.com/en/ikon-pass/)
 for the 2018-2019 season. Of all the international additions, this seemed like the most reasonable, but to make it

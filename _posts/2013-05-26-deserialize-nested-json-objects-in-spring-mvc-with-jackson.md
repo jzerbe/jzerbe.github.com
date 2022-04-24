@@ -1,12 +1,13 @@
 ---
+custom_order: 5
 layout: post
-title: deserialize nested JSON objects in Spring MVC with Jackson
+published: true
 tags:
 - JSON
 - Jackson
 - Java
 - tech
-published: true
+title: deserialize nested JSON objects in Spring MVC with Jackson
 ---
 **NOTE**: I had to use [Jackson 2.2](http://repo1.maven.org/maven2/com/fasterxml/jackson/core/) to get this working.
 [Jackson 1.9](http://repository.codehaus.org/org/codehaus/jackson/) did not cut it.

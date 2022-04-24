@@ -1,11 +1,11 @@
 ---
+custom_order: 4
 layout: post
-title: Dad's pancake and waffle mix
+published: true
 tags:
 - pancake
 - waffle
-- food
-published: true
+title: Dad's pancake and waffle mix
 ---
 I picked up this recipe from my Dad, who I am pretty sure got it from his mom.
 In any case, it works for cooking into pancakes or waffles (using a waffle maker).
