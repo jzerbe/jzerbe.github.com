@@ -8,6 +8,7 @@ tags:
 - estate planning
 - wealth management
 - US tax policy manipulation
+- finance
 published: true
 ---
 In an economic environment where [real wages have stagnated](https://www.pewresearch.org/fact-tank/2018/08/07/for-most-us-workers-real-wages-have-barely-budged-for-decades/)

@@ -7,6 +7,7 @@ tags:
 - California
 - mountain
 - trails
+- travel
 published: true
 ---
 This was another _substitute trail_ over the weekend. This trail was still

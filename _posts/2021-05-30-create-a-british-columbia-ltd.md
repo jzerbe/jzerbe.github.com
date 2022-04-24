@@ -7,6 +7,7 @@ tags:
 - international business
 - wealth management
 - Canada tax policy
+- finance
 published: true
 ---
 ## Why British Columbia?

@@ -10,7 +10,7 @@ tags:
 - mountain
 - lake
 - snowboarding
-- travels
+- travel
 published: true
 ---
 Trip notes from spending a week snowboarding in South America!

@@ -5,7 +5,7 @@ tags:
 - spicy
 - vegetarian
 - chili
-- eats
+- food
 published: true
 ---
 The original back of the can base recipe was all frozen or canned ingredients.

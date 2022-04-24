@@ -7,7 +7,7 @@ tags:
 - slaw
 - spicy
 - summer
-- eats
+- food
 published: true
 ---
 ### calabacitas

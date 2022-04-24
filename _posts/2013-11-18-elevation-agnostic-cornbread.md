@@ -3,7 +3,7 @@ layout: post
 title: elevation agnostic cornbread
 tags:
 - cornbread
-- eats
+- food
 published: true
 ---
 This cornbread recipe works very well ~1000ft or ~6000ft. As an added bonus, it is resilient against old ovens.

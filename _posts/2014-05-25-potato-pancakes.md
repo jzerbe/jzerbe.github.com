@@ -4,7 +4,7 @@ title: potato pancakes
 tags:
 - potato
 - pancakes
-- eats
+- food
 published: true
 ---
 Fried potato and onion? Hard to go wrong with that. I like to serve with

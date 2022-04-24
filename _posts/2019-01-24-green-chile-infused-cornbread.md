@@ -4,7 +4,7 @@ title: green chile infused cornbread
 tags:
 - green chile
 - cornbread
-- eats
+- food
 published: true
 ---
 This is an extension of my previously published [elevation-agnostic-cornbread](http://jzerbe.com/2013/11/elevation-agnostic-cornbread/).

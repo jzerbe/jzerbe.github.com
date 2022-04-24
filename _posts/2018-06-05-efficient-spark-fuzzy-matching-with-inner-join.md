@@ -6,6 +6,7 @@ tags:
 - fuzzy matching
 - string distance
 - inner JOIN
+- tech
 published: true
 ---
 I have a dataset in a Spark 1.6.3 environment, represented as a
@@ -30,29 +31,31 @@ Guess what? It works!
 
 The following is the meat of the important pre-filtering step done with an exact inner JOIN:
 
-    DataFrame leftFeatureDF = featureDF;
-    DataFrame rightFeatureDF = featureDF;
-    for (String columnName : allInterestingColumnNames) {
-      leftFeatureDF = leftFeatureDF.withColumnRenamed(columnName, columnName.concat("-left"));
-      rightFeatureDF = rightFeatureDF.withColumnRenamed(columnName, columnName.concat("-right"));
-    }
-    JavaRDD<Row> rowJavaRDD = null;
-    for (String columnName : allInterestingColumnNames) {
-      final String leftColName = columnName.concat("-left");
-      final String rightColName = columnName.concat("-right");
+```java
+DataFrame leftFeatureDF = featureDF;
+DataFrame rightFeatureDF = featureDF;
+for (String columnName : allInterestingColumnNames) {
+  leftFeatureDF = leftFeatureDF.withColumnRenamed(columnName, columnName.concat("-left"));
+  rightFeatureDF = rightFeatureDF.withColumnRenamed(columnName, columnName.concat("-right"));
+}
+JavaRDD<Row> rowJavaRDD = null;
+for (String columnName : allInterestingColumnNames) {
+  final String leftColName = columnName.concat("-left");
+  final String rightColName = columnName.concat("-right");
 
-      final DataFrame joinedFeatureDF = leftFeatureDF.join(
-          rightFeatureDF, leftFeatureDF.col(leftColName).equalTo(rightFeatureDF.col(rightColName)), "inner"
-      );
+  final DataFrame joinedFeatureDF = leftFeatureDF.join(
+      rightFeatureDF, leftFeatureDF.col(leftColName).equalTo(rightFeatureDF.col(rightColName)), "inner"
+  );
 
-      if (rowJavaRDD == null) {
-        rowJavaRDD = joinedFeatureDF.toJavaRDD();
-      } else {
-        rowJavaRDD = rowJavaRDD.union(joinedFeatureDF.toJavaRDD()).distinct();
-      }
-    }
+  if (rowJavaRDD == null) {
+    rowJavaRDD = joinedFeatureDF.toJavaRDD();
+  } else {
+    rowJavaRDD = rowJavaRDD.union(joinedFeatureDF.toJavaRDD()).distinct();
+  }
+}
 
-    return rowJavaRDD;
+return rowJavaRDD;
+```
 
 The `JavaRDD<Row>` you are left with only contains rows that have exact matches on at least one column of data.
 At this point it is possible to score the `N^2/K` sized dataset (where `K` is very large),

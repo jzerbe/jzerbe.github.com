@@ -4,12 +4,14 @@ title: scaling Databricks and Snowflake governance controls with Immuta
 tags:
 - data governance
 - data access control
+- data security
 - business process
 - scaling
 - Immuta
 - Databricks
 - Snowflake
 - use cases
+- tech
 published: true
 ---
 In most enterprise organizations, I see a need to have Databricks and Snowflake coexist for different
@@ -33,8 +35,10 @@ with Immuta's advisement,
 which will allow DBAs and lakehouse administrators the ability to write `GRANT` statements
 to manage column and row access, based on tagging done in Databricks. Stuff like:
 
-    GRANT SELECT ON events TO data_engineering;
-    GRANT SELECT(timestamp, location) ON events TO analysts;
+```sql
+GRANT SELECT ON events TO data_engineering;
+GRANT SELECT(timestamp, location) ON events TO analysts;
+ ```
 
 ### Snowflake controls
 Today, Snowflake supports conditional masking of both
@@ -42,13 +46,15 @@ Today, Snowflake supports conditional masking of both
 [rows](https://docs.snowflake.com/en/user-guide/security-row-intro.html#apply-a-row-access-policy-to-a-table-or-view)
 on tables and views. To create a column masking policy for social insurance/security numbers:
 
-    create or replace masking policy social_mask as (val string) returns string ->
-        case
-        when current_role() in ('HR') then val
-        else 'REDACTED BY POLICY'
-        end;
+```sql
+create or replace masking policy social_mask as (val string) returns string ->
+    case
+    when current_role() in ('HR') then val
+    else 'REDACTED BY POLICY'
+    end;
 
-    create or replace table employee_info (social_number string masking policy social_mask) using (social_number, visibility);
+create or replace table employee_info (social_number string masking policy social_mask) using (social_number, visibility);
+```
 
 We will continue to see advances in platform support for data governance controls.
 In addition to being a Snowflake Premier partner, Immuta will continue to jointly develop data governance
@@ -86,17 +92,21 @@ Be sure to add some members to the new data source
 
 If using the automatic Snowflake native access pattern setup, the Snowflake role you utilize for setup will need:
 
-    GRANT CREATE DATABASE ON ACCOUN TO ROLE immuta_bootstrap_role WITH GRANT OPTION;
-    GRANT CREATE ROLE ON ACCOUNT TO ROLE immuta_bootstrap_role WITH GRANT OPTION;
-    GRANT CREATE USER ON ACCOUNT TO ROLE immuta_bootstrap_role WITH GRANT OPTION;
-    GRANT MANAGE GRANTS ON ACCOUNT TO ROLE immuta_bootstrap_role;
+```sql
+GRANT CREATE DATABASE ON ACCOUN TO ROLE immuta_bootstrap_role WITH GRANT OPTION;
+GRANT CREATE ROLE ON ACCOUNT TO ROLE immuta_bootstrap_role WITH GRANT OPTION;
+GRANT CREATE USER ON ACCOUNT TO ROLE immuta_bootstrap_role WITH GRANT OPTION;
+GRANT MANAGE GRANTS ON ACCOUNT TO ROLE immuta_bootstrap_role;
+```
 
 Immuta will create/manage all Snowflake conditional masking policies through the `PUBLIC` Snowflake role
 so you will need to opt the `PUBLIC` role into the db you want to enforce policy on through Immuta:
 
-    GRANT USAGE ON DATABASE DB_TO_ENFORCE_PERMS TO ROLE PUBLIC;
-    GRANT USAGE ON SCHEMA DB_TO_ENFORCE_PERMS.PUBLIC TO ROLE PUBLIC;
-    GRANT SELECT ON ALL TABLES IN SCHEMA DB_TO_ENFORCE_PERMS.PUBLIC TO ROLE PUBLIC;
+```sql
+GRANT USAGE ON DATABASE DB_TO_ENFORCE_PERMS TO ROLE PUBLIC;
+GRANT USAGE ON SCHEMA DB_TO_ENFORCE_PERMS.PUBLIC TO ROLE PUBLIC;
+GRANT SELECT ON ALL TABLES IN SCHEMA DB_TO_ENFORCE_PERMS.PUBLIC TO ROLE PUBLIC;
+```
 
 `GRANT`ing to `PUBLIC` is only required if you are using Snowflake native controls,
 which requires Snowflake Enterprise Edition.
@@ -120,27 +130,31 @@ _Spark_ and _Init Scripts_ sections of the _Advanced options_.
 
 Spark config:
 
-    spark.databricks.cluster.profile serverless
-    spark.databricks.isv.product Immuta
-    spark.driver.extraJavaOptions -Djava.security.manager=com.immuta.security.ImmutaSecurityManager -Dimmuta.security.manager.classes.config=file:///databricks/immuta/allowedCallingClasses.json -Dimmuta.spark.encryption.fpe.class=com.immuta.spark.encryption.ff1.ImmutaFF1Service
-    spark.databricks.pyspark.enableProcessIsolation true
-    spark.executor.extraJavaOptions -Djava.security.manager=com.immuta.security.ImmutaSecurityManager -Dimmuta.security.manager.classes.config=file:///databricks/immuta/allowedCallingClasses.json -Dimmuta.spark.encryption.fpe.class=com.immuta.spark.encryption.ff1.ImmutaFF1Service
-    spark.databricks.repl.allowedLanguages python,sql
+```sh
+spark.databricks.cluster.profile serverless
+spark.databricks.isv.product Immuta
+spark.driver.extraJavaOptions -Djava.security.manager=com.immuta.security.ImmutaSecurityManager -Dimmuta.security.manager.classes.config=file:///databricks/immuta/allowedCallingClasses.json -Dimmuta.spark.encryption.fpe.class=com.immuta.spark.encryption.ff1.ImmutaFF1Service
+spark.databricks.pyspark.enableProcessIsolation true
+spark.executor.extraJavaOptions -Djava.security.manager=com.immuta.security.ImmutaSecurityManager -Dimmuta.security.manager.classes.config=file:///databricks/immuta/allowedCallingClasses.json -Dimmuta.spark.encryption.fpe.class=com.immuta.spark.encryption.ff1.ImmutaFF1Service
+spark.databricks.repl.allowedLanguages python,sql
+```
 
 Environment variables:
 
-    IMMUTA_SPARK_ACL_ENABLED=true
-    IMMUTA_BASE_URL=https://myinstance.demo.immuta.com
-    IMMUTA_INIT_HTTPS_USER=immuta_init
-    IMMUTA_INIT_OBSCURED_COMMANDS_URI=https://myinstance.demo.immuta.com/databricks/artifacts/obscuredCommands.yaml
-    IMMUTA_SYSTEM_API_KEY=[IMMUTA HDFS KEY]
-    IMMUTA_USER_MAPPING_IAMID=bim
-    IMMUTA_INIT_TLS=false
-    IMMUTA_SPARK_DATABRICKS_ALLOW_NON_IMMUTA_WRITES=false
-    IMMUTA_INIT_ALLOWED_CALLING_CLASSES_URI=https://myinstance.demo.immuta.com/databricks/artifacts/allowedCallingClasses.json
-    IMMUTA_INIT_HTTPS_PASSWORD=[IMMUTA HDFS KEY]
-    IMMUTA_SPARK_DATABRICKS_ALLOW_NON_IMMUTA_READS=false
-    IMMUTA_INIT_JAR_URI=https://myinstance.demo.immuta.com/databricks/artifacts/immuta_plugin.jar
+```sh
+IMMUTA_SPARK_ACL_ENABLED=true
+IMMUTA_BASE_URL=https://myinstance.demo.immuta.com
+IMMUTA_INIT_HTTPS_USER=immuta_init
+IMMUTA_INIT_OBSCURED_COMMANDS_URI=https://myinstance.demo.immuta.com/databricks/artifacts/obscuredCommands.yaml
+IMMUTA_SYSTEM_API_KEY=[IMMUTA HDFS KEY]
+IMMUTA_USER_MAPPING_IAMID=bim
+IMMUTA_INIT_TLS=false
+IMMUTA_SPARK_DATABRICKS_ALLOW_NON_IMMUTA_WRITES=false
+IMMUTA_INIT_ALLOWED_CALLING_CLASSES_URI=https://myinstance.demo.immuta.com/databricks/artifacts/allowedCallingClasses.json
+IMMUTA_INIT_HTTPS_PASSWORD=[IMMUTA HDFS KEY]
+IMMUTA_SPARK_DATABRICKS_ALLOW_NON_IMMUTA_READS=false
+IMMUTA_INIT_JAR_URI=https://myinstance.demo.immuta.com/databricks/artifacts/immuta_plugin.jar
+```
 
 Init Scripts:
 

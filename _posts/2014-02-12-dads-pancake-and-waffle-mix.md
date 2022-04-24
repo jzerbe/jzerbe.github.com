@@ -4,7 +4,7 @@ title: Dad's pancake and waffle mix
 tags:
 - pancake
 - waffle
-- eats
+- food
 published: true
 ---
 I picked up this recipe from my Dad, who I am pretty sure got it from his mom.

@@ -9,7 +9,7 @@ tags:
 - mountain
 - snowboarding
 - splitboarding
-- travels
+- travel
 published: true
 ---
 ### West Berthoud Pass

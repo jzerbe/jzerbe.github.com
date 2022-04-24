@@ -15,7 +15,7 @@ tags:
 - mountain
 - snowboarding
 - biking
-- travels
+- travel
 published: true
 ---
 This crazy idea started out when I noticed that [Valle Nevado joined the Ikon Pass](https://vallenevado.com/en/ikon-pass/)

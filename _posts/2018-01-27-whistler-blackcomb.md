@@ -10,7 +10,7 @@ tags:
 - Canada
 - mountain
 - snowboarding
-- travels
+- travel
 published: true
 ---
 Whistler Blackcomb is a whole lot of mountain,

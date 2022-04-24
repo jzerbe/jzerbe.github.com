@@ -5,6 +5,7 @@ tags:
 - Spring
 - MVC
 - CORS
+- tech
 published: true
 ---
 I am using a Spring MVC 3 annontation driven setup, and I needed to enable
@@ -23,21 +24,22 @@ so that it dispatches HTTP OPTIONS requests to controllers instead of pushing ba
 default response that does not include the relevant _Access-Control-Allow_
 headers.
 
-    <servlet>
-        <servlet-name>spring-servlet</servlet-name>
-        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-        <init-param>
-            <param-name>dispatchOptionsRequest</param-name>
-            <param-value>true</param-value>
-        </init-param>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-    
-    <servlet-mapping>
-        <servlet-name>spring-servlet</servlet-name>
-        <url-pattern>/*</url-pattern>
-    </servlet-mapping>
+```xml
+<servlet>
+    <servlet-name>spring-servlet</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+        <param-name>dispatchOptionsRequest</param-name>
+        <param-value>true</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+</servlet>
 
+<servlet-mapping>
+    <servlet-name>spring-servlet</servlet-name>
+    <url-pattern>/*</url-pattern>
+</servlet-mapping>
+```
 
 ### create an OPTIONS RequestMapping
 
@@ -47,18 +49,19 @@ NOTE: In my experience, one cannot just use `"*"` for `Access-Control-Allow-Head
 so if your CORS request is going to be using any additional headers, be sure to list them
 where `my-cool-header` is. jQuery likes to use the `x-requested-with` header.
 
-    public class CorsCommon {
-        
-        @RequestMapping(method = RequestMethod.OPTIONS)
-        public void commonOptions(HttpServletResponse theHttpServletResponse) throws IOException {
-            theHttpServletResponse.addHeader("Access-Control-Allow-Headers", "origin, content-type, accept, x-requested-with, my-cool-header");
-            theHttpServletResponse.addHeader("Access-Control-Max-Age", "60"); // seconds to cache preflight request --> less OPTIONS traffic
-            theHttpServletResponse.addHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-            theHttpServletResponse.addHeader("Access-Control-Allow-Origin", "*");
-        }
+```java
+public class CorsCommon {
     
+    @RequestMapping(method = RequestMethod.OPTIONS)
+    public void commonOptions(HttpServletResponse theHttpServletResponse) throws IOException {
+        theHttpServletResponse.addHeader("Access-Control-Allow-Headers", "origin, content-type, accept, x-requested-with, my-cool-header");
+        theHttpServletResponse.addHeader("Access-Control-Max-Age", "60"); // seconds to cache preflight request --> less OPTIONS traffic
+        theHttpServletResponse.addHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+        theHttpServletResponse.addHeader("Access-Control-Allow-Origin", "*");
     }
 
+}
+```
 
 ### example files
 

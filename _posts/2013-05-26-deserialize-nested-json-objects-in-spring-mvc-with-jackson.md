@@ -5,6 +5,7 @@ tags:
 - JSON
 - Jackson
 - Java
+- tech
 published: true
 ---
 **NOTE**: I had to use [Jackson 2.2](http://repo1.maven.org/maven2/com/fasterxml/jackson/core/) to get this working.
@@ -20,8 +21,10 @@ needs to be serialized when the `VenueObj` is serialized.
 
 ### VenueController.java POST mapping - Controller
 
-    @RequestMapping(value = RequestMappingConstants.kApiVenues, method = RequestMethod.POST)
-    protected @ResponseBody long putVenue(@RequestBody final VenueObj theVenueObj, final Principal thePrincipal, final HttpServletResponse response);
+```java
+@RequestMapping(value = RequestMappingConstants.kApiVenues, method = RequestMethod.POST)
+protected @ResponseBody long putVenue(@RequestBody final VenueObj theVenueObj, final Principal thePrincipal, final HttpServletResponse response);
+```
 
 Note the annotation driven mapping. May need to wire up your
 [spring-dispatcher-servlet.xml](https://github.com/Vraid-Systems/spring-security-gwt-template/blob/master/WEB-INF/spring-dispatcher-servlet.xml).
@@ -29,18 +32,20 @@ Note the annotation driven mapping. May need to wire up your
 
 ### VenueObj.java constructor - JSON de/serialization and ORM
 
-    @JsonCreator
-    public VenueObj(@JsonProperty(VenueObj.NAME) final String theName,
-                    @JsonProperty(VenueObj.LOCATION) final LocationObj theLocation,
-                    @JsonProperty(VenueObj.PHONE) final String thePhone,
-                    @JsonProperty(VenueObj.WEB) final String theWeb) {
-        
-        this.name = theName;
-        this.location = theLocation;
-        this.phone = thePhone;
-        this.web = theWeb;
-        
-    }
+```java
+@JsonCreator
+public VenueObj(@JsonProperty(VenueObj.NAME) final String theName,
+                @JsonProperty(VenueObj.LOCATION) final LocationObj theLocation,
+                @JsonProperty(VenueObj.PHONE) final String thePhone,
+                @JsonProperty(VenueObj.WEB) final String theWeb) {
+    
+    this.name = theName;
+    this.location = theLocation;
+    this.phone = thePhone;
+    this.web = theWeb;
+    
+}
+```
 
 All other `public` constructors should be annotated with
 `@JsonIgnore` to prevent the Jackson process from attempting to
@@ -49,27 +54,29 @@ deserialize with the incorrect one and spitting up.
 
 ### LocationObj.java getters/setters - JSON de/serialization and ORM
 
-    @JsonProperty(LocationObj.LAT)
-    public float getLat() {
-        return this.lat;
-    }
-    
-    @JsonProperty(LocationObj.LON)
-    public float getLon() {
-        return this.lon;
-    }
-    
-    ...
-    
-    @JsonProperty(LocationObj.LAT)
-    public void setLat(final float theLat) {
-        this.lat = theLat;
-    }
-    
-    @JsonProperty(LocationObj.LON)
-    public void setLon(final float theLon) {
-        this.lon = theLon;
-    }
+```java
+@JsonProperty(LocationObj.LAT)
+public float getLat() {
+    return this.lat;
+}
+
+@JsonProperty(LocationObj.LON)
+public float getLon() {
+    return this.lon;
+}
+
+...
+
+@JsonProperty(LocationObj.LAT)
+public void setLat(final float theLat) {
+    this.lat = theLat;
+}
+
+@JsonProperty(LocationObj.LON)
+public void setLon(final float theLon) {
+    this.lon = theLon;
+}
+```
 
 The `LocationObj` class is a constructor-less cacophony of getters
 and setters, with a few `private` data manipulation methods.
@@ -79,18 +86,19 @@ and setters, with a few `private` data manipulation methods.
 
 And now the service should be able to make sense of incoming JSON like:
 
-    {
-        "name":"Eldora Mountain Resort",
-        "location":{
-            ...
-            "lat":39.937678,
-            "lon":-105.580888,
-            ...
-        },
-        "phone":"(303) 440-8700",
-        "web":"http://www.eldora.com/"
-    }
-
+```json
+{
+    "name":"Eldora Mountain Resort",
+    "location":{
+        ...
+        "lat":39.937678,
+        "lon":-105.580888,
+        ...
+    },
+    "phone":"(303) 440-8700",
+    "web":"http://www.eldora.com/"
+}
+```
 
 ### Further Reading
 

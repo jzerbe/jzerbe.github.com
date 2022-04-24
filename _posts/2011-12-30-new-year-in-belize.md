@@ -11,7 +11,7 @@ tags:
 - Placencia
 - mountain
 - beach
-- travels
+- travel
 published: true
 ---
 Full disclosure, I am writing this mostly from memory (on Sept 3 2018) as I explore returning to Belize.
