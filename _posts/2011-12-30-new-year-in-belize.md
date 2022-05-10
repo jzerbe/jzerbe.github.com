@@ -25,7 +25,8 @@ and a few days in the lowland and beachy [Stann Creek](https://en.wikipedia.org/
 
 ### Getting There
 Most airlines will require you to get to Belize City (Philip S. W. Goldson International Airport)
-through Dallas or Houston. At time of writing American Airlines and United Airlines offer round trip
+through Dallas or Houston. At time of writing American Airlines and
+[United Airlines]({{ site.program.card.united }}) offer round trip
 from Denver to Belize City for $800 during the first week of January.
 
 There are a variety of [rental car options](http://www.pgiabelize.com/passenger-info/travel-and-ground-transportation/)

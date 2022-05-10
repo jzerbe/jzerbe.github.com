@@ -43,7 +43,7 @@ so they were nice enough to deliver it up to Valle Nevado the next night. Had to
 
 [Copa Airlines](https://www.copaair.com/en/web/us) is the only airline flying from SCL to LIR at anything close to reasonable from a money/time perspective.
 
-Finally, I booked LIR->IAH->DEN with United.
+Finally, I booked LIR->IAH->DEN with [United]({{ site.program.card.united }}).
 
 My traveling companions booked all of the above on one ticket through United, although they went through IAH on the way South.
 

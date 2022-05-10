@@ -50,7 +50,8 @@ We thought about making it to [Cerro Bayo](https://www.cerrobayo.com.ar) one day
 getting there and with so much terrain at Cerro Catedral, it just was not worth it.
 
 ### Getting there
-On one ticket for 3200USD, United took me from Denver, to Chicago, to Sao Paulo, to Bariloche, in 20 hours.
+On one ticket for 3200USD, [United]({{ site.program.card.united }})
+took me from Denver, to Chicago, to Sao Paulo, to Bariloche, in 20 hours.
 On the return from Bariloche, to Buenos Aires, to DFW, to Denver, in 18 hours. You can do it for closer to
 2000USD if you spend a night in Mexico City and Buenos Aires like my friend did.
 As long as you book everything on one ticket, you do not need a visa to get into Brazil, since you stay in the
