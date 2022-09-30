@@ -21,9 +21,9 @@ Alberta and Nova Scotia will too, but there is no online self-serve portal with 
 - If you are not a resident of Canada, by starting a business, investing in it, and permanently employing a Canadian resident you can be eligible for [express entrepreneur immigration](https://www.welcomebc.ca/Immigrate-to-B-C/BC-PNP-Entrepreneur-Immigration/Program-Requirements).
 
 ## Get a British Columbia address
-For ~15CAD/month you can get an address in British Columbia with [Anytime Mailbox]({{ site.program.business.anytimemb }}), which you can remotely manage.
+For ~15CAD/month you can get an address in British Columbia with [Anytime Mailbox]({{ site.program.business.anytimemb }})
+or [iPostal1]({{ site.program.business.ipostal1 }}), which you can remotely manage.
 This will allow you to satisfy the requirement to have an office and mailing address within British Columbia.
-I chose [Save On Cartridge Plus in Kelowna](https://www.anytimemailbox.com/s/kelowna-7-2070-harvey-ave).
 
 ## Investment Canada Act
 If you are a non-resident of Canada, creating a resident Canada business, then you have to notify
