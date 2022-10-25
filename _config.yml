@@ -1,7 +1,7 @@
 author:
   email: 'jzerbe@vraidsys.com'
   name: 'Jason Zerbe'
-description: 'Comfortable challenges, flexibility, and quality relationships.'
+description: 'Solutions Architect. Multi-audience. Splitboarder and enduro mountain biker.'
 future: true
 permalink: /:year/:month/:title/
 plugins: [jekyll-gist]
@@ -16,6 +16,6 @@ sidebar:
   linkedin: https://www.linkedin.com/in/jzerbe
   officehours: https://officehours.com/jzerbe
   vraidsys: https://vraidsys.com
-tagline: 'Loophole engineering'
+tagline: 'unconventional relationships'
 title: Jason Zerbe
 url: https://jzerbe.com

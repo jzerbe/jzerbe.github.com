@@ -3,13 +3,12 @@ custom_order: 2
 layout: post
 published: true
 tags:
+- Colorado
 - Limited Liability Company
 - LLC
-- estate planning
 - wealth management
-- US tax policy manipulation
-- Colorado
-title: Limited Liability Companies as a wealth management tool
+- United States tax policy
+title: The Colorado LLC as a wealth management tool
 ---
 In an economic environment where [real wages have stagnated](https://www.pewresearch.org/fact-tank/2018/08/07/for-most-us-workers-real-wages-have-barely-budged-for-decades/)
 and regular employees are paying a [larger proportion of national taxes](https://www.cbpp.org/research/federal-tax/policy-basics-where-do-federal-tax-revenues-come-from)

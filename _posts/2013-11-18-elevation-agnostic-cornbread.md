@@ -16,7 +16,7 @@ Works well for a 9.5x13.5x2 inch glass baking dish.
 - `1.5 cups` corn meal
 - `0.5 cup` sugar for more dessert-like __or__ `0.25` for general purpose use with beans, salsa, lettuce, cheese
 - `4 teaspoons` baking powder
-- `0.5 teaspoon` salt. Original says same amount for half of this recipe; sodium much?
+- `0.5 teaspoon` salt
 - `2 cups` skim milk
 - `0.5 cup` vegetable oil
 - `2` eggs

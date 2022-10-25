@@ -13,10 +13,9 @@ tags:
 - Playa Flamingo
 - Las Catalinas
 - Costa Rica
-- mountain
 - snowboarding
-- biking
-title: snowboarding in Chile and mountain biking in Costa Rica
+- mountain biking
+title: Putting snowboarding in Chile and mountain biking in Costa Rica together
 ---
 This crazy idea started out when I noticed that [Valle Nevado joined the Ikon Pass](https://vallenevado.com/en/ikon-pass/)
 for the 2018-2019 season. Of all the international additions, this seemed like the most reasonable, but to make it

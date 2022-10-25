@@ -3,16 +3,12 @@ custom_order: 1
 layout: post
 published: true
 tags:
-- data governance
-- data access control
-- data security
-- business process
-- scaling
+- data loss prevention software
+- data authorization
 - Immuta
 - Databricks
 - Snowflake
-- use cases
-title: scaling Databricks and Snowflake governance controls with Immuta
+title: How to scale Databricks and Snowflake data authorization with Immuta
 ---
 In most enterprise organizations, I see a need to have Databricks and Snowflake coexist for different
 users and workloads. With Immuta, we can build on top of the existing governance control primitives

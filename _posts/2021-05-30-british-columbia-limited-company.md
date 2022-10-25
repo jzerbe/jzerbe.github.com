@@ -5,10 +5,9 @@ published: true
 tags:
 - British Columbia
 - Limited Company
-- international business
 - wealth management
 - Canada tax policy
-title: How to create a British Columbia Limited Company
+title: The flexibility of a British Columbia Limited Company
 ---
 ## Why British Columbia?
 Canada, and more specifically the province of British Columbia is an excellent place to start a digital business:

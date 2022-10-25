@@ -3,14 +3,12 @@ custom_order: 3
 layout: post
 published: true
 tags:
+- Colorado
 - Berthoud Pass
 - Guanella Pass
 - Loveland Ski Area
-- Colorado
-- mountain
-- snowboarding
 - splitboarding
-title: chill Colorado summer splitboarding
+title: Winter is a place not a time in Colorado - summer splitboarding
 ---
 ### West Berthoud Pass
 {% include gaiagps_embed.html mid="tK2CEu42j1zW7YwLgfMaMXkm" %}

@@ -8,8 +8,6 @@ tags:
 - San Carlos de Bariloche
 - Rio Negro
 - Argentina
-- mountain
-- lake
 - snowboarding
 title: San Carlos de Bariloche - snowboarding in Argentina
 ---
