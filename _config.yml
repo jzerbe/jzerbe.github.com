@@ -1,7 +1,7 @@
 author:
   email: 'jzerbe@vraidsys.com'
   name: 'Jason Zerbe'
-description: 'Solutions Architect. Multi-audience. Splitboarder and enduro mountain biker.'
+description: 'Solutions Architect. Risk management. Splitboarder and enduro mountain biker.'
 future: true
 permalink: /:year/:month/:title/
 plugins: [jekyll-gist]
