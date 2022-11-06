@@ -82,7 +82,6 @@ Either way the oil producers get to make more money on oil products.
 ### Profits better than housing people
 Now let's take that price-fixing example even further.
 The first place I moved into in the Denver metro was ~730 ft^2 with a base rent of $1050/month in March 2013.
-Yep, I work in tech and live a bougie life; not 20,000 ft^2 like some folks, but I do well.
 I have moved around to Wheat Ridge, Boulder, and Golden, but I was still rather surprised when I looked today
 and that same unit is $1920/month in November 2022.
 
