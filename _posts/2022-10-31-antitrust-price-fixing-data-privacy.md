@@ -47,14 +47,14 @@ more to them than lunch.
 ### Guarding health data
 Fast-forward through many years of building data pipelines to figure out what motivates people, and
 now I sell data authorization and security software. When you go into the doctor's office
-and hand them all of your personal information, the software I sell allows bureaucrats to make sure the other
-20,000 bureaucrats of the health care provider do not see your name, weight, birthdate, address, social,
+and hand them all of your personal information, the software I sell allows data managers to make sure the other
+20,000 employees of the health care provider do not see your name, weight, birthdate, address, social,
 preexisting conditions, and email ... unless you (the data subject, to use a technical phrase) consent.
 If marketing wants to use your training data to predict who will purchase more diagnostic services
 or sexual pills they can only use your demographic information: age, education, ethnicity, and income range.
-Bureaucrats who use the software I sell are able to enforce those data access rules which are already mandated by law.
+Data managers who use the software I sell are able to enforce those data access rules which are already mandated by law.
 
-The elderly legislatures are starting to catch up and mandate these kinds of data protections at a more general level,
+The elderly legislators are starting to catch up and mandate these kinds of data protections at a more general level,
 but in many parts of the world these don't exist yet. I chat with companies which produce oil, bread,
 medical implants, heavy machinery, and clothing. They all know this is coming, but until there is a big
 enough fine to damage their quarterly earnings, there is no reason to do anything.
