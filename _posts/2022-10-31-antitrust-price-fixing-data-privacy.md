@@ -79,7 +79,7 @@ keep supply of oil lower than normal, drive up prices artificially, and pocket m
 
 Either way the oil producers get to make more money on oil products.
 
-### Profits better than housing people
+### High occupancy in not the most profitable
 Now let's take that price-fixing example even further.
 The first place I moved into in the Denver metro was ~730 ft^2 with a base rent of $1050/month in March 2013.
 I have moved around to Wheat Ridge, Boulder, and Golden, but I was still rather surprised when I looked today
@@ -101,9 +101,22 @@ I have spent $186,348 just on base rent:
 Interestingly, you'll notice two time periods of price jumps in the data: 2015-2017 and 2021-2022.
 These time periods coincided with periods of economic recovery and
 [higher inflation](https://www.macrotrends.net/countries/USA/united-states/inflation-rate-cpi).
-I'm of the mind that business profits lead to inflation in modern economies;
-businesses believe they can charge more for goods, they do, and the price index goes up
-... especially during these recovery periods.
+In higher rate environments, supply of new rental units typically go down, because it is more
+costly for developers to take on loans to build more, but this is good for the profits of large real
+estate holders as Jon Gray of Blackstone makes very clear in the
+[2022 Q3 earning call transcript](https://www.fool.com/earnings/call-transcripts/2022/10/20/blackstone-inc-bx-q3-2022-earnings-call-transcript/):
+> The challenge, of course, is in a rising rate environment, if you own a hard asset feels like a bond,
+> or worse an older office building, then I think you're going to see a challenge to value because the
+> income is not growing much and rates have gone up. On the other hand, if you're in rental housing and
+> you have pricing power or logistics, where we're still seeing in the U.S., 30% increases in rents. In Europe,
+> nearly 20% increases in rents.
+> 
+> ...
+> 
+> And by the way, unlike almost every other down cycle, what we have going into this, particularly in rental
+> housing is low rates of vacancy and limited new supply and a lot less leverage. So we go into this in a better.
+> And then as a result, we start to see this sharp decline in new supply, it should be even better coming out.
+> So I think long-term assets real estate, which is obviously a big area of focus for us.
 
 Say you had enough rental price information, you could make a pretty good guess what your competitors are
 charging for rent, and what people are willing to pay; pushing profits as high as possible
@@ -139,7 +152,7 @@ the other needs to agree to that usage.
 ### Prevention
 From a societal standpoint, stricter data privacy and sharing laws would prevent businesses from wandering into these
 legal grey areas. We could choose to limit businesses from using our data free of charge and level the
-playing field for all businesses regardless of technical acumen.
+playing field for all businesses regardless of their technical acumen.
 
 From a technical angle, there are solutions like the one I sell which allow
 ethical data stewards to set limits on how data is used; yes I opted to be allowed to be contacted for marketing
