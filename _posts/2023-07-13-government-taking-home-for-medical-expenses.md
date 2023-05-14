@@ -15,7 +15,7 @@ the [Omnibus Budget Reconciliation Act of 1993](https://oig.hhs.gov/oei/reports/
 requires state governments recover long term care benefits paid for by Medicaid after the recipient dies.
 Yes, state governments can take your home by filing a lien against it,
 [if you are unable to return home](https://www.senioranswers.org/insurance/medicaid/estate-recovery/),
-or other property titled in your name (estate).
+or other property titled in your name when you die, your (probate) estate.
 
 ### Exceptions
 If you have a surviving spouse, a child under age 21, or a child that is permanently disabled or blind
@@ -32,10 +32,10 @@ A [premium of a few thousand dollars a month](https://smartasset.com/insurance/h
 may be untenable for some.
 
 ### Moving assets
-At least 5 years before going on Medicaid, you need to retitle your assets; assets are no longer in your
-name by putting them in a business entity or trust. Within the 5 year window of going on Medicaid  if you
+At least 5 years before going on Medicaid, you need to retitle your assets by putting them in a
+business entity or trust. If you
 [give any gifts or transfer any assets](https://coloradoestateplan.com/why-asking-how-do-i-avoid-the-5-year-medicaid-lookback-period-leaves-you-at-risk/)
-that will be a penalty considered against your Medicaid benefit.
+within 5 years of attempting to start Medicaid, that will be a penalty considered against your Medicaid benefit.
 
 If you choose to set up a trust for your assets, you will need a trustee (who will take a management fee);
 it is most efficient to [find a lawyer](https://www.licensedlawyer.org/)
@@ -47,8 +47,8 @@ If you already trust a family member or close friend then retitle your assets un
 You will need to create an [LLC yourself](/2020/08/colorado-llc/) or have a
 [registered agent company do it for you](https://www.coloradoregisteredagent.com/colorado-registered-agent-services/).
 You will probably want them to create a manager managed LLC, get a tax id, and file your annual report.
-The single member will be the close friend or family member; they will be reporting expenses and revenue from the
-LLC on their taxes and could use this to take hefty tax deductions if done right.
+The single member and initial manager will be the close friend or family member; they will be reporting expenses
+and revenue from the LLC on their taxes and could use this to take hefty tax deductions if done right.
 
 Next:
 1. Redeed the assets to the business or trust with a [warranty deed](https://www.deedclaim.com/warranty-deed/).
@@ -61,7 +61,7 @@ If not, use a full service company like [Nomad Lease](https://nomadlease.com/pro
 I find the timing of this legislation suspicious. From 1981 to 1988 the marginal tax rate
 on the wealthy at the US national level dropped precipitously from
 [70 to 28 percent](https://taxfoundation.org/historical-income-tax-rates-brackets/).
-As show in
+As shown in
 [_The economic consequences of major tax cuts for the rich_](https://academic.oup.com/ser/article/20/2/539/6500315)
 these policies lead to higher income inequality and no change in economic growth or unemployment.
 
