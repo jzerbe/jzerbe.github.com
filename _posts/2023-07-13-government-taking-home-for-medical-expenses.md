@@ -51,7 +51,9 @@ The single member and initial manager will be the close friend or family member;
 and revenue from the LLC on their taxes and could use this to take hefty tax deductions if done right.
 
 Next:
-1. Redeed the assets to the business or trust with a [warranty deed](https://www.deedclaim.com/warranty-deed/).
+1. Sell the assets to the business or trust at below market value ($1?) and be sure to close with a
+[warranty deed](https://www.deedclaim.com/warranty-deed/). This will allow the new owner to use a
+[stepped-up tax basis](https://www.homelight.com/blog/can-i-sell-my-house-to-a-family-member/).
 2. Get a real estate insurance policy for the business or trust through [National Real Estate Insurance Group](https://nreig.com/).
 3. If you plan on living in the home use a [local property manager](https://www.deerwoods.com/lakewood-property-management)
 contracted through the business which will give you some flexibility to create a zero dollar lease agreement.
