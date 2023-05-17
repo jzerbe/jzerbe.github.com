@@ -24,7 +24,7 @@ See [Colorado](https://www.law.cornell.edu/regulations/colorado/10-CCR-SS-2505-1
 [Florida](http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0409/Sections/0409.9101.html)
 laws for reference. If one of those situations apply, then stop reading, you're good to go.
 
-### Avoiding Medicaid
+### Avoiding Medicaid long term care
 If possible, purchase a
 [long-term care insurance plan](https://www.nerdwallet.com/article/insurance/long-term-care-insurance)
 in your mid 50s or 60s to avoid going into this Medicaid estate recovery situation.
@@ -32,10 +32,10 @@ A [premium of a few thousand dollars a month](https://smartasset.com/insurance/h
 may be untenable for some.
 
 ### Moving assets
-At least 5 years before going on Medicaid, you need to retitle your assets by putting them in a
-business entity or trust. If you
+At least [5 years before applying for Medicaid long term care benefits](https://www.medicaidplanningassistance.org/medicaid-look-back-period/),
+you need to retitle your assets by putting them in a business entity or trust. If you
 [give any gifts or transfer any assets](https://coloradoestateplan.com/why-asking-how-do-i-avoid-the-5-year-medicaid-lookback-period-leaves-you-at-risk/)
-within 5 years of attempting to start Medicaid, that will be a penalty considered against your Medicaid benefit.
+within 5 years of attempting to start Medicaid long term care benefits, that will be a penalty considered against your benefit.
 
 If you choose to set up a trust for your assets, you will need a trustee (who will take a management fee);
 it is most efficient to [find a lawyer](https://www.licensedlawyer.org/)
@@ -60,8 +60,8 @@ contracted through the business which will give you some flexibility to create a
 If not, use a full service company like [Nomad Lease](https://nomadlease.com/products) to manage everything.
 
 ### Long-term solution
-I find the timing of this legislation suspicious. From 1981 to 1988 the marginal tax rate
-on the wealthy at the US national level dropped precipitously from
+I find the timing of this legislation to recoup Medicaid long term care payments suspicious.
+From 1981 to 1988 the marginal tax rate on the wealthy at the US national level dropped precipitously from
 [70 to 28 percent](https://taxfoundation.org/historical-income-tax-rates-brackets/).
 As shown in
 [_The economic consequences of major tax cuts for the rich_](https://academic.oup.com/ser/article/20/2/539/6500315)
@@ -69,4 +69,4 @@ these policies lead to higher income inequality and no change in economic growth
 
 Ironic that many of the people who voted for the politicians that enacted these policies will now be
 hurt by these policies in their old age. It does not have to be this way, we could choose to increase
-taxes on the ridiculously wealthy and fund domestic programs instead of wars.
+taxes on the ridiculously wealthy and fund these domestic health care programs.
