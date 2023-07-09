@@ -59,6 +59,26 @@ Next:
 contracted through the business which will give you some flexibility to create a zero dollar lease agreement.
 If not, use a full service company like [Nomad Lease](https://nomadlease.com/products) to manage everything.
 
+### What if I have a mortgage?
+Most mortgages contain an "acceleration" or "due on sale" clause.
+
+> This means that when you transfer a mortgaged property out of your name, the entire mortgage balance is due.
+> 
+> ...
+> 
+> However, this is not usually a problem when we are not selling your house but, rather, transferring it for estate planning purposes.
+> In fact, federal law specifically prohibit a mortgage holder from exercising a "due on sale" clause on
+> residential real property containing less than five dwelling units or on a cooperative apartment unit when the property is transferred to a spouse
+> or children of the owner, or a lifetime revocable or irrevocable trust where the borrower retains the right to occupancy.
+<https://davidowlaw.com/listen-lawrence-answer-irrevocable-trust-mortgage-question/>
+
+This came from banks not wanting borrowers to get a deal on a lower interest rate.
+
+If you were to transfer or sell your home to your children where your right of occupancy remained the same,
+a lender could not enforce an "acceleration" or "due on sale" clause: <https://www.law.cornell.edu/uscode/text/12/1701j-3>
+
+In Colorado, your interest rate cannot go up by more than 1% for a sale: <https://law.justia.com/codes/colorado/2021/title-38/article-30/section-38-30-165/>
+
 ### Long-term solution
 I find the timing of this legislation to recoup Medicaid long term care payments suspicious.
 From 1981 to 1988 the marginal tax rate on the wealthy at the US national level dropped precipitously from
