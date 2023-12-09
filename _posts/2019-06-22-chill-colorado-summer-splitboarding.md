@@ -14,11 +14,10 @@ title: Winter is a place not a time in Colorado - summer splitboarding
 {% include gaiagps_embed.html mid="tK2CEu42j1zW7YwLgfMaMXkm" %}
 
 Why deal with crowds on the East side of Berthoud Pass when there are some great lap-able
-wind loaded powder stashes on the West side? Obviously do not attempt during winter,
-but come early summer this makes for great riding.
+wind loaded powder stashes on the West side?
 
 ### West Guanella Pass
-{% include gaiagps_embed.html mid="Z7v52wSWIRK5YMZP2hxkJO2m" %}
+{% include gaiagps_embed.html mid="uIfIIBnqkvPyprrNlxlK8x3F" %}
 
 {% include google_drive_image_embed.html id="1X6Aqy0rL74uDhtkaS5OewD6c5u8nxYHB" %}
 
