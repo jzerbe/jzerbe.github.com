@@ -24,9 +24,10 @@ which is the easiest to do the paperwork for and [usually the best option for ta
 
 1. Creation is easy:
     1. [$50 in Colorado to create](https://www.sos.state.co.us/pubs/info_center/fees/business.html)
-    1. $150-300 for an hour or two of a lawyer's time to review an [example Colorado single member Operating Agreement](https://learn.vraidsys.com/?memberpressproduct=household-tax-optimization)
+    1. $150-300 for an hour or two of a lawyer's time to create a manager-managed operating agreement ... or pay me for one of mine.
     1. [$25 to get your operating agreement notarized](https://www.notarize.com/pricing)
-    1. (Optional) $10-12 per month for a mailbox with [Anytime Mailbox]({{ site.program.business.anytimemb }}) or [iPostal1]({{ site.program.business.ipostal1 }}) to shield your home address
+    1. (Optional) $10-12 per month for a mailbox with [Anytime Mailbox]({{ site.program.business.anytimemb }}) or [iPostal1]({{ site.program.business.ipostal1 }})
+   to shield your home address and move you into a lower sales tax and less regulated municipality (unincorporated Jefferson, Gilpin, or Weld county).
 2. You can do all the taxes with your standard income taxes:
     > If a single-member LLC does not elect to be treated as a corporation, the LLC is a "disregarded entity," and the LLC's activities should be reflected on its owner's federal tax return.
     
@@ -34,7 +35,7 @@ which is the easiest to do the paperwork for and [usually the best option for ta
 
    If you maintain residence in a high tax jurisdiction, you will need to get more creative here,
    as the taxable income from your LLC will be taxed at the rate of your home residence; 
-   more on that in my online [family wealth office](https://learn.vraidsys.com/?memberpressproduct=family-wealth-office) course.
+   more on that in my online [family wealth office](https://vraidsys.com/2021/03/family-wealth-office/) write up.
 4. Upkeep isn't terrible:
     1. File a [$10 annual report](https://www.sos.state.co.us/pubs/business/FAQs/reports.html)
     1. [Apply for an EIN](https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online) and maintain a bank account separate from your personal finances. I really like the [Fidelity Account for Businesses](https://www.fidelity.com/open-account/fidelity-account-for-businesses), unfortunately they (and American Express) crack down on [physical addresses provided by a Commercial Mail Receiving Agent](https://help.virtualpostmail.com/article/224-2019-02-21-proof-of-address-for-business-bank-accounts) ... while other banks will let you use a virtual mail provider for your physical address ... more on why that is important later. Be sure to [check if your address will be flagged as a Commercial Mail Receiving Agent](https://tools.usps.com/zip-code-lookup.htm?byaddress) if using a bank that cares.
@@ -70,4 +71,6 @@ Given my tax jurisdiction and wealth, all of my startup fees were covered by the
 Now given that there is no public market for these LLC assets, [gifting membership interests to your heirs while you still are the LLC manager means hefty asset write-downs](https://www.investopedia.com/articles/personal-finance/071514/using-llc-estate-planning.asp#how-a-family-llc-works).
 
 ## Going deeper
-Want to learn more? Want no business license fees and no income taxes? Check out my online [family wealth office](https://learn.vraidsys.com/?memberpressproduct=family-wealth-office) course for the inside scoop on Wyoming!
+Want to learn more? Want no business license fees and no income taxes? Check out my online
+[family wealth office](https://vraidsys.com/2021/03/family-wealth-office/)
+write up for the inside scoop on Wyoming!

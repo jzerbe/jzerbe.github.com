@@ -46,8 +46,8 @@ use the [Name Request tool](https://www.bcregistry.ca/namerequest) to reserve a 
 This will take a few days to process before you can proceed to the next step.
 1. Go through the [BC Registry Services wizard to incorporate](https://www.bcregistry.ca/corporateonline/colin/accesstransaction/menu.do?action=overview&filingTypeCode=ICORP&from=main) for [$350](https://www.corporateonline.gov.bc.ca/WebHelp/fee_schedule.htm).
 1. Add your name and the business name to the
-[example incorporation agreement and the example incorporation articles](https://learn.vraidsys.com/?memberpressproduct=family-wealth-office)
-... don't forget page 18's proxy designation.
+[example incorporation agreement and the example incorporation articles](https://www2.gov.bc.ca/assets/gov/employment-business-and-economic-development/business-management/permits-licences-and-registration/registries-other-assets/samp_02_-_incorporation_agreement_adopting_table_1.pdf)
+... don't forget section 9.10's proxy designation.
 Convert these to PDF and have them [notarized online with Notary Pro](https://www.notarypro.ca/notarize-online/book-now/).
 
 ## Ongoing upkeep
@@ -62,3 +62,4 @@ Or with a unanimous resolution of all the voting shareholders (you), can waive t
 <sup>[1](https://www.barbeau.co/uncategorized/annual-requirements-british-columbia-companies/)</sup>
 - File an [_Annual Report_ with BC Registries](https://www.corporateonline.gov.bc.ca/WebHelp/overview_annbc.htm) within 2 months of your incorporation date anniversary.
 - File your [T2 and tax calculation paperwork](https://www2.gov.bc.ca/gov/content/taxes/income-taxes/corporate) with the Canada Revenue Agency.
+I have been using <https://web.taxtron.ca> and filing paper since I do not have a Social Insurance Number to be able to e-file.

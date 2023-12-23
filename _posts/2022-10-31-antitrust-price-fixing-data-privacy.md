@@ -14,7 +14,7 @@ businesses collecting that information, many more selling that information, and 
 trying to influence you with that information.
 
 ### Engaging an audience
-10 years ago, there were just a few technical folks who realized they could provide a more customized and engaging
+In 2012, there were just a few technical folks who realized they could provide a more customized and engaging
 experience to their audience by collecting information to make informed guesses about their audience.
 
 I got the opportunity to work with one such person at the beginning of my career.
