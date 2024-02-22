@@ -17,9 +17,6 @@ where I create new technology assisted alternatives in various domains,
 such as construction, law, and real estate.
 My goal is that technology should serve people, not the other way around.
 
-I enjoy speaking and writing about how data affects lives.
-My goal is that technology should serve people, not the other way around.
-
 ---
 ---
 
