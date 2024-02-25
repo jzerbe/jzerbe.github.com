@@ -20,11 +20,13 @@
         {% endif %}
       {% endfor %}
 
-      <a class="sidebar-nav-item" href="{{ site.sidebar.github }}">Code: GitHub</a>
-      <a class="sidebar-nav-item" href="{{ site.sidebar.vraidsys }}">Incubator: Vraid Systems</a>
-      <a class="sidebar-nav-item" href="{{ site.sidebar.linkedin }}">Network: LinkedIn</a>
+      <a class="sidebar-nav-item" href="{{ site.sidebar.github.link }}">{{ site.sidebar.github.name }}</a>
+      <a class="sidebar-nav-item" href="{{ site.sidebar.linkedin.link }}">{{ site.sidebar.linkedin.name }}</a>
     </nav>
 
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    <p>
+      &copy; <a href="{{ site.sidebar.vraidsys.link }}">{{ site.sidebar.vraidsys.name }}</a>.
+      All rights reserved.
+    </p>
   </div>
 </div>

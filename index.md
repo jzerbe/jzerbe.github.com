@@ -4,7 +4,7 @@ title: Home
 ---
 
 ### Intro
-With a background in software development, machine learning, and data solutions,
+With a background in software, finance, machine learning, and data solutions,
 I help businesses leverage the power of data to drive innovation, efficiency, and growth.
 
 As an Enterprise Solutions Architect at Immuta: I lead workshops and evaluations

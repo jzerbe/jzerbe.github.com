@@ -5,10 +5,23 @@ description: 'Solutions Architect. Risk management. Splitboarder and trail mount
 future: true
 permalink: /:year/:month/:title/
 plugins: [jekyll-gist]
+program:
+  business:
+    anytimemb: https://www.amtrdb32k.com/3DB5WSS/55M6S/
+    ipostal1: https://ipostal1.com/?ref=4037
+    wise: https://wise.prf.hn/l/6lo8oEQ
+  card:
+    amex: https://americanexpress.com/en-us/referral/JASONZYEnT?XLINK=MYCP
 sidebar:
-  github: https://github.com/jzerbe
-  linkedin: https://www.linkedin.com/in/jzerbe
-  vraidsys: https://vraidsys.com
+  github:
+    link: https://github.com/jzerbe
+    name: GitHub
+  linkedin:
+    link: https://www.linkedin.com/in/jzerbe
+    name: LinkedIn
+  vraidsys:
+    link: https://vraidsys.com
+    name: Vraid Systems Limited
 tagline: 'data dirt dollars'
 title: Jason Zerbe
 url: https://jzerbe.com
