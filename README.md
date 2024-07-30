@@ -7,6 +7,6 @@ when the repository is pushed to GitHub.
 [hyde](https://github.com/poole/hyde) theme is [MIT licensed](https://github.com/poole/hyde/blob/master/LICENSE.md).
 
 ## Development
-1. `sudo gem install bundler jekyll`
-1. `sudo gem install jekyll-gist`
+1. `sudo apt install build-essential ruby ruby-bundler ruby-dev ruby-full rubygems`
+1. `bundle install`
 1. `bundle exec jekyll serve`

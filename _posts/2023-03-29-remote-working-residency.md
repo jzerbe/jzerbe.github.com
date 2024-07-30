@@ -1,6 +1,6 @@
 ---
 author: Jason Zerbe
-custom_order: 1
+custom_order: 2
 layout: post
 published: true
 tags:
