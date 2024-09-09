@@ -1,7 +1,7 @@
 author:
   email: 'jzerbe@vraidsys.com'
   name: 'Jason Zerbe'
-description: 'Systems. Risk management. Splitboarder and trail mountain biker.'
+description: 'Generalist getting to yes. Splitboarder and trail mountain biker.'
 future: true
 permalink: /:year/:month/:title/
 plugins: [jekyll-gist]
