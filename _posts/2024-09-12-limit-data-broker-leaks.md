@@ -8,11 +8,12 @@ tags:
 - Privacy
 - right to delete
 - Residency
-title: limit data broker leaks
+title: Protect yourself from data broker leaks
 ---
 Every organization will leak your data eventually. Their profit motive may get in the way of security.
 They may not pay high enough to ensure quality people are employed.
 Therefore, your goal should be to only give your data to services which are absolutely necessary.
+Remember: if the service is free, you and your data are the product being sold.
 
 What about all the organizations you give your data to without even knowing it?
 A [data broker](https://www.gartner.com/en/information-technology/glossary/data-broker) makes
@@ -43,6 +44,17 @@ we did in Chrome.
    <img src="/assets/posts/firefox_privacy_security.png" alt="drawing" class="image fit" />
 3. Scroll past the "Standard" Browser Privacy and turn on all of the "Website Privacy Preferences".
    <img src="/assets/posts/firefox_website_privacy.png" alt="drawing" class="image fit" />
+
+## Prevent - Gmail
+1. Open up the Gmail settings by clicking the gear icon in the top right corner and then "See all settings".
+   <img src="/assets/posts/gmail_settings.png" alt="drawing" class="image fit" />
+2. In the "General" tab scroll down and select "Ask before displaying external images". This will disable
+any [tracking pixels](https://en.ryte.com/wiki/Tracking_Pixel/).
+   <img src="/assets/posts/gmail_images.png" alt="drawing" class="image fit" />
+3. Scroll further down and uncheck "Turn on smart features and personalization in other Google products".
+This will prevent Google from scraping the contents of your emails to suggest features and products.
+   <img src="/assets/posts/gmail_smart_features.png" alt="drawing" class="image fit" />
+4. Scroll all the way down and click the "Save Changes" button.
 
 ## Remediation
 Search for yourself on <https://www.truepeoplesearch.com/> and tell me you are okay with that information
