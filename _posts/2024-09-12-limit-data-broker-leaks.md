@@ -45,7 +45,7 @@ we did in Chrome.
 3. Scroll past the "Standard" Browser Privacy and turn on all of the "Website Privacy Preferences".
    <img src="/assets/posts/firefox_website_privacy.png" alt="drawing" class="image fit" />
 
-## Prevent - Gmail
+## Prevention - Gmail
 1. Open up the Gmail settings by clicking the gear icon in the top right corner and then "See all settings".
    <img src="/assets/posts/gmail_settings.png" alt="drawing" class="image fit" />
 2. In the "General" tab scroll down and select "Ask before displaying external images". This will disable
