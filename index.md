@@ -6,7 +6,7 @@ title: Home
 ### Intro
 With a background in software, finance, machine learning, and data solutions, I help businesses leverage the power of data to drive innovation and redevelopment.
 
-As a Technical Solutions Architect at Immuta: I lead workshops and evaluations to help prospects make the right buying decisions, support the success of customers by collaborating with partners and product teams, and travel to build relationships through meaningful conversations.
+As an Enterprise Solutions Architect at Immuta: I lead workshops and evaluations to help prospects make the right buying decisions, support the success of customers by collaborating with partners and product teams, and travel to build relationships through meaningful conversations.
 
 In addition to my role at Immuta, I am also a Director at Vraid Systems Limited, where I create new technology assisted alternatives in various domains, such as construction, law, and real estate. My goal is that technology should serve people, not the other way around.
 
