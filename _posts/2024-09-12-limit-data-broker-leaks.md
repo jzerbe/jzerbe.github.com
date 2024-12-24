@@ -64,7 +64,8 @@ which will help you automate sending out hundreds of data deletion requests.
 
 I went with <https://incogni.com/> and after 2 weeks, I am quite impressed. My information no longer shows
 up on people search websites and my data is rapidly being expunged from data brokers who profit off of my
-data but do not pay me anything. You may also live in a
-state - <https://pro.bloomberglaw.com/insights/privacy/state-privacy-legislation-tracker/> - with privacy
-legislation which gives you a "right to deletion". That is the sharp teeth you can bring out if you have to sue
-to get your data deleted.
+data but do not pay me anything.
+You can use my Incogni discount link - <https://incogni.cello.so/iCje17eYe7z> - to receive 58% off your bill.
+You may also live in a state - <https://pro.bloomberglaw.com/insights/privacy/state-privacy-legislation-tracker/> -
+with privacy legislation which gives you a "right to deletion". That is the sharp teeth you can bring out if you
+have to sue to get your data deleted.
