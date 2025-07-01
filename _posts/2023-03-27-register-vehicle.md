@@ -33,5 +33,5 @@ especially in Flathead County.
 Registration is [$20 for the inspection and $20 for the municipal paperwork](https://www.chasingpanama.blog/2019/12/04/vehicle-registration-in-panama/).
 An additional [$100 for registration through an entity](https://www.relofirm.com/corporation_vehicle_registration/).
 
-Need help setting up a business entity to register your vehicle in any of these jurisdictions?
-Shoot me an email: <jzerbe@vraidsys.com>
+Please send an email to <{{ site.program.business.vraidsys }}> for assistance in setting up a
+business entity to register your vehicle with.

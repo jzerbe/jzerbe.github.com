@@ -238,7 +238,7 @@ Just remember you need to show profit in at least 3 of the last 5 years: <https:
 <hr />
 
 ## Practicum
-Please contact me at <jzerbe@vraidsys.com> for assistance in setting up your family wealth office.
+Please send an email to <{{ site.program.business.vraidsys }}> for assistance in setting up your family wealth office.
 We will guide you through the exact steps and offer templates for:
 1. Opening a virtual office
 2. Filing with the Secretary of State

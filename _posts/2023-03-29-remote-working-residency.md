@@ -29,4 +29,4 @@ on how you plan to remote work. Just be sure that your
 final address isn't flagged as a [Commercial Mailing Receiving Agency](https://www.smarty.com/docs/cmra)
 using the [USPS's address lookup tool](https://tools.usps.com/zip-code-lookup.htm?byaddress) if using a US address.
 
-Need help? Shoot me an email: <jzerbe@vraidsys.com>
+Please send an email to <{{ site.program.business.vraidsys }}> for assistance in setting up a new address.
