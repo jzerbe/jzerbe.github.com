@@ -4,16 +4,9 @@ title: Home
 ---
 
 ### Intro
-With a background in computer networking, software, finance, machine learning, and data security,
-I help businesses leverage the power of data to drive innovation and redevelopment.
+With a background in construction, energy, finance, and logistics, I help businesses leverage the power of data and software to drive innovation and redevelopment. I focus on cash flow positive projects and ignore the other noise.
 
-As an Enterprise Solutions Architect at Immuta: I lead workshops and evaluations to help
-prospects make the right buying decisions, support the success of customers by collaborating
-with partners and product teams, and travel to build relationships through meaningful conversations.
-
-In addition to my role at Immuta, I am also a General Manager at Vraid Systems,
-where I deliver client facing projects. My goal is that technology should serve people,
-not the other way around.
+I delight in having conversations with interesting people - ask those how and why questions, help me understand something new, let's celebrate growth. My superpower is an efficient focus on solving new problems. Sales adjacent roles seem to be the best place to exercise this - I solve something 80% of the way and get to move on to the next thing which tickles my brain.
 
 ---
 ---
