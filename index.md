@@ -6,7 +6,7 @@ title: Home
 ### Intro
 With a background in construction, energy, finance, and logistics, I help businesses leverage the power of data and software to drive innovation and redevelopment. I focus on cash flow positive projects and ignore the other noise.
 
-I delight in having conversations with interesting people - ask those how and why questions, help me understand something new, let's celebrate growth. My superpower is an efficient focus on solving new problems. Sales adjacent roles seem to be the best place to exercise this - I solve something 80% of the way and get to move on to the next thing which tickles my brain.
+I delight in having conversations with interesting people - ask those how and why questions, help me understand something new, let's celebrate growth. My superpower is an efficient focus on solving new problems; sales adjacent roles seem to be the best place to exercise this.
 
 ---
 ---
