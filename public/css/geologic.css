@@ -1,0 +1,179 @@
+/* -----------------------------------------------------------
+   THE DOSSIER IDENTITY SYSTEM
+   Ref: JZ Redesign Docs [cite: 43]
+   ----------------------------------------------------------- */
+
+:root {
+    /* COLOR PALETTE: "The Geological Stack"  */
+    --bg-color:       #F2F0ED; /* Raw Concrete / High-End Paper [cite: 47] */
+    --text-color:     #1A1A1A; /* Obsidian [cite: 47] */
+    --accent-color:   #354F52; /* Oxidized Copper [cite: 47] */
+    --border-color:   #D1CDC7; /* Mortar [cite: 47] */
+    --meta-color:     #2B3D50; /* Blueprint Blue [cite: 47] */
+
+    /* TYPOGRAPHY: "The Lab & The Field" [cite: 48] */
+    --font-heading:   'Public Sans', sans-serif; /* Structural, architectural [cite: 49] */
+    --font-body:      'IBM Plex Serif', serif;   /* High-end journal style [cite: 50] */
+    --font-mono:      'JetBrains Mono', monospace; /* Metadata/Technical [cite: 51] */
+}
+
+/* BASE STYLES */
+body {
+    background-color: var(--bg-color); /* [cite: 32] */
+    color: var(--text-color);
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.6;
+    /* subtle grain texture requested in [cite: 32] can be added here via background-image url if available */
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase; /* All-caps for structural feel [cite: 49] */
+    letter-spacing: 0.05em;
+    color: var(--text-color);
+}
+
+/* LINKS */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); /* Mechanical feel [cite: 86] */
+}
+
+a:hover {
+    background-color: rgba(53, 79, 82, 0.1); /* Highlighter pen effect [cite: 82] */
+    border-bottom-color: var(--accent-color);
+}
+
+/* LAYOUT UTILITIES */
+.container {
+    max-width: 1200px; /* Fixed Grid System [cite: 58] */
+    margin: 0 auto;
+    padding: 0 2rem;
+    border-left: 1px dashed var(--border-color); /* Blueprint styling [cite: 33] */
+    border-right: 1px dashed var(--border-color);
+}
+
+/* METADATA BLOCKS (The "Data" Block) [cite: 7] */
+.meta-block {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--meta-color);
+    border-left: 4px solid var(--meta-color); /* Heavy bar [cite: 33] */
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* -----------------------------------------------------------
+   THE FIELD NOTES LAYOUT (Sidenotes)
+   Ref: Tufte-inspired margins
+   ----------------------------------------------------------- */
+
+/* Layout Grid */
+.post-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Default mobile */
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Desktop: Create the wide margin */
+@media (min-width: 1100px) {
+    .post-content {
+        width: 60%; /* Main text takes 60% */
+        margin-right: 40%; /* Reserve 40% for notes */
+    }
+}
+
+/* Typography Overrides for Posts */
+.post-content p {
+    font-family: var(--font-body); /* IBM Plex Serif */
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* THE SIDENOTE CLASS */
+.sidenote {
+    float: right;
+    clear: right;
+    margin-right: -55%; /* Push into the empty margin */
+    width: 45%;         /* Width of the note */
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+
+    /* Styling */
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: var(--meta-color); /* Blueprint Blue */
+    vertical-align: baseline;
+    position: relative;
+
+    /* The "Architect's Blueprint" look  */
+    border-left: 1px solid var(--accent-color);
+    padding-left: 10px;
+}
+
+/* Numbering for the text reference */
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after {
+    content: counter(sidenote-counter);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    vertical-align: super;
+    color: var(--accent-color);
+    margin-left: 2px;
+    cursor: help;
+}
+
+/* Hiding the inline number inside the note itself if desired */
+.sidenote .sidenote-number:after {
+    content: "";
+}
+
+/* POST METADATA BLOCK [cite: 7] */
+.post-metadata {
+    font-family: var(--font-mono);
+    border-bottom: 4px solid var(--text-color); /* Heavy bar [cite: 33] */
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+    max-width: 60%; /* Match text width */
+}
+
+.meta-row {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.meta-label {
+    min-width: 100px;
+    color: var(--meta-color);
+    font-weight: 700;
+}
+
+/* MOBILE RESPONSIVENESS  */
+@media (max-width: 1099px) {
+    .post-content {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .sidenote {
+        float: none;
+        margin: 1rem 0;
+        width: 100%;
+        display: block;
+        background: rgba(209, 205, 199, 0.2); /* Slight background to separate */
+        padding: 1rem;
+        border-left: 4px solid var(--accent-color); /* Thicker border on mobile */
+    }
+}

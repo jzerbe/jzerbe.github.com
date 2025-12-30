@@ -234,15 +234,3 @@ Insurance. Family meetings. The list goes on:
 - <https://www.bdc.ca/en/articles-tools/money-finance/manage-finances/tax-deductible-expenses>
 
 Just remember you need to show profit in at least 3 of the last 5 years: <https://www.thebalancemoney.com/is-this-business-for-real-or-is-it-a-hobby-397675>
-
-<hr />
-
-## Practicum
-Please send an email to <{{ site.program.business.vraidsys }}> for assistance in setting up your family wealth office.
-We will guide you through the exact steps and offer templates for:
-1. Opening a virtual office
-2. Filing with the Secretary of State
-3. Filing with the IRS
-4. Creating an operating agreement
-5. Notarizing business documents
-6. Banking

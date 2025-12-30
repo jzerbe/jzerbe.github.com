@@ -1,0 +1,43 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero-grid" style="display: grid; grid-template-columns: 3fr 2fr; gap: 2rem; padding: 4rem 0; border-bottom: 1px dashed var(--border-color);">
+
+    <div class="hero-text">
+        <h1 style="font-size: 3rem; line-height: 1.1; margin-bottom: 1.5rem;">
+            SYSTEMS ARCHITECTURE<br>FROM CODE TO COPPER.
+        </h1>
+        <p style="font-size: 1.25rem;">
+            I build the research. Vraid Systems builds the infrastructure.
+        </p>
+    </div>
+
+    <div class="status-box" style="background: rgba(43, 61, 80, 0.05); padding: 1.5rem; border: 1px solid var(--meta-color);">
+        <h4 style="color: var(--meta-color); margin-top: 0;">Quick About</h4>
+        <p style="font-family: var(--font-mono); font-size: 0.9rem;">
+            My career has been defined by a transition from the abstract to the tangible - moving from
+            designing data architectures to optimizing the physical flow of goods across borders.
+            Whether it is a data pipeline or a supply chain, the core interest remains the same: Systems.
+        </p>
+    </div>
+</section>
+
+<div class="posts">
+  {% assign posts_by_order = site.posts | sort: "custom_order" %}
+  {% for post in posts_by_order %}
+  <div class="post">
+    <h3 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h3>
+
+    <span class="post-date">{{ post.tags | array_to_sentence_string }}</span>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="meta-block">
+</div>

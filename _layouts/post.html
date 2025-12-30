@@ -2,8 +2,35 @@
 layout: default
 ---
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.tags | array_to_sentence_string }}</span>
-  {{ content }}
-</div>
+<article class="post-container">
+
+  <header class="post-metadata">
+    <div class="meta-row">
+      <span class="meta-label">ENTRY_ID:</span>
+      <span class="meta-value">{{ page.date | date: "%Y-%m-%d" }}</span>
+    </div>
+    <div class="meta-row">
+      <span class="meta-label">LOCATION:</span>
+      <span class="meta-value">{{ page.location | default: "51.177556, -115.548716" }}</span>
+    </div>
+    <div class="meta-row">
+      <span class="meta-label">TAGS:</span>
+      <span class="meta-value">
+        {% for tag in page.tags %}
+          <span class="tag-box">{{ tag | upcase }}</span>
+        {% endfor %}
+      </span>
+    </div>
+  </header>
+
+  <div class="post-content">
+    <h1 class="post-title">{{ page.title | upcase }}</h1>
+
+    {{ content }}
+
+    <div class="end-of-file">
+      ///
+    </div>
+  </div>
+
+</article>

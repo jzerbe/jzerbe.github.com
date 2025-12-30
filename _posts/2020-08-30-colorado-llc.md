@@ -70,8 +70,3 @@ To save on taxes, you will need to transfer ownership of accounts and assets to 
 Depending on the tax jurisdiction and wealth, all of your startup fees could be covered by the tax savings in the first month.
 
 Now given that there is no public market for these LLC assets, [gifting membership interests to your heirs while you still are the LLC manager means hefty asset write-downs](https://www.investopedia.com/articles/personal-finance/071514/using-llc-estate-planning.asp#how-a-family-llc-works).
-
-## Going deeper
-Want to learn more? Want no business license fees and no income taxes? Check out our online
-[family wealth office](/2021/03/family-wealth-office/)
-write up for the inside scoop on Wyoming!

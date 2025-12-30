@@ -3,9 +3,8 @@ author: Jason Zerbe
 custom_order: 5
 layout: post
 published: true
-tags:
-- Advice
-- Open Journaling
+tags: [Advice, Journaling]
+location: 38.397534, -109.874972
 title: Advice to 25 year old me
 ---
 This past year I have gone through periods of excitement, hope, happiness, frustration, and anger.
@@ -25,9 +24,13 @@ voters in my municipality to adapt the built environment, and the unprofitabilit
 infrastructure. Spending time over the last few years in the problem environment allowed me to point out all
 these things; I've had fascinating conversations with people I would have initially considered my enemies.
 Others have figured this out, too: consumers will happily pay for svelte whole-home batteries to weather
-increasingly common grid-destabilizing storms. Natural disasters present a good business opportunity:
-- <https://www.stlouisfed.org/publications/regional-economist/april-1994/the-economics-of-natural-disasters>
-- <https://www.munichre.com/en/insights/natural-disaster-and-climate-change/weather-disasters-in-industrialized-countries.html>
+increasingly common grid-destabilizing storms. Natural disasters present a good business opportunity.
+<span class="sidenote-number"></span><span class="sidenote">
+<https://www.stlouisfed.org/publications/regional-economist/april-1994/the-economics-of-natural-disasters>
+</span>
+<span class="sidenote-number"></span><span class="sidenote">
+<https://www.munichre.com/en/insights/natural-disaster-and-climate-change/weather-disasters-in-industrialized-countries.html>
+</span>
 
 Engage with your "enemies". How's that for positive?
 

@@ -32,6 +32,3 @@ especially in Flathead County.
 [5% for excise tax on cars](https://kpmg.com/us/en/home/insights/2022/06/tnf-panama-exemption-from-selective-consumption-tax-for-electric-vehicles.html).
 Registration is [$20 for the inspection and $20 for the municipal paperwork](https://www.chasingpanama.blog/2019/12/04/vehicle-registration-in-panama/).
 An additional [$100 for registration through an entity](https://www.relofirm.com/corporation_vehicle_registration/).
-
-Please send an email to <{{ site.program.business.vraidsys }}> for assistance in setting up a
-business entity to register your vehicle with.
