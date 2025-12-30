@@ -177,3 +177,43 @@ a:hover {
         border-left: 4px solid var(--accent-color); /* Thicker border on mobile */
     }
 }
+
+/* -----------------------------------------------------------
+   FIX: CONTENT CONTAINMENT
+   Prevents images/code from breaking the 60% layout
+   ----------------------------------------------------------- */
+
+.post-content img,
+.post-content video,
+.post-content iframe {
+    max-width: 100%;       /* Force media to fit the column */
+    height: auto;          /* Maintain aspect ratio */
+    display: block;        /* Prevent inline spacing issues */
+    border: 1px solid var(--border-color); /* Add the "Dossier" border to images */
+    margin: 1.5rem 0;      /* Vertical breathing room */
+}
+
+/* Fix for Code Blocks & Long Strings */
+.post-content pre,
+.post-content code {
+    white-space: pre-wrap; /* Wrap long lines of code */
+    word-wrap: break-word; /* Break long words/URLs if needed */
+    max-width: 100%;       /* Ensure it stays in the box */
+    overflow-x: auto;      /* Add scrollbar if it absolutely must overflow */
+}
+
+/* Fix for Tables (often used in financial posts) */
+.post-content table {
+    width: 100%;           /* Force table to fit */
+    display: block;        /* Allow scrolling on mobile if needed */
+    overflow-x: auto;
+    border-collapse: collapse;
+}
+
+.post-content th,
+.post-content td {
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    font-family: var(--font-mono); /* Apply the technical font to data */
+    font-size: 0.85rem;
+}
