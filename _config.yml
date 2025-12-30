@@ -9,20 +9,16 @@ program:
   business:
     anytimemb: https://www.awin1.com/cread.php?awinmid=61685&awinaffid=2042851&ued=https%3A%2F%2Fwww.anytimemailbox.com%2Flocations
     ipostal1: https://ipostal1.com/?ref=4037
-    vraidsys: sales@vraidsys.com
     wise: https://wise.prf.hn/l/6lo8oEQ
   card:
     amex: https://americanexpress.com/en-us/referral/JASONZYEnT?XLINK=MYCP
 sidebar:
   github:
     link: https://github.com/jzerbe
-    name: GitHub
   linkedin:
     link: https://www.linkedin.com/in/jzerbe
-    name: LinkedIn
   vraidsys:
     link: https://vraidsys.com
-    name: Vraid Systems
 tagline: 'data dirt dollars'
 title: JZ
 url: https://jzerbe.com

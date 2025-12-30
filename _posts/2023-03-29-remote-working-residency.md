@@ -2,6 +2,7 @@
 author: Jason Zerbe
 custom_order: 2
 layout: post
+location: -32.895536, -68.865949
 published: true
 tags:
 - Employment

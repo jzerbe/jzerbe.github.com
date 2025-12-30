@@ -2,6 +2,7 @@
 author: Jason Zerbe
 custom_order: 1
 layout: post
+location: 32.894952, -96.968502
 published: true
 tags:
 - browser settings

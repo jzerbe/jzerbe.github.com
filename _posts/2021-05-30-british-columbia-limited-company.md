@@ -2,6 +2,7 @@
 author: Jason Zerbe
 custom_order: 3
 layout: post
+location: 49.440384, -124.761068
 published: true
 tags:
 - Canada tax policy

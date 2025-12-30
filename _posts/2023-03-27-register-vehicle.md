@@ -2,6 +2,7 @@
 author: Jason Zerbe
 custom_order: 2
 layout: post
+location: 8.979392, -79.528985
 published: true
 tags:
 - Vagabond
