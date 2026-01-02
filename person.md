@@ -42,10 +42,14 @@ interest in arbitrage and the mechanics of the US caste system.
 - __The Field__: When I’m not analyzing supply chains or writing "field notes",
 I’m likely on a splitboard or mountain bike, navigating the same rugged landscapes where
 our mining and ranching clients operate.
-- __Lifestyle__: I enjoy working hard on difficult problems when my mind needs exercise.
-How I make money, how I structure my day, how I grow and find purpose in this life must be complimentary.
+- __Lifestyle__: My path is in mastering my ego and willpower as a "Protector" and "Mentor".
+Financial and schedule freedom, challenging and testing people's mettle to bring out their strengths, and
+bypassing piousness or correctness for the public good are core.
 <span class="sidenote-number"></span><span class="sidenote">
     <a href="https://paulgraham.com/love.html">https://paulgraham.com/love.html</a>
+</span>
+<span class="sidenote-number"></span><span class="sidenote">
+  _Enneagram_ + _Human Design_ then ask an LLM "Can you explain the attached documents?" with your PDF results.
 </span>
 - __Foundation__: I hold a B.S. in Computer Science from the University of Minnesota,
 with an emphasis on Databases and Networking: the original "logistics" of the digital world.
