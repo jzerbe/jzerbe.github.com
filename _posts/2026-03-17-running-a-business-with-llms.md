@@ -22,7 +22,7 @@ My partner made a more interesting statement:
 
 I thought <https://fortune.com/2026/02/17/ai-productivity-paradox-ceo-study-robert-solow-information-technology-age/>
 was asking the wrong questions; to scale almost any system you try to do as much work at the edge (of the system)
-as possible. If they admit there is impact, they could be evaluated out of a job next. I thought
+as possible. If C-suite admits there is impact, C-suite could be evaluated out of a job next. I thought
 <https://www.forbes.com/councils/forbesbusinesscouncil/2025/11/07/the-c-suite-is-becoming-obsolete-what-should-replace-it/>
 was far more relevant.
 
@@ -38,8 +38,8 @@ was far more relevant.
 - Crisis Leadership: AI CEOs (and by extension, pure product boards) struggle with bold pivots required during unpredictable market failures. <https://financialpost.com/technology/ai-new-boss-replace-ceo-falls-short>
 
 ### How I run my business
-- Sales workflow: finding interesting contracts, filling out PDFs for submission, and submitting projects is done by a human
-- Sales workflow: review whether something is win-able, risk/reward, and able to be sourced is completed by an LLM
+- Sales workflow: finding interesting contracts, and submitting projects is done by a human
+- Sales workflow: review whether something is win-able, risk/reward, filling out PDFs for submission, and able to be sourced is completed by an LLM
 - Fulfillment workflow: sourcing from sales is reviewed, payment done by a human
 - Back office workflow: audit (Federal Acquisition Regulation), financial (balance sheet risks), and legal review (localized corporate law) completed by LLMs
 - Network with other small business owner/operators who lean heavily into automation for additional resources

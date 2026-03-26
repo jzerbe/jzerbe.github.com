@@ -15,7 +15,7 @@ title: quantifying and mitigating stress to be more powerfully human
 I took longer, than helpful to my goals, to realize that there is a deep connection between my mind and body.
 Largely the language the fake/pious of spiritual practices used pissed me off enough to stay away.
 But you do not need to use their language; power comes through finding your own language.
-Here, I use the language I needed to hear - that of hate and power.
+Here, I use the language I needed to hear at that earlier time - that of hate and power.
 
 ### Phase 1: empty head
 I knew that mind and body were integrated when mountain biking forced me empty my head or hit trees.
@@ -55,11 +55,11 @@ always - I took away the notification permissions
 - Meditating at least every other day
 
 What I have noticed about myself:
-- Blood pressure readings are averaging 10-20 lower. I take readings on left and right upper arms after my mediation practice in between meals.
+- Blood pressure readings are averaging 10-20 lower. I take readings on left and right upper arms after my meditation practice in between meals.
 - I am more often the person I want to be
 - I do not seem to focus on negatives as much
 
-What I am not doing:
+What I am __not__ doing:
 - Coming up with easy/fake solutions like quitting my job, isolating, or taking drugs
 - Giving up on having an interesting and integrated life - money+purpose+mental interest still must align
 - Giving up on optionality - I want to live somewhere, see certain people, eat certain foods, or pursue being active at certain times
