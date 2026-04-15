@@ -57,7 +57,6 @@ I knew the area, had looked at satellite imagery, studied topo maps but had purc
 drone operator for an aerial survey to figure out where to site the structures. Everything from the red pickup truck
 to the flat bit on the right side of the image was in play:
 <img src="/assets/posts/Echo_Ln_July_2022.jpg" alt="drawing" class="image fit" />
-Fortunately, my neighbor cleaned up their property since this photo.
 
 ## Finding the House
 Over the summer and fall of 2021 I went through the
@@ -74,15 +73,15 @@ local regulations - where I could build on the lot and the paperwork I needed to
 in 2022 wasn't too painful, even without the meteoric rise of consumer-grade LLMs. The pieces I needed according to the information packet:
 1. Complete Building Permit Application (Sign and date) - _easy, just filling out some contact details_
 2. 11X17 Proposed Site Plan by Colorado Licensed Surveyor - _spend a few months and a few grand with an engineering firm_
-3. (2) Sets of Plans, see Plans & Specifications and Plan Requirements Packet - _they want paper_ <https://theplanprinter.com/>
+3. (2) Sets of Plans, see Plans & Specifications and Plan Requirements Packet - _the rural county wanted paper_ <https://theplanprinter.com/>
 4. Access Approval & Right of Way Permits
    1. Get and fill in the right paperwork <https://www.archuletacounty.gov/county-government/public-works/county-engineer/right-of-way-permits/>
    2. Pay the fee to build a driveway and bring in utilities
    3. Do the actual construction - horizontal bore under the road to bring in electrical and form a driveway over a metal culvert
    4. Get the final inspection
 5. Sanitation (Archuleta County Water Quality approved permit if applicable)
-   1. First you need to design the septic system with an engineering firm like Davis Engineering.
-   2. Get a permit to do the construction with an excavation team like Pagosa Landworks.
+   1. First you need to design the septic system with an engineering firm like [Davis Engineering](https://www.daveng.com/).
+   2. Get a permit to do the construction with an excavation team like [Pagosa Landworks](https://www.pagosaequipment.co/).
    3. Once the septic system is electrified with a warning alarm then you can get the final review.
 6. Pagosa Fire Protection District Receipt - pay them at <https://www.pagosafire.org/impact-fee-schedule>
 7. Proof of Ownership - _already have this from closing_
@@ -98,7 +97,7 @@ Engineering designs, permits, excavation, and septic construction bill: 108,471 
 At this point in the project I became much more adverse to doing novel or creative ways of construction.
 Previously I had been planning on constructing a
 [rain water collection system](https://www.alltexirrigation.com/rain-harvesting) with a massive underground cistern.
-But after some confident words from DAK Drilling and Well Services, I proceeded with the common pattern (in the area)
+But after some confident words from [DAK Drilling and Well Services](https://dakdrilling.com/), I proceeded with the common pattern (in the area)
 of drilling a well. The San Juan River basin is already overtapped and will continue to recede over the coming years.
 <span class="sidenote-number"></span><span class="sidenote">
 <https://www.usgs.gov/news/state-news-release/groundwater-flow-colorado-river-may-decline-third-over-next-30-years>
@@ -109,7 +108,7 @@ The only legal way I can use the water coming out of this well is for inside dom
 before putting it back into the ground through my septic system.
 
 Just to drill the well to ~500ft was 52,050 USD. They make you sign a contract saying they may never hit water.
-A flat lot would probably take 25-50% off the drilling price.
+A flat lot, closer to surface water, would probably take 25-50% off the drilling price.
 
 Total bill to get potable water on the property: 120,078 USD. I still think this was way better than having water delivered like some of the neighbors.
 
@@ -118,8 +117,8 @@ By comparison, electricity was far more straightforward than water. The power po
 decided to site the house on the lot as close to the road as possible to minimize the cost of the driveway,
 the slope of the driveway (there are code maximums), and the cost of bringing in electricity to the lot disconnect.
 
-Alpine Excavation horizontally bored under Echo Ln to the power pole on the opposite side of the dirt road and fed conduit through the hole.
-This was significantly less costly and complex that cutting into the dirt road. JBX Electric put in the main lot power pedestal disconnect
+[Alpine Excavation](https://www.facebook.com/alpineexcavationpagosa/) horizontally bored under Echo Ln to the power pole on the opposite side of the dirt road and fed conduit through the hole.
+This was significantly less costly and complex that cutting into the dirt road. [JBX Electric](https://www.facebook.com/jbxelectric/) put in the main lot power pedestal disconnect
 <span class="sidenote-number"></span><span class="sidenote">
 Think something like: <https://www.youtube.com/watch?v=0yc7c_axEy8>
 </span>,
@@ -134,7 +133,7 @@ missing some crucial details and most construction workers are wholly unfamiliar
 Hiver was absolutely amazing to work with! The traveling crew took a coarsely excavated lot in February 2025:
 <img src="/assets/posts/Echo_Ln_Feb_2025.jpg" alt="drawing" class="image fit" />
 
-To a completed foundation with welding embed plates, from my friend Andrew's shop, in March 2025:
+To a completed foundation with welding embed plates, from my friend Andrew's shop - [Somnus Customs LLC](https://maps.app.goo.gl/Emp8mB9dXWMK7W258), in March 2025:
 <img src="/assets/posts/Echo_Ln_March_2025.jpeg" alt="drawing" class="image fit" />
 
 They got the wellhouse on a foundation and a safety retaining wall behind the structure as well.
