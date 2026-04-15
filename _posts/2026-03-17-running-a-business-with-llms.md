@@ -6,8 +6,6 @@ location: 40.0012561,-105.2627494
 published: true
 tags:
 - board networking
-- human benefits
-- interview
 - operations
 title: running a business with LLMs
 ---
@@ -18,7 +16,7 @@ My hypothesis going into this was that:
 > I always vote against board members that aren't relevant to product excellence.
 
 My partner made a more interesting statement:
-> I don't believe a company's board would vote out their peers even though CEOs are obsolete.
+> I don't believe a company's board would vote out their social class peers even though CEOs are obsolete.
 
 I thought <https://fortune.com/2026/02/17/ai-productivity-paradox-ceo-study-robert-solow-information-technology-age/>
 was asking the wrong questions; to scale almost any system you try to do as much work at the edge (of the system)
