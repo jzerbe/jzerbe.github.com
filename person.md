@@ -13,9 +13,6 @@ and unapologetically unconventional in my approach.
 
 ## Architecture of a Career
 I spent 15 years building software that powers modern industry.
-<span class="sidenote-number"></span><span class="sidenote">
-    <a href="{{ site.sidebar.linkedin.link }}">{{ site.sidebar.linkedin.link }}</a>
-</span>
 My work has always been at the intersection of complex data and high-stakes decision-making:
 - __Intelligence & Governance__: At Immuta, I designed data provisioning solutions for enterprise clients,
 leading evaluations to ensure stakeholders made the right buying decisions for their data platforms.
@@ -56,3 +53,19 @@ with an emphasis on Databases and Networking: the original "logistics" of the di
 <span class="sidenote-number"></span><span class="sidenote">
     <a href="{{ site.sidebar.github.link }}">{{ site.sidebar.github.link }}</a>
 </span>
+
+## Other Things
+I delight in having conversations with interesting people:
+active listening where we are both asking each other follow-up questions, in the flow of the experience.
+I find others' experiences fascinating.
+
+I enjoy systems which accomplish something in the messy real world, especially if they are novel to me.
+My superpower is an efficient focus on solving new problems;
+sales adjacent roles seem to be the best place to exercise this where profit sharing occurs naturally.
+
+I have shown myself that any domain is approachable with the correct decomposition of problems,
+based on the breadth of pursuits I have tried and accomplished.
+
+Please contact me for contract and part-time opportunities to build in real or thought space.
+
+<a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>

@@ -1,5 +1,5 @@
 author:
-  email: 'jzerbe@vraidsys.com'
+  email: 'jz@jzerbe.com'
   name: 'Jason Zerbe'
 description: 'Generalist getting to yes. Splitboarder and trail mountain biker.'
 future: true
@@ -15,8 +15,6 @@ program:
 sidebar:
   github:
     link: https://github.com/jzerbe
-  linkedin:
-    link: https://www.linkedin.com/in/jzerbe
   vraidsys:
     link: https://vraidsys.com
 tagline: 'data dirt dollars'
