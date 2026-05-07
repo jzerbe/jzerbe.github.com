@@ -3,7 +3,7 @@ layout: page
 title: The Person
 ---
 
-## Lead
+## Lead-In
 A generalist focused on getting to "Yes".
 My career has been defined by a transition from the abstract to the tangible: moving from
 designing data architectures to optimizing the physical flow of goods across borders.
@@ -14,8 +14,9 @@ and unapologetically unconventional in my approach.
 ## Architecture of a Career
 I spent 15 years building software that powers modern industry.
 My work has always been at the intersection of complex data and high-stakes decision-making:
-- __Intelligence & Governance__: At Immuta, I designed data provisioning solutions for enterprise clients,
-leading evaluations to ensure stakeholders made the right buying decisions for their data platforms.
+- __Intelligence & Governance__: At Immuta, I designed data provisioning (agent and human) solutions for enterprise
+clients, leading evaluations to ensure stakeholders made the right buying decisions for their data platforms;
+closing many millions of dollars of new business.
 - __AI & Search__: As a Technical Product Owner at Koverse, I led the development of AI-guided
 search products and built operational processes for intelligence products designed for non-technical decision-makers.
 - __Energy & Environment__: At Tendril Networks, I managed the launch of novel machine learning technology
@@ -35,7 +36,7 @@ trade using the same rigor I once applied to software re-architecture.
 ## Personal Stack
 I am not just a founder; I am a practitioner of the integrated life.
 - __Research__: I was a licensed Investment Advisor Representative, a role that fuels my
-interest in arbitrage and the mechanics of the US caste system.
+interest in arbitrage and the mechanics of the economic caste system.
 - __The Field__: When I’m not analyzing supply chains or writing "field notes",
 I’m likely on a splitboard or mountain bike, navigating the same rugged landscapes where
 our mining and ranching clients operate.
