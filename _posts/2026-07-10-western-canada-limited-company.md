@@ -6,29 +6,50 @@ location: 49.440384, -124.761068
 published: true
 tags:
 - Canada tax policy
+- Alberta
 - British Columbia
 - Limited Company
-title: The flexibility of a British Columbia Limited Company
+title: The Western Canada Limited Company
 ---
-## Why British Columbia?
-Canada, and more specifically the province of British Columbia is an excellent place to start a digital business:
-- Neither sales of [software consulting services nor database access](https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/publications/pst-105-software.pdf) pay sales tax to the province.
-- [Website subscriptions with articles that include text only, or text and still photos](https://www2.gov.bc.ca/assets/gov/taxes/sales-taxes/publications/pst-107-telecommunication-services.pdf) are not taxable sales to the province.
-- You pay no sales tax to the national government if you [make less than $30,000 a year in sales](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html), and greater than that ... only 5%.
-- There is a [15% corporate income tax levied by Canada](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html) and [12% corporate income tax levied by British Columbia](https://www2.gov.bc.ca/gov/content/taxes/income-taxes/corporate/tax-rates) for a combined rate of 27%; less than half that [if all of your controlling parties are natural-person Canadian residents](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/type-corporation.html#ccpc).
-- British Columbia is one of the few provinces which allow incorporators AND directors to be non-residents of Canada; 
-Alberta and Nova Scotia will too, but there is no online self-serve portal with Alberta and Nova Scotia has [high annual renewal fees](https://beta.novascotia.ca/incorporate-limited-company).
-- If you are not a resident of Canada, by starting a business, investing in it, and permanently employing a Canadian resident you can be eligible for [express entrepreneur immigration](https://www.welcomebc.ca/Immigrate-to-B-C/BC-PNP-Entrepreneur-Immigration/Program-Requirements).
+## Why the edit?
+This post used to be (Jul 2021) about incorporating in British Columbia. However, 5 years later (Jul 2026),
+the old [Corporate Online](https://www.corporateonline.gov.bc.ca/) is being merged into
+[BC Registries and Online Services](https://www.bcregistry.gov.bc.ca/en-CA/). On the surface, good, but the bad news
+is that you need a [BC Services Card](https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card)
+to do most everything; read you must be a resident.
 
-## Get a British Columbia address
-For ~15CAD/month you can get an address in British Columbia with [Anytime Mailbox]({{ site.program.business.anytimemb }})
+It used to be that anyone could use British Columbia's Corporate Online to be entirely self-service,
+but now you are forced to have a registered agent if you are a non-resident.
+British Columbia has made itself less competitive; therefore with everything else going for it, Alberta is the logical choice.
+Alberta has always forced you to have a registered agent.
+
+Go with Alberta, pay the registered agent to file your return: <https://theregistrationcenter.ca/product/annual-return-filing/>
+
+And save on corporate income taxes: <https://taxsummaries.pwc.com/canada/corporate/taxes-on-corporate-income>
+
+## Why Western Canada?
+The minimum criteria I set for most of my strategies: residency and citizenship should be irrelevant.
+
+Both Alberta and British Columbia allow incorporators AND directors to be non-residents of Canada.
+Nova Scotia does too, but has [high annual renewal fees](https://www.novascotia.ca/incorporate-limited-company).
+
+Alberta has no provincial sales tax. Like other energy exporters, the province pays for much of its services with energy royalties.
+
+British Columbia has several interesting digital sales tax exclusions:
+- Neither sales of [software consulting services nor database access](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/software#internet-services) pay sales tax to the province.
+- [Website subscriptions with articles that include text only, or text and still photos](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/telecommunication-services#website-subscriptions) are not taxable sales to the province.
+
+Access additional Western Canadian markets relatively easily once you incorporate in a member province: <https://www.newwestpartnershiptrade.ca/the_agreement.htm>
+
+## Get an address
+For ~15CAD/month you can get an address in Alberta or British Columbia with [Anytime Mailbox]({{ site.program.business.anytimemb }})
 or [iPostal1]({{ site.program.business.ipostal1 }}), which you can remotely manage.
-This will allow you to satisfy the requirement to have an office and mailing address within British Columbia.
+This will allow you to satisfy the requirement to have an office and mailing address within your province of choice.
 
 ## Investment Canada Act
 If you are a non-resident of Canada, creating a resident Canada business, then you have to notify
 _Innovation, Science and Economic Development Canada_ of this new investment by
-[filling out ISED-ISDE3675E.pdf](https://www.ic.gc.ca/eic/site/ica-lic.nsf/eng/h_lk00010.html)
+[filling out ISED-ISDE3675E](https://ised-isde.canada.ca/site/investment-canada-act/en/investment-canada-act/forms)
 and returning it to them by email.
 
 If you make a >1 billion CAD investment then you have to wait for their review.
@@ -36,11 +57,11 @@ If you make a >1 billion CAD investment then you have to wait for their review.
 ## Get a personal Tax Identification Number
 To file paperwork with the Canada Revenue Agency on behalf on your new business entity, you will need to get an ITN
 from them by filling out and returning
-[_Application for a Canada Revenue Agency Individual Tax Number (ITN) for Non-Residents_](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t1261/t1261-fill-18e.pdf).
+[_Application for a Canada Revenue Agency Individual Tax Number (ITN) for Non-Residents_](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t1261.html).
 Be sure to include a notarized copy of your passport with a wet signature from the notary;
 I did this at my local UPS store for $5.
 
-## The Limited Company application process
+## The July 2021 BC Limited Company application process
 1. If you want to use a specific name for your corporation instead of a series of numbers issued by the province,
 use the [Name Request tool](https://www.bcregistry.ca/namerequest) to reserve a name for
 [$30](https://www.corporateonline.gov.bc.ca/WebHelp/fee_schedule.htm).
@@ -63,4 +84,4 @@ Or with a unanimous resolution of all the voting shareholders (you), can waive t
 <sup>[1](https://www.barbeau.co/uncategorized/annual-requirements-british-columbia-companies/)</sup>
 - File an [_Annual Report_ with BC Registries](https://www.corporateonline.gov.bc.ca/WebHelp/overview_annbc.htm) within 2 months of your incorporation date anniversary.
 - File your [T2 and tax calculation paperwork](https://www2.gov.bc.ca/gov/content/taxes/income-taxes/corporate) with the Canada Revenue Agency.
-I have been using <https://web.taxtron.ca> and filing paper since I do not have a Social Insurance Number to be able to e-file.
+I have been using <https://netfilet2.taxtron.ca/>, but first you need to file an individual $0 tax return to get into the CRA's system to be self-serve.
