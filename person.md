@@ -5,11 +5,8 @@ title: The Person
 
 ## Lead-In
 A generalist focused on getting to "Yes".
-My career has been defined by a transition from the abstract to the tangible: moving from
-designing data architectures to optimizing the physical flow of goods across borders.
-Whether it is a data pipeline or a supply chain, the core interest remains the same: Systems.
-I am analytical at the high level, intuitive at the low level,
-and unapologetically unconventional in my approach.
+I enjoy spotting and pulling out hidden potential.
+I am analytical at the high level, intuitive at the low level, and unapologetically unconventional in my approach.
 
 ## Architecture of a Career
 I spent 15 years building software that powers modern industry.
