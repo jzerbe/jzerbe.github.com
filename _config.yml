@@ -4,7 +4,7 @@ author:
 description: 'Generalist getting to yes. Splitboarder and trail mountain biker.'
 future: true
 permalink: /:year/:month/:title/
-plugins: [jekyll-gist]
+plugins: []
 program:
   business:
     anytimemb: https://www.awin1.com/cread.php?awinmid=61685&awinaffid=2042851&ued=https%3A%2F%2Fwww.anytimemailbox.com%2Flocations

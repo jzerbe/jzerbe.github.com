@@ -19,7 +19,7 @@ The best spots in North America to register a vehicle by odd fringe benefits.
 
 ### United States
 - __Alaska__: Permanent registration (pay one fee and never again) of
-[passenger vehicles 8 years or older in participating boroughs](http://doa.alaska.gov/dmv/reg/Perm_Reg.htm).
+[passenger vehicles 8 years or older in participating boroughs](https://dmv.alaska.gov/vehicle-services/permanent-registration-for-trailers-and-older-vehicles/).
 On top of a $3k (for 2022) [Permanent Fund Dividend for being a resident](https://pfd.alaska.gov/).
 - __Montana__: Permanent registration (pay one fee and never again) of
 [passenger vehicles 11 years or older state-wide](https://dojmt.gov/driving/vehicle-title-and-registration/#lightvehiclepr).

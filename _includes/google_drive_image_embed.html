@@ -1,9 +1,12 @@
 <img
         class="google_drive_image_embed media-object"
         id="google_drive_{{ include.id }}"
+        alt="{{ include.alt | default: 'Image from Google Drive' }}"
+        loading="lazy"
+        referrerpolicy="no-referrer"
         src="https://drive.google.com/thumbnail?id={{ include.id }}&sz=w1000" />
 <br />
-<a class="google_drive_image_link" href="https://drive.google.com/file/d/{{ include.id }}/view">
+<a rel="noopener" class="google_drive_image_link" href="https://drive.google.com/file/d/{{ include.id }}/view">
     View in Google Drive
 </a>
 <br />

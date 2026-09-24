@@ -23,7 +23,7 @@ or other property titled in your name when you die, your (probate) estate.
 If you have a surviving spouse, a child under age 21, or a child that is permanently disabled or blind
 then a state's Medicaid program will not come after your estate.
 See [Colorado](https://www.law.cornell.edu/regulations/colorado/10-CCR-SS-2505-10-8-063) and
-[Florida](http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0409/Sections/0409.9101.html)
+[Florida](https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0409/Sections/0409.9101.html)
 laws for reference. If one of those situations apply, then stop reading, you're good to go.
 
 ### Avoiding Medicaid long term care
