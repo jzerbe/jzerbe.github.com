@@ -149,7 +149,7 @@ Having a _Type II: Noncombustible_ structure in this area significantly eased th
 I am exceedingly happy with the Southwest decor we found at [Camino Real Imports](https://maps.app.goo.gl/8pZbquQLxYUt1nN7A)!
 I always fantasized about a cozy home in the desert Southwest and stumbled into it with the right siting and accents.
 
-Find us on Google Maps: <https://maps.app.goo.gl/7JPjsvZTCWi26gxH9>
+Find us online: <https://pagosacontainerhome.com/>
 
 ## Chronology
 - March 31, 2021: The "Contract to Buy and Sell Real Estate" for the raw land was executed.
