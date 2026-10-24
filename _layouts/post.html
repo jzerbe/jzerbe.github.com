@@ -5,6 +5,12 @@ layout: default
 <article class="post-container">
 
   <header class="post-metadata">
+    {% if page.outcome %}
+    <div class="meta-row">
+      <span class="meta-label">OUTCOME:</span>
+      <span class="meta-value"><span class="outcome outcome-{{ page.outcome | downcase }}">{{ page.outcome | upcase }}</span></span>
+    </div>
+    {% endif %}
     <div class="meta-row">
       <span class="meta-label">ENTRY_ID:</span>
       <span class="meta-value">{{ page.date | date: "%Y-%m-%d" }}</span>

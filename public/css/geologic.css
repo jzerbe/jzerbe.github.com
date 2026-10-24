@@ -125,6 +125,7 @@ a:focus-visible {
 }
 
 .status-box {
+    align-self: start;
     background: var(--meta-tint);
     padding: 1.5rem;
     border: 1px solid var(--meta-color);
@@ -175,10 +176,29 @@ a:focus-visible {
     padding: 2rem 0;
 }
 
-.post-content p {
+.post-content p,
+.post-content li {
     font-size: 1.15rem;
     line-height: 1.8;
+}
+
+.post-content p {
     margin-bottom: 1.5rem;
+}
+
+.post-content li {
+    margin-bottom: 0.5rem;
+}
+
+.post-content blockquote {
+    margin: 1.5rem 0;
+    padding: 0.25rem 0 0.25rem 1.25rem;
+    border-left: 4px solid var(--border-color);
+    font-style: italic;
+}
+
+.post-content blockquote p {
+    margin: 0;
 }
 
 .post-metadata {
@@ -210,6 +230,24 @@ a:focus-visible {
     display: inline-block;
     margin-right: 0.5rem;
 }
+
+/* Experiment outcome badge: WORKED, MIXED, FAILED, ONGOING */
+.outcome {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 0 6px;
+    margin-right: 0.5rem;
+    border: 1px solid currentColor;
+    color: var(--meta-color);
+}
+
+.outcome-worked  { color: #2F5D3A; }
+.outcome-mixed   { color: #7A5A12; }
+.outcome-failed  { color: #8A2E22; }
+.outcome-ongoing { color: var(--meta-color); border-style: dashed; }
 
 .end-of-file {
     font-family: var(--font-mono);
@@ -322,7 +360,8 @@ a:focus-visible {
         font-size: 2.25rem;
     }
 
-    .post-content p {
+    .post-content p,
+    .post-content li {
         font-size: 1.05rem;
     }
 }
