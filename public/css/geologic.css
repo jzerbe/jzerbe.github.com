@@ -235,7 +235,7 @@ a:focus-visible {
     margin-right: 0.5rem;
 }
 
-/* Experiment outcome badge: WORKED, MIXED, FAILED, ONGOING */
+/* Experiment outcome badge: WORKED, MIXED, FAILED, ONGOING, UNTESTED */
 .outcome {
     display: inline-block;
     font-family: var(--font-mono);
@@ -252,6 +252,7 @@ a:focus-visible {
 .outcome-mixed   { color: #7A5A12; }
 .outcome-failed  { color: #8A2E22; }
 .outcome-ongoing { color: var(--meta-color); border-style: dashed; }
+.outcome-untested { color: var(--meta-color); border-style: dotted; }
 
 .end-of-file {
     font-family: var(--font-mono);

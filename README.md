@@ -10,7 +10,7 @@ when the repository is pushed to GitHub.
 Each post is an experiment: the problem, what I tried, and whether it worked. Lead with a `__Result:__` line.
 
 Optional front matter:
-- `outcome`: `WORKED`, `MIXED`, `FAILED`, or `ONGOING`. Shows as a badge on the post and the homepage.
+- `outcome`: `WORKED`, `MIXED`, `FAILED`, `ONGOING`, or `UNTESTED` (researched, not tried yet). Shows as a badge on the post and the homepage.
 - `location`: `lat, long` shown in the post header.
 - `custom_order`: lower numbers sort higher on the homepage.
 
