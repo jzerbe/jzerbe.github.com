@@ -176,6 +176,10 @@ a:focus-visible {
     padding: 2rem 0;
 }
 
+.post-content {
+    overflow-wrap: anywhere; /* long bare URLs */
+}
+
 .post-content p,
 .post-content li {
     font-size: 1.15rem;
