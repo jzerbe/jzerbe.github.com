@@ -3,6 +3,7 @@ author: Jason Zerbe
 custom_order: 3
 layout: post
 location: 39.758540, -105.094000
+outcome: WORKED
 published: true
 tags:
 - blood pressure
@@ -10,56 +11,79 @@ tags:
 - meditation
 - stress
 - yoga
-title: quantifying and mitigating stress to be more powerfully human
+title: Quantifying and mitigating stress to be more powerfully human
 ---
-I took longer, than helpful to my goals, to realize that there is a deep connection between my mind and body.
-Largely the language the fake/pious of spiritual practices used pissed me off enough to stay away.
-But you do not need to use their language; power comes through finding your own language.
-Here, I use the language I needed to hear at that earlier time - that of hate and power.
+__Result:__ It worked. My blood pressure readings now average 10-20 lower.
+I am more often the person I want to be, and I do not focus on negatives as much.
 
-### Phase 1: empty head
-I knew that mind and body were integrated when mountain biking forced me empty my head or hit trees.
-My mind cannot be acting up when I am rolling through a forest at speed.
-Even semi-conscious uncontrolled thought can kill. I chose to focus on neutral scenes in my head and
-eventually could clear my mind anytime and stamp down emotions.
+## The Problem
+I swam competitively in high school. They teach you to go fast, not sustainably.
+Most ex-swimmers I talk to have a loose joint or a stress injury.
+Most jobs are the same: fast, not healthy.
 
-### Phase 2 & 3: awareness + discipline
-To harness something you must understand it. The discipline to make you stronger is following
-a course like <https://courses.tarabrach.com/courses/mindfulness-daily> all the way through, every day.
-At the end you should be able to understand your emotional state, acknowledge all of yourself, and integrate.
-Power comes through integrating all of you, not silencing a part.
-You should have a 10 minute core practice you can do anywhere:
-settle through breathing, refocus as thoughts come up, once settled - watch the thoughts until they settle out or you
-are comfortable to put them back down.
+Sales at most organizations is bad for your health.
+Your agenda for the day keeps changing until 30-60 minutes before.
+A "quick call" can easily turn into an hour.
+On bad days I could hit 135/85, which the
+[American Heart Association's chart for blood pressure readings](https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings)
+says is not good.
 
-The phrase which was weird to me in the past, but I understand now: benign gaze.
-You are observing parts of yourself happen, but not taking sides.
+Selling is one of many things I play at.
+If I want to enjoy the rest of life's play, I cannot overdo it.
 
-If you prefer moving: do yoga. I asked a yoga teacher some why questions and I got out: yoga is a way to access meditation.
+It also took me longer than it should have to see how connected my mind and body are.
+The fake and pious language around spiritual practice pissed me off enough to stay away.
+You do not need their language. Power comes from finding your own.
+Here I use the language I needed to hear back then: hate and power.
 
-### Phase 4: altering stress levels
-I swam competitively in high school: they teach you to go fast, not sustainably. Most ex-swimmers I talk to also
-have a joint loose or a stress injury. Same thing at most jobs: fast, not healthy.
-Selling is but one of many things I play at, and if I am to enjoy all the rest of life's play then I cannot overdo.
+## What I Tried
 
-The practice of sales at most organizations sucks (for health): your agenda for the day is always changing up until
-30-60 minutes before. A "quick call" can easily turn into an hour.
-I could easily hit 135/85 on bad days which on the American Heart Association's page for understanding readings
-<https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings>
-is not good.
+### Phase 1: Empty Head
+Mountain biking showed me mind and body were connected: empty my head or hit trees.
+My mind cannot act up when I am rolling through a forest at speed.
+Even half-conscious, uncontrolled thought can kill.
+I chose to focus on neutral scenes in my head.
+Eventually I could clear my mind anytime and stamp down emotions.
 
+### Phase 2 and 3: Awareness and Discipline
+To harness something, you have to understand it.
+The discipline that makes you stronger: follow a course like
+[Tara Brach's Mindfulness Daily](https://courses.tarabrach.com/courses/mindfulness-daily)
+all the way through, every day.
+By the end you should understand your emotional state, acknowledge all of yourself, and integrate.
+Power comes from integrating all of you, not silencing a part.
+
+You should end up with a 10 minute core practice you can do anywhere:
+
+1. Settle through breathing.
+2. Refocus as thoughts come up.
+3. Once settled, watch the thoughts until they settle out, or until you are comfortable putting them back down.
+
+A phrase that used to sound weird to me and makes sense now: benign gaze.
+You watch parts of yourself happen without taking sides.
+
+If you prefer moving, do yoga.
+I asked a yoga teacher some "why" questions, and what I got out of it: yoga is a way into meditation.
+
+### Phase 4: Changing My Stress Levels
 What I am doing:
-- All notifications on my phone except the actual phone, texts, and <https://signal.org/> are turned off
-always - I took away the notification permissions
-- My phone is set on vibrate during the day and everything is muted 2125 - 0730
-- Meditating at least every other day
 
-What I have noticed about myself:
-- Blood pressure readings are averaging 10-20 lower. I take readings on left and right upper arms after my meditation practice in between meals.
-- I am more often the person I want to be
-- I do not seem to focus on negatives as much
+- __Notifications__: Every phone notification is off, always, except actual calls, texts, and
+[Signal](https://signal.org/). I took away the notification permissions.
+- __Quiet hours__: Phone on vibrate during the day, everything muted from 2125 to 0730.
+- __Practice__: Meditating at least every other day.
 
-What I am __not__ doing:
-- Coming up with easy/fake solutions like quitting my job, isolating, or taking drugs
-- Giving up on having an interesting and integrated life - money+purpose+mental interest still must align
-- Giving up on optionality - I want to live somewhere, see certain people, eat certain foods, or pursue being active at certain times
+## Did It Work?
+Yes. What I have noticed about myself:
+
+- __Blood pressure__: Readings average 10-20 lower.
+I take them on the left and right upper arms after meditating, between meals.
+- __Behavior__: I am more often the person I want to be.
+- __Outlook__: I do not seem to focus on negatives as much.
+
+## What I Am Not Doing
+
+- Easy or fake fixes like quitting my job, isolating, or taking drugs.
+- Giving up on an interesting, integrated life. Money, purpose, and mental interest still have to line up.
+- Giving up optionality. I want to live in certain places, see certain people, eat certain foods,
+and stay active at certain times.
