@@ -37,8 +37,8 @@ Expenses are only deductible if they come from a trade or business.
 The LLC has to actually be one: run with
 [continuity and regularity, with income or profit as the main purpose](https://en.wikipedia.org/wiki/Commissioner_v._Groetzinger).
 
-The LLC also owns and runs a short-term rental: the
-[container home I built in Pagosa Springs](/2026/01/building-in-colorado-mountains/).
+The LLC runs two real operations: a drop-shipping business, and a short-term rental
+(the [container home I built in Pagosa Springs](/2026/01/building-in-colorado-mountains/)).
 Rental real estate gets a clear [IRS safe harbor](https://www.irs.gov/node/71431) for counting as a business under QBI:
 
 - Separate books and records for the rental
