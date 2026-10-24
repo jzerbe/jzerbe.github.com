@@ -12,6 +12,7 @@ __Result:__ Ongoing. Ask me a year ago and I would have said mixed.
 The house worked: built, permitted, and the cozy desert Southwest home I always wanted.
 The money did not, at least not yet. Site work, water, and power alone came to about 244,000 USD on a 12,500 USD lot,
 and with a property management company running it, the cash flow came in below what I built it for.
+The first year added its own surprise: rotten-egg well water that has taken about 9,100 USD of fixes so far.
 So in fall 2026 I am trying something new: managing the rental myself, with AI and LLMs doing most of the work.
 My hypothesis is that this gets the cash flow close to where I want it.
 
@@ -166,6 +167,38 @@ and handled the remaining electrical, water, and sewer trenching.
 
 ### Hand it to a property manager
 After the Certificate of Occupancy in July 2025, I signed with Vacasa to run it as a short-term rental.
+It went live on October 10, 2025. In March 2026, Vacasa assigned my contract to another management company.
+
+## Year One: September 2025 to October 2026
+
+### The hydrogen sulfide saga: about 9,100 USD so far
+The well water smells like rotten eggs. That is hydrogen sulfide (H2S) gas, and it showed up in spring 2025,
+right as the house was getting ready for guests.
+<span class="sidenote-number"></span><span class="sidenote">
+Sulfate-reducing bacteria feed on the sulfate in the water and give off H2S.
+My 2024 well test showed high sulfate, a pH of 8.05, and almost no iron (0.083 mg/L).
+</span>
+
+- __Spring 2025: the water treatment system (UV and under-sink reverse osmosis), 15,096 USD.__ Installed with the pump and pressure tank. The kitchen tap was great. Every other tap still smelled.
+- __August-September 2025: carbon block filters in the pumphouse, 1,296 USD.__ Worked for 5-6 months.
+- __February-March 2026: the smell came back.__ Replaced every filter, including the UV and reverse osmosis, for 2,214 USD.
+The odor in the house was gone, but the gas at the well was the same. The driller floated a cistern to aerate the water if it got worse.
+- __September 2026: back in force.__ The property manager smelled it dropping off supplies.
+I put a maintenance hold on the calendar from September 9 to October 28 instead of collecting bad reviews.
+- __October 21, 2026: an air injection sulfur filter with an ozone kit, 5,618 USD.__
+Air injection oxidizes the H2S before it reaches the pressure tank, so there is no carbon media to foul every 3-6 months.
+
+What I would do differently: get an on-site H2S reading before buying anything.
+Nobody ever measured the sulfide level, so every fix was a guess.
+
+### Everything else
+- __Leach field repair, April 2026: 1,480 USD.__ A fitting in the original septic install was the wrong type.
+- __Mini-split, May-June 2026:__ no heat or cooling in any zone. I reached out to half a dozen HVAC companies before one fixed a leaking line set.
+- __Electrical breakers, September 2026:__ breaker problems. The fix is bundled with the EV charger install.
+- __Deck, September 2026: about 4,000 USD in labor.__ An 8x8 dining area and a 4x14 walkway out front, in composite, for shoulder season appeal.
+- __Level 2 EV charger, September-October 2026: 1,170 USD in hardware.__ Install in progress.
+- __Running costs:__ property insurance through the Colorado FAIR Plan at 1,632 USD a year, a 724 USD county vacation rental permit,
+a radon test (2.6 pCi/L, no mitigation needed), and snow removal.
 
 ## Did It Work?
 __The house: yes.__
@@ -179,6 +212,7 @@ I always fantasized about a cozy home in the desert Southwest and stumbled into 
 
 __The money: not yet.__ Over four years from land to Certificate of Occupancy,
 244,000 USD before the foundation and the house, and a professional manager taking their cut.
+Then the first year added about 9,100 USD chasing the smell, a few thousand in repairs, and seven weeks blocked off on the calendar.
 The cash flow came in under the number _JZ the business_ needs.
 
 __What I would tell you before you try this:__
@@ -188,6 +222,7 @@ __What I would tell you before you try this:__
 - __Hire a general contractor for the foundation.__ Remote, with no GC experience, I could not have done it.
 - __Concrete crews are the bottleneck.__ I lost the whole 2024 building season trying to find reliable concrete workers.
 - __Chase the paperwork.__ The final state stamp sat for months waiting on paperwork from the house manufacturer.
+- __Test the water for what you are actually fighting.__ Measure H2S on site before picking a treatment.
 
 ## What Is Next: AI-Led Management
 The same bet I made with [Vraid Systems](/2026/03/running-a-business-with-llms/):
@@ -229,4 +264,23 @@ The final state of Colorado stamp was held up by missing paperwork from Custom C
 - July 31, 2025: Certificate of Occupancy from Archuleta County.
 - August 8, 2025: Signed a "Vacation Rental Services Agreement" with Vacasa to manage the property.
 - August-September, 2025: Several trips to decorate, furnish, and prep the house to Vacasa's specs.
-- October 2026: Gave the property manager notice and moved to AI-led self-management.
+- August 21, 2025: Archuleta County vacation rental permit, 724 USD.
+- September 2, 2025: DAK Drilling installed carbon block filters in the pumphouse for the H2S smell.
+- September 26, 2025: Septic pump panel rewired, 480 USD.
+- October 10, 2025: Listed and live as a short-term rental.
+- October 24, 2025: Property insurance through the Colorado FAIR Plan, 1,632 USD.
+- February 2, 2026: Radon test, 2.6 pCi/L, no mitigation needed.
+- February 16, 2026: H2S smell back after 5-6 months.
+- March 5, 2026: DAK replaced all filters (carbon, UV, reverse osmosis), 2,214 USD.
+- March 23, 2026: Vacasa assigned the management contract to another company.
+- April 21, 2026: Leach field repaired, 1,480 USD.
+- May-June, 2026: Mini-split stopped heating and cooling. Line set leak repaired in late June.
+- August 2026: Vacation rental permit renewed.
+- September 1, 2026: Electrical breaker issues. Started planning a Level 2 EV charger and a front deck.
+- September 4, 2026: H2S smell back in force.
+- September 9, 2026: Maintenance hold on bookings through October 28.
+- September 15-21, 2026: Deck built, about 4,000 USD in labor. EV charger hardware bought, 1,170 USD.
+- October 13, 2026: Gave the property manager notice.
+- October 14-19, 2026: Ordered an engineered cost segregation study.
+- October 21, 2026: DAK installed an air injection sulfur filter with an ozone kit, 5,618 USD.
+Management by the property manager ended the same day, and I moved to AI-led self-management.
