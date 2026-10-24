@@ -28,7 +28,8 @@ My self from 10 years ago would hate that advice.
 ### 2. Live in the problem to find the opportunity
 To spot solutions, I need to experience the problem up close.
 
-Example: my power was shut off from 4 PM Wednesday, December 17, to 2 AM Thursday, December 18. Why?
+Example: my power was shut off from 4 PM Wednesday, December 17, to 2 AM Thursday, December 18.
+Xcel cut power to [nearly 100,000 Coloradans](https://www.coloradopolitics.com/2025/12/17/xcel-shuts-off-power-west-of-denver-nearly-100k-coloradans-affected) to keep high winds from starting wildfires. Why?
 
 - Shifts in the North American jet stream, caused by greenhouse gases released by past generations
 - Voters in my municipality unwilling to adapt the built environment
@@ -51,7 +52,8 @@ How's that for positive?
 ### 4. You do not need to be richer or more famous to make change
 Every year I lied to myself that making change took far more wealth or notoriety than I had.
 
-Meanwhile the US dollar has lost half its purchasing power over the last 20 years.
+Meanwhile the US dollar has lost half its purchasing power over the last 30 years.
+[Prices more than doubled from 1995 to 2025](https://ir.mit.edu/projects/cpi-u).
 You need to make at least double what your parents made!
 That gap helps explain why my generation's priorities are different from our parents'.
 
@@ -62,13 +64,13 @@ Some questions I keep asking:
 - I understand the need to socialize. But who is paying to go to the golf club? Eh, that's not a good one, but someone with the leisure time to reflect on this post probably is.
 
 ### 5. Frustrating and exciting are the same thing
-I am not sure many people in earlier generations really feel what it is like to lose half the dollar's purchasing power in 20 years.
+I am not sure many people in earlier generations really feel what it is like to lose half the dollar's purchasing power in 30 years.
 Or to not be able to count on the electricity.
 Well, my grandparents did. They grew up in rural Alberta, Iowa, Kansas, and Montana.
 
 - There is no safety net for my peers who get laid off.
 - The lack of investment in people holds back great entrepreneurship.
-- There will be no nationally sponsored retirement.
+- Social Security's retirement fund [runs dry in 2032](https://www.ssa.gov/oact/tr/2026/II_E_conclu.html), and after that it pays about 78% of benefits.
 
 It feels utterly impossible!
 
