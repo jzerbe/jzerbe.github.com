@@ -1,156 +1,197 @@
 /* -----------------------------------------------------------
-   THE DOSSIER IDENTITY SYSTEM
-   Ref: JZ Redesign Docs [cite: 43]
+   GEOLOGIC: the site's one stylesheet
    ----------------------------------------------------------- */
 
 :root {
-    /* COLOR PALETTE: "The Geological Stack"  */
-    --bg-color:       #F2F0ED; /* Raw Concrete / High-End Paper [cite: 47] */
-    --text-color:     #1A1A1A; /* Obsidian [cite: 47] */
-    --accent-color:   #354F52; /* Oxidized Copper [cite: 47] */
-    --border-color:   #D1CDC7; /* Mortar [cite: 47] */
-    --meta-color:     #2B3D50; /* Blueprint Blue [cite: 47] */
+    /* Palette */
+    --bg-color:       #F2F0ED; /* raw concrete */
+    --text-color:     #1A1A1A; /* obsidian */
+    --accent-color:   #354F52; /* oxidized copper */
+    --border-color:   #D1CDC7; /* mortar */
+    --meta-color:     #2B3D50; /* blueprint blue */
+    --accent-tint:    rgba(53, 79, 82, 0.1);
+    --meta-tint:      rgba(43, 61, 80, 0.05);
+    --border-tint:    rgba(209, 205, 199, 0.2);
 
-    /* TYPOGRAPHY: "The Lab & The Field" [cite: 48] */
-    --font-heading:   'Public Sans', sans-serif; /* Structural, architectural [cite: 49] */
-    --font-body:      'IBM Plex Serif', serif;   /* High-end journal style [cite: 50] */
-    --font-mono:      'JetBrains Mono', monospace; /* Metadata/Technical [cite: 51] */
+    /* Type */
+    --font-heading:   'Public Sans', sans-serif;
+    --font-body:      'IBM Plex Serif', serif;
+    --font-mono:      'JetBrains Mono', monospace;
 }
 
-/* BASE STYLES */
+/* BASE */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: var(--bg-color); /* [cite: 32] */
+    margin: 0;
+    background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--font-body);
     font-weight: 400;
     line-height: 1.6;
-    /* subtle grain texture requested in [cite: 32] can be added here via background-image url if available */
+    counter-reset: sidenote-counter;
 }
 
-/* HEADINGS */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-weight: 700;
-    text-transform: uppercase; /* All-caps for structural feel [cite: 49] */
+    text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--text-color);
 }
 
-/* LINKS */
 a {
     color: var(--accent-color);
     text-decoration: none;
     border-bottom: 1px solid transparent;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); /* Mechanical feel [cite: 86] */
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-a:hover {
-    background-color: rgba(53, 79, 82, 0.1); /* Highlighter pen effect [cite: 82] */
+a:hover,
+a:focus-visible {
+    background-color: var(--accent-tint);
     border-bottom-color: var(--accent-color);
 }
 
-/* LAYOUT UTILITIES */
+/* LAYOUT */
 .container {
-    max-width: 1200px; /* Fixed Grid System [cite: 58] */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
-    border-left: 1px dashed var(--border-color); /* Blueprint styling [cite: 33] */
+    border-left: 1px dashed var(--border-color);
     border-right: 1px dashed var(--border-color);
 }
 
-/* METADATA BLOCKS (The "Data" Block) [cite: 7] */
+/* SITE HEADER */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+}
+
+.site-header .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem 2rem;
+}
+
+.logo-area {
+    font-family: var(--font-mono);
+    font-weight: 700;
+}
+
+.logo-area a {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    padding: 2px 6px;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+}
+
+/* HOME: HERO */
+.hero-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2rem;
+    padding: 4rem 0;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin: 0 0 1.5rem;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+}
+
+.status-box {
+    background: var(--meta-tint);
+    padding: 1.5rem;
+    border: 1px solid var(--meta-color);
+}
+
+.status-box h4 {
+    color: var(--meta-color);
+    margin-top: 0;
+}
+
+.status-box p {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+}
+
+/* HOME: POST LIST */
+.posts {
+    padding: 2rem 0 3rem;
+}
+
+.posts .post-title {
+    margin-bottom: 0.25rem;
+}
+
+.post-date {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--meta-color);
+}
+
+/* METADATA BLOCK */
 .meta-block {
     font-family: var(--font-mono);
     font-size: 0.85rem;
     color: var(--meta-color);
-    border-left: 4px solid var(--meta-color); /* Heavy bar [cite: 33] */
+    border-left: 4px solid var(--meta-color);
     padding-left: 1rem;
     margin-bottom: 2rem;
 }
 
 /* -----------------------------------------------------------
-   THE FIELD NOTES LAYOUT (Sidenotes)
-   Ref: Tufte-inspired margins
+   POSTS AND PAGES (Tufte-style sidenotes)
    ----------------------------------------------------------- */
 
-/* Layout Grid */
 .post-container {
-    display: grid;
-    grid-template-columns: 1fr; /* Default mobile */
     max-width: 1400px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
-/* Desktop: Create the wide margin */
-@media (min-width: 1100px) {
-    .post-content {
-        width: 60%; /* Main text takes 60% */
-        margin-right: 40%; /* Reserve 40% for notes */
-    }
-}
-
-/* Typography Overrides for Posts */
 .post-content p {
-    font-family: var(--font-body); /* IBM Plex Serif */
     font-size: 1.15rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
 }
 
-/* THE SIDENOTE CLASS */
-.sidenote {
-    float: right;
-    clear: right;
-    margin-right: -55%; /* Push into the empty margin */
-    width: 45%;         /* Width of the note */
-    margin-top: 0.3rem;
-    margin-bottom: 1rem;
-
-    /* Styling */
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
-    line-height: 1.4;
-    color: var(--meta-color); /* Blueprint Blue */
-    vertical-align: baseline;
-    position: relative;
-
-    /* The "Architect's Blueprint" look  */
-    border-left: 1px solid var(--accent-color);
-    padding-left: 10px;
-}
-
-/* Numbering for the text reference */
-.sidenote-number {
-    counter-increment: sidenote-counter;
-}
-
-.sidenote-number:after {
-    content: counter(sidenote-counter);
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    vertical-align: super;
-    color: var(--accent-color);
-    margin-left: 2px;
-    cursor: help;
-}
-
-/* Hiding the inline number inside the note itself if desired */
-.sidenote .sidenote-number:after {
-    content: "";
-}
-
-/* POST METADATA BLOCK [cite: 7] */
 .post-metadata {
     font-family: var(--font-mono);
-    border-bottom: 4px solid var(--text-color); /* Heavy bar [cite: 33] */
+    border-bottom: 4px solid var(--text-color);
     padding-bottom: 1.5rem;
     margin-bottom: 3rem;
-    max-width: 60%; /* Match text width */
 }
 
 .meta-row {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0 1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -160,52 +201,98 @@ a:hover {
     font-weight: 700;
 }
 
-/* MOBILE RESPONSIVENESS  */
-@media (max-width: 1099px) {
-    .post-content {
-        width: 100%;
-        margin-right: 0;
+.meta-value {
+    flex: 1;
+    min-width: 12rem;
+}
+
+.tag-box {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.end-of-file {
+    font-family: var(--font-mono);
+    color: var(--border-color);
+    margin: 3rem 0 1rem;
+}
+
+/* Sidenotes */
+.sidenote {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: var(--meta-color);
+    margin: 1rem 0;
+    padding: 1rem;
+    background: var(--border-tint);
+    border-left: 4px solid var(--accent-color);
+}
+
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+
+.sidenote-number::after {
+    content: counter(sidenote-counter);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    vertical-align: super;
+    color: var(--accent-color);
+    margin-left: 2px;
+}
+
+.sidenote::before {
+    content: counter(sidenote-counter) ". ";
+    color: var(--accent-color);
+}
+
+/* Desktop: main column at 60%, notes float into the right margin */
+@media (min-width: 1100px) {
+    .post-content,
+    .post-metadata {
+        width: 60%;
     }
 
     .sidenote {
-        float: none;
-        margin: 1rem 0;
-        width: 100%;
-        display: block;
-        background: rgba(209, 205, 199, 0.2); /* Slight background to separate */
-        padding: 1rem;
-        border-left: 4px solid var(--accent-color); /* Thicker border on mobile */
+        float: right;
+        clear: right;
+        width: 45%;
+        margin: 0.3rem -55% 1rem 0;
+        padding: 0 0 0 10px;
+        background: none;
+        border-left-width: 1px;
     }
 }
 
-/* -----------------------------------------------------------
-   FIX: CONTENT CONTAINMENT
-   Prevents images/code from breaking the 60% layout
-   ----------------------------------------------------------- */
-
+/* Keep media, code and tables inside the column */
 .post-content img,
 .post-content video,
 .post-content iframe {
-    max-width: 100%;       /* Force media to fit the column */
-    height: auto;          /* Maintain aspect ratio */
-    display: block;        /* Prevent inline spacing issues */
-    border: 1px solid var(--border-color); /* Add the "Dossier" border to images */
-    margin: 1.5rem 0;      /* Vertical breathing room */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--border-color);
+    margin: 1.5rem 0;
 }
 
-/* Fix for Code Blocks & Long Strings */
+.post-content .gaiagps_embed {
+    width: 100%;
+    height: 500px;
+}
+
 .post-content pre,
 .post-content code {
-    white-space: pre-wrap; /* Wrap long lines of code */
-    word-wrap: break-word; /* Break long words/URLs if needed */
-    max-width: 100%;       /* Ensure it stays in the box */
-    overflow-x: auto;      /* Add scrollbar if it absolutely must overflow */
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    max-width: 100%;
+    overflow-x: auto;
 }
 
-/* Fix for Tables (often used in financial posts) */
 .post-content table {
-    width: 100%;           /* Force table to fit */
-    display: block;        /* Allow scrolling on mobile if needed */
+    width: 100%;
+    display: block;
     overflow-x: auto;
     border-collapse: collapse;
 }
@@ -214,6 +301,28 @@ a:hover {
 .post-content td {
     border: 1px solid var(--border-color);
     padding: 0.5rem;
-    font-family: var(--font-mono); /* Apply the technical font to data */
+    font-family: var(--font-mono);
     font-size: 0.85rem;
+}
+
+/* PHONE */
+@media (max-width: 700px) {
+    .container {
+        padding: 0 1rem;
+        border-left: none;
+        border-right: none;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        padding: 2.5rem 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2.25rem;
+    }
+
+    .post-content p {
+        font-size: 1.05rem;
+    }
 }

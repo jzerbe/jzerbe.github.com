@@ -3,21 +3,21 @@ layout: default
 title: Home
 ---
 
-<section class="hero-grid" style="display: grid; grid-template-columns: 3fr 2fr; gap: 2rem; padding: 4rem 0; border-bottom: 1px dashed var(--border-color);">
+<section class="hero-grid">
 
     <div class="hero-text">
-        <h1 style="font-size: 3rem; line-height: 1.1; margin-bottom: 1.5rem;">
+        <h1>
             SYSTEMS<br />FROM<br />CODE TO CRYOGENICS.
         </h1>
-        <p style="font-size: 1.25rem;">
+        <p>
             I research and solve systems.
             Vraid Systems runs the infrastructure.
         </p>
     </div>
 
-    <div class="status-box" style="background: rgba(43, 61, 80, 0.05); padding: 1.5rem; border: 1px solid var(--meta-color);">
-        <h4 style="color: var(--meta-color); margin-top: 0;">The Quick Version</h4>
-        <p style="font-family: var(--font-mono); font-size: 0.9rem;">
+    <div class="status-box">
+        <h4>The Quick Version</h4>
+        <p>
             My career has been defined by a transition from the abstract to the tangible: moving from
             designing software architectures to optimizing the physical flow of goods across borders.
             Whether it is a data pipeline or a supply chain, the core interest remains the same: Systems.
@@ -30,7 +30,7 @@ title: Home
   {% for post in posts_by_order %}
   <div class="post">
     <h3 class="post-title">
-      <a href="{{ post.url }}">
+      <a href="{{ post.url | relative_url }}">
         {{ post.title }}
       </a>
     </h3>
@@ -40,5 +40,3 @@ title: Home
   {% endfor %}
 </div>
 
-<div class="meta-block">
-</div>
