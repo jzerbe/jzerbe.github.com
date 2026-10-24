@@ -3,67 +3,64 @@ layout: page
 title: The Person
 ---
 
-## Lead-In
-A generalist focused on getting to "Yes".
-I enjoy spotting and pulling out hidden potential.
-I am analytical at the high level, intuitive at the low level, and unapologetically unconventional in my approach.
+## Short Version
+Generalist. I like getting to "yes" on problems other people have written off,
+and pulling out potential nobody else noticed.
+Analytical at the high level, intuitive at the low level, and fine doing it the odd way if the odd way works.
 
-## Architecture of a Career
-I spent 15 years building software that powers modern industry.
-My work has always been at the intersection of complex data and high-stakes decision-making:
-- __Intelligence & Governance__: At Immuta, I designed data provisioning (agent and human) solutions for enterprise
-clients, leading evaluations to ensure stakeholders made the right buying decisions for their data platforms;
-closing many millions of dollars of new business.
-- __AI & Search__: As a Technical Product Owner at Koverse, I led the development of AI-guided
-search products and built operational processes for intelligence products designed for non-technical decision-makers.
-- __Energy & Environment__: At Tendril Networks, I managed the launch of novel machine learning technology
-for smart-thermostat load shifting. This system reduced business costs by 80% and secured multi-million
-dollar contracts with major utilities.
-- __Compliance & Scale__: At Workiva, I contributed to the Digital Review suite used for SEC and SOX
-compliance, helping scale a platform where usage tripled during my tenure.
+This site is my lab notebook: problems I ran into, what I tried, and whether it worked.
 
-## Current Venture: Vraid Systems
-In 2020, I took my background in data engineering and applied it to the "dirt" and "grit" of global logistics.
-As the General Manager of Vraid Systems, I focus on delivering construction materials, telecom equipment,
-lab disposables, and consumer packaged goods faster and more efficiently than traditional players.
+## Work So Far
+15 years building software, mostly where messy data meets expensive decisions:
 
-My goal is to strip away the friction from physical
-trade using the same rigor I once applied to software re-architecture.
+- __Data governance__: At Immuta, I designed data provisioning for enterprise clients (for both people and AI agents)
+and ran the evaluations that helped buyers pick the right platform. Many millions of dollars in new business closed.
+- __AI and search__: As Technical Product Owner at Koverse, I led AI-guided search products and built the
+operating process for intelligence products used by non-technical decision-makers.
+- __Energy__: At Tendril Networks, I launched new machine learning for smart-thermostat load shifting.
+It cut costs by 80% and won multi-million dollar contracts with major utilities.
+- __Compliance__: At Workiva, I worked on the Digital Review suite for SEC and SOX filings.
+Usage tripled while I was there.
 
-## Personal Stack
-I am not just a founder; I am a practitioner of the integrated life.
-- __Research__: I was a licensed Investment Advisor Representative, a role that fuels my
-interest in arbitrage and the mechanics of the economic caste system.
-- __The Field__: When I’m not analyzing supply chains or writing "field notes",
-I’m likely on a splitboard or mountain bike, navigating the same rugged landscapes where
-our mining and ranching clients operate.
-- __Lifestyle__: My path is in mastering my ego and willpower as a "Protector" and "Mentor".
-Financial and schedule freedom, challenging and testing people's mettle to bring out their strengths, and
-bypassing piousness or correctness for the public good are core.
+## Vraid Systems
+In 2020 I pointed the data engineering background at physical trade.
+As General Manager of Vraid Systems, I deliver construction materials, telecom equipment,
+lab disposables, and consumer packaged goods faster and cheaper than the traditional players.
+Most of the work is public tenders for state governments and UN agencies.
+
+The goal is less friction and fewer middlemen, with software doing the paperwork.
+How that is going: [Running Vraid Systems on LLMs]({% post_url 2026-03-17-running-a-business-with-llms %}).
+
+## Outside of Work
+
+- __Research__: I was a licensed Investment Advisor Representative.
+I am still into arbitrage and the mechanics of the economic caste system.
+- __Outside__: Usually on a splitboard or mountain bike, often in the same rough terrain our mining and ranching clients work in.
+- __Mindset__: Working on ego and willpower, in the "Protector" and "Mentor" sense.
+What I care about: financial and schedule freedom, testing people's mettle to bring out their strengths,
+and doing the useful thing over the pious one.
 <span class="sidenote-number"></span><span class="sidenote">
     <a href="https://paulgraham.com/love.html">https://paulgraham.com/love.html</a>
 </span>
 <span class="sidenote-number"></span><span class="sidenote">
-  _Enneagram_ + _Human Design_ then ask an LLM "Can you explain the attached documents?" with your PDF results.
+  Take _Enneagram_ and _Human Design_, then give an LLM the PDF results and ask "Can you explain the attached documents?"
 </span>
-- __Foundation__: I hold a B.S. in Computer Science from the University of Minnesota,
-with an emphasis on Databases and Networking: the original "logistics" of the digital world.
+- __School__: B.S. in Computer Science from the University of Minnesota, focused on databases and networking.
 <span class="sidenote-number"></span><span class="sidenote">
     <a href="{{ site.sidebar.github.link }}">{{ site.sidebar.github.link }}</a>
 </span>
 
-## Other Things
-I delight in having conversations with interesting people:
-active listening where we are both asking each other follow-up questions, in the flow of the experience.
-I find others' experiences fascinating.
+## What I Like
+Conversations where both people keep asking follow-up questions and lose track of time.
+Other people's experiences are endlessly interesting to me.
 
-I enjoy systems which accomplish something in the messy real world, especially if they are novel to me.
-My superpower is an efficient focus on solving new problems;
-sales adjacent roles seem to be the best place to exercise this where profit sharing occurs naturally.
+Systems that get something done in the messy real world, especially ones that are new to me.
+My best skill is locking onto a new problem fast.
+Sales-adjacent roles are where that pays off best, since profit sharing comes built in.
 
-I have shown myself that any domain is approachable with the correct decomposition of problems,
-based on the breadth of pursuits I have tried and accomplished.
+So far every domain I have tried gave way once I broke the problem down the right way.
 
-Please contact me for contract and part-time opportunities to build in real or thought space.
+## Contact
+Email me about contract and part-time work, in real or thought space.
 
 <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>

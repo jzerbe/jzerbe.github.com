@@ -10,17 +10,16 @@ title: Home
             SYSTEMS<br />FROM<br />CODE TO CRYOGENICS.
         </h1>
         <p>
-            I research and solve systems.
-            Vraid Systems runs the infrastructure.
+            I try the things most people talk themselves out of,
+            then write down whether they worked.
         </p>
     </div>
 
     <div class="status-box">
-        <h4>The Quick Version</h4>
+        <h4>How to read this</h4>
         <p>
-            My career has been defined by a transition from the abstract to the tangible: moving from
-            designing software architectures to optimizing the physical flow of goods across borders.
-            Whether it is a data pipeline or a supply chain, the core interest remains the same: Systems.
+            Each entry is an experiment: the problem, what I tried, and the result.
+            The result goes at the top. Failures stay up, since those are usually the useful part.
         </p>
     </div>
 </section>
@@ -35,7 +34,10 @@ title: Home
       </a>
     </h3>
 
-    <span class="post-date">{{ post.tags | array_to_sentence_string }}</span>
+    <span class="post-date">
+      {% if post.outcome %}<span class="outcome outcome-{{ post.outcome | downcase }}">{{ post.outcome | upcase }}</span>{% endif %}
+      {{ post.tags | array_to_sentence_string }}
+    </span>
   </div>
   {% endfor %}
 </div>
