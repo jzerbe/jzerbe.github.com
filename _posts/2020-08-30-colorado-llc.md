@@ -13,7 +13,7 @@ tags:
 title: The Colorado LLC as a wealth management tool
 ---
 __Result:__ It worked.
-The 20% Qualified Business Income (QBI) deduction, plus deducting the costs of running my investment portfolio as a business, paid off.
+The 20% Qualified Business Income (QBI) deduction, plus deducting the costs of running an investment and property management business, paid off.
 Setup cost about $225 to $375, and upkeep is a [$25 periodic report](https://www.sos.state.co.us/pubs/info_center/fees/business.html) each year.
 As a Colorado tax resident, forming in a no income tax state like Nevada or Wyoming did not make sense.
 
@@ -27,18 +27,24 @@ To be clear, I do not support an unfair tax system.
 I want regular people to use the same loopholes while we work on reversing the
 [Citizens United](https://www.brennancenter.org/our-work/research-reports/citizens-united-explained) mess.
 
-__Hypothesis:__ If I run my investment portfolio through an LLC as an _Investing and Lending_ business,
-the interest income qualifies for the QBI deduction, and the costs of running the portfolio become business deductions.
+__Hypothesis:__ If I run an investment and property management business through an LLC,
+its income qualifies for the QBI deduction, and the costs of running it become business deductions.
 
 Why it matters: individuals can no longer itemize investment expenses.
 The 2017 tax law suspended those deductions, and the 2025 tax law
 [made that permanent](https://www.cozen.com/news-resources/publications/2025/changes-to-itemized-deductions-in-the-obbba).
 Expenses are only deductible if they come from a trade or business.
-<span class="sidenote-number"></span><span class="sidenote">
-The catch: the Supreme Court held in _Higgins v. Commissioner_ that managing your own investments is not a trade or business,
-even if you do it full time. The Tax Court's _Lender Management_ case shows what a real investment business looks like.
-<a href="https://www.daypitney.com/epc/article/print/5064">Day Pitney summary</a>. Have a CPA look at your setup.
-</span>
+The LLC has to actually be one: run with
+[continuity and regularity, with income or profit as the main purpose](https://en.wikipedia.org/wiki/Commissioner_v._Groetzinger).
+
+The LLC also owns and runs a short-term rental: the
+[container home I built in Pagosa Springs](/2026/01/building-in-colorado-mountains/).
+Rental real estate gets a clear [IRS safe harbor](https://www.irs.gov/node/71431) for counting as a business under QBI:
+
+- Separate books and records for the rental
+- 250 or more hours of rental services a year
+- Contemporaneous time logs: hours, what was done, the dates, and who did it
+- A statement attached to the tax return
 
 ## The Solution I Tried
 A [Single Member LLC](https://www.irs.gov/businesses/small-businesses-self-employed/single-member-limited-liability-companies).
