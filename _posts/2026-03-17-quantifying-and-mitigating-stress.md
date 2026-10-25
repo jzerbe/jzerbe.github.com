@@ -12,8 +12,12 @@ tags:
 - yoga
 title: Quantifying and mitigating stress to be more powerfully human
 ---
-__Result:__ It worked. My blood pressure readings now average 10-20 lower.
-I am more often the person I want to be, and I do not focus on negatives as much.
+__Result:__ It worked, and seven months later it is holding.
+My blood pressure readings still average 10-20 lower.
+I am down to one high-quality meditation a week, and handing the minutiae of running a business to AI took away a lot of what was competing for my time.
+My wife tells me I am more present more often, which is great for my marriage.
+
+_First written March 2026, updated October 2026._
 
 ## The Problem
 I swam competitively in high school. They teach you to go fast, not sustainably.
@@ -23,9 +27,12 @@ Most jobs are the same: fast, not healthy.
 Sales at most organizations is bad for your health.
 Your agenda for the day keeps changing until 30-60 minutes before.
 A "quick call" can easily turn into an hour.
-On bad days I could hit 135/85, which the
-[American Heart Association's chart for blood pressure readings](https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings)
-says is not good.
+On bad days I could hit 135/85, which is
+[stage 1 hypertension](https://www.merckmanuals.com/professional/multimedia/table/classification-of-blood-pressure-in-adults)
+under the 2025 American Heart Association guideline (130-139 over 80-89).
+<span class="sidenote-number"></span><span class="sidenote">
+<a href="https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings">AHA: understanding blood pressure readings</a>
+</span>
 
 Selling is one of many things I play at.
 If I want to enjoy the rest of life's play, I cannot overdo it.
@@ -35,7 +42,10 @@ The fake and pious language around spiritual practice pissed me off enough to st
 You do not need their language. Power comes from finding your own.
 Here I use the language I needed to hear back then: hate and power.
 
-## What I Tried
+__Hypothesis:__ Train my attention the way a fast trail forces me to, cut the inputs competing for it,
+and the numbers on the blood pressure cuff will follow.
+
+## The Solution I Tried
 
 ### Phase 1: Empty Head
 Mountain biking showed me mind and body were connected: empty my head or hit trees.
@@ -70,15 +80,27 @@ What I am doing:
 - __Notifications__: Every phone notification is off, always, except actual calls, texts, and
 [Signal](https://signal.org/). I took away the notification permissions.
 - __Quiet hours__: Phone on vibrate during the day, everything muted from 2125 to 0730.
-- __Practice__: Meditating at least every other day.
+- __Practice__: Meditating at least every other day. These days, one high-quality session a week holds the line.
+
+### Phase 5: Hand Off the Minutiae
+The surprise came from work, not the cushion.
+Once AI took over most of the clerical side of [running Vraid Systems](/2026/03/running-a-business-with-llms/),
+fewer things felt like they were competing for my time.
+Less to keep track of means less to be anxious about, and more of me shows up at home.
 
 ## Did It Work?
 Yes. What I have noticed about myself:
 
-- __Blood pressure__: Readings average 10-20 lower.
+- __Blood pressure__: Readings average 10-20 lower, still true in October 2026.
 I take them on the left and right upper arms after meditating, between meals.
+<span class="sidenote-number"></span><span class="sidenote">
+Fair warning on my own method: the usual home routine is to
+<a href="https://map.ama-assn.org/sites/default/files/2024-05/How%20to%20measure%20blood%20pressure%20at%20home.pdf">rest 5 minutes, then take 2 readings a minute apart, morning and night</a>.
+Right after meditating is probably my best number of the day, not my average one.
+</span>
 - __Behavior__: I am more often the person I want to be.
 - __Outlook__: I do not seem to focus on negatives as much.
+- __Home__: My wife tells me I am more present more often.
 
 ## What I Am Not Doing
 
