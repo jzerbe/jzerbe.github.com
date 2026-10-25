@@ -101,9 +101,29 @@ Upkeep is light:
 - __Meetings__: private Alberta corporations can act by
 [written resolution](https://www.bennettjones.com/Insights/Blogs/2023/04/If-Its-Broke-Fix-It-Amendments-to-the-Alberta-Business-Corporations-Act).
 As the only shareholder, I sign resolutions instead of holding meetings.
-- __Taxes__: file the T2 with the Canada Revenue Agency. I use <https://netfilet2.taxtron.ca/>.
-First you have to file an individual $0 tax return to get into the CRA's system and be self-serve.
+- __Taxes__: two returns now instead of one. See below.
 - __Banking__: covered in [Bootstrapping personal Canadian financial services](/2026/07/bootstrapping-canadian-finances/).
+
+### The catch: Alberta runs its own corporate tax
+The Canada Revenue Agency collects provincial corporate tax
+[for every province except Quebec and Alberta](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/provincial-territorial-corporation-tax.html).
+In BC, the federal T2 return covered everything. In Alberta, it does not.
+The tax number stayed the same through the continuance, but Alberta adds a second, separate return:
+
+- __Federal T2__ with the Canada Revenue Agency, same as before. I use <https://netfilet2.taxtron.ca/>.
+First you have to file an individual $0 tax return to get into the CRA's system and be self-serve.
+- __Alberta AT1__ with Alberta Tax and Revenue Administration (TRA), for any corporation with a
+[permanent establishment in Alberta during the year](https://www.alberta.ca/corporate-income-tax).
+It is due 6 months after year-end, and since 2025 it
+[has to be net filed electronically](https://www.alberta.ca/corporate-income-tax), with a 1,000 CAD penalty if not.
+TaxTron is on Alberta's
+[list of software certified for AT1 net file](https://open.alberta.ca/dataset/ecb4beb2-a18e-43b5-8524-98f3f0230ce0/resource/e29fad96-f608-4414-8848-d4b71d57ef84/download/tbf-corporate-income-tax-software-certified-for-at1-net-file-2020-0527.pdf).
+- __Alberta account number__: the [Corporate Access Number on the Alberta certificate](https://www.alberta.ca/corporate-income-tax) is the corporate tax account number.
+- __TRACS__: Alberta's online account for corporate tax. It shows assessments, handles address changes,
+direct deposit, and objections. You enrol with a TRACS Enrolment Request.
+
+What this means for Vraid: upkeep went from one tax return to two, plus a second government account to watch.
+I have not dug into the AT1 closely yet, so this part is still ONGOING.
 
 __Lesson:__ check for an old extra-provincial registration in the destination province before you start.
 It costs nothing to cancel, but it will stall the continuance until you do.
