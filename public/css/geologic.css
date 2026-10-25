@@ -334,6 +334,7 @@ a:focus-visible {
 }
 
 .post-content table {
+    overflow-wrap: normal; /* never split numbers mid-digit */
     width: 100%;
     display: block;
     overflow-x: auto;
@@ -346,6 +347,12 @@ a:focus-visible {
     padding: 0.5rem;
     font-family: var(--font-mono);
     font-size: 0.85rem;
+}
+
+/* keep amounts in the last column on one line */
+.post-content th:last-child,
+.post-content td:last-child {
+    white-space: nowrap;
 }
 
 /* PHONE */

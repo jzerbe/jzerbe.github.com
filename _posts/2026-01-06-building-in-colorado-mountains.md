@@ -10,7 +10,8 @@ title: Building a container home in the Colorado mountains
 ---
 __Result:__ Ongoing. Ask me a year ago and I would have said mixed.
 The house worked: built, permitted, and the cozy desert Southwest home I always wanted.
-The money did not, at least not yet. Site work, water, and power alone came to about 244,000 USD on a 12,500 USD lot,
+The money did not, at least not yet. Construction came to about 617,000 USD all-in on a 12,500 USD lot,
+more than half of it site work and water,
 and with a property management company running it, the cash flow came in below what I built it for.
 The first year added its own surprise: rotten-egg well water that has taken about 9,100 USD of fixes so far.
 So in fall 2026 I am trying something new: managing the rental myself, with AI and LLMs doing most of the work.
@@ -97,7 +98,7 @@ upfront ballpark pricing, and online designs to pick from.
 For my budget, space needs, and delivery constraints I went with
 [the Double Duo](https://www.customcontainerliving.com/residential/the-double-duo/).
 
-### Permits and excavation: 108,471 USD
+### Permits and excavation
 Reading [Archuleta County's Modular building permit](https://www.archuletacounty.gov/county-government/development-services/building-department/permit-applications/)
 in 2022 wasn't too painful, even before consumer-grade LLMs took off. What the packet asked for:
 
@@ -115,9 +116,9 @@ then get the final review once it is powered with a warning alarm
 9. Pay the permit fee (cash or check only)
 
 Pagosa Landworks took massive amounts of material out of the hillside, and we did some extremely creative things with Davis Engineering.
-You could probably cut that cost in half on a flat lot.
+You could probably cut the excavation cost in half on a flat lot.
 
-### Water: 120,078 USD
+### Water
 By this point I had become much more averse to novel construction.
 I had planned a [rain water collection system](https://www.alltexirrigation.com/rain-harvesting) with a massive underground cistern.
 After some confident words from [DAK Drilling and Well Services](https://dakdrilling.com/),
@@ -133,9 +134,10 @@ The only legal use for this well water is inside domestic use (showering, drinki
 
 Just drilling the well to ~500ft was 52,050 USD. They make you sign a contract saying they may never hit water.
 A flat lot closer to surface water would probably take 25-50% off the drilling price.
+All in, the well, pump, pressure tank, treatment system, and well house came to 125,476 USD.
 Still way better than having water delivered like some of the neighbors.
 
-### Electricity: 15,289 USD
+### Electricity
 Electricity was far simpler than water.
 The power pole was across the dirt road, and we put the house as close to the road as possible.
 That kept down the cost of the driveway, the slope of the driveway (code has a maximum), and the cost of running power to the lot disconnect.
@@ -169,7 +171,8 @@ and handled the remaining electrical, water, and sewer trenching.
 After the Certificate of Occupancy in July 2025, I signed with Vacasa to run it as a short-term rental.
 It went live on October 10, 2025. In March 2026, Vacasa assigned my contract to another management company.
 
-## Year One: September 2025 to October 2026
+## The First Year After the Certificate of Occupancy
+_July 31, 2025 through October 2026._
 
 ### The hydrogen sulfide saga: about 9,100 USD so far
 The well water smells like rotten eggs. That is hydrogen sulfide (H2S) gas, and it showed up in spring 2025,
@@ -210,15 +213,27 @@ A _Type II: Noncombustible_ structure in this area made the property insurance p
 I am very happy with the Southwest decor we found at [Camino Real Imports](https://maps.app.goo.gl/8pZbquQLxYUt1nN7A)!
 I always fantasized about a cozy home in the desert Southwest and stumbled into it with the right siting and accents.
 
-__The money: not yet.__ Over four years from land to Certificate of Occupancy,
-244,000 USD before the foundation and the house, and a professional manager taking their cut.
+__The money: not yet.__ It took over four years from land to Certificate of Occupancy.
+Here is what it cost, matching my October 2026 cost reconciliation for taxes:
+
+| What | Cost |
+|---|---:|
+| Land (12,500 USD price plus closing) | 13,650 USD |
+| Site work: excavation, septic, driveway, retaining wall, utility connection | 203,205 USD |
+| Well, pump, and water treatment | 125,476 USD |
+| Building and foundation: the house, foundation, electrical | 272,261 USD |
+| Soft costs: engineering, geotech study, general contractor fee | 16,408 USD |
+| __Construction total__ | __617,350 USD__ |
+| __All-in with land__ | __631,000 USD__ |
+
+Furnishings are not in there yet. Add a professional manager taking their cut.
 Then the first year added about 9,100 USD chasing the smell, a few thousand in repairs, and seven weeks blocked off on the calendar.
 The cash flow came in under the number _JZ the business_ needs.
 
 __What I would tell you before you try this:__
 
 - __Flat lots are cheaper.__ The hillside roughly doubled excavation and added 25-50% to the well.
-- __Water is the gamble.__ Over 120,000 USD, and the well comes with no guarantee of water.
+- __Water is the gamble.__ About 125,000 USD, and the well comes with no guarantee of water.
 - __Hire a general contractor for the foundation.__ Remote, with no GC experience, I could not have done it.
 - __Concrete crews are the bottleneck.__ I lost the whole 2024 building season trying to find reliable concrete workers.
 - __Chase the paperwork.__ The final state stamp sat for months waiting on paperwork from the house manufacturer.
