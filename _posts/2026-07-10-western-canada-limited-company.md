@@ -2,6 +2,7 @@
 author: Jason Zerbe
 layout: post
 location: 49.440384, -124.761068
+outcome: WORKED
 published: true
 tags:
 - Canada tax policy
@@ -10,78 +11,99 @@ tags:
 - Limited Company
 title: The Western Canada Limited Company
 ---
-__Result:__ Go with Alberta.
-This post first recommended British Columbia (July 2021), because anyone could incorporate there self-service.
-Five years later (July 2026), BC requires a BC Services Card for most filings, so non-residents are forced to use a registered agent.
-Alberta always required one, so BC lost its edge and Alberta wins on everything else.
+__Result:__ It worked. My company, Vraid Systems Limited, moved from British Columbia to Alberta on September 22, 2026.
+The continuance took about 11 weeks and cost 1,003.82 CAD through a registration agent.
+BC was the right call in 2021 because a foreigner could run a company there entirely self-service.
+Then BC started requiring a BC Services Card for most filings, which only residents can get.
+Once I needed an agent anyway, Alberta won on everything else.
 
-## What Changed
+_First written July 2021, updated October 2026._
+
+## The Problem
+My minimum bar for most strategies: residency and citizenship should not matter.
+I want a Canadian company I can run from anywhere, with as little upkeep as possible:
+easy tax filing, no required meetings, and full flexibility to act as director whenever I need to.
+
+__Hypothesis (2021):__ British Columbia is the best place for a non-resident to run a Canadian company,
+because the whole thing is self-service online.
+
+__Hypothesis (2026):__ Once BC requires an agent for non-residents, Alberta is better on every count that is left.
+
+## Why Western Canada
+
+- __Non-resident friendly__: British Columbia lets incorporators and directors be non-residents.
+Alberta [dropped its rule that 25% of directors be Canadian residents](https://www.bennettjones.com/Insights/Blogs/Important-Changes-to-the-Alberta-Business-Corporations-Act-Now-in-Effect)
+on March 29, 2021.
+Nova Scotia allows non-resident directors too, but has [high annual renewal fees](https://www.novascotia.ca/incorporate-limited-company).
+- __Alberta's taxes__: no provincial sales tax, only the 5% federal GST.
+Like other energy exporters, the province pays for much of its services with energy royalties.
+The combined general corporate rate for 2026 is
+[23% in Alberta vs 27% in BC](https://www.taxtips.ca/smallbusiness/corporatetax/corporate-tax-rates-2026.htm).
+- __Market access__: once you incorporate in a member province, the rest of Western Canada is easy to sell into under the
+[New West Partnership Trade Agreement](https://www.newwestpartnershiptrade.ca/the_agreement.htm).
+
+## The Solution I Tried
+
+### 1. Set up as a non-resident
+- __Address__: for about 15 CAD a month, [Anytime Mailbox]({{ site.program.business.anytimemb }})
+or [iPostal1]({{ site.program.business.ipostal1 }}) gives you a remotely managed address in Alberta or British Columbia.
+That covers the requirement for an office and mailing address in your province.
+- __Investment Canada Act__: a non-Canadian starting a brand-new Canadian business only has to notify
+_Innovation, Science and Economic Development Canada_, before or within 30 days of starting it.
+New businesses are [notifiable, not reviewable](https://www.cwilson.com/rules-governing-foreign-investment-in-canada/).
+Fill out [ISED-ISDE3675E](https://ised-isde.canada.ca/site/investment-canada-act/en/investment-canada-act/forms) and email it back.
+- __Personal tax number__: to file with the Canada Revenue Agency for your company, you need an ITN.
+Send in the
+[_Application for a Canada Revenue Agency Individual Tax Number (ITN) for Non-Residents_](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t1261.html)
+with a notarized copy of your passport, wet signature from the notary.
+I did this at my local UPS store for $5.
+
+### 2. Incorporate in British Columbia (2021)
+
+1. For a real name instead of a number, reserve one with the
+[Name Request tool](https://www.bcregistry.ca/namerequest) for
+[$30](https://www.corporateonline.gov.bc.ca/WebHelp/fee_schedule.htm).
+It takes a few days to process.
+1. Go through the [BC Registry Services incorporation wizard](https://www.bcregistry.ca/corporateonline/colin/accesstransaction/menu.do?action=overview&filingTypeCode=ICORP&from=main) for [$350](https://www.corporateonline.gov.bc.ca/WebHelp/fee_schedule.htm).
+1. Add your name and the business name to the
+[example incorporation agreement and articles](https://www2.gov.bc.ca/assets/gov/employment-business-and-economic-development/business-management/permits-licences-and-registration/registries-other-assets/samp_02_-_incorporation_agreement_adopting_table_1.pdf).
+Do not forget section 9.10's proxy designation.
+Convert them to PDF and get them [notarized online with Notary Pro](https://www.notarypro.ca/notarize-online/book-now/).
+
+This worked well for five years.
+
+### 3. Watch BC close the door (2026)
 The old [Corporate Online](https://www.corporateonline.gov.bc.ca/) is being merged into
 [BC Registries and Online Services](https://www.bcregistry.gov.bc.ca/en-CA/).
 On the surface that is good.
 The bad news: you need a [BC Services Card](https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card)
 to do most things, which means you must be a resident.
+Non-residents now need a registered agent. BC made itself less competitive.
 
-Anyone used to be able to use Corporate Online and stay entirely self-service.
-Now non-residents have to have a registered agent.
-British Columbia made itself less competitive, and with everything else going for it, Alberta is the logical choice.
+### 4. Continue the company to Alberta: 11 weeks, 1,003.82 CAD
+A continuance moves the same company to a new province, with the same company and history and no new incorporation.
+I hired [The Registration Center](https://theregistrationcenter.ca/) to handle it.
 
-- Pay a registered agent to file your Alberta annual return: <https://theregistrationcenter.ca/product/annual-return-filing/>
-- Save on corporate income taxes: <https://taxsummaries.pwc.com/canada/corporate/taxes-on-corporate-income>
+- __July 5, 2026__: Ordered the continuance. 49 CAD e-filing, 399 CAD authorization to continue, 499 CAD Articles of Continuance, plus tax.
+- __July 17__: The agent applied to BC for authorization to continue out.
+- __September 16__: BC approved. That wait was most of the 11 weeks.
+- __September 17__: The snag. The company was still registered in Alberta as an extra-provincial BC company,
+which blocked the continuance. I logged in and cancelled that registration myself.
+- __September 22__: Continued into Alberta. Certificate and Articles of Continuance in hand.
 
-## The Problem
-My minimum bar for most strategies: residency and citizenship should not matter.
+## Did It Work?
+Yes. Same company, same tax number, now in a province with lower corporate tax, no provincial sales tax,
+and no residency strings on directors.
 
-Alberta and British Columbia both allow incorporators AND directors to be non-residents of Canada.
-Nova Scotia does too, but has [high annual renewal fees](https://www.novascotia.ca/incorporate-limited-company).
+Upkeep is light:
 
-## Why Western Canada
-- __Alberta__: No provincial sales tax. Like other energy exporters, the province pays for much of its services with energy royalties.
-- __British Columbia__: Some useful digital sales tax exclusions.
-  - [Software consulting services and database access](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/software#internet-services) pay no provincial sales tax.
-  - [Website subscriptions with text only, or text and still photos](https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst/publications/telecommunication-services#website-subscriptions) are not taxable sales.
-- __Both__: Once you incorporate in a member province, other Western Canadian markets are easy to access: <https://www.newwestpartnershiptrade.ca/the_agreement.htm>
-
-## What I Did
-
-__Get an address.__ For about 15CAD a month, [Anytime Mailbox]({{ site.program.business.anytimemb }})
-or [iPostal1]({{ site.program.business.ipostal1 }}) gives you a remotely managed address in Alberta or British Columbia.
-That covers the requirement for an office and mailing address in your province.
-
-__Notify under the Investment Canada Act.__ A non-resident creating a Canadian resident business has to notify
-_Innovation, Science and Economic Development Canada_ by
-[filling out ISED-ISDE3675E](https://ised-isde.canada.ca/site/investment-canada-act/en/investment-canada-act/forms)
-and emailing it back.
-Investments over 1 billion CAD have to wait for their review.
-
-__Get a personal tax number.__ To file with the Canada Revenue Agency for your new company, you need an ITN.
-Fill out and return the
-[_Application for a Canada Revenue Agency Individual Tax Number (ITN) for Non-Residents_](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t1261.html).
-Include a notarized copy of your passport with a wet signature from the notary.
-I did this at my local UPS store for $5.
-
-__Incorporate (the July 2021 BC process):__
-
-1. If you want a real name instead of a number from the province, reserve one with the
-[Name Request tool](https://www.bcregistry.ca/namerequest) for
-[$30](https://www.corporateonline.gov.bc.ca/WebHelp/fee_schedule.htm).
-It takes a few days to process before the next step.
-1. Go through the [BC Registry Services incorporation wizard](https://www.bcregistry.ca/corporateonline/colin/accesstransaction/menu.do?action=overview&filingTypeCode=ICORP&from=main) for [$350](https://www.corporateonline.gov.bc.ca/WebHelp/fee_schedule.htm).
-1. Add your name and the business name to the
-[example incorporation agreement and example incorporation articles](https://www2.gov.bc.ca/assets/gov/employment-business-and-economic-development/business-management/permits-licences-and-registration/registries-other-assets/samp_02_-_incorporation_agreement_adopting_table_1.pdf).
-Do not forget section 9.10's proxy designation.
-Convert them to PDF and get them [notarized online with Notary Pro](https://www.notarypro.ca/notarize-online/book-now/).
-
-## Ongoing Upkeep
-These come from the [BC Business Corporations Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/02057_00):
-<sup>[1](https://www.barbeau.co/uncategorized/annual-requirements-british-columbia-companies/)</sup>
-
-- __Annual General Meeting__: Hold one and record notes. For a one-person company, that can be you writing down actions taken or planned in the minute book.
-A unanimous resolution of all voting shareholders (you) can waive it.
-- __Financial statements__: Directors (you) approve, sign, produce, and publish them before the AGM,
-unless all voting and non-voting shareholders pass a unanimous resolution.
-- __Auditor__: One must be appointed, unless a unanimous resolution waives it.
-- __Annual Report__: File it [with BC Registries](https://www.corporateonline.gov.bc.ca/WebHelp/overview_annbc.htm) within 2 months of your incorporation anniversary.
-- __Taxes__: File your [T2 and tax calculation paperwork](https://www2.gov.bc.ca/gov/content/taxes/income-taxes/corporate) with the Canada Revenue Agency.
-I use <https://netfilet2.taxtron.ca/>.
+- __Annual return__: [pay a registered agent to file it](https://theregistrationcenter.ca/product/annual-return-filing/).
+- __Meetings__: private Alberta corporations can act by
+[written resolution](https://www.bennettjones.com/Insights/Blogs/2023/04/If-Its-Broke-Fix-It-Amendments-to-the-Alberta-Business-Corporations-Act).
+As the only shareholder, I sign resolutions instead of holding meetings.
+- __Taxes__: file the T2 with the Canada Revenue Agency. I use <https://netfilet2.taxtron.ca/>.
 First you have to file an individual $0 tax return to get into the CRA's system and be self-serve.
+- __Banking__: covered in [Bootstrapping personal Canadian financial services](/2026/07/bootstrapping-canadian-finances/).
+
+__Lesson:__ check for an old extra-provincial registration in the destination province before you start.
+It costs nothing to cancel, but it will stall the continuance until you do.
