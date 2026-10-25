@@ -1,94 +1,133 @@
 ---
 author: Jason Zerbe
-custom_order: 4
 layout: post
 location: 39.7239777, -104.9985091
+outcome: UNTESTED
 published: true
 tags:
-- Government mandated home seizure
 - Medicaid Estate Recovery
+- Government mandated home seizure
 - United States healthcare
-- malicious compliance
-- peaceful protest
-title: How to prevent the US government from taking your home for medical expenses
+- estate planning
+- elder care
+title: How to keep the US government from taking your home for medical expenses
 ---
-This is a uniquely American problem, which would be hilarious if it was not so effective at enforcing the US caste system:
-the [Omnibus Budget Reconciliation Act of 1993](https://oig.hhs.gov/oei/reports/oei-07-92-00880.pdf)
-requires state governments recover long term care benefits paid for by Medicaid after the recipient dies.
-Yes, state governments can take your home by filing a lien against it,
-[if you are unable to return home](https://www.senioranswers.org/insurance/medicaid/estate-recovery/),
-or other property titled in your name when you die, your (probate) estate.
+__Result:__ Untested. I researched this for a friend whose parents are getting older, and nobody has run it yet.
+The best protection is one most families already have and do not know about: a child who lives at home as the caregiver.
+Federal law lets a parent [give the home to that child with no penalty](https://www.law.cornell.edu/uscode/text/42/1396p),
+and Colorado will not take the home back through estate recovery while that child keeps living there.
+The paperwork decides it, so start collecting it now and hire an elder law attorney.
 
-### Exceptions
-If you have a surviving spouse, a child under age 21, or a child that is permanently disabled or blind
-then a state's Medicaid program will not come after your estate.
-See [Colorado](https://www.law.cornell.edu/regulations/colorado/10-CCR-SS-2505-10-8-063) and
-[Florida](https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0409/Sections/0409.9101.html)
-laws for reference. If one of those situations apply, then stop reading, you're good to go.
+## The Problem
+This is a uniquely American problem.
+It would be hilarious if it were not so effective at enforcing the US caste system.
 
-### Avoiding Medicaid long term care
-If possible, purchase a
-[long-term care insurance plan](https://www.nerdwallet.com/article/insurance/long-term-care-insurance)
-in your mid 50s or 60s to avoid going into this Medicaid estate recovery situation.
-A [premium of a few thousand dollars a month](https://smartasset.com/insurance/how-much-does-long-term-care-insurance-cost)
-may be untenable for some.
+The [Omnibus Budget Reconciliation Act of 1993](https://oig.hhs.gov/oei/reports/oei-07-92-00880.pdf)
+requires states to recover what Medicaid paid for long-term care after the recipient dies.
+That covers [anyone who got nursing home or home and community-based care at age 55 or older](https://www.law.cornell.edu/uscode/text/42/1396p).
+The state can put a lien on the home
+[if the person is not expected to return home](https://www.senioranswers.org/insurance/medicaid/estate-recovery/),
+and go after the estate after death.
+Some states [reach past the probate estate](https://www.law.cornell.edu/uscode/text/42/1396p) into jointly held and trust property too.
 
-### Moving assets
-At least [5 years before applying for Medicaid long term care benefits](https://www.medicaidplanningassistance.org/medicaid-look-back-period/),
-you need to retitle your assets by putting them in a business entity or trust. If you
-[give any gifts or transfer any assets](https://coloradoestateplan.com/why-asking-how-do-i-avoid-the-5-year-medicaid-lookback-period-leaves-you-at-risk/)
-within 5 years of attempting to start Medicaid long term care benefits, that will be a penalty considered against your benefit.
+__Hypothesis:__ Know the rules early enough, and the family home does not have to go to the state.
 
-If you choose to set up a trust for your assets, you will need a trustee (who will take a management fee);
-it is most efficient to [find a lawyer](https://www.licensedlawyer.org/)
-who will both draft the trust documents and act as the trustee. Largely, you want to compare
-[Revocable and Irrevocable trusts](https://www.investopedia.com/ask/answers/071615/what-difference-between-revocable-trust-and-living-trust.asp).
-The former can be changed after creation, the later cannot and confers some estate tax benefits.
+## The Solution I Would Try
+In order, starting with the cheapest.
 
-If you already trust a family member or close friend then retitle your assets under a business (an LLC is easiest).
-You will need to create an [LLC yourself](/2020/08/colorado-llc/) or have a
-[registered agent company do it for you](https://www.coloradoregisteredagent.com/colorado-registered-agent-services/).
-You will probably want them to create a manager managed LLC, get a tax id, and file your annual report.
-The single member and initial manager will be the close friend or family member; they will be reporting expenses
-and revenue from the LLC on their taxes and could use this to take hefty tax deductions if done right.
+### 1. Check the automatic exceptions
+The state [cannot recover while any of these are alive](https://www.law.cornell.edu/uscode/text/42/1396p):
 
-Next:
-1. Sell the assets to the business or trust at below market value ($1?) and be sure to close with a
-[warranty deed](https://www.deedclaim.com/warranty-deed/). This will allow the new owner to use a
-[stepped-up tax basis](https://www.homelight.com/blog/can-i-sell-my-house-to-a-family-member/).
-2. Get a real estate insurance policy for the business or trust through [National Real Estate Insurance Group](https://nreig.com/).
-3. If you plan on living in the home use a [local property manager](https://www.deerwoods.com/lakewood-property-management)
-contracted through the business which will give you some flexibility to create a zero dollar lease agreement.
-If not, use a full service company like [Nomad Lease](https://nomadlease.com/products) to manage everything.
+- A surviving spouse
+- A child under 21
+- A child who is blind or permanently disabled
 
-### What if I have a mortgage?
-Most mortgages contain an "acceleration" or "due on sale" clause.
+A transfer of the home to a spouse is also penalty-free.
 
-> This means that when you transfer a mortgaged property out of your name, the entire mortgage balance is due.
-> 
-> ...
-> 
-> However, this is not usually a problem when we are not selling your house but, rather, transferring it for estate planning purposes.
-> In fact, federal law specifically prohibit a mortgage holder from exercising a "due on sale" clause on
-> residential real property containing less than five dwelling units or on a cooperative apartment unit when the property is transferred to a spouse
-> or children of the owner, or a lifetime revocable or irrevocable trust where the borrower retains the right to occupancy.
-<https://davidowlaw.com/listen-lawrence-answer-irrevocable-trust-mortgage-question/>
+### 2. Use the caregiver child rule
+This is the one that fits my friend's family: his brother has lived in the home as the caregiver for years.
 
-This came from banks not wanting borrowers to get a deal on a lower interest rate.
+__The rule:__ a parent can transfer the home, penalty-free, to a
+[son or daughter who lived there for at least two years](https://www.law.cornell.edu/uscode/text/42/1396p)
+before the parent went into a nursing home, and whose care kept the parent at home instead of in a facility.
+A sibling with an ownership stake who lived there a year gets similar treatment.
+[Adopted children count](https://dupontestatelaw.com/blog/the-medicaid-caregiver-child-exception/),
+with adoption records as proof.
 
-If you were to transfer or sell your home to your children where your right of occupancy remained the same,
-a lender could not enforce an "acceleration" or "due on sale" clause: <https://www.law.cornell.edu/uscode/text/12/1701j-3>
+__Two ways to use it:__
 
-In Colorado, your interest rate cannot go up by more than 1% for a sale: <https://law.justia.com/codes/colorado/2021/title-38/article-30/section-38-30-165/>
+- __Transfer the home to the caregiver.__ No look-back penalty and no estate recovery on the house.
+The catch is taxes. A gift passes along the parent's
+[original cost basis](https://www.irs.gov/publications/p551), not the stepped-up value at death.
+If the caregiver lives there as their main home for 2 of the 5 years before selling,
+the [$250,000 single or $500,000 married capital gains exclusion](https://dupontestatelaw.com/blog/the-medicaid-caregiver-child-exception/) softens that.
+- __Leave the home in the parent's name.__ Colorado bars recovery against the home while a qualifying caregiver child
+[keeps living there continuously](https://www.cobar.org/Portals/COBAR/Repository/Sections/Elder-Law/3121/Estate%20Recovery%20CBA%20March%202020.pdf),
+and the child inherits with a [stepped-up basis](https://www.irs.gov/publications/p551).
+The catch: the protection lasts only as long as they live there.
 
-### Long-term solution
-The timing of this legislation to recoup Medicaid long term care payments suspicious.
-From 1981 to 1988 the marginal tax rate on the wealthy at the US national level dropped precipitously from
+__The paperwork__ ([what states usually ask for](https://dupontestatelaw.com/blog/the-medicaid-caregiver-child-exception/)):
+
+- Proof of the relationship: birth certificate or adoption records
+- 24 months of address records at the home: utility bills, tax returns, voter registration, bank statements
+- A detailed physician letter on the parent's care needs and how the child's care kept them out of a facility
+- Dates for the transfer and the Medicaid application
+
+Colorado [does not pre-approve exclusions](https://www.cobar.org/Portals/COBAR/Repository/Sections/Elder-Law/3121/Estate%20Recovery%20CBA%20March%202020.pdf).
+Gather all of this while the parent is alive.
+
+### 3. Plan 5 years out with an irrevocable trust
+Gifts made within [60 months of applying](https://www.law.cornell.edu/uscode/text/42/1396p) get penalized.
+Move the home into an irrevocable Medicaid asset protection trust more than 5 years ahead, and it is generally out of reach.
+
+- __It has to be irrevocable.__ A revocable trust
+[still counts as the parent's asset](https://www.law.cornell.edu/uscode/text/42/1396p).
+- __Draft it to keep the step-up.__ The IRS ruled in 2023 that a home in a trust kept out of the parent's estate
+[gets no step-up at death](https://247wallst.com/personal-finance/2026/09/29/put-grandmas-house-in-an-irrevocable-trust-to-protect-it-from-the-nursing-home-and-the-kids-will-lose-their-tax-free-step-up-the-irs-ruled-on-it-in-2023/).
+A retained right to live there, or a limited power of appointment, keeps it in the estate for tax purposes.
+Bad wording can trade one benefit for the other, so this one needs a lawyer.
+
+### 4. Insure it
+[Long-term care insurance](https://www.nerdwallet.com/article/insurance/long-term-care-insurance) keeps you out of Medicaid entirely.
+In 2026 a couple buying at 55 paid
+[about $5,010 a year](https://www.pr.com/press-release/975049) for $165,000 in initial benefits with inflation protection.
+
+### 5. Ask for a hardship waiver
+States [can waive penalties](https://www.law.cornell.edu/uscode/text/42/1396p) for undue hardship.
+In Colorado, [good cause includes](https://www.cobar.org/Portals/COBAR/Repository/Sections/Elder-Law/3121/Estate%20Recovery%20CBA%20March%202020.pdf)
+heirs who would otherwise need public assistance, or a home that is part of a working farm, ranch, or business.
+
+## What Not to Do
+An earlier version of this post had a few of these. They are wrong.
+
+- __Selling the home for $1 does not get a stepped-up basis.__ It is a gift, so the buyer
+[takes the parent's old basis](https://www.irs.gov/publications/p551).
+It is also a transfer inside the look-back window.
+- __A revocable trust does not protect anything.__ Medicaid
+[counts it as yours](https://www.law.cornell.edu/uscode/text/42/1396p).
+- __Do not deed the home to a friend's LLC.__ It is a penalized gift for 5 years, the house now belongs to someone else
+(and their creditors and divorce), and deducting expenses on a house a parent lives in rent-free will not survive an audit.
+
+## What If There Is a Mortgage?
+Most mortgages have a "due on sale" clause. Federal law
+[stops the lender from using it](https://www.law.cornell.edu/uscode/text/12/1701j-3) on homes with fewer than five units when:
+
+- The borrower's spouse or children become an owner
+- The home goes into a living trust where the borrower is and remains a beneficiary, with no change in who lives there
+
+## Open Questions for the Attorney
+
+- Does the caregiver rule apply if the parent gets Medicaid care at home instead of in a nursing home? The statute is written around entering a facility.
+- Which state are the parents in? Look-back periods, estate definitions, and hardship rules vary.
+- Does that state reach non-probate property, like a beneficiary deed?
+
+## The Long-Term Fix
+The timing of this law is suspicious.
+From 1981 to 1988, the top US federal marginal tax rate dropped from
 [70 to 28 percent](https://taxfoundation.org/historical-income-tax-rates-brackets/).
-As shown in
 [_The economic consequences of major tax cuts for the rich_](https://academic.oup.com/ser/article/20/2/539/6500315)
-these policies lead to higher income inequality and no change in economic growth or unemployment.
+found these cuts led to higher income inequality and no change in economic growth or unemployment.
 
-Ironic that many of the people who voted for the politicians that enacted these policies will now be
-hurt by these policies in their old age. It does not have to be this way, we could choose to increase
-taxes on the ridiculously wealthy and fund these domestic health care programs.
+Ironic that many of the people who voted for the politicians behind these policies will be hurt by them in old age.
+It does not have to be this way.
+We could raise taxes on the ridiculously wealthy and fund these domestic health care programs.

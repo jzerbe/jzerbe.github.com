@@ -6,6 +6,13 @@ when the repository is pushed to GitHub.
 
 [hyde](https://github.com/poole/hyde) theme is [MIT licensed](https://github.com/poole/hyde/blob/master/LICENSE.md).
 
+## Writing a post
+Each post is an experiment: the problem, what I tried, and whether it worked. Lead with a `__Result:__` line.
+
+Optional front matter:
+- `outcome`: `WORKED`, `MIXED`, `FAILED`, `ONGOING`, or `UNTESTED` (researched, not tried yet). Shows as a badge on the post and the homepage.
+- `location`: `lat, long` shown in the post header.
+
 ## Development
 1. `sudo apt install build-essential ruby ruby-bundler ruby-dev ruby-full rubygems`
 1. `bundle install`

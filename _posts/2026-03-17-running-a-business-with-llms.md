@@ -1,6 +1,5 @@
 ---
 author: Jason Zerbe
-custom_order: 1
 layout: post
 location: 40.0012561,-105.2627494
 outcome: WORKED
@@ -28,15 +27,16 @@ The catch is paperwork.
 Every tender is a stack of PDFs, procurement rules, and legal terms in a different jurisdiction.
 Reading all of it is a full-time clerical job, and I wanted the business to run without one.
 
-## The Hypothesis
+My starting point:
+
 > With the advent of AI and LLMs many things are changing about how money is made.
 > Administration and clerical work goes away, which means the C-suite should be reshaped,
 > as much of what they do is glorified clerical work from their background in law, MBAs, and finance.
 
-If that is true at a big company, it should be even more true at a small one.
-So: can LLMs do the clerical and administrative work, so I only do the parts that need a person?
+__Hypothesis:__ If that is true at a big company, it should be even more true at a small one.
+LLMs can do the clerical and administrative work, and I only do the parts that need a person.
 
-## What I Set Up
+## The Solution I Tried
 
 - __Leads__: Tender notices land in a Slack channel. An LLM pulls the bid documents from the procurement portal,
 checks them against my criteria, and posts the ones worth chasing to the sales channel.
@@ -57,6 +57,8 @@ Yes.
 - __Risk__: The biggest surprise. I now get the nuance in FAR clauses, liability terms, and local corporate law.
 I can ask "what happens to me if this goes wrong?" and get a straight answer that points at the clause.
 - __Fulfillment__: In progress. Sourcing and ordering are next.
+- __Me__: fewer things competing for my time.
+That turned out to be part of [a different experiment, on stress](/2026/03/quantifying-and-mitigating-stress/).
 
 One lesson came out of tuning the evaluation rules: stop bidding on single-lot goods tenders.
 Only the manufacturers win those, and it is a race to the bottom.
@@ -71,7 +73,7 @@ My partner made a better point than my original hypothesis:
 > I don't believe a company's board would vote out their social class peers even though CEOs are obsolete.
 
 I still think [Fortune's take on the AI productivity paradox](https://fortune.com/2026/02/17/ai-productivity-paradox-ceo-study-robert-solow-information-technology-age/)
-asks the wrong question. To scale almost any system, you push as much work as possible out to the edge.
+asks the wrong question. It covers an NBER survey where nearly 90% of firms reported no AI impact on productivity or jobs so far. To scale almost any system, you push as much work as possible out to the edge.
 If leadership admits AI changes the work, leadership is the next thing to get evaluated.
 [This Forbes piece on replacing the C-suite](https://www.forbes.com/councils/forbesbusinesscouncil/2025/11/07/the-c-suite-is-becoming-obsolete-what-should-replace-it/)
 is closer to right.
@@ -85,19 +87,20 @@ Resource dependence: board networks provide access to information, trust, and ca
 <a href="https://www.redalyc.org/journal/3223/322359389007/html/">redalyc.org</a>
 </span>
 The research backs both sides.
-Tech-literate CEOs drive more product innovation,
+CEOs with technical knowledge drive more digital product innovation, at least in stable markets,
 <span class="sidenote-number"></span><span class="sidenote">
-<a href="https://pubsonline.informs.org/doi/10.1287/isre.2021.0553">Information Systems Research</a>
+<a href="https://pubsonline.informs.org/doi/abs/10.1287/isre.2021.0553">CEO Human Capital and Digital Product Innovation, Information Systems Research</a>
 </span>
-and zombie directors and plurality voting are early signs of a company falling behind.
+a board that falls short is a leading indicator of underperformance,
+and plurality voting lets directors keep their seats without majority support.
 <span class="sidenote-number"></span><span class="sidenote">
 <a href="https://corpgov.law.harvard.edu/2025/09/09/governance-matters-dont-overlook-board-oversight/">Harvard Law Forum on Corporate Governance</a>,
 <a href="https://www.glasslewis.com/article/how-plurality-voting-allows-directors-to-stay-on-the-board-without-majority-support">Glass Lewis</a>
 </span>
-But legal and finance backgrounds still matter when the risk is AI-generated fraud or a trade shock.
+But legal and finance backgrounds still matter when tariffs shift, or when officers can be held personally liable for oversight failures.
 <span class="sidenote-number"></span><span class="sidenote">
-<a href="https://www.klorconsulting.com/blog/ai-accountability-delaware-ruling">Klor Consulting</a>,
-<a href="https://www.bcg.com/publications/2025/five-dynamics-that-will-test-ceos-in-2025">BCG</a>
+Tariffs top <a href="https://www.bcg.com/publications/2025/five-dynamics-that-will-test-ceos-in-2025">BCG's list of dynamics testing CEOs</a>.
+Delaware's 2023 ruling extended oversight duties to officers: <a href="https://www.klorconsulting.com/blog/ai-accountability-delaware-ruling">Klor Consulting</a>.
 </span>
 
 My updated view: vote against busy directors and zombie boards.

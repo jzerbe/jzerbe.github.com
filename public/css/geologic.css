@@ -150,6 +150,10 @@ a:focus-visible {
     margin-bottom: 0.25rem;
 }
 
+.post-list-date {
+    margin-right: 0.75rem;
+}
+
 .post-date {
     font-family: var(--font-mono);
     font-size: 0.85rem;
@@ -174,6 +178,10 @@ a:focus-visible {
     max-width: 1400px;
     margin: 0 auto;
     padding: 2rem 0;
+}
+
+.post-content {
+    overflow-wrap: anywhere; /* long bare URLs */
 }
 
 .post-content p,
@@ -231,7 +239,7 @@ a:focus-visible {
     margin-right: 0.5rem;
 }
 
-/* Experiment outcome badge: WORKED, MIXED, FAILED, ONGOING */
+/* Experiment outcome badge: WORKED, MIXED, FAILED, ONGOING, UNTESTED */
 .outcome {
     display: inline-block;
     font-family: var(--font-mono);
@@ -248,6 +256,7 @@ a:focus-visible {
 .outcome-mixed   { color: #7A5A12; }
 .outcome-failed  { color: #8A2E22; }
 .outcome-ongoing { color: var(--meta-color); border-style: dashed; }
+.outcome-untested { color: var(--meta-color); border-style: dotted; }
 
 .end-of-file {
     font-family: var(--font-mono);
@@ -329,6 +338,7 @@ a:focus-visible {
 }
 
 .post-content table {
+    overflow-wrap: normal; /* never split numbers mid-digit */
     width: 100%;
     display: block;
     overflow-x: auto;
@@ -341,6 +351,12 @@ a:focus-visible {
     padding: 0.5rem;
     font-family: var(--font-mono);
     font-size: 0.85rem;
+}
+
+/* keep amounts in the last column on one line */
+.post-content th:last-child,
+.post-content td:last-child {
+    white-space: nowrap;
 }
 
 /* PHONE */

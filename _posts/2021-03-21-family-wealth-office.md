@@ -1,237 +1,130 @@
 ---
 author: Jason Zerbe
-custom_order: 4
 layout: post
 location: 44.883955, -107.849377
+outcome: FAILED
 published: true
 tags:
 - Estate Planning
 - Tax Optimization
-title: Family wealth office
+- Family Office
+- Alberta
+title: The family wealth office experiment
 ---
-Running your family's finances through a business entity makes a lot of sense in many countries.
-Business entities can be created in any jurisdiction you desire and are typically taxed at lower rates.
-This course will suggest practiced methods of varying degrees of difficulty to optimize your income and taxes.
+__Result:__ It failed.
+IRS rules do not give a regular person a squeaky clean way to run their household investments through a business entity.
+It works when you already manage several real businesses through a holding company,
+and you are already traveling for a business purpose. A household with a brokerage account is neither.
+
+What survived: real businesses in real entities.
+My [Colorado LLC](/2020/08/colorado-llc/) runs a short-term rental and a drop-shipping business.
+In September 2026 my Canadian company moved from British Columbia to Alberta.
 
 > Money often costs too much.
 >
 _Ralph Waldo Emerson_
 
-
-## Where the income is made
-
+## The Problem
 > In any situation, location is crucial.
 >
 _Gordon Ramsay_
 
-Have you ever stopped to think about where you are working? Maybe it used to be in an office building.
-Perhaps a warehouse. For some lucky folks their workplace might be a lawn chair in the sun.
+Taxes stack up at every layer of where you work: city, county, region, province, and country.
+If I spend most of my time in one place (the Denver metro area), residency is easy.
+But what if I split my time between a coworking space in Calgary, a townhome in Buenos Aires, and a cabin in Pagosa Springs?
+Each place has its own rules for what work gets taxed and how much.
+And which government gets the taxes on electricity my solar panels sell to a utility in another state?
 
-More specific. Think about the city, county, region, province, and country where you work; at each layer
-taxes will be imposed to fund services. In the past, when people rarely moved (even across a town), the
-products of their work touched their neighbors, but that was about it. In the present, the products of
-my work can touch someone not even on this planet; of course
-[astronauts have Internet access](https://usa.kaspersky.com/blog/internet-in-space/18618/)!
-
-With work much less location dependent, how we think about our residency might change too. If I spend
-most of my time in a particular place (the Denver metro area) that’s easy, but what if I split my time
-working in a coworking space in Calgary, a townhome in Buenos Aires, and a cabin in Pagosa Springs;
-each place has different rules about what kinds of work is taxed, and how much those taxes might be.
-It gets even more complicated thinking about the situation where the means of production (solar panels,
-land, crops) are managed from several thousand miles away. Certainly one can say I do some of the work
-from my cabin, but to what government should I pay taxes for money my solar panels generate by selling
-electricity to a utility in another state?
-
-Enter [tax arbitrage](https://www.investopedia.com/terms/t/tax-arbitrage.asp):
-profiting from differences in how income and transactions are taxed in different jurisdictions.
-
-In this first section we will explore the best tax jurisdictions for keeping as much of your income as possible.
-
-## US Territories
-Most US Territories offer heavy tax incentives to businesses (and people) to relocate to their island shores,
-but [beware if you still reside within a US State](https://www.law.cornell.edu/uscode/text/26/957)!
-You will be hit with additional penalties for owning or
-receiving income from a
-"[controlled foreign corporation](https://www.law.cornell.edu/uscode/text/26/subtitle-A/chapter-1/subchapter-N/part-III/subpart-F)"
-and you would be just as well served to create
-your "foreign corporation" in a truly zero tax foreign location. With spotty internet access and irregular
-flights; a business could be difficult to run remotely. If it makes you feel any better though, you only
-pay to the
-[respective territory treasury and never the US IRS](https://www.irs.gov/individuals/international-taxpayers/individuals-living-or-working-in-us-possessions).
-
-- Puerto Rico offers a tax rate of 4% for export companies
-  - <https://www.ddec.pr.gov/en/puerto-rico-incentives-code/>
-  - <https://nomadcapitalist.com/2018/06/02/puerto-rico-tax-incentives/>
-- Guam will offer a 75% rebate for certain industries, assuming you invest at least $10,000: <https://www.investguam.com/business-in-guam/investor-incentives/>
-- US Virgin Islands offers 90% income tax rebates if you employ 10 people and invest $100,000: <https://www.usvieda.org/incentives/edc-program>
-
-<img src="/assets/posts/US_insular_areas.svg" alt="drawing" class="image fit" />
-
-From: <https://commons.wikimedia.org/wiki/File:US_insular_areas.svg>
-
-## US States
-Certain states have no or low sales taxes, while other states have no or low income taxes.
-For our purposes we want to find jurisdictions that have the lowest income taxes, but are still
-relatively easy to do business in (reasonable filling fees, online services, responsive officials).
-This new family wealth office won’t be selling anything, but it will be earning plenty of income!
+__Hypothesis:__ Treat the household as a business, a family office.
+Put it in the lowest tax jurisdiction that is still easy to deal with.
+Managing the family's wealth becomes business activity, so household costs become business deductions,
+and [tax arbitrage](https://www.investopedia.com/terms/t/tax-arbitrage.asp) does the rest.
 
 > From investment management to charitable giving advice, family offices offer a total financial solution.
 > In addition, the family office can also handle non-financial issues, such as private schooling,
 > travel arrangements, and miscellaneous other household arrangements.
 >
-What Are Family Offices? – <https://www.investopedia.com/terms/f/family-offices.asp>
+[What Are Family Offices?](https://www.investopedia.com/terms/f/family-offices.asp)
 
-When thinking about managing your household’s money, you will be running the family office
-and also be the beneficiary of its services. This will come in handy later when we talk about potential tax deductions.
+## The Solution I Tried
 
-### Low income tax US states
-There are only two states in the US which do not levy corporate income tax, individual income tax, nor
-[gross receipts taxes](https://taxfoundation.org/gross-receipts-tax/):
-South Dakota and Wyoming. [South Dakota](https://sdsos.gov/general-information/filing-fees.aspx)
-has some of the highest filling fees I have ever seen outside of
-[Nevada](https://www.nvsos.gov/sos/businesses/commercial-recordings/forms-fees).
-[Wyoming has fees on the higher side](https://sos.wyo.gov/Business/docs/BusinessFees.pdf),
-but you’re paying for lower taxes, right?
-Both have navigable and responsive secretary of state websites for easy online filing.
+### 1. Shop for a Jurisdiction
+I compared places on two things: lowest income tax, and easy to do business in
+(reasonable filing fees, online services, responsive officials).
 
-Watch out for states with gross receipts taxes!
-They tend to have all manner of business licenses at the state, county, and local levels you will have to comply with too.
-Nevada is the prime example: a few hundred dollars at just about every level of government adds up!
-
-Compare that to Wyoming which has no state level business license fee,
-no annual list filing fee, and very few local municipal business licenses to be sorted through,
-which are usually limited to certain controlled industries.
-
-There are a few states with flat corporate and individual income tax rates below 5%:
-Colorado, Florida, North Dakota, and Utah.
-I'm not going to bother with Florida since it will be underwater in 20 years.
-[North Dakota’s online business filing fees](https://sos.nd.gov/business/business-services/business-structures/limited-liability-companies/limited-liability-company-llc/llc-fees.html) are on the higher side.
-[Utah has slightly higher fees](https://corporations.utah.gov/pdf/currentfees.pdf)
-than [Colorado's filing fees](https://www.sos.state.co.us/pubs/info_center/fees/business.html).
-
-<img src="/assets/posts/2021-state-income-tax-rates.png" alt="drawing" class="image fit" />
-
-Taken from <https://taxfoundation.org/publications/state-individual-income-tax-rates-and-brackets/>
-
-<img src="/assets/posts/2020-State-Corporate-Income-Tax-Rates.png" alt="drawing" class="image fit" />
-
-Taken from <https://taxfoundation.org/state-corporate-income-tax-rates-brackets-2020/>
-
-### Conclusions
-If you are looking for a state with no taxes, then pick Wyoming; generally they are going to be very hands off.
-
-If you want a progressive state with low taxes, Colorado is the right place to locate;
-government services are great for what you pay.
-
-## Canada
-Every Canadian province and territory has income and sales tax.
-But as we discussed in the previous section, there are always ways to optimize for the
-intersection of income tax, investment goals, family needs, and DIY options. If you can
-save a percent or two on income tax, but it is a real pain to manage the legal requirements ...
-is it worth it? Why create a business in a region which will be more unstable due to climate change?
-For my risk/reward profile, interior British Columbia made the most sense for my headquarters.
-
-### Sales Tax
-On the sales tax side, the province of
-[Alberta, and the territories of Yukon, Nunavut, and Northwest Territories, are the places where you will only pay the 5% GST](https://borderbuddy.com/blog/whats-the-difference-between-gst-hst-and-pst/)
-to the national government. Moral of the story: purchase your goods in those locations.
-
-<img src="/assets/posts/map-canada-01.png.webp" alt="drawing" class="image fit" />
-
-From <https://www.transfereaserelocation.com/canada-which-region-has-the-lowest-tax-rate/>
-
-### Corporate income tax
-Compared with other regions, Canada allows fewer loopholes when it comes to passive income.
-Investment income is taxed at a significantly higher national rate and is specifically defined as income from property:
-
-> A specified investment business is carried on by a corporation whose principal purpose is to derive
-> income (interest, rent, dividends and royalties) from property, unless the business employs more than
-> 5 full time employees. Income from property would include rental or leasing income from land or buildings,
-> but would exclude income from renting or leasing moveable property such as machinery and equipment.
->
-<https://accountingottawa.com/active-business-income-small-business-deduction/>
-
-<img src="/assets/posts/canada_2020_corporate_income_tax_rates.png" alt="drawing" class="image fit" />
-
-From <https://www.taxtips.ca/smallbusiness/corporatetax/corporate-tax-rates-2020.htm>
-
-And there is no way to shield your passive income streams by bundling them into a business entity with some
-or most of its income coming from active sources
-([unless you have 5 employees or could employ 5 employees](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012/t2-corporation-income-tax-guide-chapter-4-page-4-t2-return.html#P2883_209821)).
-
-### Personal income tax
-The great thing about creating a corporation is that the business entity can retain earnings to keep your personal
-income tax rate low (by only paying dividends when you need the cash). Or your corporation can be taxed
-in a jurisdiction separate from your personal income. Like corporate tax rates, the territories
-have the lowest personal tax rates:
-<https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html#provincial>
-
-### Conclusions
-If you are looking for a province which prides itself on pushing income taxes as low as possible,
-and other sorts of "business friendly" decisions including
-[allowing foreigners to run their own company](https://www.mccarthy.ca/en/insights/blogs/canadian-securities-regulatory-monitor/alberta-eases-director-residency-requirements),
-choose Alberta. For the DIYers, watch out, you cannot file directly, you have to go through a service provider:
-<https://www.alberta.ca/incorporate-alberta-corporation.aspx>
-
-For a provincial home offering a balance of lower taxes, better services,
-[relaxed director requirements](https://www.canadianbusinessresources.ca/qualifications-of-directors-of-british-columbia-companies/),
-and [automated services](https://www.bcregistry.ca/), make your base in British Columbia.
-
-Or do what I do and have an entity domiciled and registered,
-[350CAD registration and 45CAD renewal](https://www.corporateonline.gov.bc.ca/WebHelp/fee_schedule.htm),
-in British Columbia, with a location in Alberta as well. Alberta has an automated and cheap (14CAD)
-[online registration](https://newwestregistration.alberta.ca/) to support businesses under the
+- __US territories__: big incentives, but a trap if you still live in a US state.
+Income from a [controlled foreign corporation](https://www.law.cornell.edu/uscode/text/26/957) gets hit with extra rules,
+plus spotty internet and irregular flights.
+- __US states__: only South Dakota and Wyoming have no corporate income tax, no individual income tax, and no
+[gross receipts tax](https://taxfoundation.org/gross-receipts-tax/).
+Wyoming wins for no taxes. Colorado wins for low taxes with good government services.
+- __Canada__: every province has income and sales tax.
+I registered in British Columbia ([350CAD to register, 45CAD to renew](https://www.corporateonline.gov.bc.ca/WebHelp/fee_schedule.htm))
+for automated self-service, with an extra-provincial registration in Alberta under the
 [New West Partnership Trade Agreement](https://www2.gov.bc.ca/gov/content/employment-business/business/managing-a-business/permits-licences/businesses-incorporated-companies/new-west-partnership-trade-agreement).
-You pay income tax on where the money is made. Compare that to direct registration in Alberta which costs
-[300-500CAD registration and 70-90CAD a year](https://www.ownr.co/blog/how-to-incorporate-in-alberta/)
-in renewal fees depending on which service provider you find.
 
-Be sure to use [BizPal](https://www.bizpal.ca/) for a comprehensive list of licenses you may need.
+### 2. Build the Holding Company
+The plan, at a high level:
 
-## Outside of Northern America
-Significant international tax arbitrage is outside of the scope of this course, and may be covered in another,
-more advanced course. In the meantime a few tips for doing business outside of Northern America.
+1. Get a street address in the low tax location with [Anytime Mailbox]({{ site.program.business.anytimemb }}) or [iPostal1]({{ site.program.business.ipostal1 }}),
+and use it as the [registered agent address](https://howtostartanllc.com/what-is-a-registered-agent).
+1. Create a holding LLC there.
+1. Move ownership of assets into it.
+1. Have operating businesses pay it rent or royalties.
+Across borders, the [Wise Multi Currency Account]({{ site.program.business.wise }}) helps.
+1. [Elect corporate tax treatment](https://www.irs.gov/businesses/small-businesses-self-employed/llc-filing-as-a-corporation-or-partnership)
+so profits stay in the low tax jurisdiction, while watching for
+[personal holding company tax](https://www.henssler.com/avoiding-personal-holding-company-tax/).
 
-For the Canada Revenue Agency:
-- If you file an income tax return with the CRA as a Canada domestic entity and hold $100,000 CAD or
-more in foreign assets you have to file Form T1135: <https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/foreign-income-verification-statement.html>
-- Canada has a number of income tax treaties to prevent double taxation: <https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties.html>
+### 3. Deduct the Household
+The original plan was to write off household costs as family office expenses.
+Do not do this. Without a real business behind them, those are personal expenses,
+and claiming them is a good way to get audited.
 
-For the US Internal Revenue Service:
-- If you have signature authority over more than $10,000 USD held in foreign financial institutions, whether you are the owner or the trustee, you have to file FBAR: <https://www.fincen.gov/report-foreign-bank-and-financial-accounts>
-- If you file an income tax return with the IRS as a US domestic entity and hold $50,000 USD or more in foreign financial assets you have to file Form 8938: <https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets>
-- The US has a number of income tax treaties with other countries so you won’t necessarily get double taxed on the same income: <https://www.irs.gov/businesses/international-businesses/united-states-income-tax-treaties-a-to-z>
+## Why It Failed
 
-## Utilizing different tax rates
-Even if you create a corporation or LLC in another location, this does not mean that all of your income will
-magically be taxed at the lower rate, but this is not difficult. At a high level:
-1. Get a street address in another location with [Anytime Mailbox]({{ site.program.business.anytimemb }}) or [iPostal1]({{ site.program.business.ipostal1 }}),
-which you will use for your business address and [registered agent address](https://howtostartanllc.com/what-is-a-registered-agent).
-Alternatively, there are plenty of companies that offer these services for you and will manage everything if you pay them higher "all inclusive" fees.
-2. Create a holding LLC in the low tax jurisdiction. LLCs usually have lower filing fees, less paperwork
-than C-corporations, nor do you have to
-[pay taxes on the business entity's earnings and what you elect to pay yourself as your personal income](https://www.wolterskluwer.com/en/expert-insights/s-corp-vs-c-corp-differences-benefits).
-3. Transfer the ownership of all assets (intellectual, tangible, or otherwise) from your existing business to the new business in the low tax jurisdiction.
-4. Have the existing business pay significant rent or royalties to the holding company thereby wiping out the tax burden of the existing company.
-Think about doing this across country borders? Check out the [Multi Currency Account from Wise]({{ site.program.business.wise }}).
-5. [Elect to have the holding LLC taxed as a corporation](https://www.irs.gov/businesses/small-businesses-self-employed/llc-filing-as-a-corporation-or-partnership)
-so all of the profits are retained in the low tax jurisdiction, but beware this might set you up for
-[personal holding company penalties](https://www.henssler.com/avoiding-personal-holding-company-tax/https://www.henssler.com/avoiding-personal-holding-company-tax/).
-It might be easier to spend down most of the revenue on an
-[American Express company card]({{ site.program.card.amex }}) and let the remaining profits continue to pass through.
+- __Managing your own money is not a business.__ The Supreme Court said so in _Higgins v. Commissioner_.
+The family offices that win, like _Lender Management_, manage money for other people, have employees, and get paid for it.
+([Day Pitney summary](https://www.daypitney.com/epc/article/print/5064))
+- __Investment expenses are gone for individuals.__ The 2017 tax law suspended them and the 2025 law
+[made it permanent](https://www.cozen.com/news-resources/publications/2025/changes-to-itemized-deductions-in-the-obbba).
+Without a real trade or business, there is nothing to deduct against.
+- __The IRS checks for profit.__ An activity is
+[presumed for profit if it makes money in 3 of the last 5 years](https://irs.gov/zh-hans/newsroom/is-your-hobby-a-for-profit-endeavor).
+A household spends money. That is the whole point of a household.
+- __Travel has to be for business first.__ For a domestic trip,
+[the primary purpose has to be business](https://www.peasebell.com/insights/combining-business-and-vacation-travel-what-can-you-deduct/),
+or none of the transportation is deductible. A family trip does not become a business trip because the family is incorporated.
+- __Where you live still wins.__ A single-member LLC's income lands on your personal return,
+and your home state taxes it. More in the [Colorado LLC](/2020/08/colorado-llc/) post.
+- __Canada is stricter.__ A corporation whose main purpose is earning interest, rent, dividends, or royalties is a
+[specified investment business](https://taxtips.ca/smallbusiness/specified-investment-business.htm),
+unless it has more than 5 full-time employees.
+That income is taxed at [46.7% in Alberta and 50.7% in BC for 2026](https://www.taxtips.ca/smallbusiness/corporatetax/corporate-tax-rates-2026.htm),
+combined federal and provincial.
 
-For a deeper example with the state of Wyoming, I highly recommend reading: <https://www.northwestregisteredagent.com/start-a-business/wyoming/tax-benefits>
+## What I Do Now
+Real businesses, each in the place that makes sense for it.
 
-## Business deductions
-Earlier in the course we talked about running your household as a business, more specifically a _family office_.
-Managing your family’s wealth then becomes a business and allows us to take advantage of all kinds business deductions
-for the purposes of keeping your family successful, strong, healthy, and wealthy.
+- __Colorado__: my LLC runs a short-term rental and a drop-shipping business.
+Those are real operations, so the QBI deduction and business expenses hold up.
+- __Alberta__: in September 2026 I continued Vraid Systems Limited from British Columbia to Alberta.
+BC now [requires a BC Services Card](https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card) for most filings,
+which makes it impossible for a foreigner or non-resident to self-manage.
+More in the [Western Canada Limited Company](/2026/07/western-canada-limited-company/) post.
+Alberta also costs less:
+    - __Corporate income tax__: [23% combined general rate in Alberta vs 27% in BC](https://www.taxtips.ca/smallbusiness/corporatetax/corporate-tax-rates-2026.htm) for 2026.
+    - __Sales tax__: Alberta only charges the [5% federal GST](https://borderbuddy.com/blog/whats-the-difference-between-gst-hst-and-pst/).
+    BC adds a [7% PST](https://en.wikipedia.org/wiki/Sales_taxes_in_British_Columbia).
 
-All the legals fees for creating a family business are tax deductions.
-Maintaining a home office and your virtual office becomes a tax deduction. Telecom services.
-Paying employees (aka family members). Interest on purchases to increase your family's wealth.
-Insurance. Family meetings. The list goes on:
-- <https://turbotax.intuit.com/tax-tips/small-business-taxes/taking-business-tax-deductions/L5RueYPVS>
-- <https://www.bdc.ca/en/articles-tools/money-finance/manage-finances/tax-deductible-expenses>
+## Paperwork You Owe Anyway
+Cross-border holdings come with reporting, business or not.
 
-Just remember you need to show profit in at least 3 of the last 5 years: <https://www.thebalancemoney.com/is-this-business-for-real-or-is-it-a-hobby-397675>
+- __Canada__: hold more than $100,000 CAD in foreign assets, and you file
+[Form T1135](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/foreign-reporting/foreign-income-verification-statement.html).
+Canada has [tax treaties](https://www.canada.ca/en/department-finance/programs/tax-policy/tax-treaties.html) to prevent double taxation.
+- __US__: signature authority over more than $10,000 USD in foreign accounts means filing an
+[FBAR](https://www.fincen.gov/report-foreign-bank-and-financial-accounts).
+Enough foreign financial assets also means
+[Form 8938](https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets).
+The US also has [tax treaties](https://www.irs.gov/businesses/international-businesses/united-states-income-tax-treaties-a-to-z).
