@@ -14,7 +14,9 @@ Bring a better bike than I did: my hardtail's drive train did not survive the tr
 ## The Problem
 I wanted a big, remote mountain bike trip somewhere I do not speak the language, without planning every meal, tent, and transfer myself.
 
-## What I Tried
+__Hypothesis:__ A supported tour trades away route freedom, and in return I get to spend all of my attention on riding.
+
+## The Solution I Tried
 This summer I rode ~500 km across the Tian Shan, from Almaty in Kazakhstan to Karakol in Kyrgyzstan, on the
 [Spice Roads Mountain Biking Kazakhstan and Kyrgyzstan tour](https://www.spiceroads.com/tours/biking_kazakhstan/details).
 12 days, 10 of them on the bike, with the gear, food, and tents (6 nights of camping)
@@ -27,8 +29,9 @@ broad pedestrian boulevards, big trees, cafe culture, very European with an Asia
 
 Download the [Yandex Go app](https://go.yandex/en_kz/): the rides are cheap and plentiful; opt for the Comfort+.
 We had fantastic drivers, especially our driver to the [Central State Museum of the Republic of Kazakhstan](https://maps.app.goo.gl/a73vbQTMVBrPs6GA6);
-his street racer was an EDM party the whole way. According to the museum exhibits Kazakhstan was an ethnic dumping
-ground for the Soviets ... which is why the food scene is so good???
+his street racer was an EDM party the whole way. According to the museum exhibits Kazakhstan was an
+[ethnic dumping ground for the Soviets](https://en.wikipedia.org/wiki/Population_transfer_in_the_Soviet_Union)
+(Koreans, Germans, Chechens, and more) ... which is why the food scene is so good???
 A blend of Middle Eastern, East Asian, and Eastern European, all fresh ingredients.
 
 ### The route
@@ -74,7 +77,7 @@ The view from the top. Nothing to do at this point but go downhill.
 
 ### Toward Khan Tengri
 Days 7 and 8 go deep into the Central Tian Shan. The camp on Day 7 sits at 3,000 m, reached by a steady river
-valley climb, with Khan Tengri in the area. Day 8 crosses Aktog Pass and a long braided-river descent
+valley climb, with [Khan Tengri](https://en.wikipedia.org/wiki/Khan_Tengri) (7,010 m) in the area. Day 8 crosses Aktog Pass and a long braided-river descent
 with jailoos (summer pastures) on both sides.
 <span class="sidenote-number"></span><span class="sidenote">
 One Chinese firm appeared to have the contract for the road development spanning the pass through most of the river valley.
@@ -89,8 +92,8 @@ hammered it back together on some shale.
 <img src="/assets/posts/2026AugKaz/PXL_20260804_041740997.jpg_compressed.JPEG" alt="Glacier and rocky peaks under overcast sky" class="image fit" />
 Overcast, with a glacier in the distance.
 
-The last riding day is a mild 41 km of paved provincial road into Karakol, then a swim in Issyk-Kul, the second-largest
-alpine lake in the world. A fitting end after ten days of dust. The ride into Karakol through unending road construction
+The last riding day is a mild 41 km of paved provincial road into Karakol, then a swim in Issyk-Kul, the
+[second-largest mountain lake in the world](https://en.wikipedia.org/wiki/Issyk-Kul) after Titicaca. A fitting end after ten days of dust. The ride into Karakol through unending road construction
 is where my drive train finally exploded into unretrievable bits.
 
 ### Charyn Canyon and back to Almaty
@@ -110,6 +113,9 @@ Yes. What I took away:
 - __Supported touring is a fair trade.__ I gave up route freedom and got to spend all my attention on riding.
   I'll do that again for remote places where I do not speak the language.
 - __Central Asia is easy to get to and nobody goes.__ The gap between how accessible this is and how few
-  people come is the whole appeal. 18 hour transit time: DEN -> FRA -> ALA. Foreigners can buy apartments in both countries ...
+  people come is the whole appeal. 18 hour transit time: DEN -> FRA -> ALA. Foreigners can buy apartments in both
+  [Kazakhstan](https://expatexchange.com/article/18843/Real-Estate-Kazakhstan-Buying-a-Home-in-Kazakhstan)
+  and [Kyrgyzstan](https://gratanet.com/publications/legal-aspects-of-real-estate-transactions-in-kyrgyzstan),
+  though generally not the land ...
 - __The area is rapidly developing.__ There are massive outdoor recreation projects, road construction,
 infrastructure works going on all the time. Chinese firms are landing huge bids: <https://snowbrains.com/kyrgyzstan-launches-2nd-major-ski-resort-project-with-chinese-backing/>
