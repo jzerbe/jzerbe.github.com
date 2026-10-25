@@ -1,6 +1,5 @@
 ---
 author: Jason Zerbe
-custom_order: 2
 layout: post
 location: 51.1282333, -114.0753725
 published: true

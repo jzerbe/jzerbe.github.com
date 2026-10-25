@@ -1,6 +1,5 @@
 ---
 author: Jason Zerbe
-custom_order: 1
 layout: post
 outcome: ONGOING
 published: true

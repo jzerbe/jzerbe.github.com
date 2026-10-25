@@ -1,6 +1,5 @@
 ---
 author: Jason Zerbe
-custom_order: 3
 layout: post
 location: 39.055561, -108.736926
 outcome: WORKED

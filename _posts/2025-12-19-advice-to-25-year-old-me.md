@@ -1,6 +1,5 @@
 ---
 author: Jason Zerbe
-custom_order: 5
 layout: post
 published: true
 tags: [Advice, Journaling, What I Learned]

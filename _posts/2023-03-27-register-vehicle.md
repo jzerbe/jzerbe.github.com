@@ -1,6 +1,5 @@
 ---
 author: Jason Zerbe
-custom_order: 3
 layout: post
 location: 8.979392, -79.528985
 outcome: FAILED

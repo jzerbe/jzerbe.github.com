@@ -150,6 +150,10 @@ a:focus-visible {
     margin-bottom: 0.25rem;
 }
 
+.post-list-date {
+    margin-right: 0.75rem;
+}
+
 .post-date {
     font-family: var(--font-mono);
     font-size: 0.85rem;

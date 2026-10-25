@@ -25,8 +25,7 @@ title: Home
 </section>
 
 <div class="posts">
-  {% assign posts_by_order = site.posts | sort: "custom_order" %}
-  {% for post in posts_by_order %}
+  {% for post in site.posts %}
   <div class="post">
     <h3 class="post-title">
       <a href="{{ post.url | relative_url }}">
@@ -35,6 +34,7 @@ title: Home
     </h3>
 
     <span class="post-date">
+      <span class="post-list-date">{{ post.date | date: "%Y-%m-%d" }}</span>
       {% if post.outcome %}<span class="outcome outcome-{{ post.outcome | downcase }}">{{ post.outcome | upcase }}</span>{% endif %}
       {{ post.tags | array_to_sentence_string }}
     </span>

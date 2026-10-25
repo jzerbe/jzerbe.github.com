@@ -1,6 +1,5 @@
 ---
 author: Jason Zerbe
-custom_order: 4
 layout: post
 location: 39.7239777, -104.9985091
 outcome: UNTESTED
