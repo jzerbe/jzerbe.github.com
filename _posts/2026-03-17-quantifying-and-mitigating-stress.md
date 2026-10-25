@@ -40,7 +40,7 @@ If I want to enjoy the rest of life's play, I cannot overdo it.
 It also took me longer than it should have to see how connected my mind and body are.
 The fake and pious language around spiritual practice pissed me off enough to stay away.
 You do not need their language. Power comes from finding your own.
-Here I use the language I needed to hear back then: hate and power.
+Here I use the language I needed to hear back then: power.
 
 __Hypothesis:__ Train my attention the way a fast trail forces me to, cut the inputs competing for it,
 and the numbers on the blood pressure cuff will follow.
