@@ -11,7 +11,7 @@ tags:
 - Wealthsimple
 title: Bootstrapping personal Canadian financial services
 ---
-__Result:__ It worked. By October 2026 I was entirely off BMO and fully on Wealthsimple.
+__Result:__ It worked. By July 2025 I was entirely off BMO and fully on [Wealthsimple]({{ site.program.business.wealthsimple }}).
 My Alberta company runs day-to-day chequeing on [Wise]({{ site.program.business.wise }}),
 and its unused cash sits in non-US, and some non-North American, ETFs in a Wealthsimple corporate account.
 The way in: walk into a big bank branch with a passport, a driver license, and a reason.
