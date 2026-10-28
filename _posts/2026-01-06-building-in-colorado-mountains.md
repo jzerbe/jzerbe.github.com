@@ -247,7 +247,7 @@ In October 2026 I gave my property manager notice and started running it myself,
 Running it myself also builds toward the hours the IRS wants to see for a rental to count as a real business.
 More on that in the [Colorado LLC](/2020/08/colorado-llc/) post.
 
-Book a stay directly: <https://pagosacontainerhome.com/>
+Book a stay: <https://pagosacontainerhome.com/>
 
 ## Chronology
 
