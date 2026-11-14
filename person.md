@@ -47,7 +47,7 @@ and doing the useful thing over the pious one.
 </span>
 - __School__: B.S. in Computer Science from the University of Minnesota, focused on databases and networking.
 <span class="sidenote-number"></span><span class="sidenote">
-    <a href="{{ site.sidebar.github.link }}">{{ site.sidebar.github.link }}</a>
+    <a href="https://github.com/jzerbe">https://github.com/jzerbe</a>
 </span>
 
 ## What I Like
