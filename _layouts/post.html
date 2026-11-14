@@ -15,10 +15,12 @@ layout: default
       <span class="meta-label">ENTRY_ID:</span>
       <span class="meta-value">{{ page.date | date: "%Y-%m-%d" }}</span>
     </div>
+    {% if page.location %}
     <div class="meta-row">
       <span class="meta-label">LOCATION:</span>
-      <span class="meta-value">{{ page.location | default: "51.177556, -115.548716" }}</span>
+      <span class="meta-value">{{ page.location }}</span>
     </div>
+    {% endif %}
     <div class="meta-row">
       <span class="meta-label">TAGS:</span>
       <span class="meta-value">

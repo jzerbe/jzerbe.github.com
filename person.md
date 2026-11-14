@@ -46,8 +46,9 @@ and doing the useful thing over the pious one.
   Take _Enneagram_ and _Human Design_, then give an LLM the PDF results and ask "Can you explain the attached documents?"
 </span>
 - __School__: B.S. in Computer Science from the University of Minnesota, focused on databases and networking.
+{% assign github = site.social.links | where_exp: "link", "link contains 'github.com'" | first %}
 <span class="sidenote-number"></span><span class="sidenote">
-    <a href="{{ site.sidebar.github.link }}">{{ site.sidebar.github.link }}</a>
+    <a href="{{ github }}">{{ github }}</a>
 </span>
 
 ## What I Like

@@ -1,10 +1,17 @@
 author:
   email: 'jzerbe@jzerbe.com'
   name: 'Jason Zerbe'
+  url: https://jzerbe.com/person
 description: 'Experiments in business, money, and the outdoors: what I tried and whether it worked.'
 future: true
 permalink: /:year/:month/:title/
-plugins: []
+lang: en_US
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+header:
+  vraidsys:
+    link: https://vraidsys.com
 program:
   business:
     airbnb: https://www.airbnb.com/rp/jasonz1948?s=67&unique_share_id=5c1c838f-147a-4e64-970f-1a118f2b7c05
@@ -14,11 +21,10 @@ program:
     wise: https://wise.prf.hn/l/6lo8oEQ
   card:
     amex: https://americanexpress.com/en-us/referral/JASONZYEnT?XLINK=MYCP
-sidebar:
-  github:
-    link: https://github.com/jzerbe
-  vraidsys:
-    link: https://vraidsys.com
+social:
+  name: Jason Zerbe
+  links:
+    - https://github.com/jzerbe
 tagline: 'data dirt dollars'
 title: JZ
 url: https://jzerbe.com
