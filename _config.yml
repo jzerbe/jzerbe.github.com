@@ -9,6 +9,9 @@ lang: en_US
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+header:
+  vraidsys:
+    link: https://vraidsys.com
 program:
   business:
     airbnb: https://www.airbnb.com/rp/jasonz1948?s=67&unique_share_id=5c1c838f-147a-4e64-970f-1a118f2b7c05
