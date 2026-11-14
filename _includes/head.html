@@ -2,8 +2,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>{% if page.title == "Home" %}{{ site.title }} &middot; {{ site.tagline }}{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}</title>
-  <meta name="description" content="{{ page.description | default: site.description | strip_html | strip_newlines | escape }}">
+  <title>{% if page.url == "/" %}{{ site.title }} &middot; {{ site.tagline }}{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}</title>
+
+  <!-- Canonical, description, Open Graph, Twitter card, JSON-LD -->
+  {% seo title=false %}
+  {% if page.url == "/person" or page.url == "/person.html" %}{% include person_jsonld.html %}{% endif %}
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "/public/css/geologic.css" | relative_url }}">

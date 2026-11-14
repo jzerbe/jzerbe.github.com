@@ -1,0 +1,24 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "{{ site.url }}/person",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/person#person",
+    "name": {{ site.author.name | jsonify }},
+    "url": "{{ site.url }}/person",
+    "jobTitle": "General Manager",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Vraid Systems",
+      "url": "https://vraidsys.com/"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Minnesota"
+    },
+    "sameAs": {{ site.social.links | jsonify }}
+  }
+}
+</script>

@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /page
+Sitemap: https://jzerbe.com/sitemap.xml
 Sitemap: https://jzerbe.com/atom.xml
