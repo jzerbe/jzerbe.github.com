@@ -29,10 +29,11 @@ broad pedestrian boulevards, big trees, cafe culture, very European with an Asia
 
 Download the [Yandex Go app](https://go.yandex/en_kz/): the rides are cheap and plentiful; opt for the Comfort+.
 We had fantastic drivers, especially our driver to the [Central State Museum of the Republic of Kazakhstan](https://maps.app.goo.gl/a73vbQTMVBrPs6GA6);
-his street racer was an EDM party the whole way. According to the museum exhibits Kazakhstan was an
-[ethnic dumping ground for the Soviets](https://en.wikipedia.org/wiki/Population_transfer_in_the_Soviet_Union)
-(Koreans, Germans, Chechens, and more) ... which is why the food scene is so good???
-A blend of Middle Eastern, East Asian, and Eastern European, all fresh ingredients.
+his street racer was an EDM party the whole way. The museum covers the Soviet
+[deportations](https://en.wikipedia.org/wiki/Population_transfer_in_the_Soviet_Union)
+that forced Koreans, Germans, Chechens, and others into Kazakhstan, at a huge human cost.
+Their descendants are part of why the food is so varied today:
+a blend of Middle Eastern, East Asian, and Eastern European, all fresh ingredients.
 
 ### The route
 Almaty to the Kyrgyz border by bike, a helicopter drop, then over a pass at nearly 4,000 m into the Issyk-Kul basin:

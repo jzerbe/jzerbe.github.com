@@ -8,7 +8,7 @@ tags:
 - Colorado
 - Limited Liability Company
 - United States tax policy
-- Tax Optimization
+- Tax Planning
 title: The Colorado LLC as a wealth management tool
 ---
 __Result:__ It worked.
@@ -18,13 +18,9 @@ As a Colorado tax resident, forming in a no income tax state like Nevada or Wyom
 
 ## The Problem
 [Real wages have stagnated](https://www.pewresearch.org/fact-tank/2018/08/07/for-most-us-workers-real-wages-have-barely-budged-for-decades/),
-and regular employees pay a [larger share of national taxes](https://www.cbpp.org/research/federal-tax/policy-basics-where-do-federal-tax-revenues-come-from)
-than [shell companies for the rich](https://www.icij.org/investigations/panama-papers/).
-So why not play the same games until the legislation catches up?
-
-To be clear, I do not support an unfair tax system.
-I want regular people to use the same loopholes while we work on reversing the
-[Citizens United](https://www.brennancenter.org/our-work/research-reports/citizens-united-explained) mess.
+and regular employees pay a [larger share of national taxes](https://www.cbpp.org/research/federal-tax/policy-basics-where-do-federal-tax-revenues-come-from).
+The tax code already gives small businesses real deductions. Most regular people never set one up.
+My goal: use the same rules a small business uses, by the book, with the paperwork to back it up.
 
 __Hypothesis:__ If I run an investment and property management business through an LLC,
 its income qualifies for the QBI deduction, and the costs of running it become business deductions.
@@ -56,7 +52,7 @@ It has the easiest paperwork and is
 1. $150 to $300 for an hour or two of a lawyer's time to write a manager-managed operating agreement. Or pay me for one of mine.
 1. [$25 to notarize the operating agreement](https://www.notarize.com/pricing).
 1. Optional: $10 to $12 a month for a mailbox with [Anytime Mailbox]({{ site.program.business.anytimemb }}) or [iPostal1]({{ site.program.business.ipostal1 }}).
-This shields your home address and can put you in a lower sales tax, less regulated municipality (unincorporated Jefferson, Gilpin, or Weld county).
+This keeps your home address off public filings.
 
 ### Why Colorado and Not Nevada or Wyoming
 Everyone talks about Delaware (zero sales tax).

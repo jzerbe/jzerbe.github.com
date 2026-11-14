@@ -20,7 +20,7 @@ The paperwork decides it, so start collecting it now and hire an elder law attor
 
 ## The Problem
 This is a uniquely American problem.
-It would be hilarious if it were not so effective at enforcing the US caste system.
+It lands hardest on families with modest estates and few options.
 
 The [Omnibus Budget Reconciliation Act of 1993](https://oig.hhs.gov/oei/reports/oei-07-92-00880.pdf)
 requires states to recover what Medicaid paid for long-term care after the recipient dies.
@@ -120,14 +120,3 @@ Most mortgages have a "due on sale" clause. Federal law
 - Does the caregiver rule apply if the parent gets Medicaid care at home instead of in a nursing home? The statute is written around entering a facility.
 - Which state are the parents in? Look-back periods, estate definitions, and hardship rules vary.
 - Does that state reach non-probate property, like a beneficiary deed?
-
-## The Long-Term Fix
-The timing of this law is suspicious.
-From 1981 to 1988, the top US federal marginal tax rate dropped from
-[70 to 28 percent](https://taxfoundation.org/historical-income-tax-rates-brackets/).
-[_The economic consequences of major tax cuts for the rich_](https://academic.oup.com/ser/article/20/2/539/6500315)
-found these cuts led to higher income inequality and no change in economic growth or unemployment.
-
-Ironic that many of the people who voted for the politicians behind these policies will be hurt by them in old age.
-It does not have to be this way.
-We could raise taxes on the ridiculously wealthy and fund these domestic health care programs.

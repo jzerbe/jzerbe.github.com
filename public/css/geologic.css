@@ -264,6 +264,17 @@ a:focus-visible {
     margin: 3rem 0 1rem;
 }
 
+/* Footer */
+.site-footer {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--meta-color);
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 /* Sidenotes */
 .sidenote {
     display: block;

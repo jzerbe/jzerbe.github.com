@@ -11,7 +11,7 @@ tags:
 - Montana
 title: Where to register a vehicle
 ---
-__Result:__ It failed.
+__Result:__ It failed on paper, so I never registered a vehicle in Montana. This was research only.
 A vehicle gets registered where it lives, not where its owner would like it to live.
 A Montana-registered company car, driven by a Colorado resident and kept in Colorado, has to be registered in Colorado.
 Wyoming will cite you too if you work there on out-of-state plates without a permit.
@@ -25,7 +25,7 @@ __Hypothesis:__ Register the vehicle where the fringe benefits are best,
 like Montana's permanent registration and zero sales tax, through a company based there.
 
 ## The Solution I Tried
-I researched the best spots in North America to register a vehicle, then looked at registering a company car through my Montana company.
+I researched the best spots in North America to register a vehicle, then looked at registering a company car through my Montana company. The research below is why I did not.
 
 ### Canada
 
@@ -49,7 +49,7 @@ especially in Flathead County.
 
 ### Central America
 
-- __Panama__: Modern, friendly, and a strong democracy (from a memory of a recent autocrat).
+- __Panama__: Modern and friendly.
 [VAT is 7%](https://taxsummaries.pwc.com/panama/corporate/other-taxes), plus a
 [5% excise tax on cars](https://kpmg.com/us/en/home/insights/2022/06/tnf-panama-exemption-from-selective-consumption-tax-for-electric-vehicles.html).
 Registration is [$20 for the inspection and $20 for the municipal paperwork](https://www.chasingpanama.blog/2019/12/04/vehicle-registration-in-panama/).

@@ -45,7 +45,7 @@ It was the lowest tier where a balance waives the fee.
 ### 2. Start a credit history
 You need a Canadian address and phone number.
 
-- __Address__: a coworking space, an [Anytime Mailbox]({{ site.program.business.anytimemb }}) or [iPostal1]({{ site.program.business.ipostal1 }}) address, a hotel, or a colleague's apartment.
+- __Address__: a coworking space, an [Anytime Mailbox]({{ site.program.business.anytimemb }}) or [iPostal1]({{ site.program.business.ipostal1 }}) address that actually receives your mail. Banks check.
 - __Phone__: With no credit history, you need a prepaid plan. [Koodo](https://www.koodomobile.com/en/prepaid-plans) and [Freedom](https://shop.freedommobile.ca/en-CA/prepaid-plans) are your nationwide options.
 Most financial institutions crack down on VoIP numbers.
 - __First credit card__: With zero Canadian credit history, the bank where you opened your chequing account is probably one of the few that will consider a credit card or revolving line of credit.
@@ -53,7 +53,7 @@ Most financial institutions crack down on VoIP numbers.
 ### 3. Move everything to Wealthsimple
 Personal banking moved to Wealthsimple, and I closed the BMO account and card.
 
-On the business side, the company that is now [Vraid Systems Limited of Alberta](/2021/03/family-wealth-office/) splits the job:
+On the business side, the company that is now [Vraid Systems Limited of Alberta](/2026/07/western-canada-limited-company/) splits the job:
 
 - __Day to day__: chequeing on Wise, which handles multiple currencies.
 - __Unused cash__: a [Wealthsimple corporate account](https://wealthsimple.com/en-ca/accounts/corporate-accounts)

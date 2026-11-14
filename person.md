@@ -34,7 +34,7 @@ How that is going: [Running Vraid Systems on LLMs]({% post_url 2026-03-17-runnin
 ## Outside of Work
 
 - __Research__: I was a licensed Investment Advisor Representative.
-I am still into arbitrage and the mechanics of the economic caste system.
+I am still into arbitrage and the mechanics of the wealth gap.
 - __Outside__: Usually on a splitboard or mountain bike, often in the same rough terrain our mining and ranching clients work in.
 - __Mindset__: Working on ego and willpower, in the "Protector" and "Mentor" sense.
 What I care about: financial and schedule freedom, testing people's mettle to bring out their strengths,
