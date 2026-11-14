@@ -17,7 +17,7 @@ The leads pipeline and bid evaluation are fully automated.
 I understand the fine print of the policies I sign up for, so I can manage risk instead of just accepting it.
 Fulfillment is the next piece and is in progress.
 
-_First written March 2026, updated October 2026._
+_First written March 2026, updated November 2026._
 
 ## The Problem
 Vraid Systems sells goods and software into public tenders, mostly state governments and UN agencies.
@@ -31,7 +31,7 @@ My starting point:
 
 > With the advent of AI and LLMs many things are changing about how money is made.
 > Administration and clerical work goes away, which means the C-suite should be reshaped,
-> as much of what they do is glorified clerical work from their background in law, MBAs, and finance.
+> since so much of their time goes to the paperwork their law, MBA, and finance training prepared them for.
 
 __Hypothesis:__ If that is true at a big company, it should be even more true at a small one.
 LLMs can do the clerical and administrative work, and I only do the parts that need a person.
@@ -41,12 +41,16 @@ LLMs can do the clerical and administrative work, and I only do the parts that n
 - __Leads__: Tender notices land in a Slack channel. An LLM pulls the bid documents from the procurement portal,
 checks them against my criteria, and posts the ones worth chasing to the sales channel.
 I log in to the portals myself. Everything after that is automated.
-- __Evaluation__: For each bid it checks whether we can win, the risk versus reward,
-and whether we can source it, then fills out the submission PDFs.
-Goods bids get a sourcing sheet with at least three suppliers, with customs duties and tariffs included.
+- __Evaluation__: For each bid it checks whether we can win and the risk versus reward,
+then drafts the company information and terms sections of the response.
+Pricing and sourcing stay with me. I tried automating them and pulled it back out in November 2026.
 - __Back office__: LLMs review audit questions against the Federal Acquisition Regulation (FAR),
 balance sheet risk, and corporate law in each place we operate.
-- __Humans__: I submit the bid, approve the sourcing, and send payments.
+- __Tender documents__: they stay in Vraid's own workflow and storage accounts,
+and the models read them through the Anthropic API, whose
+[commercial terms](https://www.anthropic.com/legal/commercial-terms) bar training on customer content.
+No consumer chatbot accounts.
+- __Humans__: I price the bid, choose suppliers, submit, and send payments.
 Anything that moves money or signs my name, I do.
 - __Network__: I trade notes with other small business owners who lean hard into automation.
 
@@ -65,9 +69,9 @@ Only the manufacturers win those, and it is a race to the bottom.
 Tenders split into lots are where a small reseller can actually win.
 
 ## What This Says About Bigger Companies
-In my business, the work that got automated first was the work that looks most like an executive's job:
-reading policy, weighing risk, checking compliance, filling out forms.
-What is left for a person is trust, relationships, and signing for the money.
+In my business, the first work to get automated was the reading:
+policy, risk, compliance, and forms.
+That leaves more of a person's time for judgment, trust, relationships, and signing for the money.
 
 My partner made a better point than my original hypothesis:
 > I don't believe a company's board would vote out their social class peers even though CEOs are obsolete.

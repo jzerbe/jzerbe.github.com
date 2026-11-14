@@ -36,7 +36,7 @@ Xcel cut power to [nearly 100,000 Coloradans](https://www.coloradopolitics.com/2
 
 Spending time in that environment over the last few years is how I can name all of this.
 Others have figured it out too: people will happily pay for svelte whole-home batteries to ride out increasingly common grid-destabilizing storms.
-Natural disasters are a good business opportunity.
+Resilience against natural disasters is a growing market.
 <span class="sidenote-number"></span><span class="sidenote">
 <https://www.stlouisfed.org/publications/regional-economist/april-1994/the-economics-of-natural-disasters>
 </span>

@@ -30,7 +30,7 @@ I also wanted more cash flow. In 2020 and 2021, rates on stored cash were effect
 <https://fred.stlouisfed.org/series/FEDFUNDS>
 </span>
 and, as usual, asset prices went the other way: higher than I believed their valuations should be.
-Stuck inside during COVID-19, I went off the diving board into the deep end of oligarch finance and accredited investing.
+Stuck inside during COVID-19, I went off the diving board into the deep end of private markets and accredited investing.
 My world view changed from "the future will be better" to actively living my better future.
 
 In startup-land we talk about ARR

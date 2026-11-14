@@ -6,7 +6,7 @@ outcome: FAILED
 published: true
 tags:
 - Estate Planning
-- Tax Optimization
+- Tax Planning
 - Family Office
 - Alberta
 title: The family wealth office experiment
